@@ -1,0 +1,1192 @@
+{
+ "family": "b_control_min",
+ "lo": 1,
+ "hi": 61,
+ "target": 12,
+ "screen": {
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": true,
+  "8": true,
+  "9": true,
+  "10": true,
+  "11": true,
+  "12": true,
+  "13": true,
+  "14": true,
+  "15": true,
+  "16": true,
+  "17": true,
+  "18": true,
+  "19": true,
+  "20": true,
+  "21": true,
+  "22": true,
+  "23": true,
+  "24": true,
+  "25": true,
+  "26": true,
+  "27": true,
+  "28": true,
+  "29": true,
+  "30": true,
+  "31": true,
+  "32": true,
+  "33": true,
+  "34": true,
+  "35": true,
+  "36": true,
+  "37": true,
+  "38": true,
+  "39": true,
+  "40": true,
+  "41": true,
+  "42": true,
+  "43": true,
+  "44": true,
+  "45": true,
+  "46": true,
+  "47": true,
+  "48": true,
+  "49": true,
+  "50": true,
+  "51": true,
+  "52": true,
+  "53": true,
+  "54": true,
+  "55": true,
+  "56": true,
+  "57": true,
+  "58": true,
+  "59": true,
+  "60": true
+ },
+ "gate": {
+  "1": {
+   "accept": true,
+   "bad": []
+  },
+  "2": {
+   "accept": true,
+   "bad": []
+  },
+  "3": {
+   "accept": true,
+   "bad": []
+  },
+  "4": {
+   "accept": true,
+   "bad": []
+  },
+  "5": {
+   "accept": true,
+   "bad": []
+  },
+  "6": {
+   "accept": true,
+   "bad": []
+  },
+  "7": {
+   "accept": true,
+   "bad": []
+  },
+  "8": {
+   "accept": true,
+   "bad": []
+  },
+  "9": {
+   "accept": true,
+   "bad": []
+  },
+  "10": {
+   "accept": true,
+   "bad": []
+  },
+  "11": {
+   "accept": true,
+   "bad": []
+  },
+  "12": {
+   "accept": true,
+   "bad": []
+  },
+  "13": {
+   "accept": true,
+   "bad": []
+  },
+  "14": {
+   "accept": true,
+   "bad": []
+  },
+  "15": {
+   "accept": true,
+   "bad": []
+  },
+  "16": {
+   "accept": true,
+   "bad": []
+  },
+  "17": {
+   "accept": true,
+   "bad": []
+  },
+  "18": {
+   "accept": true,
+   "bad": []
+  },
+  "19": {
+   "accept": true,
+   "bad": []
+  },
+  "20": {
+   "accept": true,
+   "bad": []
+  },
+  "21": {
+   "accept": true,
+   "bad": []
+  },
+  "22": {
+   "accept": true,
+   "bad": []
+  },
+  "23": {
+   "accept": true,
+   "bad": []
+  },
+  "24": {
+   "accept": true,
+   "bad": []
+  },
+  "25": {
+   "accept": true,
+   "bad": []
+  },
+  "26": {
+   "accept": true,
+   "bad": []
+  },
+  "27": {
+   "accept": true,
+   "bad": []
+  },
+  "28": {
+   "accept": true,
+   "bad": []
+  },
+  "29": {
+   "accept": true,
+   "bad": []
+  },
+  "30": {
+   "accept": true,
+   "bad": []
+  },
+  "31": {
+   "accept": true,
+   "bad": []
+  },
+  "32": {
+   "accept": true,
+   "bad": []
+  }
+ },
+ "post": {
+  "pabl:8": {
+   "seed": 8,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "ext_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_cheap_instrument_is_needed": {
+     "strategy": "ext_only",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "pabl:9": {
+   "seed": 9,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "ext_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_cheap_instrument_is_needed": {
+     "strategy": "ext_only",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "pabl:10": {
+   "seed": 10,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "ext_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_cheap_instrument_is_needed": {
+     "strategy": "ext_only",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "pabl:11": {
+   "seed": 11,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "ext_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_cheap_instrument_is_needed": {
+     "strategy": "ext_only",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "search:8": {
+   "seed": 8,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "ext_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.8,
+      0.8,
+      0.8
+     ],
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "search:9": {
+   "seed": 9,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "ext_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.8,
+      0.8,
+      0.8
+     ],
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "search:10": {
+   "seed": 10,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "ext_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.8,
+      0.8,
+      0.8
+     ],
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "search:11": {
+   "seed": 11,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "ext_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.8,
+      0.8,
+      0.8
+     ],
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "mut:8": {
+   "seed": 8,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "culprit_label": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_culprit",
+      "failed": [
+       "R1_culprit"
+      ]
+     },
+     "ok": true
+    },
+    "effect_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "effect_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "mut:9": {
+   "seed": 9,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "culprit_label": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_culprit",
+      "failed": [
+       "R1_culprit"
+      ]
+     },
+     "ok": true
+    },
+    "effect_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "effect_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "act:8": {
+   "R0_report": {
+    "n": 18,
+    "pass": 14,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.778,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R1_culprit": {
+    "n": 14,
+    "pass": 10,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.714,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R2_effect": {
+    "n": 14,
+    "pass": 2,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.143,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   }
+  },
+  "act:9": {
+   "R0_report": {
+    "n": 18,
+    "pass": 14,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.778,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R1_culprit": {
+    "n": 14,
+    "pass": 10,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.714,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R2_effect": {
+    "n": 14,
+    "pass": 2,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.143,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   }
+  },
+  "act:10": {
+   "R0_report": {
+    "n": 18,
+    "pass": 14,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.778,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R1_culprit": {
+    "n": 14,
+    "pass": 10,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.714,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R2_effect": {
+    "n": 14,
+    "pass": 2,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.143,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   }
+  }
+ },
+ "pool": [
+  8,
+  9,
+  10,
+  11,
+  14,
+  20,
+  22,
+  24,
+  25,
+  26,
+  29,
+  30
+ ],
+ "pool_info": {
+  "n": 12,
+  "modal_culprit": 3,
+  "cap_culprit": 3,
+  "culprits": {
+   "H-3": 2,
+   "H-2": 3,
+   "H-5": 2,
+   "H-4": 3,
+   "H-1": 2
+  }
+ }
+}

@@ -1,0 +1,1151 @@
+{
+ "family": "a_span",
+ "n_candidates": 240,
+ "n_screened": 45,
+ "n_strategy_gate_clean": 31,
+ "n_strategy_gate_run": 36,
+ "strategy_gate_rejected": {
+  "79": [
+   "rank_volume"
+  ],
+  "120": [
+   "rank_uniform"
+  ],
+  "131": [
+   "rank_volume"
+  ],
+  "184": [
+   "rank_volume"
+  ],
+  "188": [
+   "rank_uniform",
+   "rank_volume"
+  ]
+ },
+ "admitted": [
+  58,
+  62,
+  77,
+  97,
+  101,
+  103,
+  140,
+  150,
+  161,
+  185,
+  189,
+  192
+ ],
+ "pool_gate": {
+  "n": 12,
+  "best_fixed": 1,
+  "best_fixed_set": [
+   "C-203",
+   "C-241",
+   "C-352"
+  ]
+ },
+ "p_ablation": {
+  "58": {
+   "seed": 58,
+   "screen_ok": true,
+   "principles": {
+    "Q2_mix_must_be_estimated": {
+     "strategy": "rank_uniform",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q2b_one_trace_is_rank_one": {
+     "strategy": "rank_nearest_trace",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q3_composition_is_not_additive": {
+     "strategy": "compose_canary",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q4_removal_is_in_context": {
+     "strategy": "right_set_wrong_weakest",
+     "items_declared": true,
+     "protects": [
+      "R3_weakest_member"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q5_interval_must_be_earned": {
+     "strategy": "wide",
+     "items_declared": true,
+     "protects": [
+      "R2_speedup_predicted"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "62": {
+   "seed": 62,
+   "screen_ok": true,
+   "principles": {
+    "Q2_mix_must_be_estimated": {
+     "strategy": "rank_uniform",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q2b_one_trace_is_rank_one": {
+     "strategy": "rank_nearest_trace",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q3_composition_is_not_additive": {
+     "strategy": "compose_canary",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q4_removal_is_in_context": {
+     "strategy": "right_set_wrong_weakest",
+     "items_declared": true,
+     "protects": [
+      "R3_weakest_member"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q5_interval_must_be_earned": {
+     "strategy": "wide",
+     "items_declared": true,
+     "protects": [
+      "R2_speedup_predicted"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "77": {
+   "seed": 77,
+   "screen_ok": true,
+   "principles": {
+    "Q2_mix_must_be_estimated": {
+     "strategy": "rank_uniform",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q2b_one_trace_is_rank_one": {
+     "strategy": "rank_nearest_trace",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q3_composition_is_not_additive": {
+     "strategy": "compose_canary",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q4_removal_is_in_context": {
+     "strategy": "right_set_wrong_weakest",
+     "items_declared": true,
+     "protects": [
+      "R3_weakest_member"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q5_interval_must_be_earned": {
+     "strategy": "wide",
+     "items_declared": true,
+     "protects": [
+      "R2_speedup_predicted"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "97": {
+   "seed": 97,
+   "screen_ok": true,
+   "principles": {
+    "Q2_mix_must_be_estimated": {
+     "strategy": "rank_uniform",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q2b_one_trace_is_rank_one": {
+     "strategy": "rank_nearest_trace",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q3_composition_is_not_additive": {
+     "strategy": "compose_canary",
+     "items_declared": true,
+     "protects": [
+      "R1_set_is_near_optimal"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "Q4_removal_is_in_context": {
+     "strategy": "right_set_wrong_weakest",
+     "items_declared": true,
+     "protects": [
+      "R3_weakest_member"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ],
+      [
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "Q5_interval_must_be_earned": {
+     "strategy": "wide",
+     "items_declared": true,
+     "protects": [
+      "R2_speedup_predicted"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ],
+      [
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  }
+ },
+ "p_ablation_ok": true,
+ "item_activity": {
+  "R0_plan": {
+   "n": 66,
+   "pass": 54,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.818,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R1_set_is_near_optimal": {
+   "n": 54,
+   "pass": 18,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.333,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R2_speedup_predicted": {
+   "n": 54,
+   "pass": 14,
+   "oracle_n": 6,
+   "oracle_pass": 5,
+   "pass_rate": 0.259,
+   "oracle_rate": 0.833,
+   "inert": false,
+   "broken": false
+  },
+  "R3_weakest_member": {
+   "n": 54,
+   "pass": 34,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.63,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  }
+ },
+ "items_inert": [],
+ "items_broken": [],
+ "search": {
+  "58": {
+   "seed": 58,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "rank_uniform": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.438,
+      0.438,
+      0.438
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "borda": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.453,
+      0.453,
+      0.453
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "minimax": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.469,
+      0.469,
+      0.469
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "62": {
+   "seed": 62,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "rank_uniform": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "borda": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.516,
+      0.516,
+      0.516
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    },
+    "minimax": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.531,
+      0.531,
+      0.531
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "77": {
+   "seed": 77,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "rank_uniform": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.547,
+      0.547,
+      0.547
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "borda": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.562,
+      0.562,
+      0.562
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "minimax": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.578,
+      0.578,
+      0.578
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "97": {
+   "seed": 97,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "rank_uniform": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.391,
+      0.391,
+      0.391
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "borda": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.406,
+      0.406,
+      0.406
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted"
+      ]
+     ],
+     "ok": true
+    },
+    "minimax": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.422,
+      0.422,
+      0.422
+     ],
+     "failed_items": [
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ],
+      [
+       "R1_set_is_near_optimal",
+       "R2_speedup_predicted",
+       "R3_weakest_member"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  }
+ },
+ "search_ok": true,
+ "mutation": {
+  "58": {
+   "seed": 58,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "set_choice": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_set_is_near_optimal",
+      "failed": [
+       "R1_set_is_near_optimal"
+      ]
+     },
+     "ok": true
+    },
+    "interval_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_speedup_predicted",
+      "failed": [
+       "R2_speedup_predicted"
+      ]
+     },
+     "ok": true
+    },
+    "interval_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_speedup_predicted",
+      "failed": [
+       "R2_speedup_predicted"
+      ]
+     },
+     "ok": true
+    },
+    "weakest_member": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_weakest_member",
+      "failed": [
+       "R3_weakest_member"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "62": {
+   "seed": 62,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "set_choice": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_set_is_near_optimal",
+      "failed": [
+       "R1_set_is_near_optimal"
+      ]
+     },
+     "ok": true
+    },
+    "interval_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_speedup_predicted",
+      "failed": [
+       "R2_speedup_predicted"
+      ]
+     },
+     "ok": true
+    },
+    "interval_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_speedup_predicted",
+      "failed": [
+       "R2_speedup_predicted"
+      ]
+     },
+     "ok": true
+    },
+    "weakest_member": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_weakest_member",
+      "failed": [
+       "R3_weakest_member"
+      ]
+     },
+     "ok": true
+    }
+   }
+  }
+ },
+ "mutation_ok": true,
+ "mutation_checked": true,
+ "ok": true
+}

@@ -1,0 +1,13 @@
+[task]
+name = "d_shift_repair_22"
+module = "d_shift_repair"
+seed = 22
+
+[verifier]
+artifacts = ["report.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 32
+unit = "credits"
