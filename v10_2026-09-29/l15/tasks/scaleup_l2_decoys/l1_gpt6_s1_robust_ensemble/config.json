@@ -1,0 +1,18 @@
+{
+  "hidden": 256,
+  "lr": 0.003,
+  "batch_size": 128,
+  "aug_sigma": 0.0,
+  "label_smoothing": 0.0,
+  "warmup_frac": 0.02,
+  "weight_decay": 1.5,
+  "noise_rate": 0.25,
+  "decay_reference_rows": 4000,
+  "decay_power": 0.5,
+  "members": [
+    {"hidden": 256, "weight_decay": 1.5, "decay_power": 0.5},
+    {"hidden": 256, "weight_decay": 3.0, "decay_power": 1.0},
+    {"hidden": 128, "weight_decay": 1.0, "decay_power": 0.75},
+    {"hidden": 128, "weight_decay": 1.5, "decay_power": 0.5}
+  ]
+}

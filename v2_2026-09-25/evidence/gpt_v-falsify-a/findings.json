@@ -1,0 +1,26 @@
+{
+  "V1": {
+    "status": "violated",
+    "witness": "witnesses/v1.json"
+  },
+  "V2": {
+    "status": "violated",
+    "witness": "witnesses/v2.json"
+  },
+  "V3": {
+    "status": "violated",
+    "witness": "witnesses/v3.json"
+  },
+  "V4": {
+    "status": "holds",
+    "argument": "Every scoped length is nonnegative and is clipped to max_tokens. The running total equals the sum of clipped lengths in the current batch. Before appending an item that would exceed the limit, any nonempty batch is emitted and the total reset to zero. A new batch starts with one clipped length at most max_tokens. By induction every current and emitted batch stays within the limit, including zero-length items and the final batch."
+  },
+  "V5": {
+    "status": "holds",
+    "argument": "For every processed input prefix, the multiset of emitted items plus the multiset in the buffer equals the multiset of that prefix. Filling the buffer adds exactly the incoming item. Each full-buffer step emits one existing buffered item and replaces its slot with exactly the incoming item, preserving the invariant. Draining emits and removes one buffered item per step until the buffer is empty. Therefore the final output has exactly the input multiplicities for every valid buffer size and random choice, including repeated items and empty input."
+  },
+  "V6": {
+    "status": "violated",
+    "witness": "witnesses/v6.json"
+  }
+}

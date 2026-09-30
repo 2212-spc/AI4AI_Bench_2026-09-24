@@ -1,0 +1,79 @@
+{
+ "pass": false,
+ "score": 0.6667,
+ "items": {
+  "R0_recipe": {
+   "ok": true,
+   "detail": "recipe.json is well-formed"
+  },
+  "R1_recipe": {
+   "ok": false,
+   "detail": "expected final val loss of your recipe at the new setup exceeds the best achievable by 0.01072 (allowed 0.0008): lr part 0.00554, lr*wd part 0.00518.  Best recipe lr=6.11e-05 wd=0.0557; yours lr=8e-05 wd=0.035 (log2 offsets: lr +0.39, lr*wd -0.28)."
+  },
+  "R2_loss": {
+   "ok": true,
+   "detail": "expected final val loss of YOUR recipe at the new setup is 2.49099; you reported [2.49000, 2.49300] (covers, width 0.00300, cap 0.0110)."
+  }
+ },
+ "diag": {
+  "variant": "tokens8x",
+  "penalty": 0.01072,
+  "pen_lr": 0.005536,
+  "pen_lrwd": 0.005184,
+  "du_log2": 0.389,
+  "dw_log2": -0.281,
+  "wd_changed": false,
+  "closest_decoy": "lr_measured__wd_keep",
+  "closest_decoy_dist": 0.389,
+  "interval_centre_minus_truth": 0.000505,
+  "n_runs": 4,
+  "n_full_length": 3,
+  "shortest_octaves_below": -1.0,
+  "wd_varied_at_fixed_lr_max_octave": null,
+  "spent": 224.0
+ },
+ "ref": {
+  "variant": "tokens8x",
+  "u_star": -13.99818,
+  "v_star": -4.16701,
+  "w_star": -18.16518,
+  "lr_star": 6.11e-05,
+  "wd_star": 0.0557,
+  "best_loss": 2.480275,
+  "decoy_penalty": {
+   "lr_rho0__wd_keep": 0.124358,
+   "lr_rho0__lrwd_keep": 0.124358,
+   "lr_rho0__steps_pow_half": 0.109996,
+   "lr_rho0__steps_pow_one": 0.391149,
+   "lr_rho0__batch1_tokens_half": 0.109996,
+   "lr_rho0.5__wd_keep": 0.124358,
+   "lr_rho0.5__lrwd_keep": 0.124358,
+   "lr_rho0.5__steps_pow_half": 0.109996,
+   "lr_rho0.5__steps_pow_one": 0.391149,
+   "lr_rho0.5__batch1_tokens_half": 0.109996,
+   "lr_rho1__wd_keep": 0.124358,
+   "lr_rho1__lrwd_keep": 0.124358,
+   "lr_rho1__steps_pow_half": 0.109996,
+   "lr_rho1__steps_pow_one": 0.391149,
+   "lr_rho1__batch1_tokens_half": 0.109996,
+   "lr_measured__wd_keep": 0.028011,
+   "lr_measured__lrwd_keep": 0.044469,
+   "lr_measured__steps_pow_half": 0.030107,
+   "lr_measured__steps_pow_one": 0.31126,
+   "lr_measured__batch1_tokens_half": 0.030107,
+   "proxy_optimum": 0.22108
+  },
+  "ofat_penalty": 0.010037,
+  "carry_over_penalty": 0.124358
+ },
+ "run": "rr11__haiku__r1",
+ "task": "r_retune_s11",
+ "model": "claude-haiku-4-5-20251001",
+ "hint": 0,
+ "lab_calls": 4,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 2.0,
+ "api_errors": 0,
+ "truncated": false
+}

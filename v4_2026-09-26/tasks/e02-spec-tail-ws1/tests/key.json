@@ -1,0 +1,166 @@
+[
+ {
+  "id": "q1",
+  "kind": "point",
+  "text": "With `draft=d_lite` at proposal length 4: the fraction of one verification step's wall time that goes to the draft model rather than to the target model's verification pass.  A fraction in [0, 1]; it is the same at every batch and context length (noise-free expected value).",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.18414929776166744,
+   "hi": 0.18414929776166744
+  },
+  "tol": 0.01125152687116826,
+  "floor": 0.004,
+  "cards": [
+   "S3"
+  ],
+  "obstacles": [
+   "O2",
+   "O4"
+  ],
+  "chain": [
+   "matched",
+   "profile",
+   "perstep"
+  ],
+  "prior_key": {
+   "lo": 0.3386243386243386,
+   "hi": 0.3386243386243386
+  }
+ },
+ {
+  "id": "q2",
+  "kind": "set",
+  "text": "Steady-state decode throughput, in output tokens per second, of **one production replica** under `deploy/serving.yaml`: no speculation, `bits=16`, the replica filled with as many whole sequences of the p95 context length as its reserved KV pool holds.  The p95 context length is the first known unknown of Section 5; give the set of values this throughput takes over its documented range (noise-free expected values).",
+  "unit": "tokens/s",
+  "key": {
+   "lo": 5362.674286480414,
+   "hi": 7840.681664591513
+  },
+  "tol": 141.08099549562212,
+  "floor": 31.362726658366054,
+  "cards": [
+   "S1",
+   "S5"
+  ],
+  "obstacles": [
+   "O13",
+   "O2"
+  ],
+  "chain": [
+   "capacity",
+   "roofline",
+   "extremes"
+  ]
+ },
+ {
+  "id": "q3",
+  "kind": "cex",
+  "text": "Is the following forced by the evidence?  Free parameters: `a` (acceptance at proposal position 0) in [0.8943, 0.9547], `rho` (the decay over positions 0 to 3) in [0.9366, 0.9735], and `rho_tail` (the decay from position 4 on) in [0.85, 1.00].  A witness gives all three and nothing else.",
+  "claim": "Raising the draft scheduler's proposal length from 4 to 8, with the draft model, the hardware and the serving configuration unchanged, raises steady-state decode throughput.",
+  "schema": {
+   "params": {
+    "a": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "a"
+     ],
+     "lo": 0.8943,
+     "hi": 0.9547,
+     "type": "float"
+    },
+    "rho": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "rho"
+     ],
+     "lo": 0.9366,
+     "hi": 0.9735,
+     "type": "float"
+    },
+    "rho_tail": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "rho_tail"
+     ],
+     "lo": 0.85,
+     "hi": 1.0,
+     "type": "float"
+    }
+   }
+  },
+  "entailed": false,
+  "key": {
+   "verdict": "refutable"
+  },
+  "z_bar": 4.5,
+  "cards": [
+   "S3"
+  ],
+  "obstacles": [
+   "O11",
+   "O13"
+  ],
+  "chain": [
+   "profile",
+   "tail"
+  ]
+ },
+ {
+  "id": "q4",
+  "kind": "cex",
+  "text": "Is the following forced by the evidence?  Free parameters: `a` (acceptance at proposal position 0) in [0.8943, 0.9547], `rho` (the decay over positions 0 to 3) in [0.9366, 0.9735], and `rho_tail` (the decay from position 4 on) in [0.85, 1.00].  A witness gives all three and nothing else.",
+  "claim": "Raising the draft scheduler's proposal length from 4 to 8, with everything else unchanged, cannot raise steady-state decode throughput by more than 12.30%.",
+  "schema": {
+   "params": {
+    "a": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "a"
+     ],
+     "lo": 0.8943,
+     "hi": 0.9547,
+     "type": "float"
+    },
+    "rho": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "rho"
+     ],
+     "lo": 0.9366,
+     "hi": 0.9735,
+     "type": "float"
+    },
+    "rho_tail": {
+     "path": [
+      "drafts",
+      "d_lite",
+      "rho_tail"
+     ],
+     "lo": 0.85,
+     "hi": 1.0,
+     "type": "float"
+    }
+   }
+  },
+  "entailed": true,
+  "key": {
+   "verdict": "entailed"
+  },
+  "z_bar": 4.5,
+  "cards": [
+   "S3"
+  ],
+  "obstacles": [
+   "O11"
+  ],
+  "chain": [
+   "profile",
+   "bound"
+  ]
+ }
+]

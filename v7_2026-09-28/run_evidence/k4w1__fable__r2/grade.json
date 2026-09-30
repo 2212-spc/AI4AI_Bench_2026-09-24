@@ -1,0 +1,65 @@
+{
+ "pass": true,
+ "score": 1.0398,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "test accuracy 0.9150 (majority@6 0.4792, reference 0.8983) -> s=1.040, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.9025,
+   0.91,
+   0.9325
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.866,
+    "geometry": 0.8972,
+    "combinatorics": 0.9304,
+    "number_theory": 0.9136
+   },
+   {
+    "algebra": 0.8716,
+    "geometry": 0.8506,
+    "combinatorics": 0.9615,
+    "number_theory": 0.95
+   },
+   {
+    "algebra": 0.8824,
+    "geometry": 0.9195,
+    "combinatorics": 0.96,
+    "number_theory": 0.964
+   }
+  ],
+  "n_dev_samples": 3400,
+  "n_evaluate": 4
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__fable__r2",
+ "task": "k4-tts-w1",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 11,
+ "budget_spent_frac": 0.74,
+ "status": "done",
+ "agent_min": 11.8,
+ "api_errors": 0,
+ "truncated": false
+}

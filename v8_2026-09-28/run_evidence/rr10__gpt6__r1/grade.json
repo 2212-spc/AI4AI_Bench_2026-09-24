@@ -1,0 +1,79 @@
+{
+ "pass": false,
+ "score": 0.6667,
+ "items": {
+  "R0_recipe": {
+   "ok": true,
+   "detail": "recipe.json is well-formed"
+  },
+  "R1_recipe": {
+   "ok": false,
+   "detail": "expected final val loss of your recipe at the new setup exceeds the best achievable by 0.01774 (allowed 0.0008): lr part 0.00073, lr*wd part 0.01701.  Best recipe lr=0.000275 wd=0.0785; yours lr=0.0003 wd=0.1 (log2 offsets: lr +0.13, lr*wd +0.47)."
+  },
+  "R2_loss": {
+   "ok": true,
+   "detail": "expected final val loss of YOUR recipe at the new setup is 3.18136; you reported [3.17700, 3.18800] (covers, width 0.01100, cap 0.0110)."
+  }
+ },
+ "diag": {
+  "variant": "batch4x",
+  "penalty": 0.017742,
+  "pen_lr": 0.000732,
+  "pen_lrwd": 0.01701,
+  "du_log2": 0.125,
+  "dw_log2": 0.474,
+  "wd_changed": true,
+  "closest_decoy": "lr_measured__steps_pow_one",
+  "closest_decoy_dist": 0.195,
+  "interval_centre_minus_truth": 0.001138,
+  "n_runs": 11,
+  "n_full_length": 3,
+  "shortest_octaves_below": -6.0,
+  "wd_varied_at_fixed_lr_max_octave": -6.0,
+  "spent": 224.0
+ },
+ "ref": {
+  "variant": "batch4x",
+  "u_star": -11.82778,
+  "v_star": -3.6707,
+  "w_star": -15.49849,
+  "lr_star": 0.000275,
+  "wd_star": 0.0785,
+  "best_loss": 3.16362,
+  "decoy_penalty": {
+   "lr_rho0__wd_keep": 0.176077,
+   "lr_rho0__lrwd_keep": 0.176077,
+   "lr_rho0__steps_pow_half": 0.024325,
+   "lr_rho0__steps_pow_one": 0.024113,
+   "lr_rho0__batch1_tokens_half": 0.024113,
+   "lr_rho0.5__wd_keep": 0.03973,
+   "lr_rho0.5__lrwd_keep": 0.191482,
+   "lr_rho0.5__steps_pow_half": 0.03973,
+   "lr_rho0.5__steps_pow_one": 0.039517,
+   "lr_rho0.5__batch1_tokens_half": 0.039517,
+   "lr_rho1__wd_keep": 0.148622,
+   "lr_rho1__lrwd_keep": 0.300586,
+   "lr_rho1__steps_pow_half": 0.148834,
+   "lr_rho1__steps_pow_one": 0.148622,
+   "lr_rho1__batch1_tokens_half": 0.148622,
+   "lr_measured__wd_keep": 0.102978,
+   "lr_measured__lrwd_keep": 0.170801,
+   "lr_measured__steps_pow_half": 0.019049,
+   "lr_measured__steps_pow_one": 0.018837,
+   "lr_measured__batch1_tokens_half": 0.018837,
+   "proxy_optimum": 0.701539
+  },
+  "ofat_penalty": 0.039345,
+  "carry_over_penalty": 0.176077
+ },
+ "run": "rr10__gpt6__r1",
+ "task": "r_retune_s10",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 11,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 12.8,
+ "api_errors": 0,
+ "truncated": false
+}

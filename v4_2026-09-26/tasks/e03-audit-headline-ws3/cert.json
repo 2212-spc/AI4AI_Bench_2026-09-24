@@ -1,0 +1,571 @@
+{
+ "gates": {
+  "G0_wellposed": {
+   "pass": true,
+   "why": "defect D1_selection_max_over_seeds at analysis/headline.py:76 moves the headline 0.4694 -> 0.4402; herrings <= 0; corrected range [0.2439, 0.4970] straddles the bar 0.26; believing the script gives [0.2699, 0.5264]; item-count weighting 0.4402; ignoring a card costs {\"E2\": 0.1531, \"E3\": 0.1532, \"E6\": 0.0212, \"E8\": 0.126}"
+  },
+  "G1_solvable": {
+   "pass": true,
+   "ver_allpass": 1.0,
+   "min_item_pass": 1.0,
+   "shipped_oracle_all_pass": true
+  },
+  "G2_kill_matrix": {
+   "pass": true,
+   "unkilled_must_kill": []
+  },
+  "G3_set_width": {
+   "pass": true,
+   "narrow": []
+  },
+  "G4_identifiability": {
+   "pass": true,
+   "certs": [
+    {
+     "param": "w0_rel",
+     "range": [
+      0.15,
+      0.85
+     ],
+     "n_requests": 282,
+     "n_differing": 0,
+     "zero_footprint": true
+    }
+   ]
+  },
+  "G5_replay": {
+   "n_rows": 16,
+   "n_mismatch": 0,
+   "pass": true
+  },
+  "G6_leakage": {
+   "hits": [],
+   "pass": true
+  },
+  "G7_key_types": {
+   "pass": true,
+   "kinds": [
+    "audit",
+    "set",
+    "verdict"
+   ],
+   "has_ignorance_item": true
+  },
+  "G8_decision_gap": {
+   "pass": true,
+   "gaps": []
+  },
+  "G9_load_bearing": {
+   "pass": true,
+   "cards": {
+    "E1": "exempt: E1 is the item bank itself - the substrate every other card acts on, not a separable effect: neutralising it removes the population the questions are about rather than one mechanism.",
+    "E2": "killed by drop:E2",
+    "E3": "exempt: E3 (corpus duplication) defines the clean subset the headline is about.  Setting kappa to zero removes the memorisation *premium* but not the duplicated items, so the clean-subset key is unchanged to the last digit - a drop cannot certify this card, and pretending otherwise would be a noise kill.  Certified by G12 instead: `naive_ignore:E3`, the analyst who never excludes contaminated items, is killed with margin (the premium is screened at draw time to exceed 0.05, more than ten tolerances).",
+    "E6": "exempt: E6 (the between-call shift) is why handling repetitions is an inferential choice rather than bookkeeping, and it is what the D1 variant exploits.  Dropping it perturbs every shipped row, so `drop:E6` would be killed by resampling noise rather than by structure.  Certified by G12: `naive_ignore:E6`, the analyst who quotes one pass instead of averaging the six, is killed with margin.",
+    "E7": "killed by drop:E7",
+    "E8": "exempt: E8 is the decoy mechanism.  The cheap detector's scores are shipped and the memo argues from them, but the keys are computed from the exact scan, so a world without the cheap detector has the same answers.  Certified by G12: `naive_ignore:E8`, the analyst who trusts the detector, is killed with margin on every instance, not only on the ones where it is the injected defect."
+   }
+  },
+  "G10_item_useful": {
+   "pass": true,
+   "note": "informational: which rivals each item kills with margin",
+   "free_items": [],
+   "item_kills": {
+    "a1": [
+     "skip:defect",
+     "skip:recompute",
+     "B_prior",
+     "naive_ignore:E2",
+     "naive_ignore:E3",
+     "naive_ignore:E6",
+     "naive_ignore:E8",
+     "drop:E2",
+     "drop:E7"
+    ],
+    "a2": [
+     "skip:defect",
+     "skip:recompute",
+     "skip:weights",
+     "B_prior",
+     "naive_ignore:E2",
+     "naive_ignore:E3",
+     "naive_ignore:E6",
+     "naive_ignore:E8",
+     "naive_ignore:E7",
+     "drop:E2",
+     "drop:E7",
+     "collapse_sets"
+    ],
+    "a3": [
+     "skip:defect",
+     "skip:recompute",
+     "skip:weights",
+     "skip:bar",
+     "B_prior",
+     "naive_ignore:E2",
+     "naive_ignore:E3",
+     "naive_ignore:E6",
+     "naive_ignore:E8",
+     "naive_ignore:E7",
+     "drop:E2",
+     "drop:E7"
+    ]
+   }
+  },
+  "G11_depth": {
+   "pass": true,
+   "declared_depth": {
+    "a1": 2,
+    "a2": 3,
+    "a3": 4
+   },
+   "max_depth": 4,
+   "claimed": 4,
+   "steps_without_a_killed_shortcut": []
+  },
+  "G12_nuisance": {
+   "pass": true,
+   "nuisance_cards": [
+    "E2",
+    "E3",
+    "E6",
+    "E7",
+    "E8"
+   ],
+   "not_killed": []
+  },
+  "G13_anti_prior": {
+   "pass": true,
+   "items": [
+    {
+     "item": "a2",
+     "prior_rival_killed": true,
+     "gap_over_T": 112.77
+    }
+   ],
+   "failing": []
+  },
+  "G14_witness": {
+   "pass": true,
+   "vol_max": 0.1,
+   "items": []
+  },
+  "G15_plan": {
+   "pass": true,
+   "need_sd": 4.0,
+   "n_salt": 9,
+   "items": []
+  },
+  "G16_audit": {
+   "pass": true,
+   "herring_max": 0.25,
+   "defect_min": 2.0,
+   "items": [
+    {
+     "item": "a1",
+     "have_variants": [
+      "as_shipped",
+      "fixed",
+      "herring:hardcoded_n",
+      "herring:round6",
+      "herring:sort_seeds"
+     ],
+     "defect_shift_over_width": 9.73,
+     "herring_shift_over_width": {
+      "herring:hardcoded_n": 0.0,
+      "herring:round6": 0.0,
+      "herring:sort_seeds": 0.0
+     },
+     "reported_number_outside_key": true,
+     "pass": true
+    }
+   ]
+  },
+  "G17_oracle_bias": {
+   "pass": true,
+   "biased_items": {},
+   "median_over_p90": {},
+   "ratio_max": 0.9,
+   "share_max": 0.05
+  }
+ },
+ "ok": true,
+ "kill_matrix": {
+  "skip:defect": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: defect, corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 14.72
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "skip:recompute": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 14.72
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "skip:weights": {
+   "score": 0.3333333333333333,
+   "killed": true,
+   "margin_items": [
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": true,
+     "answer": ""
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 98.17
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "skip:bar": {
+   "score": 0.6666666666666666,
+   "killed": true,
+   "margin_items": [
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": true,
+     "answer": ""
+    },
+    "a2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "B_prior": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: defect, corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 112.77
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "naive_ignore:E2": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 76.54
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "naive_ignore:E3": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 76.58
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "naive_ignore:E6": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 10.58
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "naive_ignore:E8": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 62.99
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "naive_ignore:E7": {
+   "score": 0.3333333333333333,
+   "killed": true,
+   "margin_items": [
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": true,
+     "answer": ""
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 98.17
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "drop:E2": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 60.34
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "drop:E7": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "a1",
+    "a2",
+    "a3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": false,
+     "answer": "wrong or missing: corrected"
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 87.7
+    },
+    "a3": {
+     "pass": false,
+     "answer": "supported"
+    }
+   }
+  },
+  "collapse_sets": {
+   "score": 0.6666666666666666,
+   "killed": true,
+   "margin_items": [
+    "a2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "a1": {
+     "pass": true,
+     "answer": ""
+    },
+    "a2": {
+     "pass": false,
+     "err_over_T": 63.28
+    },
+    "a3": {
+     "pass": true,
+     "answer": "undetermined"
+    }
+   }
+  }
+ },
+ "calibration": {
+  "tol": {
+   "a2": 0.002
+  },
+  "cal_errs": {
+   "a1": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "a2": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "a3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ver_pass": {
+   "a1": 1.0,
+   "a2": 1.0,
+   "a3": 1.0
+  },
+  "ver_allpass": 1.0,
+  "oracle_usage": {
+   "cost_unit": "eval credits",
+   "cost_used": 0.0,
+   "cost_left": 6000.0,
+   "runs_used": 0,
+   "runs_left": 12,
+   "run_cost_cap": 4000.0
+  }
+ }
+}

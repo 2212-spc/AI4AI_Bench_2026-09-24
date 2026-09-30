@@ -1,0 +1,119 @@
+[
+ {
+  "id": "q1",
+  "kind": "point",
+  "text": "Repetition cost: by how much (nats/token) does repetition raise the final loss of the unfiltered (q=0) production run N=1e9, D=2e11 on a snapshot of 4e10 raw unique tokens, compared with the same run on unlimited unique data?  (A positive number; 0 if repetition were free.)",
+  "unit": "nats",
+  "key": {
+   "lo": 0.013351073891562315,
+   "hi": 0.013351073891562315
+  },
+  "tol": 0.0016617433140360127,
+  "cards": [
+   "C6"
+  ],
+  "obstacles": [
+   "O3"
+  ],
+  "floor": 0.0015
+ },
+ {
+  "id": "q2",
+  "kind": "point",
+  "text": "Filtering effect: final loss of the production run (N=1e9, D=2e11, snapshot of 4e10 raw unique tokens) at q=0.5 minus its final loss at q=0, in nats/token (negative = filtering helps).",
+  "unit": "nats",
+  "key": {
+   "lo": -0.00673787346806165,
+   "hi": -0.00673787346806165
+  },
+  "tol": 0.003195821913398289,
+  "cards": [
+   "C6",
+   "C7"
+  ],
+  "obstacles": [
+   "O2",
+   "O3"
+  ],
+  "floor": 0.0015
+ },
+ {
+  "id": "q3",
+  "kind": "decision",
+  "text": "For the production run N=1e9, D=2e11 on a snapshot of 4e10 raw unique tokens, which filter level gives the lowest final loss?  Options: A: q=0, B: q=0.3, C: q=0.6, D: q=0.85",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "key": {
+   "choice": "B",
+   "regret": {
+    "A": 0.008481775502553024,
+    "B": 0.0,
+    "C": 0.005982655282323446,
+    "D": 0.04692841462434627
+   }
+  },
+  "r_tol": 0.0019942184274411487,
+  "cards": [
+   "C6",
+   "C7"
+  ],
+  "obstacles": [
+   "O2",
+   "O3"
+  ],
+  "gap": 0.005982655282323446
+ },
+ {
+  "id": "q4",
+  "kind": "verdict",
+  "text": "With enough unique data that nothing is repeated, filtering at q=0.6 lowers the final loss of N=1e9 trained on D=1e11 tokens by at least 0.015 nats (compared with q=0).",
+  "key": {
+   "verdict": "supported"
+  },
+  "cards": [
+   "C7"
+  ],
+  "obstacles": [
+   "O2"
+  ]
+ },
+ {
+  "id": "q5",
+  "kind": "set",
+  "text": "Filtering effect on the next snapshot as it will be: final loss of N=1e9, D=2e11 at q=0.5 minus at q=0, in nats/token (negative = filtering helps); the snapshot size is the documented known unknown.",
+  "unit": "nats",
+  "key": {
+   "lo": -0.015021040779960693,
+   "hi": 0.0030090310439034873
+  },
+  "tol": 0.0041808842175405925,
+  "cards": [
+   "C6",
+   "C7"
+  ],
+  "obstacles": [
+   "O5"
+  ],
+  "floor": 0.0015
+ },
+ {
+  "id": "q6",
+  "kind": "verdict",
+  "text": "For the production run as planned (N=1e9, D=2e11, next snapshot), filtering at q=0.85 gives a lower final loss than no filtering.",
+  "key": {
+   "verdict": "refuted"
+  },
+  "cards": [
+   "C6",
+   "C7"
+  ],
+  "obstacles": [
+   "O5",
+   "O2"
+  ]
+ }
+]

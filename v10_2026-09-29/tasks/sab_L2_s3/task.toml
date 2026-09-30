@@ -1,0 +1,13 @@
+[task]
+name = "sab_L2_s3"
+module = "serve_ab_l2"
+seed = 3
+
+[verifier]
+artifacts = ["rollout.conf", "report.md"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 24
+unit = "experiment-days"

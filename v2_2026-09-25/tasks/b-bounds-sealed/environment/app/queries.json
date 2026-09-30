@@ -1,0 +1,362 @@
+{
+ "cells": [
+  {
+   "id": "b01",
+   "cell": {
+    "suite": "gsm_plus",
+    "curriculum": "c3",
+    "retrieval": "dense",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "b02",
+   "cell": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "none",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "b03",
+   "cell": {
+    "suite": "arc_lite",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   }
+  },
+  {
+   "id": "b04",
+   "cell": {
+    "suite": "gsm_plus",
+    "curriculum": "c0",
+    "retrieval": "dense",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "b05",
+   "cell": {
+    "suite": "code_ms",
+    "curriculum": "c0",
+    "retrieval": "none",
+    "decoder": "greedy"
+   }
+  },
+  {
+   "id": "b06",
+   "cell": {
+    "suite": "gsm_plus",
+    "curriculum": "c3",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "b07",
+   "cell": {
+    "suite": "arc_lite",
+    "curriculum": "c2",
+    "retrieval": "none",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "b08",
+   "cell": {
+    "suite": "arc_lite",
+    "curriculum": "c0",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   }
+  }
+ ],
+ "contrasts": [
+  {
+   "id": "k01",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k02",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c0",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   }
+  },
+  {
+   "id": "k03",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c3",
+    "retrieval": "dense",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c3",
+    "retrieval": "none",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k04",
+   "from": {
+    "suite": "arc_lite",
+    "curriculum": "c0",
+    "retrieval": "none",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "arc_lite",
+    "curriculum": "c3",
+    "retrieval": "none",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k05",
+   "from": {
+    "suite": "gsm_plus",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "gsm_plus",
+    "curriculum": "c2",
+    "retrieval": "none",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k06",
+   "from": {
+    "suite": "arc_lite",
+    "curriculum": "c0",
+    "retrieval": "dense",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "arc_lite",
+    "curriculum": "c1",
+    "retrieval": "dense",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k07",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c3",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c3",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   }
+  },
+  {
+   "id": "k08",
+   "from": {
+    "suite": "arc_lite",
+    "curriculum": "c1",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "arc_lite",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   }
+  }
+ ],
+ "decisions": [
+  {
+   "id": "d01",
+   "from": {
+    "suite": "arc_lite",
+    "curriculum": "c0",
+    "retrieval": "none",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "arc_lite",
+    "curriculum": "c3",
+    "retrieval": "none",
+    "decoder": "greedy"
+   },
+   "margin": 0.02
+  },
+  {
+   "id": "d02",
+   "from": {
+    "suite": "arc_lite",
+    "curriculum": "c2",
+    "retrieval": "none",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "arc_lite",
+    "curriculum": "c3",
+    "retrieval": "none",
+    "decoder": "sample"
+   },
+   "margin": 0.01
+  },
+  {
+   "id": "d03",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   },
+   "margin": 0.02
+  },
+  {
+   "id": "d04",
+   "from": {
+    "suite": "gsm_plus",
+    "curriculum": "c0",
+    "retrieval": "none",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "gsm_plus",
+    "curriculum": "c1",
+    "retrieval": "none",
+    "decoder": "sample"
+   },
+   "margin": 0.0
+  },
+  {
+   "id": "d05",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c1",
+    "retrieval": "dense",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c1",
+    "retrieval": "none",
+    "decoder": "greedy"
+   },
+   "margin": 0.0
+  },
+  {
+   "id": "d06",
+   "from": {
+    "suite": "gsm_plus",
+    "curriculum": "c0",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "to": {
+    "suite": "gsm_plus",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "greedy"
+   },
+   "margin": 0.02
+  },
+  {
+   "id": "d07",
+   "from": {
+    "suite": "gsm_plus",
+    "curriculum": "c1",
+    "retrieval": "dense",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "gsm_plus",
+    "curriculum": "c2",
+    "retrieval": "dense",
+    "decoder": "sample"
+   },
+   "margin": 0.01
+  },
+  {
+   "id": "d08",
+   "from": {
+    "suite": "code_ms",
+    "curriculum": "c0",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   },
+   "to": {
+    "suite": "code_ms",
+    "curriculum": "c2",
+    "retrieval": "bm25",
+    "decoder": "sample"
+   },
+   "margin": 0.01
+  }
+ ],
+ "supports": [
+  {
+   "id": "s01",
+   "run_id": "r00084"
+  },
+  {
+   "id": "s02",
+   "run_id": "r01116"
+  },
+  {
+   "id": "s03",
+   "run_id": "r00003"
+  },
+  {
+   "id": "s04",
+   "run_id": "r02210"
+  },
+  {
+   "id": "s05",
+   "run_id": "r02257"
+  },
+  {
+   "id": "s06",
+   "run_id": "r02507"
+  },
+  {
+   "id": "s07",
+   "run_id": "r00015"
+  },
+  {
+   "id": "s08",
+   "run_id": "r00880"
+  }
+ ]
+}

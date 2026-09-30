@@ -1,0 +1,12 @@
+seed 40 screen True {"gap": 0.33936, "offline_drop": 0.0187, "cause": "lr_scale", "snr": 53.2, "naive_reset": 0.405}
+  oracle       expect=pass pass=0/4 BAD | F s=0.7279 R1_fix_recovers; F s=0.7436 R1_fix_recovers; F s=0.7371 R1_fix_recovers; F s=0.757 R1_fix_recovers
+  blame_leak   expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  fix_all      expect=fail pass=0/2 OK  | F s=0.3889 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=0.3902 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause
+  biggest_offline expect=fail pass=0/4 OK  | F s=0.4021 R1_fix_recovers; F s=0.3957 R1_fix_recovers; F s=0.3977 R1_fix_recovers; F s=0.4016 R1_fix_recovers
+  partial_fix  expect=fail pass=0/2 OK  | F s=0.4021 R1_fix_recovers; F s=0.3957 R1_fix_recovers
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  bad_json     expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  guess_capacity expect=fail pass=0/2 OK  | F s=0.0035 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=-0.0049 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause
+  guess_mixture expect=fail pass=0/2 OK  | F s=0.0035 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=-0.0049 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause
+  guess_lr_scale expect=fail pass=0/2 OK  | F s=0.4021 R1_fix_recovers; F s=0.3957 R1_fix_recovers
+REJECT ['oracle']

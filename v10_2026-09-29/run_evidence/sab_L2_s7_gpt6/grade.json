@@ -1,0 +1,96 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": true,
+   "detail": "expected daily score change of your schedule +0.01952 vs the best achievable +0.01983: regret 0.00031 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth +0.00336; you said [-0.00020, +0.00570] (covers, width 0.00590, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.01952; you said [+0.01760, +0.02150] (covers, width 0.00390, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 0.000306,
+  "D_submitted": 0.019524,
+  "closest_schedule": "keep_target",
+  "closest_dist": 0.0061,
+  "peak_fraction": 0.488,
+  "q1_centre_minus_truth": -0.000606,
+  "q1_centre_minus_naive": -0.021748,
+  "q1_centre_minus_fluid": -0.000499,
+  "q1_centre_minus_lossmodel": -0.018729,
+  "q2_centre_minus_truth": 2.6e-05,
+  "n_tests": 2,
+  "n_drills": 0,
+  "drill_days": 0,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L2",
+  "D_star": 0.01983,
+  "x_star": [
+   0.93,
+   0.962,
+   0.966,
+   0.934,
+   0.937,
+   0.943,
+   0.997,
+   0.974,
+   0.988,
+   0.968,
+   0.817,
+   0.69,
+   0.59,
+   0.52,
+   0.492,
+   0.506,
+   0.57,
+   0.675,
+   0.976,
+   0.998,
+   0.984,
+   0.972,
+   0.986,
+   0.927
+  ],
+  "D_full": 0.003356,
+  "naive_ab_delta": 0.024498,
+  "fluid_full": 0.003249,
+  "loss_full": 0.021479,
+  "decoy_regret": {
+   "ship_all": 0.016473,
+   "guard_safe": 0.007965,
+   "keep_target": 0.000182,
+   "no_ship": 0.01983,
+   "rho_0.85": 0.00179,
+   "rho_0.90": 0.004305,
+   "rho_0.95": 0.007728
+  },
+  "peak_hour": 14,
+  "peak_full_util_at_quota": 1.067,
+  "peak_full_abandon": 0.085,
+  "peak_full_wait_s": 4.99
+ },
+ "run": "sab_L2_s7_gpt6",
+ "task": "sab_L2_s7",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 2,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 64.4,
+ "api_errors": 5,
+ "truncated": false
+}

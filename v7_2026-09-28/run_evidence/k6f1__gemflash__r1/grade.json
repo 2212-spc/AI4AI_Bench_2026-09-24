@@ -1,0 +1,42 @@
+{
+ "pass": false,
+ "score": -0.1677,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "scheduler completed all 40 segments on all 5 hidden runs"
+  },
+  "R1_time": {
+   "ok": false,
+   "detail": "mean 4.644 s (best constant batch 4.578 s, reference scheduler 4.180 s) -> s=-0.168, need 0.90"
+  }
+ },
+ "diag": {
+  "seconds_by_run": [
+   5.7439,
+   4.9429,
+   4.0236,
+   6.0279,
+   2.4838
+  ],
+  "T_const_best": 4.5777,
+  "T_ref": 4.18,
+  "profile_seconds": 1.82,
+  "n_evaluate": 9
+ },
+ "ref": {
+  "T_const_best": 4.577716566283746,
+  "T_ref": 4.179999032383903
+ },
+ "run": "k6f1__gemflash__r1",
+ "task": "k6-ramp-f1",
+ "model": "gemini-3.8-flash",
+ "hint": 0,
+ "lab_calls": 18,
+ "budget_spent_frac": 0.991,
+ "status": "max_calls",
+ "agent_min": 52.2,
+ "api_errors": 1,
+ "truncated": true,
+ "truncate_reason": "max_calls"
+}

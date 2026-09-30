@@ -1,0 +1,82 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "production job ran for both seeds and wrote valid predictions"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "production accuracy (mean of seeds 0,1) 0.7992 vs target 0.740"
+  }
+ },
+ "diag": {
+  "replicas": [
+   {
+    "seed": 0,
+    "exit": 0,
+    "cpu_s": 40.3,
+    "acc": 0.79825
+   },
+   {
+    "seed": 1,
+    "exit": 0,
+    "cpu_s": 40.0,
+    "acc": 0.80015
+   }
+  ],
+  "acc": 0.7992,
+  "shipped_cfg": {
+   "hidden": 256,
+   "lr": 0.003,
+   "batch_size": 128,
+   "warmup_frac": 0.02,
+   "aug_sigma": 0.0,
+   "loss": "gce",
+   "gce_q": 0.5,
+   "wd_candidates": [
+    0.5,
+    0.7,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0
+   ],
+   "prior_wd_at_4000": 2.5,
+   "prior_wd_exponent": 0.35,
+   "epochs_per_candidate": 32,
+   "min_steps": 500,
+   "val_frac": 0.12,
+   "val_max": 4000,
+   "val_min": 150,
+   "ensemble_tol": 0.01,
+   "lda_shrink": 0.02,
+   "final_models": 3,
+   "cpu_budget_s": 75
+  },
+  "wd_ratio_vs_team": NaN,
+  "train_py_changed": true
+ },
+ "ref": {
+  "T": 0.74,
+  "ref_acc": 0.7666999999999999,
+  "decoys": {
+   "ship_as_is": 0.7175,
+   "retune_sample": 0.7092750000000001,
+   "row_rule": 0.5974999999999999,
+   "l1_fable_injob": 0.59015
+  }
+ },
+ "run": "su_L2_s5_fcc2",
+ "task": "su_L2_s5",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 0,
+ "budget_spent_frac": 0.0,
+ "status": "done",
+ "agent_min": 43.7,
+ "api_errors": 0,
+ "truncated": false
+}

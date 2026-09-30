@@ -1,0 +1,124 @@
+[
+ {
+  "id": "q1",
+  "kind": "point",
+  "text": "log10 of the learning rate above which the production run (N=7e9, D=1.4e11, batch 0.5M, warmup 0.02, qk-layernorm off) diverges.",
+  "unit": "log10(lr)",
+  "key": {
+   "lo": -3.1055212310410076,
+   "hi": -3.1055212310410076
+  },
+  "tol": 0.025,
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O3",
+   "O9"
+  ],
+  "floor": 0.025
+ },
+ {
+  "id": "q2",
+  "kind": "set",
+  "text": "log10 of the learning rate above which the same production run diverges with qk-layernorm on.",
+  "unit": "log10(lr)",
+  "key": {
+   "lo": -1.8119458656896883,
+   "hi": -1.3273699806573644
+  },
+  "tol": 0.025,
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O5"
+  ],
+  "floor": 0.025
+ },
+ {
+  "id": "q3",
+  "kind": "verdict",
+  "text": "The production run exactly as planned in the lab notes (qk-layernorm off, warmup 0.02, peak lr = 0.00143) diverges.",
+  "key": {
+   "verdict": "supported"
+  },
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O3"
+  ]
+ },
+ {
+  "id": "q4",
+  "kind": "verdict",
+  "text": "The production run with qk-layernorm on (warmup 0.02) and peak lr = 0.0057 does not diverge.",
+  "key": {
+   "verdict": "supported"
+  },
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O5"
+  ]
+ },
+ {
+  "id": "q5",
+  "kind": "verdict",
+  "text": "The production run with qk-layernorm on (warmup 0.02) and peak lr = 0.0299 does not diverge.",
+  "key": {
+   "verdict": "undetermined"
+  },
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O5"
+  ]
+ },
+ {
+  "id": "q6",
+  "kind": "decision",
+  "text": "Keeping qk-layernorm off and warmup 0.02, which peak learning rate gives the production run the lowest final loss?  A run that diverges counts as the worst possible outcome.  Options: A: 0.000443, B: 0.000554, C: 0.000692, D: 0.000865",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "key": {
+   "choice": "C",
+   "regret": {
+    "A": 0.04128114725756316,
+    "B": 0.01830861763627343,
+    "C": 0.0,
+    "D": 9.971600708736664
+   }
+  },
+  "r_tol": 0.006102872545424476,
+  "cards": [
+   "C2",
+   "C4"
+  ],
+  "obstacles": [
+   "O3"
+  ],
+  "gap": 0.01830861763627343
+ },
+ {
+  "id": "q7",
+  "kind": "verdict",
+  "text": "With qk-layernorm off but warmup raised to 5% of steps (wu=0.05), the production run at peak lr = 0.00106 does not diverge.",
+  "key": {
+   "verdict": "refuted"
+  },
+  "cards": [
+   "C4"
+  ],
+  "obstacles": [
+   "O9"
+  ]
+ }
+]

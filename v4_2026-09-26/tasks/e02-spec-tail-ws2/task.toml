@@ -1,0 +1,21 @@
+[task]
+id = "e02-spec-tail-ws2"
+blueprint = "e02-spec-tail"
+lab = "servelab"
+world_seed = 2
+title = "Speculative tail: what a proposal length you cannot run would buy, and what one replica delivers"
+cards = ["S1", "S3", "S5"]
+obstacles = ["O11", "O4", "O2", "O13"]
+claim = "separate a speculative decoder's yield from its cost, price a proposal length the build cannot run as a question about what the evidence leaves open rather than as a measurement, and read a production replica's capacity off the pool it actually reserves"
+n_items = 4
+kinds = ["cex", "point", "set"]
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+app_dir = "environment/app"
+lab_service = "scalelab.lab_server (holds hidden/world.json; the agent reaches it only through bin/lab)"
+
+[verifier]
+command = "python3 tests/grade.py <answers.json> [lab_ledger.jsonl]"

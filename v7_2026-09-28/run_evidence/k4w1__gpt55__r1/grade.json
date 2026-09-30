@@ -1,0 +1,66 @@
+{
+ "pass": false,
+ "score": 0.0,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.4792 (majority@6 0.4792, reference 0.8983) -> s=0.000, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.4021,
+    "geometry": 0.5234,
+    "combinatorics": 0.5304,
+    "number_theory": 0.5556
+   },
+   {
+    "algebra": 0.4862,
+    "geometry": 0.4483,
+    "combinatorics": 0.5288,
+    "number_theory": 0.42
+   },
+   {
+    "algebra": 0.451,
+    "geometry": 0.4368,
+    "combinatorics": 0.53,
+    "number_theory": 0.4324
+   }
+  ],
+  "n_dev_samples": 8400,
+  "n_evaluate": 0
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__gpt55__r1",
+ "task": "k4-tts-w1",
+ "model": "gpt-5.5",
+ "hint": 0,
+ "lab_calls": 8,
+ "budget_spent_frac": 0.84,
+ "status": "timeout",
+ "agent_min": 101.3,
+ "api_errors": 0,
+ "truncated": true,
+ "truncate_reason": "timeout"
+}

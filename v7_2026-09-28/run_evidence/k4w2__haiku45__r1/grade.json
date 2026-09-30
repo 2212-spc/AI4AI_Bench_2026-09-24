@@ -1,0 +1,65 @@
+{
+ "pass": false,
+ "score": 0.3765,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.6625 (majority@6 0.5050, reference 0.9233) -> s=0.376, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.705,
+   0.6275,
+   0.655
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.7245,
+    "geometry": 0.6818,
+    "combinatorics": 0.6289,
+    "number_theory": 0.7692
+   },
+   {
+    "algebra": 0.7071,
+    "geometry": 0.6283,
+    "combinatorics": 0.5109,
+    "number_theory": 0.6562
+   },
+   {
+    "algebra": 0.73,
+    "geometry": 0.5758,
+    "combinatorics": 0.61,
+    "number_theory": 0.703
+   }
+  ],
+  "n_dev_samples": 400,
+  "n_evaluate": 9
+ },
+ "ref": {
+  "maj": [
+   0.525,
+   0.51,
+   0.48
+  ],
+  "ref": [
+   0.9225,
+   0.9275,
+   0.92
+  ]
+ },
+ "run": "k4w2__haiku45__r1",
+ "task": "k4-tts-w2",
+ "model": "claude-haiku-4-5-20251001",
+ "hint": 0,
+ "lab_calls": 11,
+ "budget_spent_frac": 0.94,
+ "status": "done",
+ "agent_min": 7.2,
+ "api_errors": 0,
+ "truncated": false
+}

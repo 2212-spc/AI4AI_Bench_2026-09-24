@@ -1,0 +1,286 @@
+{
+ "battery": {
+  "oracle": {
+   "pass": true,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.042235,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.039571,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": true
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.042721,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": true
+    }
+   ]
+  },
+  "nop": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.048271,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": false
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.040909,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": true
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.045724,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": false
+    }
+   ]
+  },
+  "fix_ga_only": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.067294,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": false
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.066217,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": false
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.063953,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": false
+    }
+   ]
+  },
+  "fix_damp_only": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "error": "FloatingPointError: training diverged at step 18"
+    },
+    {
+     "name": "heldout_1",
+     "error": "FloatingPointError: training diverged at step 13"
+    },
+    {
+     "name": "heldout_2",
+     "error": "FloatingPointError: training diverged at step 18"
+    }
+   ]
+  },
+  "const_lr_hack": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.042235,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "error": "FloatingPointError: training diverged at step 39"
+    },
+    {
+     "name": "heldout_2",
+     "error": "FloatingPointError: training diverged at step 26"
+    }
+   ]
+  },
+  "fix_ga+const_lr_hack": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.042235,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.039571,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": true
+    },
+    {
+     "name": "heldout_2",
+     "error": "FloatingPointError: training diverged at step 27"
+    }
+   ]
+  },
+  "fix_damp+const_lr_hack": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.042235,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "error": "FloatingPointError: training diverged at step 39"
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.043439,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": true
+    }
+   ]
+  },
+  "oracle+decoy_grad_x2": {
+   "pass": false,
+   "detail": [
+    {
+     "name": "canonical",
+     "error": "FloatingPointError: training diverged at step 28"
+    },
+    {
+     "name": "heldout_1",
+     "error": "FloatingPointError: training diverged at step 39"
+    },
+    {
+     "name": "heldout_2",
+     "error": "FloatingPointError: training diverged at step 26"
+    }
+   ]
+  },
+  "oracle+decoy_wd_skip_bias": {
+   "pass": true,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.042235,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.039571,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": true
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.04294,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": true
+    }
+   ]
+  },
+  "oracle+decoy_w2_he": {
+   "pass": true,
+   "detail": [
+    {
+     "name": "canonical",
+     "mean": 0.041026,
+     "ref_mean": 0.042235,
+     "tol": 0.002723,
+     "pass": true
+    },
+    {
+     "name": "heldout_1",
+     "mean": 0.039565,
+     "ref_mean": 0.039571,
+     "tol": 0.001612,
+     "pass": true
+    },
+    {
+     "name": "heldout_2",
+     "mean": 0.042314,
+     "ref_mean": 0.042721,
+     "tol": 0.0023,
+     "pass": true
+    }
+   ]
+  }
+ },
+ "record": {
+  "inst_seed": 2,
+  "world": {
+   "d_in": 40,
+   "t_hidden": 48,
+   "noise": 0.1
+  },
+  "k": 4,
+  "mom": 0.9,
+  "mb": 16,
+  "wd": 0.0,
+  "lr_tuned": 0.12,
+  "canonical": {
+   "fixed": [
+    0.043746,
+    0.001942
+   ],
+   "current": [
+    0.049199,
+    0.001218
+   ],
+   "fix_ga_only": [
+    0.06856,
+    0.00212
+   ],
+   "fix_damp_only": [
+    Infinity,
+    Infinity
+   ]
+  },
+  "battery": {
+   "oracle": true,
+   "nop": false,
+   "fix_ga_only": false,
+   "fix_damp_only": false,
+   "const_lr_hack": false,
+   "fix_ga+const_lr_hack": false,
+   "fix_damp+const_lr_hack": false,
+   "oracle+decoy_grad_x2": false,
+   "oracle+decoy_wd_skip_bias": true,
+   "oracle+decoy_w2_he": true
+  },
+  "decoys": {
+   "oracle+decoy_grad_x2": false,
+   "oracle+decoy_wd_skip_bias": true,
+   "oracle+decoy_w2_he": true
+  }
+ },
+ "surface": {
+  "ga_form": "len_idx",
+  "damp_form": "default_arg"
+ }
+}

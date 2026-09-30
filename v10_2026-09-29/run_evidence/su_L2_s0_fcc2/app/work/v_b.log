@@ -1,0 +1,4 @@
+train n=2000 ep=32.0 {} -> 0.5527 [0.59, 0.562, 0.506]
+train n=2000 ep=32.0 {"weight_decay_grid":[2.0],"ensemble":1} -> 0.5687 [0.562, 0.587, 0.557]
+train n=2000 ep=32.0 {"weight_decay_grid":[4.0],"ensemble":1} -> 0.5863 [0.592, 0.595, 0.572]
+train n=2000 ep=32.0 {"weight_decay_grid":[4.0],"ensemble":2} -> 0.5920 [0.605, 0.589, 0.582]

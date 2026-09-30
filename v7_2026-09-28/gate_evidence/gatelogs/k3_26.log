@@ -1,0 +1,11 @@
+seed 26 screen True {"gap": 0.6565, "tol": 0.06, "n_opt": 2896, "q": 1.2825, "L_opt": 3.2798, "L_q1": 0.6565, "L_qhalf": 4.7202, "L_small": 0.3428, "L_big": 1.3247, "L_transplant": 4.7202}
+  oracle       expect=pass pass=2/4 BAD | P s=0.9814 ; F s=0.9625 R2_forecast_covers; P s=0.9971 ; F s=0.9905 R2_forecast_covers
+  q1           expect=fail pass=0/4 OK  | F s=-0.2268 R1_config_quality,R2_forecast_covers; F s=-0.2268 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-0.2268 R1_config_quality,R2_forecast_covers
+  qhalf        expect=fail pass=0/4 OK  | F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers
+  transplant   expect=fail pass=0/4 OK  | F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers
+  small        expect=fail pass=0/4 OK  | F s=-0.2451 R1_config_quality,R2_forecast_covers; F s=-0.2451 R1_config_quality,R2_forecast_covers; F s=-0.2451 R1_config_quality,R2_forecast_covers; F s=-0.2451 R1_config_quality,R2_forecast_covers
+  big          expect=fail pass=0/4 OK  | F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers
+  recite       expect=fail pass=0/2 OK  | F s=0.8444 R1_config_quality,R2_forecast_covers; F s=0.8444 R1_config_quality,R2_forecast_covers
+  cheat_wide   expect=fail pass=0/2 OK  | F s=-1.0 R1_config_quality,R2_forecast_covers; F s=-1.0 R1_config_quality,R2_forecast_covers
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_artifact; F s=0.0 R0_artifact
+REJECT ['oracle']

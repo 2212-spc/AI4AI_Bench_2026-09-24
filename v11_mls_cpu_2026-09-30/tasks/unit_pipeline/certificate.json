@@ -1,0 +1,428 @@
+{
+ "task": "unit_pipeline",
+ "ok": true,
+ "created": "2026-09-30 12:47",
+ "candidates": [
+  {
+   "kind": "reference",
+   "name": "preprocess.py",
+   "passed": true,
+   "as_expected": true,
+   "failed_settings": [],
+   "secs": 40.9,
+   "detail": {
+    "pass": true,
+    "settings": {
+     "dev_mix": {
+      "metric": 1.012,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 0.996,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 1.036,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 1.01,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 1.007,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 0.999,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "drop_site.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_S4",
+    "hid_S5",
+    "hid_new6",
+    "hid_new7"
+   ],
+   "secs": 39.0,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 1.057,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 1.136,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 1.163,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 1.838,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 1.579,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 1.046,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "identity.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_S4",
+    "hid_S5",
+    "hid_new6",
+    "hid_new7",
+    "hid_new8"
+   ],
+   "secs": 39.9,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 1.043,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 1.121,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 1.161,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 3.021,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 1.898,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 1.102,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "site_standardise.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_mix",
+    "dev_S4",
+    "hid_S5",
+    "hid_new6",
+    "hid_new7",
+    "hid_new8"
+   ],
+   "secs": 38.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 4.782,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 4.802,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 6.644,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 5.024,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 6.841,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 3.201,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "quantile_global.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_S4",
+    "hid_S5",
+    "hid_new6",
+    "hid_new7"
+   ],
+   "secs": 40.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 1.057,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.8
+     },
+     "dev_S4": {
+      "metric": 1.136,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.8
+     },
+     "hid_S5": {
+      "metric": 1.163,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.8
+     },
+     "hid_new6": {
+      "metric": 1.838,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.8
+     },
+     "hid_new7": {
+      "metric": 1.579,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.8
+     },
+     "hid_new8": {
+      "metric": 1.046,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.8
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "robust_rowwise.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "hid_new6",
+    "hid_new7"
+   ],
+   "secs": 37.9,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 1.008,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 1.05,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 1.04,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 3.072,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 3.177,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 1.022,
+      "threshold": 1.1,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "site_ratio_align.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_mix",
+    "dev_S4",
+    "hid_S5",
+    "hid_new6",
+    "hid_new7",
+    "hid_new8"
+   ],
+   "secs": 39.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_mix": {
+      "metric": 3.093,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "dev_S4": {
+      "metric": 3.58,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3
+     },
+     "hid_S5": {
+      "metric": 5.001,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new6": {
+      "metric": 3.123,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new7": {
+      "metric": 6.185,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     },
+     "hid_new8": {
+      "metric": 1.7,
+      "threshold": 1.1,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3
+     }
+    }
+   }
+  }
+ ],
+ "pass_dev_fail_hidden": [
+  "robust_rowwise.py"
+ ]
+}

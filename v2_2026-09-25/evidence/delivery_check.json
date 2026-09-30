@@ -1,0 +1,97 @@
+{
+ "what": "final delivery check: every gate and self-check re-run against the copy in outputs/, not the build tree",
+ "date": "2026-09-25",
+ "leakage_gate": {
+  "status": "PASS",
+  "tasks": 9,
+  "leaks": 0,
+  "collisions_explained": 8
+ },
+ "signature_gate": {
+  "status": "PASS",
+  "declaration_mismatches": 0,
+  "fingerprint_collisions": 0,
+  "min_differing_axes_over_shipped_pairs": 5
+ },
+ "audit_gates": {
+  "status": "PASS",
+  "tasks": 9,
+  "results": 45,
+  "pass": 15,
+  "n/a": 29,
+  "diagnostic": 1,
+  "note": "29 n/a is the honest coverage figure: A1/A2 are family-agnostic but need queries.json + an id-keyed key, and A3/A4 only bind on the two D arms that ship an explicit mechanism artefact and a two-reading sentence."
+ },
+ "selfchecks": {
+  "b-bounds-a": {
+   "status": "PASS",
+   "probes": 21
+  },
+  "b-bounds-sealed": {
+   "status": "PASS",
+   "probes": 30
+  },
+  "c-audit-a": {
+   "status": "PASS",
+   "probes": 17
+  },
+  "s-censored-a": {
+   "status": "PASS",
+   "probes": 17
+  },
+  "d-design-a": {
+   "status": "PASS",
+   "probes": 39
+  },
+  "d-design-sealed": {
+   "status": "PASS",
+   "probes": 60
+  },
+  "d-design-open": {
+   "status": "PASS",
+   "probes": 62
+  },
+  "o-pack-a": {
+   "status": "PASS",
+   "probes": 7
+  },
+  "v-falsify-a": {
+   "status": "PASS",
+   "probes": 15
+  }
+ },
+ "shipped_verification": {
+  "status": "PASS",
+  "reference_rederivations": 9,
+  "answer_replays": 18,
+  "see": "evidence/shipped_verification.json"
+ },
+ "defects_found_by_this_pass": [
+  {
+   "task": "c-audit-a",
+   "what": "solution/ref_solve.py hard-coded /app/log.csv, /app/queries.json and /app/answers.json, so the key could not be re-derived anywhere except inside the container",
+   "fixed": "the app directory is now argv[1] with /app as the default"
+  },
+  {
+   "task": "c-audit-a",
+   "what": "solution/solve.sh invoked /app/ref_solve.py, a path that exists under neither of the two mount conventions the corpus uses",
+   "fixed": "the solver is now resolved relative to the script, which works under both"
+  },
+  {
+   "task": "(evidence)",
+   "what": "the archive kept only answers.json, but three families' deliverables are larger than that - c-audit-a also requires audit.md, o-pack-a is a module, v-falsify-a is a directory of witnesses - so six runs could not have been re-graded from the delivered directory",
+   "fixed": "the full deliverable of all 18 live runs is archived under evidence/<run>/"
+  }
+ ],
+ "key_leak_scan": {
+  "status": "CLEAN",
+  "exact_match_hits": 0,
+  "pattern_sweep_hits": [
+   "harness/gateway.py:32 PLACEHOLDER = sk-sandbox-placeholder-not-a-credential",
+   "REPORT_2026-09-25.md security paragraph, which names the placeholder"
+  ],
+  "provider_host_mentions": 0,
+  "note": "the credential lives only outside the delivered tree; the sandboxed agent reaches the provider through a local gateway and never holds it"
+ },
+ "report": "REPORT_2026-09-25.md"
+}

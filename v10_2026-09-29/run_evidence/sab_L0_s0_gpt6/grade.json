@@ -1,0 +1,96 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": true,
+   "detail": "expected daily score change of your schedule +0.02268 vs the best achievable +0.02269: regret 0.00001 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth +0.02268; you said [+0.01950, +0.02540] (covers, width 0.00590, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.02268; you said [+0.02080, +0.02420] (covers, width 0.00340, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 1.1e-05,
+  "D_submitted": 0.02268,
+  "closest_schedule": "ship_all",
+  "closest_dist": 0.0,
+  "peak_fraction": 1.0,
+  "q1_centre_minus_truth": -0.00023,
+  "q1_centre_minus_naive": 0.00085,
+  "q1_centre_minus_fluid": 0.000365,
+  "q1_centre_minus_lossmodel": -0.033897,
+  "q2_centre_minus_truth": -0.00018,
+  "n_tests": 2,
+  "n_drills": 0,
+  "drill_days": 0,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L0",
+  "D_star": 0.022691,
+  "x_star": [
+   0.994,
+   0.963,
+   0.977,
+   0.993,
+   1.0,
+   0.993,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.977,
+   0.977
+  ],
+  "D_full": 0.02268,
+  "naive_ab_delta": 0.0216,
+  "fluid_full": 0.022085,
+  "loss_full": 0.056347,
+  "decoy_regret": {
+   "ship_all": 1.1e-05,
+   "guard_safe": 0.011744,
+   "keep_target": 1.1e-05,
+   "no_ship": 0.022691,
+   "rho_0.85": 1.1e-05,
+   "rho_0.90": 1.1e-05,
+   "rho_0.95": 1.1e-05
+  },
+  "peak_hour": 14,
+  "peak_full_util_at_quota": 0.549,
+  "peak_full_abandon": 0.0009,
+  "peak_full_wait_s": 0.06
+ },
+ "run": "sab_L0_s0_gpt6",
+ "task": "sab_L0_s0",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 2,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 43.4,
+ "api_errors": 4,
+ "truncated": false
+}

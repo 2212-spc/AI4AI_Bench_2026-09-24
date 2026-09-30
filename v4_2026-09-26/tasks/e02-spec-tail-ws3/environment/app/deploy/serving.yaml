@@ -1,0 +1,17 @@
+# production serving configuration (replica template) -- do not edit by hand
+model:
+  name: target-16b
+  dtype: float16
+runtime:
+  # bytes of device memory reserved for the paged KV cache on every replica.  Fixed at deploy time, and
+  # smaller than the free memory on a development box so that the profiler and the tracer have room.
+  kv_pool_bytes: 20655837241
+  block_size: 16
+  enforce_whole_sequences: true      # a sequence is admitted only if its full context fits
+  speculative:
+    draft: d_lite
+    num_speculative_tokens: 4       # the shipped build; 8 needs the new scheduler
+traffic:
+  # the p95 context length of the production mix, as measured by the traffic team
+  ctx_p95_min_tokens: 1182
+  ctx_p95_max_tokens: 1760

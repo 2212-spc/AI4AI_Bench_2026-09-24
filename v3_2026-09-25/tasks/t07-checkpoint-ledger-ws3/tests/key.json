@@ -1,0 +1,106 @@
+[
+ {
+  "id": "q1",
+  "kind": "decision",
+  "text": "Among finished runs at the production compute 6*N*D = 1.08e+21 FLOPs (D = C/(6N), same schedule for all), which model size gives the lowest final loss?  Options: A: N=8.9e+08, B: N=1.8e+09, C: N=3.6e+09, D: N=7.1e+09",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "key": {
+   "choice": "B",
+   "regret": {
+    "A": 0.025630126919662377,
+    "B": 0.0,
+    "C": 0.018373940105341102,
+    "D": 0.0774112714855324
+   }
+  },
+  "r_tol": 0.006124646701780367,
+  "cards": [
+   "C1"
+  ],
+  "obstacles": [
+   "O7",
+   "O9"
+  ],
+  "gap": 0.018373940105341102
+ },
+ {
+  "id": "q2",
+  "kind": "point",
+  "text": "Final validation loss (nats/token) of the production model N=3e9 trained on D=6e10 tokens with the WSD schedule, run to completion.",
+  "unit": "nats",
+  "key": {
+   "lo": 2.350187849217911,
+   "hi": 2.350187849217911
+  },
+  "tol": 0.03735349059266979,
+  "cards": [
+   "C1",
+   "C11"
+  ],
+  "obstacles": [
+   "O7",
+   "O9"
+  ],
+  "floor": 0.004
+ },
+ {
+  "id": "q3",
+  "kind": "point",
+  "text": "The production cosine run (N=3e9, D=6e10) is evaluated at its checkpoint after 40% of its tokens.  By how much (nats/token) is that checkpoint's loss higher than the final loss of a separate WSD run of the same model trained to completion on 0.4*6e10 = 2.4e10 tokens?",
+  "unit": "nats",
+  "key": {
+   "lo": 0.12312944748257204,
+   "hi": 0.12312944748257204
+  },
+  "tol": 0.004344780850611289,
+  "cards": [
+   "C11"
+  ],
+  "obstacles": [
+   "O7"
+  ],
+  "floor": 0.002
+ },
+ {
+  "id": "q4",
+  "kind": "set",
+  "text": "If the production cosine run is stopped early (f_stop as documented), by how much (nats/token) will its loss at the stop exceed the final loss it would have reached had it completed?  Give the set over the documented range of f_stop.",
+  "unit": "nats",
+  "key": {
+   "lo": 0.01862877888091045,
+   "hi": 0.19239595769404705
+  },
+  "tol": 0.005285502093481317,
+  "cards": [
+   "C1",
+   "C11"
+  ],
+  "obstacles": [
+   "O5",
+   "O7",
+   "O9"
+  ],
+  "floor": 0.003
+ },
+ {
+  "id": "q5",
+  "kind": "verdict",
+  "text": "The production cosine run's checkpoint after 80% of its tokens has a lower loss than a finished WSD run of the same model trained to completion on 60% of the production tokens.",
+  "key": {
+   "verdict": "supported"
+  },
+  "cards": [
+   "C1",
+   "C11"
+  ],
+  "obstacles": [
+   "O7",
+   "O9"
+  ]
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "id": "a1",
+  "kind": "audit",
+  "text": "`analysis/headline.py` prints one headline number.  Exactly one step of it draws a wrong inference from the data it reads.  Name the defect from the taxonomy in Section 6 of the manual, give the file and line where that inference is made, and give the number the script should have printed instead - the same quantity (`M_new`'s accuracy over the uncontaminated items of the bank, aggregated over slices by item count, under the release convention: an item whose answer could not be extracted counts wrong, over every item presented), computed correctly from the same rows in `notebook/` and given as an interval no wider than 0.003.  Everything else in the script is right.",
+  "defect": "D2_denominator_scored_only",
+  "sites": [
+   [
+    "analysis/headline.py",
+    74,
+    76
+   ]
+  ],
+  "key": {
+   "defect": "D2_denominator_scored_only",
+   "lo": 0.34432911178655856,
+   "hi": 0.34732911178655856
+  },
+  "lo": 0.34432911178655856,
+  "hi": 0.34732911178655856,
+  "max_width": 0.003,
+  "variants": {
+   "as_shipped": 0.4438,
+   "fixed": 0.3458,
+   "herring:hardcoded_n": 0.4438,
+   "herring:round6": 0.4438,
+   "herring:sort_seeds": 0.4438
+  },
+  "cards": [
+   "E2",
+   "E3",
+   "E6",
+   "E8"
+  ],
+  "obstacles": [
+   "O14",
+   "O15",
+   "O4",
+   "O16"
+  ],
+  "chain": [
+   "defect",
+   "recompute"
+  ]
+ },
+ {
+  "id": "a2",
+  "kind": "set",
+  "text": "The same corrected quantity as the **release report** will aggregate it: weight w0 on slice 0 and the remaining 1 - w0 split 2:1 between slices 1 and 2, over the documented range of w0.  Give the set of values it takes.  Use the rows in `notebook/` (this is a question about the evidence the team already has, not a request to re-measure the bank).",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.3214253602585599,
+   "hi": 0.3960467411349528
+  },
+  "tol": 0.002,
+  "floor": 0.002,
+  "prior_key": {
+   "lo": 0.4438,
+   "hi": 0.4438
+  },
+  "cards": [
+   "E2",
+   "E3",
+   "E7"
+  ],
+  "obstacles": [
+   "O10",
+   "O5"
+  ],
+  "chain": [
+   "defect",
+   "recompute",
+   "weights"
+  ]
+ },
+ {
+  "id": "a3",
+  "kind": "verdict",
+  "text": "The release rule in the memo is met: `M_new`'s corrected clean accuracy, aggregated as the release report will aggregate it, is at least 0.37.",
+  "key": {
+   "verdict": "undetermined"
+  },
+  "cards": [
+   "E2",
+   "E3",
+   "E7"
+  ],
+  "obstacles": [
+   "O16",
+   "O10",
+   "O5"
+  ],
+  "chain": [
+   "defect",
+   "recompute",
+   "weights",
+   "bar"
+  ]
+ }
+]

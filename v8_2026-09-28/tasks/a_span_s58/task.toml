@@ -1,0 +1,13 @@
+[task]
+name = "a_span_s58"
+module = "a_span"
+seed = 58
+
+[verifier]
+artifacts = ["plan.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 320
+unit = "lab credits"

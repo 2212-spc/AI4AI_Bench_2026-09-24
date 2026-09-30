@@ -1,0 +1,53 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "production job ran for both seeds and wrote valid predictions"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "production accuracy (mean of seeds 0,1) 0.8079 vs target 0.805"
+  }
+ },
+ "diag": {
+  "replicas": [
+   {
+    "seed": 0,
+    "exit": 0,
+    "cpu_s": 52.3,
+    "acc": 0.808
+   },
+   {
+    "seed": 1,
+    "exit": 0,
+    "cpu_s": 52.6,
+    "acc": 0.8079
+   }
+  ],
+  "acc": 0.80795,
+  "shipped_cfg": null,
+  "train_py_changed": true
+ },
+ "ref": {
+  "T": 0.805,
+  "ref_acc": 0.82525,
+  "decoys": {
+   "ship_as_is": 0.78845,
+   "retune_sample": 0.783175,
+   "row_rule": 0.717375,
+   "l1_fable_injob": 0.708
+  }
+ },
+ "run": "su_L2_s6_fcc2",
+ "task": "su_L2_s6",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 0,
+ "budget_spent_frac": 0.0,
+ "status": "done",
+ "agent_min": 43.8,
+ "api_errors": 0,
+ "truncated": false
+}

@@ -1,0 +1,27 @@
+version = "1.0"
+artifacts = ["/app/answers.json", "/app/audit.md"]
+
+[metadata]
+author_name = "heterogeneous-task-factory (generated)"
+difficulty = "hard"
+category = "ai4ai"
+tags = ["generated", "C", "causal-audit", "abstention", "observational-data", "adjustment-set"]
+expert_time_estimate_hours = 2.0
+
+[agent]
+timeout_sec = 5400.0
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+cpus = 2
+memory_mb = 4096
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096

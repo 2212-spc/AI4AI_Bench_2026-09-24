@@ -1,0 +1,508 @@
+{
+ "family": "serve_ab_l0",
+ "lo": 0,
+ "hi": 8,
+ "target": 4,
+ "screen": {
+  "0": true,
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": true
+ },
+ "gate": {
+  "0": {
+   "accept": true,
+   "bad": []
+  },
+  "1": {
+   "accept": true,
+   "bad": []
+  },
+  "2": {
+   "accept": true,
+   "bad": []
+  },
+  "3": {
+   "accept": true,
+   "bad": []
+  },
+  "4": {
+   "accept": true,
+   "bad": []
+  },
+  "5": {
+   "accept": false,
+   "bad": [
+    "ship_all"
+   ]
+  },
+  "6": {
+   "accept": true,
+   "bad": []
+  },
+  "7": {
+   "accept": true,
+   "bad": []
+  }
+ },
+ "post": {
+  "pabl:0": {
+   "seed": 0,
+   "screen_ok": true,
+   "principles": {
+    "P2b_validated_fraction_is_not_the_launch": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "pabl:4": {
+   "seed": 4,
+   "screen_ok": true,
+   "principles": {
+    "P2b_validated_fraction_is_not_the_launch": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "pabl:6": {
+   "seed": 6,
+   "screen_ok": true,
+   "principles": {
+    "P2b_validated_fraction_is_not_the_launch": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "search:0": {
+   "seed": 0,
+   "checked": false,
+   "ok": false,
+   "note": "family declares no SEARCH strategies; searchability is unproven"
+  },
+  "search:4": {
+   "seed": 4,
+   "checked": false,
+   "ok": false,
+   "note": "family declares no SEARCH strategies; searchability is unproven"
+  },
+  "search:6": {
+   "seed": 6,
+   "checked": false,
+   "ok": false,
+   "note": "family declares no SEARCH strategies; searchability is unproven"
+  },
+  "mut:0": {
+   "seed": 0,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "schedule": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_schedule",
+      "failed": [
+       "R1_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "q1_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q1_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q2_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_own_schedule",
+      "failed": [
+       "R3_own_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "format": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R0_format",
+      "failed": [
+       "R0_format"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "mut:4": {
+   "seed": 4,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "schedule": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_schedule",
+      "failed": [
+       "R1_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "q1_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q1_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q2_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_own_schedule",
+      "failed": [
+       "R3_own_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "format": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R0_format",
+      "failed": [
+       "R0_format"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "act:0": {
+   "R0_format": {
+    "n": 14,
+    "pass": 10,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.714,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R1_schedule": {
+    "n": 10,
+    "pass": 6,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.6,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R2_full_launch": {
+    "n": 10,
+    "pass": 8,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.8,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R3_own_schedule": {
+    "n": 10,
+    "pass": 8,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.8,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   }
+  },
+  "act:4": {
+   "R0_format": {
+    "n": 14,
+    "pass": 10,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.714,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R1_schedule": {
+    "n": 10,
+    "pass": 6,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.6,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R2_full_launch": {
+    "n": 10,
+    "pass": 8,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.8,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   },
+   "R3_own_schedule": {
+    "n": 10,
+    "pass": 8,
+    "oracle_n": 2,
+    "oracle_pass": 2,
+    "pass_rate": 0.8,
+    "oracle_rate": 1.0,
+    "inert": false,
+    "broken": false
+   }
+  }
+ },
+ "pool": [
+  0,
+  4,
+  6,
+  7
+ ],
+ "pool_info": {
+  "n": 4,
+  "quota_counts": {
+   "32": 2,
+   "20": 1,
+   "24": 1
+  }
+ }
+}

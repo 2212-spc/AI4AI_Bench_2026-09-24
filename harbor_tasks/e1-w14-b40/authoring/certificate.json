@@ -1,0 +1,193 @@
+{
+ "instance": "e1-w14-b40",
+ "params": {
+  "lr": 0.04,
+  "lr_f": 2.5,
+  "mom": 0.9,
+  "mom2": 0.97,
+  "warm": 10,
+  "clip": 0.3,
+  "hid2": 256,
+  "wd2": 0.001,
+  "tseed": 425165,
+  "dseed": 20256
+ },
+ "n_truth_seeds": 80,
+ "opt": [
+  "c1",
+  "c2",
+  "c3",
+  "c5",
+  "c6"
+ ],
+ "opt_mu": 0.039950030366630786,
+ "delta_rel": 0.03100000000000001,
+ "boundary_clearance_pairedSE": 3.4726211922819736,
+ "accept_set": [
+  "c1+c2+c3+c5",
+  "c1+c2+c3+c5+c6"
+ ],
+ "diverge_rate_by_cell": {
+  "c1+c2": 1.0,
+  "c1+c4": 1.0,
+  "c2+c4": 1.0,
+  "c1+c2+c4": 1.0,
+  "c1+c2+c5": 1.0,
+  "c1+c4+c5": 1.0,
+  "c2+c4+c5": 1.0,
+  "c1+c2+c4+c5": 1.0,
+  "c1+c6": 0.025,
+  "c1+c2+c6": 1.0,
+  "c1+c4+c6": 1.0,
+  "c2+c4+c6": 1.0,
+  "c1+c2+c4+c6": 1.0,
+  "c1+c5+c6": 0.0125,
+  "c1+c2+c5+c6": 1.0,
+  "c1+c4+c5+c6": 1.0,
+  "c2+c4+c5+c6": 1.0,
+  "c1+c2+c4+c5+c6": 1.0
+ },
+ "policies": {
+  "expert_full_factorial": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "(none)",
+     1.0
+    ]
+   ]
+  },
+  "expert_prune_c6": {
+   "pass_decision": 0.9883333333333333,
+   "pass": 0.985,
+   "typical_end": [
+    [
+     "c1+c2+c3+c5",
+     0.99
+    ],
+    [
+     "c1+c2+c3+c4+c5",
+     0.01
+    ],
+    [
+     "c3+c4+c5",
+     0.0
+    ]
+   ]
+  },
+  "ofat_combine": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c5+c6",
+     0.5
+    ],
+    [
+     "c5",
+     0.45
+    ],
+    [
+     "c1+c5+c6",
+     0.03
+    ]
+   ]
+  },
+  "ofat_then_verify": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c5",
+     0.52
+    ],
+    [
+     "c5+c6",
+     0.45
+    ],
+    [
+     "c1+c5",
+     0.02
+    ]
+   ]
+  },
+  "greedy_forward": {
+   "pass_decision": 0.14333333333333334,
+   "pass": 0.13833333333333334,
+   "typical_end": [
+    [
+     "c1+c5",
+     0.29
+    ],
+    [
+     "c5",
+     0.18
+    ],
+    [
+     "c1+c5+c6",
+     0.17
+    ]
+   ]
+  },
+  "greedy_backward": {
+   "pass_decision": 1.0,
+   "pass": 0.9966666666666667,
+   "typical_end": [
+    [
+     "c1+c2+c3+c5+c6",
+     0.59
+    ],
+    [
+     "c1+c2+c3+c5",
+     0.41
+    ]
+   ]
+  },
+  "ship_all": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c1+c2+c3+c4+c5+c6",
+     1.0
+    ]
+   ]
+  },
+  "ship_none": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "(none)",
+     1.0
+    ]
+   ]
+  },
+  "random_subset": {
+   "pass_decision": 0.02666666666666667,
+   "pass": 0.02666666666666667,
+   "typical_end": [
+    [
+     "c4+c5",
+     0.03
+    ],
+    [
+     "c2+c3+c4+c5",
+     0.03
+    ],
+    [
+     "c2+c4+c5",
+     0.03
+    ]
+   ]
+  }
+ },
+ "C1_truth_resolution": true,
+ "C2_structure": true,
+ "C3_solvable": true,
+ "C4_no_shortcut": true,
+ "C5_estimation": true,
+ "accepted": true,
+ "teammate_seed": 0
+}

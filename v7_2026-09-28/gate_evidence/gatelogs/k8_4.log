@@ -1,0 +1,12 @@
+seed 4 screen True {"gap": 0.08168, "offline_drop": 0.0047, "cause": "mixture", "snr": 13.0}
+  oracle       expect=pass pass=0/3 BAD | F s=0.0 R0_report ERR LabError: insufficient budget: this call costs 10 re-runs, 9 left; F s=0.0 R0_report ERR LabError: insufficient budget: this call costs 10 re-runs, 9 left; F s=0.0 R0_report ERR LabError: insufficient budget: this call costs 10 re-runs, 9 left
+  blame_leak   expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  fix_all      expect=fail pass=0/2 OK  | F s=1.4707 R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=1.5229 R2_cause_survives_intervention,R3_fix_acts_on_cause
+  biggest_offline expect=fail pass=3/3 BAD | P s=1.5049 ; P s=1.5343 ; P s=1.4629 
+  partial_fix  expect=fail pass=0/2 OK  | F s=0.0 R0_report ERR LabError: insufficient budget: this call costs 4 re-runs, 1 left; F s=0.0 R0_report ERR LabError: insufficient budget: this call costs 4 re-runs, 1 left
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  bad_json     expect=fail pass=0/2 OK  | F s=0.0 R0_report; F s=0.0 R0_report
+  guess_capacity expect=fail pass=0/2 OK  | F s=-0.0012 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=-0.0792 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause
+  guess_mixture expect=fail pass=2/2 BAD | P s=1.5049 ; P s=1.5343 
+  guess_lr_scale expect=fail pass=0/2 OK  | F s=-0.0012 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause; F s=-0.0792 R1_fix_recovers,R2_cause_survives_intervention,R3_fix_acts_on_cause
+REJECT ['oracle', 'biggest_offline', 'guess_mixture']

@@ -1,0 +1,465 @@
+{
+ "axes": [
+  "deliverable",
+  "truth_source",
+  "failure_vectors",
+  "noisy_world",
+  "metered_budget",
+  "abstention_is_an_answer",
+  "interaction",
+  "probing"
+ ],
+ "signatures": {
+  "O": {
+   "deliverable": "executable code (a module the grader imports and runs)",
+   "truth_source": "execution of an independent specification implementation",
+   "failure_vectors": "semantics|efficiency",
+   "noisy_world": false,
+   "metered_budget": "wall clock, calibrated",
+   "abstention_is_an_answer": false,
+   "interaction": "read a program, write a program",
+   "probing": "unlimited - the reference implementation is public and runnable, so correctness is never in doubt; only cost is"
+  },
+  "C": {
+   "deliverable": "structured verdicts with numbers and a written audit",
+   "truth_source": "analytic, from the generative model of the world",
+   "failure_vectors": "identifiability|estimation|confounding",
+   "noisy_world": true,
+   "metered_budget": "none",
+   "abstention_is_an_answer": true,
+   "interaction": "read a fixed observational log",
+   "probing": "none - no new experiment can be run"
+  },
+  "V": {
+   "deliverable": "constructed counterexamples (inputs that break a claim)",
+   "truth_source": "self-evidencing - the witness is re-checked from first principles",
+   "failure_vectors": "false-negative|false-positive|out-of-scope",
+   "noisy_world": false,
+   "metered_budget": "none",
+   "abstention_is_an_answer": false,
+   "interaction": "read a code base, run it freely, hand back inputs",
+   "probing": "unlimited - the modules are executable and copyable"
+  },
+  "S": {
+   "deliverable": "point estimates plus a typed abstention code per item",
+   "truth_source": "analytic, from the generative model of the world",
+   "failure_vectors": "selection-on-outcome|over-abstention|nuisance-mechanism",
+   "noisy_world": true,
+   "metered_budget": "none",
+   "abstention_is_an_answer": true,
+   "interaction": "read a designed sweep and its launcher rules",
+   "probing": "none - no new experiment can be run"
+  },
+  "B": {
+   "deliverable": "sharp identified intervals plus ternary decisions at a stated margin",
+   "truth_source": "exact arithmetic over the published records, cross-checked by a second independent implementation",
+   "failure_vectors": "non-sharpness|provenance-join|population-definition|decision-rule",
+   "noisy_world": false,
+   "metered_budget": "none",
+   "abstention_is_an_answer": true,
+   "interaction": "reconcile several partly contradictory logs of one broken archive",
+   "probing": "documentary - the mechanism must be recovered from incident notes and policy versions, not from data"
+  },
+  "D": {
+   "deliverable": "a purchase decision: guaranteed widths, marginal-value verdicts, and the smallest set of measurements that reaches a stated target",
+   "truth_source": "exact arithmetic over the records, hardened by an adversarial sweep over every rival reading of the measurement service",
+   "failure_vectors": "measurement-semantics|worst-case-over-outcomes|marginal-value|minimal-set",
+   "noisy_world": false,
+   "metered_budget": "none",
+   "abstention_is_an_answer": false,
+   "interaction": "choose what to measure next in an archive, and commit before seeing it",
+   "probing": "counterfactual - the agent must predict what a measurement would return without being allowed to take it"
+  }
+ },
+ "shipped": [
+  "O",
+  "V",
+  "S",
+  "B",
+  "D"
+ ],
+ "retired": {
+  "C": "superseded by S: only 3 of 8 axes differ, and C is solved by frontier agents"
+ },
+ "pairs": [
+  {
+   "pair": "B-C",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": false
+  },
+  {
+   "pair": "B-D",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "B-O",
+   "n_differing_axes": 7,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "metered_budget",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "B-S",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "B-V",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "C-D",
+   "n_differing_axes": 7,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": false
+  },
+  {
+   "pair": "C-O",
+   "n_differing_axes": 8,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "metered_budget",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": false
+  },
+  {
+   "pair": "C-S",
+   "n_differing_axes": 3,
+   "axes": [
+    "deliverable",
+    "failure_vectors",
+    "interaction"
+   ],
+   "shipped_pair": false
+  },
+  {
+   "pair": "C-V",
+   "n_differing_axes": 7,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": false
+  },
+  {
+   "pair": "D-O",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "metered_budget",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "D-S",
+   "n_differing_axes": 7,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "D-V",
+   "n_differing_axes": 5,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "O-S",
+   "n_differing_axes": 8,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "metered_budget",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "O-V",
+   "n_differing_axes": 6,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "metered_budget",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  },
+  {
+   "pair": "S-V",
+   "n_differing_axes": 7,
+   "axes": [
+    "deliverable",
+    "truth_source",
+    "failure_vectors",
+    "noisy_world",
+    "abstention_is_an_answer",
+    "interaction",
+    "probing"
+   ],
+   "shipped_pair": true
+  }
+ ],
+ "min_required": 5,
+ "family_of_task": {
+  "o-pack-a": "O",
+  "v-falsify-a": "V",
+  "s-censored-a": "S",
+  "c-audit-a": "C",
+  "b-bounds-a": "B",
+  "b-bounds-sealed": "B",
+  "d-design-a": "D",
+  "d-design-sealed": "D",
+  "d-design-open": "D"
+ },
+ "derived_from_artefacts": {
+  "b-bounds-a": {
+   "family": "B",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "cells",
+    "contrasts",
+    "decisions"
+   ],
+   "vocabulary": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "abstention_in_vocabulary": true,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "b-bounds-sealed": {
+   "family": "B",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "cells",
+    "contrasts",
+    "decisions",
+    "mechanism",
+    "supports"
+   ],
+   "vocabulary": [
+    "RSN-04",
+    "RSN-11",
+    "cannot_tell",
+    "cells",
+    "no",
+    "yes"
+   ],
+   "abstention_in_vocabulary": true,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "c-audit-a": {
+   "family": "C",
+   "deliverable_kind": "records",
+   "answer_sections": [],
+   "vocabulary": [
+    "aliased_with_other_knob",
+    "combination_never_observed",
+    "identified",
+    "level_never_observed",
+    "underdetermined"
+   ],
+   "abstention_in_vocabulary": true,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "d-design-a": {
+   "family": "D",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "contrasts",
+    "plans",
+    "values",
+    "widths"
+   ],
+   "vocabulary": [
+    "no",
+    "yes"
+   ],
+   "abstention_in_vocabulary": false,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "d-design-open": {
+   "family": "D",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "contrasts",
+    "plans",
+    "recovery",
+    "values",
+    "widths"
+   ],
+   "vocabulary": [
+    "no",
+    "yes"
+   ],
+   "abstention_in_vocabulary": false,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "d-design-sealed": {
+   "family": "D",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "contrasts",
+    "plans",
+    "recovery",
+    "values",
+    "widths"
+   ],
+   "vocabulary": [
+    "no",
+    "yes"
+   ],
+   "abstention_in_vocabulary": false,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "o-pack-a": {
+   "family": "O",
+   "deliverable_kind": "code",
+   "answer_sections": [],
+   "vocabulary": [],
+   "abstention_in_vocabulary": false,
+   "metered_budget": "wall clock",
+   "executable_probing": true,
+   "n_executable_modules_in_environment": 1
+  },
+  "s-censored-a": {
+   "family": "S",
+   "deliverable_kind": "records",
+   "answer_sections": [
+    "censoring",
+    "queries"
+   ],
+   "vocabulary": [
+    "combination_never_launched",
+    "identified",
+    "level_never_launched",
+    "no_surviving_run",
+    "underdetermined"
+   ],
+   "abstention_in_vocabulary": true,
+   "metered_budget": "none",
+   "executable_probing": false,
+   "n_executable_modules_in_environment": 0
+  },
+  "v-falsify-a": {
+   "family": "V",
+   "deliverable_kind": "inputs",
+   "answer_sections": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+   ],
+   "vocabulary": [
+    "holds",
+    "violated"
+   ],
+   "abstention_in_vocabulary": false,
+   "metered_budget": "none",
+   "executable_probing": true,
+   "n_executable_modules_in_environment": 7
+  }
+ },
+ "declaration_mismatches": [],
+ "derived_fingerprint_collisions": [],
+ "all_shipped_pairs_pass": true
+}

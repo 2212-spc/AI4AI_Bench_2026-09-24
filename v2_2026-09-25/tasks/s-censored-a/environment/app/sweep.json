@@ -1,0 +1,58 @@
+{
+ "knobs": [
+  "lr",
+  "batch",
+  "sched",
+  "init_scale",
+  "precision"
+ ],
+ "levels": {
+  "lr": [
+   0.0001,
+   0.0003,
+   0.001
+  ],
+  "batch": [
+   256,
+   512,
+   1024
+  ],
+  "sched": [
+   "cosine",
+   "wsd"
+  ],
+  "init_scale": [
+   0.5,
+   1.0
+  ],
+  "precision": [
+   "bf16",
+   "fp8",
+   "fp16"
+  ]
+ },
+ "replicates_per_launched_cell": 2000,
+ "guard_val_loss": 2.955,
+ "columns": {
+  "manifest.csv": [
+   "run_id",
+   "lr",
+   "batch",
+   "sched",
+   "init_scale",
+   "precision"
+  ],
+  "results.csv": [
+   "run_id",
+   "lr",
+   "batch",
+   "sched",
+   "init_scale",
+   "precision",
+   "steps",
+   "tokens_seen",
+   "status",
+   "val_loss"
+  ]
+ }
+}

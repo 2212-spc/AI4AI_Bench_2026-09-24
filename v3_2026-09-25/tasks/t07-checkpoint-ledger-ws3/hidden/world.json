@@ -1,0 +1,54 @@
+{
+ "params": {
+  "E": 1.668130646004692,
+  "A": 1599.6051940747022,
+  "alpha": 0.40122336223109833,
+  "Bc": 1569.6638724578304,
+  "beta": 0.330518647239358,
+  "sigma0": 0.006107372008733986,
+  "rho": 0.16457189839313904,
+  "ca": 0.19000428243424708,
+  "zeta": 1.1648094696974307,
+  "rmin": 0.1,
+  "cd": 0.2,
+  "f_stop": 0.7695601342591316
+ },
+ "spec": {
+  "knobs": {
+   "N": {
+    "type": "float",
+    "min": 10000000.0,
+    "max": 300000000.0,
+    "log": true
+   },
+   "D": {
+    "type": "float",
+    "min": 200000000.0,
+    "max": 100000000000.0,
+    "log": true
+   },
+   "sched": {
+    "type": "choice",
+    "values": [
+     "cosine",
+     "wsd"
+    ]
+   }
+  },
+  "fixed": {
+   "B": 500000.0
+  },
+  "caps": {
+   "run_flops": 8e+18,
+   "total_flops": 2e+19,
+   "max_runs": 10
+  },
+  "metrics": [
+   "loss"
+  ],
+  "checkpoints": true
+ },
+ "salt": "aef872aabf14ec8a",
+ "blueprint": "t07-checkpoint-ledger",
+ "world_seed": 3
+}

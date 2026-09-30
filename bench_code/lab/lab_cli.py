@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+"""lab — client for the shared MiniLab training cluster.
+
+  lab run --changes c1,c3 [--seed N]   train the production recipe with the given changes applied
+                                        (no --changes = unmodified baseline); prints JSON with val_mse.
+                                        Without --seed a random seed is drawn. Each call costs 1 run.
+  lab status                            budget used / remaining (free)
+  lab history                           all runs so far (free)
+
+The seed controls model initialisation and minibatch order; the data set is fixed.
+A run that diverges reports "diverged": true and val_mse null (it still costs 1 run)."""
+import argparse, json, os, sys, urllib.request, urllib.error
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+TOKEN = open(os.path.join(HERE, ".lab_token")).read().strip()
+URL = os.environ.get("LAB_URL", "http://127.0.0.1:18777/")
+
+
+def call(req):
+    req["token"] = TOKEN
+    r = urllib.request.Request(URL, data=json.dumps(req).encode(), headers={"Content-Type": "application/json"})
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))  # the lab is local; never use a proxy
+    try:
+        with opener.open(r, timeout=120) as f: return json.loads(f.read())
+    except urllib.error.HTTPError as e:
+        return json.loads(e.read() or b"{}")
+    except Exception as e:
+        return {"error": "lab unreachable: %r" % e}
+
+
+def main():
+    ap = argparse.ArgumentParser(prog="lab", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sp = ap.add_subparsers(dest="cmd", required=True)
+    r = sp.add_parser("run"); r.add_argument("--changes", default=""); r.add_argument("--seed", type=int)
+    sp.add_parser("status"); sp.add_parser("history")
+    a = ap.parse_args()
+    if a.cmd == "run":
+        out = call({"op": "run", "changes": a.changes, "seed": a.seed})
+    else:
+        out = call({"op": a.cmd})
+    print(json.dumps(out, indent=None if a.cmd == "run" else 1))
+    sys.exit(1 if "error" in out else 0)
+
+
+if __name__ == "__main__":
+    main()

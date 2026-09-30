@@ -1,0 +1,182 @@
+{
+ "instance": "e1-wA",
+ "params": {
+  "lr": 0.03,
+  "lr_f": 2.0,
+  "mom": 0.9,
+  "mom2": 0.95,
+  "warm": 10,
+  "clip": 1.0,
+  "tseed": 11,
+  "dseed": 5
+ },
+ "n_truth_seeds": 80,
+ "opt": [
+  "c1",
+  "c2",
+  "c3",
+  "c5"
+ ],
+ "opt_mu": 0.04200071259574003,
+ "delta_rel": 0.044500000000000026,
+ "boundary_clearance_pairedSE": 2.718618641829078,
+ "accept_set": [
+  "c1+c2+c3",
+  "c1+c2+c3+c5",
+  "c1+c2+c3+c6",
+  "c1+c2+c3+c5+c6"
+ ],
+ "diverge_rate_by_cell": {
+  "c1+c2+c4": 0.825,
+  "c1+c2+c4+c5": 0.8,
+  "c1+c2+c4+c6": 0.8875,
+  "c1+c2+c4+c5+c6": 0.8375
+ },
+ "policies": {
+  "expert_full_factorial": {
+   "pass_decision": 0.9983333333333333,
+   "pass": 0.9983333333333333,
+   "typical_end": [
+    [
+     "c1+c2+c3+c5",
+     0.51
+    ],
+    [
+     "c1+c2+c3+c5+c6",
+     0.47
+    ],
+    [
+     "c1+c2+c3+c6",
+     0.02
+    ]
+   ]
+  },
+  "expert_prune_c6": {
+   "pass_decision": 1.0,
+   "pass": 1.0,
+   "typical_end": [
+    [
+     "c1+c2+c3+c5",
+     1.0
+    ],
+    [
+     "c1+c2+c3",
+     0.0
+    ]
+   ]
+  },
+  "ofat_combine": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c1+c2+c4+c5",
+     0.57
+    ],
+    [
+     "c1+c2+c4+c5+c6",
+     0.43
+    ]
+   ]
+  },
+  "ofat_then_verify": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c1",
+     0.93
+    ],
+    [
+     "c2",
+     0.07
+    ],
+    [
+     "c4",
+     0.0
+    ]
+   ]
+  },
+  "greedy_forward": {
+   "pass_decision": 0.006666666666666667,
+   "pass": 0.006666666666666667,
+   "typical_end": [
+    [
+     "c1+c5",
+     0.45
+    ],
+    [
+     "c1+c5+c6",
+     0.35
+    ],
+    [
+     "c2+c5",
+     0.12
+    ]
+   ]
+  },
+  "greedy_backward": {
+   "pass_decision": 1.0,
+   "pass": 1.0,
+   "typical_end": [
+    [
+     "c1+c2+c3+c5",
+     0.55
+    ],
+    [
+     "c1+c2+c3+c5+c6",
+     0.45
+    ],
+    [
+     "c1+c2+c3+c6",
+     0.01
+    ]
+   ]
+  },
+  "ship_all": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "c1+c2+c3+c4+c5+c6",
+     1.0
+    ]
+   ]
+  },
+  "ship_none": {
+   "pass_decision": 0.0,
+   "pass": 0.0,
+   "typical_end": [
+    [
+     "(none)",
+     1.0
+    ]
+   ]
+  },
+  "random_subset": {
+   "pass_decision": 0.07333333333333333,
+   "pass": 0.07333333333333333,
+   "typical_end": [
+    [
+     "c3+c4+c5",
+     0.03
+    ],
+    [
+     "c1+c5",
+     0.03
+    ],
+    [
+     "c1+c2+c3+c6",
+     0.03
+    ]
+   ]
+  }
+ },
+ "C1_truth_resolution": true,
+ "C2_structure": true,
+ "C3_solvable": true,
+ "C4_no_shortcut": true,
+ "C5_estimation": true,
+ "accepted": true,
+ "teammate_seed": 9
+}

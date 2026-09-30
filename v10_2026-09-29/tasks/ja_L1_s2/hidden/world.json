@@ -1,0 +1,70 @@
+{
+ "task": "judge_audit",
+ "seed": 2,
+ "params": {
+  "seed": 2,
+  "k": 1,
+  "wseed": 485343623,
+  "L0": 1150.0
+ },
+ "salt": "75716a06e98e9e3f54a5d997",
+ "budget": 500.0,
+ "truth": {
+  "truth": {
+   "pass_A": 0.7,
+   "pass_B": 0.635,
+   "D": -0.06499999999999995,
+   "decision": "HOLD"
+  },
+  "policies": {
+   "judge_only": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.125,
+    "bias_q2": 0.1333,
+    "sd_q2": 0.0
+   },
+   "review_all": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.1167,
+    "bias_q2": 0.1167,
+    "sd_q2": 0.0
+   },
+   "crowd5_majority": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.1174,
+    "bias_q2": 0.1203,
+    "sd_q2": 0.0107
+   },
+   "judge_corrected_by_review": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.117,
+    "bias_q2": 0.1168,
+    "sd_q2": 0.0057
+   },
+   "info_ppi_random": {
+    "pass_rate": 0.32,
+    "bias_q1": -0.0004,
+    "bias_q2": -0.0002,
+    "sd_q2": 0.0346
+   },
+   "info_ppi_random_B_only": {
+    "pass_rate": 0.62,
+    "bias_q1": -0.0002,
+    "bias_q2": -0.0002,
+    "sd_q2": 0.0205
+   },
+   "reference": {
+    "pass_rate": 1.0,
+    "bias_q1": -0.005,
+    "bias_q2": -0.005,
+    "sd_q2": 0.0014
+   }
+  },
+  "decoys": [
+   "judge_only",
+   "review_all",
+   "crowd5_majority",
+   "judge_corrected_by_review"
+  ]
+ }
+}

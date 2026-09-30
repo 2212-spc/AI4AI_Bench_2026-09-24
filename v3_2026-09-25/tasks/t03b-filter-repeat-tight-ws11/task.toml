@@ -1,0 +1,19 @@
+[task]
+id = "t03b-filter-repeat-tight-ws11"
+blueprint = "t03b-filter-repeat-tight"
+world_seed = 11
+title = "Quality filtering for a data-constrained production run (tight budget)"
+cards = ["C1", "C6", "C7", "C10"]
+obstacles = ["O2", "O3", "O5"]
+claim = "decompose two effects that cancel in the team's ablation by designing experiments that isolate each; carry a documented range through a nonlinear model"
+n_items = 6
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+app_dir = "environment/app"
+lab_service = "scalelab.lab_server (holds hidden/world.json; the agent reaches it only through bin/lab)"
+
+[verifier]
+command = "python3 tests/grade.py <answers.json>"

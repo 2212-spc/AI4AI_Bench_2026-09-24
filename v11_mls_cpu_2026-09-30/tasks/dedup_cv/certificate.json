@@ -1,0 +1,516 @@
+{
+ "task": "dedup_cv",
+ "ok": true,
+ "created": "2026-09-30 13:06",
+ "candidates": [
+  {
+   "kind": "reference",
+   "name": "solution.py",
+   "passed": true,
+   "as_expected": true,
+   "failed_settings": [],
+   "secs": 353.3,
+   "detail": {
+    "pass": true,
+    "settings": {
+     "dev_a": {
+      "metric": 1.046,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": false,
+      "pick": "knn_k64",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 27.9
+     },
+     "dev_b": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": false,
+      "pick": "knn_k32",
+      "oracle": "knn_k32",
+      "secs": 46.0
+     },
+     "hid_a": {
+      "metric": 1.017,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "knn_k128",
+      "oracle": "rf_leaf80",
+      "secs": 79.4
+     },
+     "hid_b": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "knn_k8",
+      "oracle": "knn_k8",
+      "secs": 59.0
+     },
+     "hid_c": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 64.3
+     },
+     "hid_d": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "rf_leaf250",
+      "oracle": "rf_leaf250",
+      "secs": 76.7
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "kfold_cv.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_a",
+    "dev_b",
+    "hid_a",
+    "hid_b",
+    "hid_c",
+    "hid_d"
+   ],
+   "secs": 357.2,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.291,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 41.5
+     },
+     "dev_b": {
+      "metric": 1.559,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "knn_k1",
+      "oracle": "knn_k32",
+      "secs": 43.3
+     },
+     "hid_a": {
+      "metric": 6.481,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf80",
+      "secs": 46.1
+     },
+     "hid_b": {
+      "metric": 1.336,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "knn_k8",
+      "secs": 74.1
+     },
+     "hid_c": {
+      "metric": 1.309,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 77.8
+     },
+     "hid_d": {
+      "metric": 1.257,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "rf_leaf250",
+      "secs": 74.4
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "one_se_cv.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_a",
+    "dev_b",
+    "hid_a",
+    "hid_b",
+    "hid_c",
+    "hid_d"
+   ],
+   "secs": 377.2,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.241,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 83.1
+     },
+     "dev_b": {
+      "metric": 1.559,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "knn_k1",
+      "oracle": "knn_k32",
+      "secs": 52.1
+     },
+     "hid_a": {
+      "metric": 6.481,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf80",
+      "secs": 55.2
+     },
+     "hid_b": {
+      "metric": 1.336,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "knn_k8",
+      "secs": 56.2
+     },
+     "hid_c": {
+      "metric": 1.289,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 71.9
+     },
+     "hid_d": {
+      "metric": 1.257,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "rf_leaf250",
+      "secs": 58.6
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "repeated_cv.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_a",
+    "dev_b",
+    "hid_a",
+    "hid_b",
+    "hid_c",
+    "hid_d"
+   ],
+   "secs": 579.6,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.291,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 114.7
+     },
+     "dev_b": {
+      "metric": 1.559,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "knn_k1",
+      "oracle": "knn_k32",
+      "secs": 100.1
+     },
+     "hid_a": {
+      "metric": 6.481,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf80",
+      "secs": 97.7
+     },
+     "hid_b": {
+      "metric": 1.336,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "knn_k8",
+      "secs": 84.2
+     },
+     "hid_c": {
+      "metric": 1.289,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 81.6
+     },
+     "hid_d": {
+      "metric": 1.257,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "rf_leaf250",
+      "secs": 101.3
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "always_smooth.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "hid_b"
+   ],
+   "secs": 0.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": false,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 0.0
+     },
+     "dev_b": {
+      "metric": 1.133,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": false,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "knn_k32",
+      "secs": 0.0
+     },
+     "hid_a": {
+      "metric": 1.123,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "rf_leaf80",
+      "secs": 0.0
+     },
+     "hid_b": {
+      "metric": 1.52,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "knn_k8",
+      "secs": 0.0
+     },
+     "hid_c": {
+      "metric": 1.0,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 0.0
+     },
+     "hid_d": {
+      "metric": 1.102,
+      "threshold": 1.2,
+      "ok": true,
+      "hidden": true,
+      "pick": "gbm_lr0.03_leaf300",
+      "oracle": "rf_leaf250",
+      "secs": 0.0
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "dedup_exact.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_a",
+    "dev_b",
+    "hid_a",
+    "hid_b",
+    "hid_c",
+    "hid_d"
+   ],
+   "secs": 189.1,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.291,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 25.1
+     },
+     "dev_b": {
+      "metric": 1.559,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "knn_k1",
+      "oracle": "knn_k32",
+      "secs": 34.3
+     },
+     "hid_a": {
+      "metric": 6.481,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf80",
+      "secs": 33.8
+     },
+     "hid_b": {
+      "metric": 1.336,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "knn_k8",
+      "secs": 36.4
+     },
+     "hid_c": {
+      "metric": 1.309,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 29.3
+     },
+     "hid_d": {
+      "metric": 2.305,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf250",
+      "secs": 30.1
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "holdout.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_a",
+    "dev_b",
+    "hid_a",
+    "hid_b",
+    "hid_c",
+    "hid_d"
+   ],
+   "secs": 34.6,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_a": {
+      "metric": 1.241,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 5.8
+     },
+     "dev_b": {
+      "metric": 1.559,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": false,
+      "pick": "knn_k1",
+      "oracle": "knn_k32",
+      "secs": 5.8
+     },
+     "hid_a": {
+      "metric": 6.481,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "rf_leaf80",
+      "secs": 5.8
+     },
+     "hid_b": {
+      "metric": 1.336,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "knn_k1",
+      "oracle": "knn_k8",
+      "secs": 5.6
+     },
+     "hid_c": {
+      "metric": 1.309,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf2",
+      "oracle": "gbm_lr0.03_leaf300",
+      "secs": 5.8
+     },
+     "hid_d": {
+      "metric": 1.257,
+      "threshold": 1.2,
+      "ok": false,
+      "hidden": true,
+      "pick": "gbm_lr0.1_leaf20",
+      "oracle": "rf_leaf250",
+      "secs": 5.8
+     }
+    }
+   }
+  }
+ ],
+ "pass_dev_fail_hidden": [
+  "always_smooth.py"
+ ]
+}

@@ -1,0 +1,19 @@
+[task]
+id = "t01-lr-horizon-ws1"
+blueprint = "t01-lr-horizon"
+world_seed = 1
+title = "Learning-rate transfer to an over-trained production run"
+cards = ["C1", "C2", "C10"]
+obstacles = ["O1", "O9", "O5"]
+claim = "separate two causes that co-vary in prior runs by designing off-diagonal experiments; state what the lab cannot tell"
+n_items = 8
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+app_dir = "environment/app"
+lab_service = "scalelab.lab_server (holds hidden/world.json; the agent reaches it only through bin/lab)"
+
+[verifier]
+command = "python3 tests/grade.py <answers.json>"

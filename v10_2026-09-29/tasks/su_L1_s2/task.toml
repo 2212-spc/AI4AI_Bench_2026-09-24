@@ -1,0 +1,13 @@
+[task]
+name = "su_L1_s2"
+module = "scaleup"
+seed = 2
+
+[verifier]
+artifacts = ["repo/", "report.md"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 1
+unit = "none"

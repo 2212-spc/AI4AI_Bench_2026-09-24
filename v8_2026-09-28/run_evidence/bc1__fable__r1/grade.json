@@ -1,0 +1,109 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_report": {
+   "ok": true,
+   "detail": "report.json is well-formed"
+  },
+  "R1_culprit": {
+   "ok": true,
+   "detail": "reverting `H-3` raises true quality by +2.481; the best single reversion is `H-3` at +2.481.  Full table (true quality gain from reverting each alone): H-1 +1.072, H-2 +0.025, H-3 +2.481, H-4 -0.026, H-5 -1.202"
+  },
+  "R2_effect": {
+   "ok": true,
+   "detail": "the true quality gain from reverting YOUR named change `H-3` is +2.481; you reported [+2.300, +2.700] (covers, width 0.400, cap 0.45).  The coupled leave-one-out design would have estimated +2.028 for it."
+  },
+  "R3_harness_only": {
+   "ok": true,
+   "detail": "changes with |quality effect| <= 0.30 AND |reported-number offset| >= 0.90: ['H-2', 'H-4'].  You listed: ['H-2', 'H-4'].  Per change (quality effect, harness offset): H-1 (-1.072, -0.195), H-2 (-0.025, -1.645), H-3 (-2.481, +0.452), H-4 (+0.026, -2.720), H-5 (+1.202, -0.037)"
+  }
+ },
+ "diag": {
+  "named": "H-3",
+  "true_culprit": "H-3",
+  "coupled_culprit": "H-4",
+  "rescore_culprit": "H-4",
+  "named_the_coupled_answer": false,
+  "named_the_rescore_answer": false,
+  "n_train": 5,
+  "n_score": 15,
+  "distinct_harness_configs": 7,
+  "spent": 98.0,
+  "scored_under_one_config": [
+   [],
+   [
+    "H-1"
+   ],
+   [
+    "H-1",
+    "H-2",
+    "H-3",
+    "H-4",
+    "H-5"
+   ],
+   [
+    "H-2"
+   ],
+   [
+    "H-3"
+   ],
+   [
+    "H-4"
+   ]
+  ]
+ },
+ "ref": {
+  "revert_gain": {
+   "H-1": 1.0722,
+   "H-2": 0.0251,
+   "H-3": 2.4807,
+   "H-4": -0.0257,
+   "H-5": -1.2015
+  },
+  "coupled_estimate": {
+   "H-1": 1.2669,
+   "H-2": 1.6703,
+   "H-3": 2.0283,
+   "H-4": 2.694,
+   "H-5": -1.1645
+  },
+  "rescore_estimate": {
+   "H-1": 0.1947,
+   "H-2": 1.6452,
+   "H-3": -0.4524,
+   "H-4": 2.7197,
+   "H-5": 0.037
+  },
+  "culprit": "H-3",
+  "culprit_gain": 2.4807,
+  "runner_up": "H-1",
+  "margin": 1.4085,
+  "harness_only": [
+   "H-2",
+   "H-4"
+  ],
+  "coupled_culprit": "H-4",
+  "rescore_culprit": "H-4",
+  "total_regression": -2.3508,
+  "q_release": 55.0412,
+  "q_previous": 57.392,
+  "roles": {
+   "H-1": "small_mover",
+   "H-2": "quiet_ruler",
+   "H-3": "culprit",
+   "H-4": "loud_ruler",
+   "H-5": "helpful"
+  }
+ },
+ "run": "bc1__fable__r1",
+ "task": "b_control_s5",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 20,
+ "budget_spent_frac": 0.817,
+ "status": "done",
+ "agent_min": 3.2,
+ "api_errors": 0,
+ "truncated": false
+}

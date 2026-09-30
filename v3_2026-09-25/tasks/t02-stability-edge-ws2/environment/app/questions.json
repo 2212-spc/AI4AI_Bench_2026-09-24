@@ -1,0 +1,55 @@
+[
+ {
+  "id": "q1",
+  "question": "log10 of the learning rate above which the production run (N=7e9, D=1.4e11, batch 0.5M, warmup 0.02, qk-layernorm off) diverges.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "log10(lr)"
+ },
+ {
+  "id": "q2",
+  "question": "log10 of the learning rate above which the same production run diverges with qk-layernorm on.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "log10(lr)"
+ },
+ {
+  "id": "q3",
+  "question": "The production run exactly as planned in the lab notes (qk-layernorm off, warmup 0.02, peak lr = 0.00117) diverges.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ },
+ {
+  "id": "q4",
+  "question": "The production run with qk-layernorm on (warmup 0.02) and peak lr = 0.00468 does not diverge.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ },
+ {
+  "id": "q5",
+  "question": "The production run with qk-layernorm on (warmup 0.02) and peak lr = 0.0241 does not diverge.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ },
+ {
+  "id": "q6",
+  "question": "Keeping qk-layernorm off and warmup 0.02, which peak learning rate gives the production run the lowest final loss?  A run that diverges counts as the worst possible outcome.  Options: A: 0.000418, B: 0.000522, C: 0.000653, D: 0.000816",
+  "answer_format": {
+   "choice": "one of A, B, C, D"
+  }
+ },
+ {
+  "id": "q7",
+  "question": "With qk-layernorm off but warmup raised to 5% of steps (wu=0.05), the production run at peak lr = 0.000829 does not diverge.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ }
+]

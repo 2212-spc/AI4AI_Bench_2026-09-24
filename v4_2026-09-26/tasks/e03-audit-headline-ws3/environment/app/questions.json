@@ -1,0 +1,30 @@
+[
+ {
+  "id": "a1",
+  "question": "`analysis/headline.py` prints one headline number.  Exactly one step of it draws a wrong inference from the data it reads.  Name the defect from the taxonomy in Section 6 of the manual, give the file and line where that inference is made, and give the number the script should have printed instead - the same quantity (`M_new`'s accuracy over the uncontaminated items of the bank, aggregated over slices by item count, under the release convention: an item whose answer could not be extracted counts wrong, over every item presented), computed correctly from the same rows in `notebook/` and given as an interval no wider than 0.003.  Everything else in the script is right.",
+  "answer_format": {
+   "defect": "one defect id from the taxonomy in manual.md Section 6",
+   "site": "file:line",
+   "corrected": {
+    "lo": "number",
+    "hi": "number"
+   }
+  }
+ },
+ {
+  "id": "a2",
+  "question": "The same corrected quantity as the **release report** will aggregate it: weight w0 on slice 0 and the remaining 1 - w0 split 2:1 between slices 1 and 2, over the documented range of w0.  Give the set of values it takes.  Use the rows in `notebook/` (this is a question about the evidence the team already has, not a request to re-measure the bank).",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "fraction"
+ },
+ {
+  "id": "a3",
+  "question": "The release rule in the memo is met: `M_new`'s corrected clean accuracy, aggregated as the release report will aggregate it, is at least 0.26.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ }
+]

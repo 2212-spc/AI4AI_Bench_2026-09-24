@@ -1,0 +1,66 @@
+{
+ "pass": false,
+ "score": 0.505,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.6908 (majority@6 0.4792, reference 0.8983) -> s=0.505, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.6775,
+   0.7,
+   0.695
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.5258,
+    "geometry": 0.5701,
+    "combinatorics": 0.8261,
+    "number_theory": 0.7901
+   },
+   {
+    "algebra": 0.578,
+    "geometry": 0.5862,
+    "combinatorics": 0.8654,
+    "number_theory": 0.76
+   },
+   {
+    "algebra": 0.4902,
+    "geometry": 0.5632,
+    "combinatorics": 0.86,
+    "number_theory": 0.8378
+   }
+  ],
+  "n_dev_samples": 10000,
+  "n_evaluate": 0
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__gpt6__r1",
+ "task": "k4-tts-w1",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 7,
+ "budget_spent_frac": 1.0,
+ "status": "timeout",
+ "agent_min": 101.1,
+ "api_errors": 2,
+ "truncated": true,
+ "truncate_reason": "timeout"
+}

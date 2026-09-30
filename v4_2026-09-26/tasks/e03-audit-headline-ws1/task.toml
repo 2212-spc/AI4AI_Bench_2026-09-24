@@ -1,0 +1,21 @@
+[task]
+id = "e03-audit-headline-ws1"
+blueprint = "e03-audit-headline"
+lab = "evallab"
+world_seed = 1
+title = "Audit the release headline"
+cards = ["E1", "E2", "E3", "E6", "E7", "E8"]
+obstacles = ["O14", "O15", "O4", "O16", "O10", "O5"]
+claim = "The number in the review memo is what the team's own evidence implies, and the release bar is cleared."
+n_items = 3
+kinds = ["audit", "set", "verdict"]
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+app_dir = "environment/app"
+lab_service = "scalelab.lab_server (holds hidden/world.json; the agent reaches it only through bin/lab)"
+
+[verifier]
+command = "python3 tests/grade.py <answers.json> [lab_ledger.jsonl]"

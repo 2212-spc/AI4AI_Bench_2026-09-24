@@ -1,0 +1,516 @@
+{
+ "seeds": [
+  7,
+  11,
+  23,
+  101,
+  5,
+  77,
+  313,
+  929,
+  1217,
+  4001
+ ],
+ "tol_delta": {
+  "q01": 0.03,
+  "q02": 0.03,
+  "q03": 0.03,
+  "q04": 0.033,
+  "q05": 0.03,
+  "q06": 0.03,
+  "q10": 0.037,
+  "q11": 0.03,
+  "q12": 0.03
+ },
+ "tol_censor": {
+  "r1": 0.04,
+  "r2": 0.04,
+  "r3": 0.048,
+  "r4": 0.04,
+  "r5": 0.04,
+  "r6": 0.04
+ },
+ "ref_bias": {
+  "q01": -0.001,
+  "q02": 4e-05,
+  "q03": 0.00156,
+  "q04": 0.00084,
+  "q05": 0.00063,
+  "q06": 0.00037,
+  "q10": -0.00105,
+  "q11": 0.00065,
+  "q12": -0.00096
+ },
+ "ref_sd": {
+  "q01": 0.00189,
+  "q02": 0.00347,
+  "q03": 0.00233,
+  "q04": 0.00638,
+  "q05": 0.0038,
+  "q06": 0.0039,
+  "q10": 0.00713,
+  "q11": 0.00311,
+  "q12": 0.00442
+ },
+ "ref_worst_abs": {
+  "q01": 0.0032,
+  "q02": 0.00575,
+  "q03": 0.0059,
+  "q04": 0.01138,
+  "q05": 0.00632,
+  "q06": 0.0061,
+  "q10": 0.01217,
+  "q11": 0.00683,
+  "q12": 0.0082
+ },
+ "ref_censor_worst_abs": {
+  "r1": 0.00862,
+  "r2": 0.01447,
+  "r3": 0.01796,
+  "r4": 0.01377,
+  "r5": 0.01531,
+  "r6": 0.0
+ },
+ "ref_verdicts": {
+  "q01": [
+   "identified"
+  ],
+  "q02": [
+   "identified"
+  ],
+  "q03": [
+   "identified"
+  ],
+  "q04": [
+   "identified"
+  ],
+  "q05": [
+   "identified"
+  ],
+  "q06": [
+   "identified"
+  ],
+  "q07": [
+   "underdetermined"
+  ],
+  "q08": [
+   "underdetermined"
+  ],
+  "q09": [
+   "underdetermined"
+  ],
+  "q10": [
+   "identified"
+  ],
+  "q11": [
+   "identified"
+  ],
+  "q12": [
+   "identified"
+  ],
+  "q13": [
+   "underdetermined"
+  ]
+ },
+ "verdict_key": {
+  "q01": "identified",
+  "q02": "identified",
+  "q03": "identified",
+  "q04": "identified",
+  "q05": "identified",
+  "q06": "identified",
+  "q07": "underdetermined",
+  "q08": "underdetermined",
+  "q09": "underdetermined",
+  "q10": "identified",
+  "q11": "identified",
+  "q12": "identified",
+  "q13": "underdetermined"
+ },
+ "candidate_scan": {
+  "REFERENCE": {
+   "n_fail_per_seed": [
+    0,
+    0,
+    0
+   ],
+   "example": []
+  },
+  "guard_threshold_read_off_max": {
+   "n_fail_per_seed": [
+    0,
+    0,
+    0
+   ],
+   "example": []
+  },
+  "model_based_censoring_report": {
+   "n_fail_per_seed": [
+    0,
+    0,
+    0
+   ],
+   "example": []
+  },
+  "moment_matching_under_heavy_truncation": {
+   "n_fail_per_seed": [
+    0,
+    2,
+    0
+   ],
+   "example": []
+  },
+  "complete_case": {
+   "n_fail_per_seed": [
+    3,
+    3,
+    3
+   ],
+   "example": [
+    [
+     "q03",
+     0.0569
+    ],
+    [
+     "q04",
+     0.0905
+    ],
+    [
+     "q12",
+     0.0834
+    ]
+   ]
+  },
+  "complete_case_median": {
+   "n_fail_per_seed": [
+    3,
+    3,
+    3
+   ],
+   "example": [
+    [
+     "q03",
+     0.0472
+    ],
+    [
+     "q04",
+     0.0819
+    ],
+    [
+     "q12",
+     0.0718
+    ]
+   ]
+  },
+  "complete_case_with_extrapolation": {
+   "n_fail_per_seed": [
+    5,
+    5,
+    5
+   ],
+   "example": [
+    [
+     "q03",
+     0.0569
+    ],
+    [
+     "q04",
+     0.0905
+    ],
+    [
+     "q07",
+     "verdict:identified"
+    ],
+    [
+     "q12",
+     0.0834
+    ],
+    [
+     "q13",
+     "verdict:identified"
+    ]
+   ]
+  },
+  "correct_fit_but_abstains_on_any_hole": {
+   "n_fail_per_seed": [
+    9,
+    9,
+    9
+   ],
+   "example": [
+    [
+     "q01",
+     "verdict:underdetermined"
+    ],
+    [
+     "q02",
+     "verdict:underdetermined"
+    ],
+    [
+     "q03",
+     "verdict:underdetermined"
+    ],
+    [
+     "q04",
+     "verdict:underdetermined"
+    ],
+    [
+     "q05",
+     "verdict:underdetermined"
+    ],
+    [
+     "q06",
+     "verdict:underdetermined"
+    ]
+   ]
+  },
+  "correct_fit_but_abstains_when_censored": {
+   "n_fail_per_seed": [
+    9,
+    9,
+    9
+   ],
+   "example": [
+    [
+     "q01",
+     "verdict:underdetermined"
+    ],
+    [
+     "q02",
+     "verdict:underdetermined"
+    ],
+    [
+     "q03",
+     "verdict:underdetermined"
+    ],
+    [
+     "q04",
+     "verdict:underdetermined"
+    ],
+    [
+     "q05",
+     "verdict:underdetermined"
+    ],
+    [
+     "q06",
+     "verdict:underdetermined"
+    ]
+   ]
+  },
+  "correct_fit_but_extrapolates_dead_cell": {
+   "n_fail_per_seed": [
+    2,
+    2,
+    2
+   ],
+   "example": [
+    [
+     "q07",
+     "verdict:identified"
+    ],
+    [
+     "q13",
+     "verdict:identified"
+    ]
+   ]
+  },
+  "impute_above_guard": {
+   "n_fail_per_seed": [
+    3,
+    4,
+    3
+   ],
+   "example": [
+    [
+     "q04",
+     0.0351
+    ],
+    [
+     "q05",
+     0.0749
+    ],
+    [
+     "q12",
+     0.0801
+    ]
+   ]
+  },
+  "impute_at_guard": {
+   "n_fail_per_seed": [
+    4,
+    4,
+    4
+   ],
+   "example": [
+    [
+     "q03",
+     0.0553
+    ],
+    [
+     "q04",
+     0.0882
+    ],
+    [
+     "q05",
+     0.0595
+    ],
+    [
+     "q12",
+     0.1165
+    ]
+   ]
+  },
+  "reports_no_censoring": {
+   "n_fail_per_seed": [
+    3,
+    3,
+    3
+   ],
+   "example": [
+    [
+     "r2",
+     0.3906
+    ],
+    [
+     "r3",
+     0.6389
+    ],
+    [
+     "r6",
+     1.0
+    ]
+   ]
+  },
+  "reports_raw_missing_fraction": {
+   "n_fail_per_seed": [
+    5,
+    4,
+    3
+   ],
+   "example": [
+    [
+     "r1",
+     0.1059
+    ],
+    [
+     "r2",
+     0.0669
+    ],
+    [
+     "r3",
+     0.0501
+    ],
+    [
+     "r4",
+     0.2779
+    ],
+    [
+     "r5",
+     0.0467
+    ]
+   ]
+  },
+  "reweight_preemption_only": {
+   "n_fail_per_seed": [
+    3,
+    3,
+    3
+   ],
+   "example": [
+    [
+     "q03",
+     0.0569
+    ],
+    [
+     "q04",
+     0.0905
+    ],
+    [
+     "q12",
+     0.0834
+    ]
+   ]
+  },
+  "survival_rate_ignoring_preemption": {
+   "n_fail_per_seed": [
+    11,
+    11,
+    10
+   ],
+   "example": [
+    [
+     "q01",
+     0.0947
+    ],
+    [
+     "q03",
+     0.2079
+    ],
+    [
+     "q04",
+     0.2627
+    ],
+    [
+     "q05",
+     0.071
+    ],
+    [
+     "q11",
+     0.081
+    ],
+    [
+     "q12",
+     0.1999
+    ]
+   ]
+  },
+  "survival_rate_with_preemption_model": {
+   "n_fail_per_seed": [
+    7,
+    7,
+    5
+   ],
+   "example": [
+    [
+     "q01",
+     0.2013
+    ],
+    [
+     "q02",
+     0.0813
+    ],
+    [
+     "q03",
+     0.1167
+    ],
+    [
+     "q04",
+     0.0536
+    ],
+    [
+     "q05",
+     0.1043
+    ],
+    [
+     "q06",
+     0.1383
+    ]
+   ]
+  }
+ },
+ "candidate_seeds": [
+  7,
+  11,
+  23
+ ],
+ "G_reference_passes": true,
+ "G_alternatives_pass": true,
+ "G_every_candidate_fails": true,
+ "borderline": {
+  "moment_matching_under_heavy_truncation": [
+   0,
+   2,
+   0
+  ]
+ }
+}

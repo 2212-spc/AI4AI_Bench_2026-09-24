@@ -1,0 +1,13 @@
+[task]
+name = "r_retune_s20"
+module = "r_retune"
+seed = 20
+
+[verifier]
+artifacts = ["recipe.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 224
+unit = "credits"

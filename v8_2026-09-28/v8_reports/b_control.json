@@ -1,0 +1,972 @@
+{
+ "family": "b_control",
+ "n_candidates": 60,
+ "n_screened": 60,
+ "n_strategy_gate_clean": 32,
+ "n_strategy_gate_run": 32,
+ "strategy_gate_rejected": {},
+ "admitted": [
+  5,
+  6,
+  9,
+  13,
+  14,
+  19,
+  21,
+  22,
+  24,
+  27,
+  28,
+  29
+ ],
+ "pool_gate": {
+  "n": 12,
+  "modal_culprit": 3,
+  "cap_culprit": 3,
+  "modal_harness_only": 3,
+  "cap_harness_only": 4,
+  "culprits": {
+   "H-3": 3,
+   "H-4": 3,
+   "H-2": 1,
+   "H-1": 3,
+   "H-5": 2
+  },
+  "harness_only_sets": {
+   "H-2,H-4": 3,
+   "H-2,H-5": 1,
+   "H-4,H-5": 1,
+   "H-2,H-3": 3,
+   "H-1,H-2": 1,
+   "H-1,H-4": 2,
+   "H-1,H-3": 1
+  }
+ },
+ "p_ablation": {
+  "5": {
+   "seed": 5,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "right_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_harness_only_is_two_sided": {
+     "strategy": "harness_only_all_movers",
+     "items_declared": true,
+     "protects": [
+      "R3_harness_only"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "6": {
+   "seed": 6,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "right_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_harness_only_is_two_sided": {
+     "strategy": "harness_only_all_movers",
+     "items_declared": true,
+     "protects": [
+      "R3_harness_only"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "9": {
+   "seed": 9,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "right_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_harness_only_is_two_sided": {
+     "strategy": "harness_only_all_movers",
+     "items_declared": true,
+     "protects": [
+      "R3_harness_only"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "13": {
+   "seed": 13,
+   "screen_ok": true,
+   "principles": {
+    "P3_hold_the_ruler_fixed": {
+     "strategy": "coupled_loo",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P3b_effect_needs_a_fixed_ruler": {
+     "strategy": "right_culprit_coupled_effect",
+     "items_declared": true,
+     "protects": [
+      "R2_effect"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ],
+      [
+       "R2_effect"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_model_side_needs_retraining": {
+     "strategy": "rescore_only",
+     "items_declared": true,
+     "protects": [
+      "R1_culprit"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_harness_only_is_two_sided": {
+     "strategy": "harness_only_all_movers",
+     "items_declared": true,
+     "protects": [
+      "R3_harness_only"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ],
+      [
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  }
+ },
+ "p_ablation_ok": true,
+ "item_activity": {
+  "R0_report": {
+   "n": 54,
+   "pass": 42,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.778,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R1_culprit": {
+   "n": 42,
+   "pass": 30,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.714,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R2_effect": {
+   "n": 42,
+   "pass": 18,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.429,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R3_harness_only": {
+   "n": 42,
+   "pass": 18,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.429,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  }
+ },
+ "items_inert": [],
+ "items_broken": [],
+ "search": {
+  "5": {
+   "seed": 5,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "6": {
+   "seed": 6,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "9": {
+   "seed": 9,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "13": {
+   "seed": 13,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "coupled_loo": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.633,
+      0.633,
+      0.633
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    },
+    "rescore_only": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.4,
+      0.4,
+      0.4
+     ],
+     "failed_items": [
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ],
+      [
+       "R1_culprit",
+       "R2_effect",
+       "R3_harness_only"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  }
+ },
+ "search_ok": true,
+ "mutation": {
+  "5": {
+   "seed": 5,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "culprit_label": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_culprit",
+      "failed": [
+       "R1_culprit"
+      ]
+     },
+     "ok": true
+    },
+    "effect_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "effect_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "harness_only_set": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_harness_only",
+      "failed": [
+       "R3_harness_only"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "6": {
+   "seed": 6,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "culprit_label": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_culprit",
+      "failed": [
+       "R1_culprit"
+      ]
+     },
+     "ok": true
+    },
+    "effect_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "effect_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_effect",
+      "failed": [
+       "R2_effect"
+      ]
+     },
+     "ok": true
+    },
+    "harness_only_set": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_harness_only",
+      "failed": [
+       "R3_harness_only"
+      ]
+     },
+     "ok": true
+    }
+   }
+  }
+ },
+ "mutation_ok": true,
+ "mutation_checked": true,
+ "ok": true
+}

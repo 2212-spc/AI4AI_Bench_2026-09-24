@@ -1,0 +1,108 @@
+{
+ "pass": false,
+ "score": 0.6667,
+ "items": {
+  "R0_recipe": {
+   "ok": true,
+   "detail": "recipe.json is well-formed"
+  },
+  "R1_recipe": {
+   "ok": false,
+   "detail": "expected final val loss of your recipe at the new setup exceeds the best achievable by 0.00210 (allowed 0.0006): lr part 0.00143, lr*wd part 0.00067.  Best recipe lr=0.00211 wd=0.181; yours lr=0.00186 wd=0.22 (log2 offsets: lr -0.18, lr*wd +0.10)."
+  },
+  "R2_loss": {
+   "ok": true,
+   "detail": "expected final val loss of YOUR recipe at the new setup is 2.72450; you reported [2.72150, 2.73250] (covers, width 0.01100, cap 0.0110)."
+  }
+ },
+ "diag": {
+  "variant": "batch8x",
+  "penalty": 0.0021,
+  "pen_lr": 0.001433,
+  "pen_lrwd": 0.000666,
+  "du_log2": -0.18,
+  "dw_log2": 0.097,
+  "wd_changed": true,
+  "closest_decoy": "lr_mixed__w_star",
+  "closest_decoy_dist": 0.141,
+  "lr_offset_vs_shortcuts": {
+   "did4": 0.702,
+   "did2": 0.231,
+   "trend": -0.444,
+   "mixed": 0.136,
+   "near2": -0.268
+  },
+  "interval_centre_minus_truth": 0.0025,
+  "n_runs": 54,
+  "n_full_length": 2,
+  "shortest_octaves_below": -6.0,
+  "wd_varied_at_fixed_lr_max_octave": 0.0,
+  "lr_varied_new_batch_max_octave": -2.0,
+  "spent": 377.0
+ },
+ "ref": {
+  "variant": "batch8x",
+  "u_star": -8.88998,
+  "v_star": -2.462,
+  "w_star": -11.35199,
+  "lr_star": 0.00211,
+  "wd_star": 0.181,
+  "best_loss": 2.7224,
+  "decoy_penalty": {
+   "lr_rho0__wd_keep": 0.334236,
+   "lr_rho0__lrwd_keep": 0.334236,
+   "lr_rho0__steps_pow_half": 0.071927,
+   "lr_rho0__steps_pow_one": 0.127723,
+   "lr_rho0__batch1_tokens_half": 0.127723,
+   "lr_rho0.5__wd_keep": 0.023121,
+   "lr_rho0.5__lrwd_keep": 0.28543,
+   "lr_rho0.5__steps_pow_half": 0.023121,
+   "lr_rho0.5__steps_pow_one": 0.078916,
+   "lr_rho0.5__batch1_tokens_half": 0.078916,
+   "lr_rho1__wd_keep": 0.22811,
+   "lr_rho1__lrwd_keep": 0.434624,
+   "lr_rho1__steps_pow_half": 0.172315,
+   "lr_rho1__steps_pow_one": 0.22811,
+   "lr_rho1__batch1_tokens_half": 0.22811,
+   "lr_measured__wd_keep": 0.053156,
+   "lr_measured__lrwd_keep": 0.279068,
+   "lr_measured__steps_pow_half": 0.016759,
+   "lr_measured__steps_pow_one": 0.072554,
+   "lr_measured__batch1_tokens_half": 0.072554,
+   "lr_rho0_tok0__w_star": 0.055168,
+   "lr_rho0_tok0.33__w_star": 0.055168,
+   "lr_rho0_tok0.5__w_star": 0.055168,
+   "lr_rho0.5_tok0__w_star": 0.006362,
+   "lr_rho0.5_tok0.33__w_star": 0.006362,
+   "lr_rho0.5_tok0.5__w_star": 0.006362,
+   "lr_rho1_tok0__w_star": 0.155556,
+   "lr_rho1_tok0.33__w_star": 0.155556,
+   "lr_rho1_tok0.5__w_star": 0.155556,
+   "proxy_optimum": 0.644114,
+   "lr_did4__w_star": 0.034195,
+   "lr_trend__w_star": 0.003078,
+   "lr_mixed__w_star": 0.004396
+  },
+  "ofat_penalty": 0.020393,
+  "carry_over_penalty": 0.334236,
+  "near2_lr_penalty": 0.000343,
+  "did2_lr_penalty": 0.007427,
+  "lr_offsets_log2": {
+   "did4": -0.882,
+   "did2": -0.411,
+   "trend": 0.264,
+   "mixed": -0.316,
+   "near2": 0.088
+  }
+ },
+ "run": "rc18__fable__r1",
+ "task": "r_crit_s18",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 54,
+ "budget_spent_frac": 0.982,
+ "status": "done",
+ "agent_min": 17.6,
+ "api_errors": 0,
+ "truncated": false
+}

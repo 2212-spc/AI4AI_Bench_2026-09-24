@@ -1,0 +1,19 @@
+[task]
+id = "t07-checkpoint-ledger-ws4"
+blueprint = "t07-checkpoint-ledger"
+world_seed = 4
+title = "Scaling law from intermediate checkpoints, carried to a production run that may be stopped early"
+cards = ["C1", "C11", "C10"]
+obstacles = ["O7", "O1", "O5", "O9"]
+claim = "recognise that intermediate checkpoints and finished runs are different measurements, infer how the gap depends on the schedule, design unbiased measurements within a tight budget, and carry both the scaling law and the schedule effect to a production run with an unknown stopping point"
+n_items = 5
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+app_dir = "environment/app"
+lab_service = "scalelab.lab_server (holds hidden/world.json; the agent reaches it only through bin/lab)"
+
+[verifier]
+command = "python3 tests/grade.py <answers.json>"

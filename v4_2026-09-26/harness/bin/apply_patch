@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""Minimal implementation of the Codex apply_patch format.
+Usage: apply_patch '<patch text>'   or   apply_patch < patchfile"""
+import sys, os
+
+def main():
+    text = sys.argv[1] if len(sys.argv) > 1 else sys.stdin.read()
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines) and lines[i].strip() != "*** Begin Patch":
+        i += 1
+    if i == len(lines):
+        print("error: missing '*** Begin Patch'"); sys.exit(1)
+    i += 1
+    done = []
+    while i < len(lines):
+        ln = lines[i]
+        if ln.strip() == "*** End Patch":
+            break
+        if ln.startswith("*** Add File: "):
+            path = ln[len("*** Add File: "):].strip(); i += 1; body = []
+            while i < len(lines) and not lines[i].startswith("*** "):
+                body.append(lines[i][1:] if lines[i].startswith("+") else lines[i]); i += 1
+            os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+            open(path, "w").write("\n".join(body) + "\n"); done.append("A " + path); continue
+        if ln.startswith("*** Delete File: "):
+            path = ln[len("*** Delete File: "):].strip(); os.remove(path); done.append("D " + path); i += 1; continue
+        if ln.startswith("*** Update File: "):
+            path = ln[len("*** Update File: "):].strip(); i += 1
+            move_to = None
+            if i < len(lines) and lines[i].startswith("*** Move to: "):
+                move_to = lines[i][len("*** Move to: "):].strip(); i += 1
+            src = open(path).read()
+            had_nl = src.endswith("\n")
+            flines = src.split("\n")
+            if had_nl: flines = flines[:-1]
+            hunks = []; cur = None
+            while i < len(lines) and not lines[i].startswith("*** "):
+                l = lines[i]
+                if l.startswith("@@"):
+                    cur = {"old": [], "new": []}; hunks.append(cur)
+                else:
+                    if cur is None:
+                        cur = {"old": [], "new": []}; hunks.append(cur)
+                    if l.startswith("-"): cur["old"].append(l[1:])
+                    elif l.startswith("+"): cur["new"].append(l[1:])
+                    else:
+                        c = l[1:] if l.startswith(" ") else l
+                        cur["old"].append(c); cur["new"].append(c)
+                i += 1
+            pos = 0
+            for h in hunks:
+                old, new = h["old"], h["new"]
+                if not old:
+                    flines[len(flines):] = new; continue
+                found = -1
+                for norm in (lambda s: s, lambda s: s.rstrip(), lambda s: s.strip()):
+                    o = [norm(x) for x in old]
+                    for j in range(pos, len(flines) - len(old) + 1):
+                        if [norm(x) for x in flines[j:j + len(old)]] == o:
+                            found = j; break
+                    if found < 0:
+                        for j in range(0, len(flines) - len(old) + 1):
+                            if [norm(x) for x in flines[j:j + len(old)]] == o:
+                                found = j; break
+                    if found >= 0: break
+                if found < 0:
+                    print("error: hunk context not found in %s:\n%s" % (path, "\n".join(old))); sys.exit(1)
+                flines[found:found + len(old)] = new
+                pos = found + len(new)
+            out = "\n".join(flines) + ("\n" if had_nl else "")
+            dest = move_to or path
+            open(dest, "w").write(out)
+            if move_to: os.remove(path)
+            done.append("M " + dest); continue
+        i += 1
+    print("Success. Updated the following files:\n" + "\n".join(done))
+
+main()

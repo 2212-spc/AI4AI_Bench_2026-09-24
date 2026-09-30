@@ -1,0 +1,65 @@
+{
+ "pass": false,
+ "score": 0.5229,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.6983 (majority@6 0.4792, reference 0.8983) -> s=0.523, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.685,
+   0.69,
+   0.72
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.5979,
+    "geometry": 0.6449,
+    "combinatorics": 0.7913,
+    "number_theory": 0.6914
+   },
+   {
+    "algebra": 0.6147,
+    "geometry": 0.6782,
+    "combinatorics": 0.7885,
+    "number_theory": 0.68
+   },
+   {
+    "algebra": 0.6176,
+    "geometry": 0.7011,
+    "combinatorics": 0.81,
+    "number_theory": 0.7477
+   }
+  ],
+  "n_dev_samples": 5900,
+  "n_evaluate": 4
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__sonnet5__r1",
+ "task": "k4-tts-w1",
+ "model": "claude-sonnet-5",
+ "hint": 0,
+ "lab_calls": 17,
+ "budget_spent_frac": 0.99,
+ "status": "done",
+ "agent_min": 30.1,
+ "api_errors": 0,
+ "truncated": false
+}

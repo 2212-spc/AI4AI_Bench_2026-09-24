@@ -1,0 +1,13 @@
+[task]
+name = "k3-edge-v1"
+module = "k3_edge"
+seed = 19
+
+[verifier]
+artifacts = ["config.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 6e+10
+unit = "n^2*steps"

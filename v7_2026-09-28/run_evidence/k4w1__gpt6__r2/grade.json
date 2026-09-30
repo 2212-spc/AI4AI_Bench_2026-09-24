@@ -1,0 +1,65 @@
+{
+ "pass": true,
+ "score": 1.1829,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "test accuracy 0.9750 (majority@6 0.4792, reference 0.8983) -> s=1.183, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.965,
+   0.975,
+   0.985
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.9485,
+    "geometry": 0.9626,
+    "combinatorics": 0.9826,
+    "number_theory": 0.963
+   },
+   {
+    "algebra": 0.9817,
+    "geometry": 0.931,
+    "combinatorics": 1.0,
+    "number_theory": 0.98
+   },
+   {
+    "algebra": 1.0,
+    "geometry": 0.9885,
+    "combinatorics": 0.97,
+    "number_theory": 0.982
+   }
+  ],
+  "n_dev_samples": 5200,
+  "n_evaluate": 1
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__gpt6__r2",
+ "task": "k4-tts-w1",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 7,
+ "budget_spent_frac": 0.62,
+ "status": "done",
+ "agent_min": 11.1,
+ "api_errors": 0,
+ "truncated": false
+}

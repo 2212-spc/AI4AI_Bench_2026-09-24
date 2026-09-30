@@ -1,0 +1,13 @@
+[task]
+name = "b_control_min_s14"
+module = "b_control_min"
+seed = 14
+
+[verifier]
+artifacts = ["report.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 120
+unit = "credits"

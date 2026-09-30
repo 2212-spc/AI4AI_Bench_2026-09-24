@@ -1,0 +1,918 @@
+{
+ "seed": 41,
+ "screen_ok": true,
+ "screen": {
+  "gap": 0.0375,
+  "s_recite": 0.201,
+  "s_replica": 0.972,
+  "L_opt": 1.240836121135447,
+  "L_myopic": 1.2783568348368215,
+  "L_recite": 1.2708234537982446
+ },
+ "runs": [
+  {
+   "pass": true,
+   "score": 0.9993,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": true,
+     "detail": "regret 0.0000 (tol 0.0023), s=0.999"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2409, interval [1.2147, 1.2647]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": -0.0011445031514241144,
+    "target_epochs": {
+     "web": 0.04,
+     "code": 6.4,
+     "math": 5.06,
+     "papers": 3.37
+    },
+    "mixture": {
+     "web": 0.25,
+     "code": 0.2,
+     "math": 0.21,
+     "papers": 0.34
+    },
+    "n_train": 51,
+    "n_pool_runs": 51,
+    "max_epochs_explored": 16.429
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "oracle",
+   "salt": "gate-41-0",
+   "expect": "pass",
+   "error": null,
+   "spent_frac": 0.974,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": 0.9819,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": true,
+     "detail": "regret 0.0007 (tol 0.0023), s=0.982"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "true target loss 1.2415, interval [1.2429, 1.2929]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.026430637269191593,
+    "target_epochs": {
+     "web": 0.03,
+     "code": 6.72,
+     "math": 4.58,
+     "papers": 4.26
+    },
+    "mixture": {
+     "web": 0.17,
+     "code": 0.21,
+     "math": 0.19,
+     "papers": 0.43
+    },
+    "n_train": 44,
+    "n_pool_runs": 44,
+    "max_epochs_explored": 14.596
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "oracle",
+   "salt": "gate-41-1",
+   "expect": "pass",
+   "error": null,
+   "spent_frac": 0.97,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": 0.7804,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0082 (tol 0.0023), s=0.780"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2491, interval [1.2366, 1.2776]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.008042158087723461,
+    "target_epochs": {
+     "web": 0.09,
+     "code": 8.64,
+     "math": 4.58,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.54,
+     "code": 0.27,
+     "math": 0.19,
+     "papers": 0.0
+    },
+    "n_train": 53,
+    "n_pool_runs": 53,
+    "max_epochs_explored": 14.274
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "oracle_rsm",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.708,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": 0.7975,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0076 (tol 0.0023), s=0.797"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2484, interval [1.2004, 1.2504]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": -0.023058656934752175,
+    "target_epochs": {
+     "web": 0.1,
+     "code": 6.72,
+     "math": 4.58,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.6,
+     "code": 0.21,
+     "math": 0.19,
+     "papers": 0.0
+    },
+    "n_train": 53,
+    "n_pool_runs": 53,
+    "max_epochs_explored": 10.932
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "oracle_rsm",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.708,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": -0.001,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0376 (tol 0.0023), s=-0.001"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "true target loss 1.2784, interval [1.1556, 1.2056]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": -0.09780170739482896,
+    "target_epochs": {
+     "web": 0.0,
+     "code": 22.72,
+     "math": 6.99,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.0,
+     "code": 0.71,
+     "math": 0.29,
+     "papers": 0.0
+    },
+    "n_train": 53,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0.909
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "myopic",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.708,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": 0.0092,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0372 (tol 0.0023), s=0.009"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "true target loss 1.2780, interval [1.1228, 1.1728]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": -0.13025994611668223,
+    "target_epochs": {
+     "web": 0.0,
+     "code": 21.76,
+     "math": 7.71,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.0,
+     "code": 0.68,
+     "math": 0.32,
+     "papers": 0.0
+    },
+    "n_train": 53,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0.87
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "myopic",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.708,
+   "sec": 0.2
+  },
+  {
+   "pass": false,
+   "score": 0.2008,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0300 (tol 0.0023), s=0.201"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2708, interval [1.2608, 1.2808]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.0,
+    "target_epochs": {
+     "web": 0.01,
+     "code": 11.84,
+     "math": 14.16,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.0425,
+     "code": 0.37,
+     "math": 0.5875,
+     "papers": 0.0
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "recite",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": 0.2008,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0300 (tol 0.0023), s=0.201"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2708, interval [1.2608, 1.2808]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.0,
+    "target_epochs": {
+     "web": 0.01,
+     "code": 11.84,
+     "math": 14.16,
+     "papers": 0.0
+    },
+    "mixture": {
+     "web": 0.0425,
+     "code": 0.37,
+     "math": 0.5875,
+     "papers": 0.0
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "recite",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": -1.5368,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0952 (tol 0.0023), s=-1.537"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.3360, interval [1.3260, 1.3460]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.0,
+    "target_epochs": {
+     "web": 0.16,
+     "code": 0.16,
+     "math": 0.16,
+     "papers": 0.16
+    },
+    "mixture": {
+     "web": 0.9719,
+     "code": 0.0051,
+     "math": 0.0067,
+     "papers": 0.0163
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "natural",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": -1.5368,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0952 (tol 0.0023), s=-1.537"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.3360, interval [1.3260, 1.3460]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.0,
+    "target_epochs": {
+     "web": 0.16,
+     "code": 0.16,
+     "math": 0.16,
+     "papers": 0.16
+    },
+    "mixture": {
+     "web": 0.9719,
+     "code": 0.0051,
+     "math": 0.0067,
+     "papers": 0.0163
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "natural",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": 0.5847,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0156 (tol 0.0023), s=0.585"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2564, interval [1.2259, 1.2759]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": -0.005474248095025835,
+    "target_epochs": {
+     "web": 0.08,
+     "code": 11.2,
+     "math": 1.93,
+     "papers": 1.19
+    },
+    "mixture": {
+     "web": 0.45,
+     "code": 0.35,
+     "math": 0.08,
+     "papers": 0.12
+    },
+    "n_train": 13,
+    "n_pool_runs": 13,
+    "max_epochs_explored": 11.199
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "prior_mixture",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.468,
+   "sec": 0.1
+  },
+  {
+   "pass": false,
+   "score": 0.5847,
+   "items": {
+    "R0_artifact": {
+     "ok": true,
+     "detail": "ok"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "regret 0.0156 (tol 0.0023), s=0.585"
+    },
+    "R2_forecast_covers": {
+     "ok": true,
+     "detail": "true target loss 1.2564, interval [1.2358, 1.2858]"
+    }
+   },
+   "diag": {
+    "forecast_center_err": 0.00441488559261205,
+    "target_epochs": {
+     "web": 0.08,
+     "code": 11.2,
+     "math": 1.93,
+     "papers": 1.19
+    },
+    "mixture": {
+     "web": 0.45,
+     "code": 0.35,
+     "math": 0.08,
+     "papers": 0.12
+    },
+    "n_train": 13,
+    "n_pool_runs": 13,
+    "max_epochs_explored": 11.199
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "prior_mixture",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.468,
+   "sec": 0.1
+  },
+  {
+   "pass": false,
+   "score": 1.0,
+   "items": {
+    "R0_artifact": {
+     "ok": false,
+     "detail": "predicted_loss interval width 10.0000 > 0.050"
+    },
+    "R1_mixture_quality": {
+     "ok": true,
+     "detail": "regret 0.0000 (tol 0.0023), s=1.000"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "no valid interval"
+    }
+   },
+   "diag": {
+    "target_epochs": {
+     "web": 0.05,
+     "code": 6.08,
+     "math": 5.0,
+     "papers": 3.3
+    },
+    "mixture": {
+     "web": 0.27,
+     "code": 0.19,
+     "math": 0.2075,
+     "papers": 0.3325
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "cheat_wide",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": 1.0,
+   "items": {
+    "R0_artifact": {
+     "ok": false,
+     "detail": "predicted_loss interval width 10.0000 > 0.050"
+    },
+    "R1_mixture_quality": {
+     "ok": true,
+     "detail": "regret 0.0000 (tol 0.0023), s=1.000"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "no valid interval"
+    }
+   },
+   "diag": {
+    "target_epochs": {
+     "web": 0.05,
+     "code": 6.08,
+     "math": 5.0,
+     "papers": 3.3
+    },
+    "mixture": {
+     "web": 0.27,
+     "code": 0.19,
+     "math": 0.2075,
+     "papers": 0.3325
+    },
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "cheat_wide",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": null,
+   "items": {
+    "R0_artifact": {
+     "ok": false,
+     "detail": "missing mixture.json"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "no valid mixture"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "no valid mixture"
+    }
+   },
+   "diag": {
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "nop",
+   "salt": "gate-41-0",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  },
+  {
+   "pass": false,
+   "score": null,
+   "items": {
+    "R0_artifact": {
+     "ok": false,
+     "detail": "missing mixture.json"
+    },
+    "R1_mixture_quality": {
+     "ok": false,
+     "detail": "no valid mixture"
+    },
+    "R2_forecast_covers": {
+     "ok": false,
+     "detail": "no valid mixture"
+    }
+   },
+   "diag": {
+    "n_train": 0,
+    "n_pool_runs": 0,
+    "max_epochs_explored": 0
+   },
+   "ref": {
+    "L_opt": 1.240836121135447,
+    "r_opt": [
+     0.27,
+     0.19,
+     0.2075,
+     0.3325
+    ],
+    "L_myopic": 1.2783568348368215,
+    "r_myopic": [
+     0.0,
+     0.7075,
+     0.2925,
+     0.0
+    ]
+   },
+   "strategy": "nop",
+   "salt": "gate-41-1",
+   "expect": "fail",
+   "error": null,
+   "spent_frac": 0.0,
+   "sec": 0.0
+  }
+ ],
+ "bad": [
+  "oracle"
+ ],
+ "accept": false
+}

@@ -1,0 +1,95 @@
+{
+ "n_claims": 6,
+ "key": {
+  "V1": "violated",
+  "V2": "violated",
+  "V3": "violated",
+  "V4": "holds",
+  "V5": "holds",
+  "V6": "violated"
+ },
+ "G1_reference_witnesses_confirmed": true,
+ "reference_witnesses": {
+  "V1": {
+   "confirmed": true,
+   "check": {
+    "jaccard": 0.9107,
+    "kept": [
+     0,
+     1
+    ]
+   }
+  },
+  "V2": {
+   "confirmed": true,
+   "check": {
+    "n_surviving": 1,
+    "leaking_survivors": [
+     0
+    ]
+   }
+  },
+  "V3": {
+   "confirmed": true,
+   "check": {
+    "n_indices_not_once": 1,
+    "example": [
+     9
+    ],
+    "out_of_range": []
+   }
+  },
+  "V6": {
+   "confirmed": true,
+   "check": {
+    "n_returned": 64,
+    "n_indices_not_once": 36,
+    "example": [
+     64,
+     65,
+     66,
+     67,
+     68
+    ]
+   }
+  }
+ },
+ "G2_holding_claims_survive_fuzz": true,
+ "n_fuzz_per_claim": 4000,
+ "fuzz_violations": [],
+ "G3_random_search_fails_on_V1": true,
+ "n_random_pairs": 1200,
+ "random_search_hits": 0,
+ "V1_analytic_escape_probability_at_jaccard_0.9": 2.8844141356761986e-12,
+ "G4_out_of_scope_witnesses_rejected": true,
+ "scope_probes": [
+  {
+   "witness": "V1_two_short_identical_docs",
+   "rejected": true,
+   "reason": "each document needs 300..4000 whitespace tokens, got 51"
+  },
+  {
+   "witness": "V3_drop_last_true",
+   "rejected": true,
+   "reason": "the claim is scoped to drop_last=False"
+  },
+  {
+   "witness": "V3_world_size_zero",
+   "rejected": true,
+   "reason": "world_size must be in [1, 16]"
+  },
+  {
+   "witness": "V6_n_zero",
+   "rejected": true,
+   "reason": "n must be in [1, 10^6]"
+  },
+  {
+   "witness": "V1_low_jaccard",
+   "rejected": true,
+   "reason": "jaccard of the 5-token-window sets is 0.0000, below 0.80"
+  }
+ ],
+ "G5_blanket_answer_guess_rate": 0.015625,
+ "v1_construction_seconds": 0.07,
+ "accepted": true
+}

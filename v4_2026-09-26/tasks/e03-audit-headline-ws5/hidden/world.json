@@ -1,0 +1,191 @@
+{
+ "params": {
+  "n_items": 1500,
+  "n_slices": 3,
+  "bank_seed": 634460,
+  "det_fast_cost": 0.03,
+  "det_scan_cost": 1.2,
+  "a_mu": 1.2280088571493322,
+  "a_sd": 0.539143521500433,
+  "b_mu": 0.22503217973688672,
+  "b_sd": 1.1930940165685802,
+  "det_a": 0.7005495403832447,
+  "det_b": -3.120845850657842,
+  "det_s": 0.8349285770346244,
+  "dup_frac": 0.3372451831139985,
+  "dup_lam": 7.740735510810911,
+  "sig_call": 0.19886742472934463,
+  "slice_b": [
+   -0.752053754934448,
+   0.7449345707882736,
+   0.0071191841461743744
+  ],
+  "fmt_ext": {
+   "mc_letter": {
+    "base": 0.12247933045373141,
+    "by_slice": [
+     -0.026677622099561274,
+     0.03184044791244569,
+     -0.0051628258128844084
+    ]
+   },
+   "mc_cloze": {
+    "base": 0.09798319220451814,
+    "by_slice": [
+     0.030834757944471623,
+     0.026515874311930518,
+     -0.057350632256402155
+    ]
+   }
+  },
+  "models": {
+   "M_new": {
+    "theta": 0.08417195057327162,
+    "kappa": 0.9525613428861011,
+    "ext": 0.10833010125258719,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": -0.13944073320903655
+    },
+    "slice_off": [
+     -0.3487994788511991,
+     0.3519549429173389,
+     -0.003155464066139823
+    ]
+   },
+   "M_ref": {
+    "theta": -0.10277672505692984,
+    "kappa": 0.0,
+    "ext": 0.0,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": -0.33555758477454367
+    },
+    "slice_off": [
+     0.3684234643841983,
+     -0.039402302973891606,
+     -0.3290211614103067
+    ]
+   }
+  },
+  "w0_rel": 0.22593941809076226,
+  "defect": "D2_denominator_scored_only"
+ },
+ "spec": {
+  "lab": "evallab",
+  "knobs": {
+   "svc": {
+    "type": "choice",
+    "values": [
+     "score",
+     "corpus"
+    ],
+    "default": "score"
+   },
+   "model": {
+    "type": "choice",
+    "values": [
+     "M_new",
+     "M_ref"
+    ],
+    "default": "M_new"
+   },
+   "split": {
+    "type": "choice",
+    "values": [
+     "all",
+     "s0",
+     "s1",
+     "s2"
+    ],
+    "default": "all"
+   },
+   "fmt": {
+    "type": "choice",
+    "values": [
+     "mc_letter",
+     "mc_cloze"
+    ],
+    "default": "mc_letter"
+   },
+   "n": {
+    "type": "float",
+    "min": 10,
+    "max": 1500,
+    "int": true
+   },
+   "reps": {
+    "type": "float",
+    "min": 1,
+    "max": 400,
+    "default": 1,
+    "int": true
+   },
+   "detail": {
+    "type": "choice",
+    "values": [
+     0,
+     1
+    ],
+    "default": 0
+   },
+   "mode": {
+    "type": "choice",
+    "values": [
+     "fast",
+     "scan"
+    ],
+    "default": "fast"
+   }
+  },
+  "n_items": 1500,
+  "n_slices": 3,
+  "models": {
+   "M_new": {
+    "theta": 0.08417195057327162,
+    "kappa": 0.9525613428861011,
+    "ext": 0.10833010125258719,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": -0.13944073320903655
+    },
+    "slice_off": [
+     -0.3487994788511991,
+     0.3519549429173389,
+     -0.003155464066139823
+    ]
+   },
+   "M_ref": {
+    "theta": -0.10277672505692984,
+    "kappa": 0.0,
+    "ext": 0.0,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": -0.33555758477454367
+    },
+    "slice_off": [
+     0.3684234643841983,
+     -0.039402302973891606,
+     -0.3290211614103067
+    ]
+   }
+  },
+  "caps": {
+   "run_cost": 4000.0,
+   "total_cost": 6000.0,
+   "max_runs": 12
+  }
+ },
+ "salt": "220c7201d9a61cf6",
+ "blueprint": "e03-audit-headline",
+ "module": "e03_audit_headline",
+ "world_seed": 5
+}

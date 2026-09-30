@@ -1,0 +1,56 @@
+{
+ "q1": {
+  "lo": 41.0,
+  "hi": 41.0
+ },
+ "q2": {
+  "lo": 0.3589819429817016,
+  "hi": 0.3589819429817016
+ },
+ "q3": {
+  "runs": [
+   {
+    "svc": "gold",
+    "method": "bon",
+    "kl": 1.0,
+    "steps": 400,
+    "n": 41,
+    "len_pen": 0.0,
+    "gold_n": 5498,
+    "label": "b"
+   },
+   {
+    "svc": "gold",
+    "method": "ppo",
+    "kl": 6.442347828087546,
+    "steps": 470,
+    "n": 1,
+    "len_pen": 0.0,
+    "gold_n": 5498,
+    "label": "p"
+   }
+  ],
+  "rule": {
+   "expr": "b.gold_win_rate - p.gold_win_rate",
+   "cuts": [
+    [
+     ">",
+     0.1,
+     "bon"
+    ],
+    [
+     "<",
+     -0.1,
+     "ppo"
+    ],
+    [
+     "else",
+     "undetermined"
+    ]
+   ]
+  }
+ },
+ "q4": {
+  "choice": "bon_b"
+ }
+}

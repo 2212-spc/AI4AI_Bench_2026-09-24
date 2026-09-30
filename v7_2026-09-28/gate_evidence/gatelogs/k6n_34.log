@@ -1,0 +1,15 @@
+seed 34 screen True {"gain_over_const": 0.1319, "crit_excess": 0.3063, "open_excess": 0.2663, "B_const": 820.035, "uj": 0.65}
+  oracle       expect=pass pass=4/4 OK  | P s=1.0 ; P s=1.0 ; P s=1.0 ; P s=1.0 
+  memo_dev     expect=fail pass=1/4 BAD | F s=0.807 R1_time; F s=0.7088 R1_time; P s=0.9101 ; F s=0.7024 R1_time
+  myopic       expect=pass pass=4/4 OK  | P s=0.988 ; P s=0.9097 ; P s=0.9608 ; P s=0.9456 
+  bigdither    expect=fail pass=0/4 OK  | F s=0.6916 R1_time; F s=0.7566 R1_time; F s=0.7355 R1_time; F s=0.7642 R1_time
+  noprior      expect=fail pass=1/4 BAD | F s=0.8564 R1_time; P s=0.9016 ; F s=0.8674 R1_time; F s=0.8787 R1_time
+  latedetect   expect=fail pass=0/4 OK  | F s=0.5707 R1_time; F s=0.3108 R1_time; F s=0.3557 R1_time; F s=0.7724 R1_time
+  open         expect=fail pass=0/2 OK  | F s=-0.8849 R1_time; F s=-2.377 R1_time
+  crit         expect=fail pass=0/2 OK  | F s=-0.669 R1_time; F s=-1.323 R1_time
+  const_best   expect=fail pass=0/2 OK  | F s=0.0 R1_time; F s=0.0 R1_time
+  const_hw     expect=fail pass=0/2 OK  | F s=-62.5595 R1_time; F s=-98.6809 R1_time
+  crash        expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  cheat_probe  expect=fail pass=0/2 OK  | F s=-62.5596 R1_time; F s=-98.681 R1_time
+REJECT ['memo_dev', 'noprior']

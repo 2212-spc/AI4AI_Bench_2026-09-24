@@ -1,0 +1,13 @@
+[task]
+name = "k8-post-c3"
+module = "k8_post"
+seed = 78
+
+[verifier]
+artifacts = ["report.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 20
+unit = "re-runs"

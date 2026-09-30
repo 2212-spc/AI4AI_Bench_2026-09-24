@@ -1,0 +1,13 @@
+seed 34 screen True {"gain_over_const": 0.1319, "crit_excess": 0.3063, "open_excess": 0.2663, "B_const": 820.035}
+  oracle       expect=pass pass=4/4 OK  | P s=1.0 ; P s=1.0 ; P s=1.0 ; P s=1.0 
+  memo_dev     expect=fail pass=2/2 BAD | P s=1.1624 ; P s=1.0589 
+  myopic       expect=fail pass=0/4 OK  | F s=0.7094 R1_time; F s=0.7204 R1_time; F s=0.6881 R1_time; F s=0.7102 R1_time
+  bigdither    expect=fail pass=0/4 OK  | F s=0.6922 R1_time; F s=0.7057 R1_time; F s=0.7537 R1_time; F s=0.6137 R1_time
+  open         expect=fail pass=0/2 OK  | F s=-1.6578 R1_time; F s=-2.5945 R1_time
+  crit         expect=fail pass=0/2 OK  | F s=-1.3443 R1_time; F s=-1.8914 R1_time
+  const_best   expect=fail pass=0/2 OK  | F s=0.0 R1_time; F s=0.0 R1_time
+  const_hw     expect=fail pass=0/2 OK  | F s=-89.3377 R1_time; F s=-108.7308 R1_time
+  crash        expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  cheat_probe  expect=fail pass=0/2 OK  | F s=-89.3378 R1_time; F s=-108.7309 R1_time
+REJECT ['memo_dev']

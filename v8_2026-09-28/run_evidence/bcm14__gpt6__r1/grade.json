@@ -1,0 +1,88 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_report": {
+   "ok": true,
+   "detail": "report.json is well-formed"
+  },
+  "R1_culprit": {
+   "ok": true,
+   "detail": "reverting `H-4` raises the external-suite score by +2.644; the best single reversion is `H-4` at +2.644.  Full table (true external gain from reverting each alone): H-1 -0.003, H-2 -0.044, H-3 +0.800, H-4 +2.644, H-5 -0.935"
+  },
+  "R2_effect": {
+   "ok": true,
+   "detail": "the true external-suite gain from reverting YOUR named change `H-4` is +2.644; you reported [+2.550, +2.950] (covers, width 0.400, cap 0.45).  The in-house default (own-manifest) leave-one-out design would have estimated +2.147 for it."
+  }
+ },
+ "diag": {
+  "named": "H-4",
+  "true_culprit": "H-4",
+  "coupled_culprit": "H-1",
+  "rescore_culprit": "H-1",
+  "named_the_coupled_answer": false,
+  "named_the_rescore_answer": false,
+  "effect_width": 0.4,
+  "effect_centre_minus_coupled": 0.6031,
+  "n_train": 5,
+  "n_score": 5,
+  "n_ext": 2,
+  "n_score_explicit_harness": 5,
+  "distinct_explicit_configs": 1,
+  "configs_with_retrained_vs_other_ckpt": 1,
+  "spent": 120.0
+ },
+ "ref": {
+  "revert_gain": {
+   "H-1": -0.0031,
+   "H-2": -0.044,
+   "H-3": 0.8005,
+   "H-4": 2.6436,
+   "H-5": -0.9351
+  },
+  "coupled_estimate": {
+   "H-1": 2.7785,
+   "H-2": 1.4951,
+   "H-3": 1.0253,
+   "H-4": 2.1469,
+   "H-5": -0.9693
+  },
+  "rescore_estimate": {
+   "H-1": 2.7816,
+   "H-2": 1.5391,
+   "H-3": 0.2248,
+   "H-4": -0.4967,
+   "H-5": -0.0342
+  },
+  "culprit": "H-4",
+  "culprit_gain": 2.6436,
+  "runner_up": "H-3",
+  "margin": 1.8431,
+  "harness_only": [
+   "H-1",
+   "H-2"
+  ],
+  "coupled_culprit": "H-1",
+  "rescore_culprit": "H-1",
+  "total_regression": -2.4619,
+  "q_release": 57.4461,
+  "q_previous": 59.908,
+  "roles": {
+   "H-1": "loud_ruler",
+   "H-2": "quiet_ruler",
+   "H-3": "small_mover",
+   "H-4": "culprit",
+   "H-5": "helpful"
+  }
+ },
+ "run": "bcm14__gpt6__r1",
+ "task": "b_control_min_s14",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 12,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 15.9,
+ "api_errors": 3,
+ "truncated": false
+}

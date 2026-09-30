@@ -1,0 +1,1369 @@
+{
+ "n": 20,
+ "reps": 300,
+ "n_ok": 20,
+ "decisions": {
+  "SHIP": 7,
+  "HOLD": 13
+ },
+ "aggregate": {
+  "judge_only": {
+   "pass_min": 0.0,
+   "pass_mean": 0.0,
+   "pass_max": 0.0,
+   "bias_q2_mean": 0.1231,
+   "bias_q2_min": 0.0733,
+   "bias_q2_max": 0.2117
+  },
+  "review_all": {
+   "pass_min": 0.0,
+   "pass_mean": 0.0,
+   "pass_max": 0.0,
+   "bias_q2_mean": 0.1016,
+   "bias_q2_min": 0.0683,
+   "bias_q2_max": 0.1517
+  },
+  "crowd5_majority": {
+   "pass_min": 0.0,
+   "pass_mean": 0.0,
+   "pass_max": 0.0,
+   "bias_q2_mean": 0.1013,
+   "bias_q2_min": 0.0647,
+   "bias_q2_max": 0.1643
+  },
+  "judge_corrected_by_review": {
+   "pass_min": 0.0,
+   "pass_mean": 0.0,
+   "pass_max": 0.0,
+   "bias_q2_mean": 0.1017,
+   "bias_q2_min": 0.0682,
+   "bias_q2_max": 0.1519
+  },
+  "info_ppi_random": {
+   "pass_min": 0.32,
+   "pass_mean": 0.4168,
+   "pass_max": 0.58,
+   "bias_q2_mean": -0.0003,
+   "bias_q2_min": -0.0044,
+   "bias_q2_max": 0.0021
+  },
+  "info_ppi_random_B_only": {
+   "pass_min": 0.56,
+   "pass_mean": 0.664,
+   "pass_max": 0.79,
+   "bias_q2_mean": 0.0028,
+   "bias_q2_min": -0.0024,
+   "bias_q2_max": 0.0118
+  },
+  "reference": {
+   "pass_min": 1.0,
+   "pass_mean": 1.0,
+   "pass_max": 1.0,
+   "bias_q2_mean": 0.0024,
+   "bias_q2_min": -0.005,
+   "bias_q2_max": 0.0099
+  }
+ },
+ "seeds": {
+  "0": {
+   "params": {
+    "seed": 0,
+    "k": 0,
+    "wseed": 141621774,
+    "L0": 1000.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7266666666666667,
+    "pass_B": 0.7633333333333333,
+    "D": 0.036666666666666625,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0817,
+     "bias_q2": 0.1,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0783,
+     "bias_q2": 0.0817,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0775,
+     "bias_q2": 0.0778,
+     "sd_q2": 0.0102
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0782,
+     "bias_q2": 0.0818,
+     "sd_q2": 0.0064
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.58,
+     "bias_q1": -0.0005,
+     "bias_q2": -0.0006,
+     "sd_q2": 0.0252
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.71,
+     "bias_q1": -0.0013,
+     "bias_q2": 0.0021,
+     "sd_q2": 0.0171
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0047,
+     "bias_q2": 0.008,
+     "sd_q2": 0.0009
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "1": {
+   "params": {
+    "seed": 1,
+    "k": 0,
+    "wseed": 56779024,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.675,
+    "pass_B": 0.5416666666666666,
+    "D": -0.13333333333333341,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1917,
+     "bias_q2": 0.2117,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.15,
+     "bias_q2": 0.1517,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1681,
+     "bias_q2": 0.1643,
+     "sd_q2": 0.0115
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1502,
+     "bias_q2": 0.1519,
+     "sd_q2": 0.0068
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4167,
+     "bias_q1": -0.0046,
+     "bias_q2": -0.0044,
+     "sd_q2": 0.0352
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.56,
+     "bias_q1": 0.0005,
+     "bias_q2": 0.0022,
+     "sd_q2": 0.024
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0024,
+     "bias_q2": 0.0041,
+     "sd_q2": 0.0015
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "2": {
+   "params": {
+    "seed": 2,
+    "k": 1,
+    "wseed": 485343623,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7,
+    "pass_B": 0.635,
+    "D": -0.06499999999999995,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.125,
+     "bias_q2": 0.1333,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1167,
+     "bias_q2": 0.1167,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1174,
+     "bias_q2": 0.1203,
+     "sd_q2": 0.0107
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.117,
+     "bias_q2": 0.1168,
+     "sd_q2": 0.0057
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.32,
+     "bias_q1": -0.0004,
+     "bias_q2": -0.0002,
+     "sd_q2": 0.0346
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.62,
+     "bias_q1": -0.0002,
+     "bias_q2": -0.0002,
+     "sd_q2": 0.0205
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.005,
+     "bias_q2": -0.005,
+     "sd_q2": 0.0014
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "3": {
+   "params": {
+    "seed": 3,
+    "k": 2,
+    "wseed": 245420601,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6733333333333333,
+    "pass_B": 0.6233333333333333,
+    "D": -0.050000000000000044,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.125,
+     "bias_q2": 0.1367,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1117,
+     "bias_q2": 0.1133,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1108,
+     "bias_q2": 0.1066,
+     "sd_q2": 0.0103
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.112,
+     "bias_q2": 0.1138,
+     "sd_q2": 0.0064
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4033,
+     "bias_q1": 0.0017,
+     "bias_q2": 0.0018,
+     "sd_q2": 0.0322
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.75,
+     "bias_q1": -0.0011,
+     "bias_q2": 0.0006,
+     "sd_q2": 0.019
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0026,
+     "bias_q2": 0.0043,
+     "sd_q2": 0.0013
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "4": {
+   "params": {
+    "seed": 4,
+    "k": 3,
+    "wseed": 382016691,
+    "L0": 850.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6016666666666667,
+    "pass_B": 0.6366666666666667,
+    "D": 0.03500000000000003,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1367,
+     "bias_q2": 0.125,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1083,
+     "bias_q2": 0.1117,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1255,
+     "bias_q2": 0.1029,
+     "sd_q2": 0.0116
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.108,
+     "bias_q2": 0.1117,
+     "sd_q2": 0.0071
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4233,
+     "bias_q1": -0.0023,
+     "bias_q2": -0.0025,
+     "sd_q2": 0.0308
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6333,
+     "bias_q1": -0.0027,
+     "bias_q2": 0.0006,
+     "sd_q2": 0.02
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0027,
+     "bias_q2": 0.0061,
+     "sd_q2": 0.0014
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "5": {
+   "params": {
+    "seed": 5,
+    "k": 1,
+    "wseed": 880113606,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6983333333333334,
+    "pass_B": 0.6533333333333333,
+    "D": -0.04500000000000004,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.105,
+     "bias_q2": 0.135,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0933,
+     "bias_q2": 0.0933,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.104,
+     "bias_q2": 0.1014,
+     "sd_q2": 0.0107
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0935,
+     "bias_q2": 0.0938,
+     "sd_q2": 0.0071
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4633,
+     "bias_q1": -0.0007,
+     "bias_q2": -0.0013,
+     "sd_q2": 0.0295
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.7467,
+     "bias_q1": 0.0025,
+     "bias_q2": 0.0025,
+     "sd_q2": 0.0187
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0006,
+     "bias_q2": 0.0006,
+     "sd_q2": 0.001
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "6": {
+   "params": {
+    "seed": 6,
+    "k": 0,
+    "wseed": 977437869,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.63,
+    "pass_B": 0.6983333333333334,
+    "D": 0.06833333333333336,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0783,
+     "bias_q2": 0.0733,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.09,
+     "bias_q2": 0.095,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0863,
+     "bias_q2": 0.0801,
+     "sd_q2": 0.0097
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0902,
+     "bias_q2": 0.0953,
+     "sd_q2": 0.0066
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.3933,
+     "bias_q1": 0.0024,
+     "bias_q2": 0.0021,
+     "sd_q2": 0.0293
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6033,
+     "bias_q1": 0.0001,
+     "bias_q2": 0.0051,
+     "sd_q2": 0.0183
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0001,
+     "bias_q2": 0.0049,
+     "sd_q2": 0.0009
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "7": {
+   "params": {
+    "seed": 7,
+    "k": 1,
+    "wseed": 854857302,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6816666666666666,
+    "pass_B": 0.715,
+    "D": 0.033333333333333326,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.075,
+     "bias_q2": 0.0917,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0833,
+     "bias_q2": 0.085,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.088,
+     "bias_q2": 0.0893,
+     "sd_q2": 0.01
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0833,
+     "bias_q2": 0.0849,
+     "sd_q2": 0.0066
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.3233,
+     "bias_q1": 0.0015,
+     "bias_q2": 0.0006,
+     "sd_q2": 0.0329
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6733,
+     "bias_q1": 0.0008,
+     "bias_q2": 0.0025,
+     "sd_q2": 0.0192
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0062,
+     "bias_q2": -0.0045,
+     "sd_q2": 0.001
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "8": {
+   "params": {
+    "seed": 8,
+    "k": 1,
+    "wseed": 812645524,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7483333333333333,
+    "pass_B": 0.7816666666666666,
+    "D": 0.033333333333333326,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0533,
+     "bias_q2": 0.0817,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0633,
+     "bias_q2": 0.0683,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.065,
+     "bias_q2": 0.0647,
+     "sd_q2": 0.0101
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0635,
+     "bias_q2": 0.0682,
+     "sd_q2": 0.0068
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.3467,
+     "bias_q1": -0.0001,
+     "bias_q2": -0.0008,
+     "sd_q2": 0.0307
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6267,
+     "bias_q1": 0.0018,
+     "bias_q2": 0.0068,
+     "sd_q2": 0.0162
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0077,
+     "bias_q2": -0.0027,
+     "sd_q2": 0.0009
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "9": {
+   "params": {
+    "seed": 9,
+    "k": 2,
+    "wseed": 451733680,
+    "L0": 1000.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.65,
+    "pass_B": 0.6116666666666667,
+    "D": -0.03833333333333333,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.12,
+     "bias_q2": 0.13,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1133,
+     "bias_q2": 0.1133,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.121,
+     "bias_q2": 0.114,
+     "sd_q2": 0.0108
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1131,
+     "bias_q2": 0.1132,
+     "sd_q2": 0.0067
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4267,
+     "bias_q1": 0.0015,
+     "bias_q2": 0.0016,
+     "sd_q2": 0.0332
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.73,
+     "bias_q1": -0.0008,
+     "bias_q2": -0.0008,
+     "sd_q2": 0.0193
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0058,
+     "bias_q2": 0.0058,
+     "sd_q2": 0.0014
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "10": {
+   "params": {
+    "seed": 10,
+    "k": 2,
+    "wseed": 527200202,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7266666666666667,
+    "pass_B": 0.7666666666666667,
+    "D": 0.040000000000000036,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.065,
+     "bias_q2": 0.075,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.08,
+     "bias_q2": 0.09,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0706,
+     "bias_q2": 0.0709,
+     "sd_q2": 0.0095
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0804,
+     "bias_q2": 0.0904,
+     "sd_q2": 0.0064
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.44,
+     "bias_q1": 0.002,
+     "bias_q2": 0.0016,
+     "sd_q2": 0.0272
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.5667,
+     "bias_q1": 0.0018,
+     "bias_q2": 0.0118,
+     "sd_q2": 0.0176
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0062,
+     "bias_q2": 0.0038,
+     "sd_q2": 0.0009
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "11": {
+   "params": {
+    "seed": 11,
+    "k": 2,
+    "wseed": 680136574,
+    "L0": 850.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7566666666666667,
+    "pass_B": 0.7233333333333334,
+    "D": -0.033333333333333326,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.085,
+     "bias_q2": 0.0917,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0767,
+     "bias_q2": 0.0833,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0839,
+     "bias_q2": 0.0726,
+     "sd_q2": 0.0097
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0768,
+     "bias_q2": 0.083,
+     "sd_q2": 0.0072
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.35,
+     "bias_q1": -0.0021,
+     "bias_q2": -0.0028,
+     "sd_q2": 0.0313
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.5667,
+     "bias_q1": 0.001,
+     "bias_q2": 0.0077,
+     "sd_q2": 0.0174
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0062,
+     "bias_q2": 0.0005,
+     "sd_q2": 0.001
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "12": {
+   "params": {
+    "seed": 12,
+    "k": 0,
+    "wseed": 753129039,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.785,
+    "pass_B": 0.7083333333333334,
+    "D": -0.07666666666666666,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0667,
+     "bias_q2": 0.09,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.08,
+     "bias_q2": 0.08,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.078,
+     "bias_q2": 0.0831,
+     "sd_q2": 0.0099
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0798,
+     "bias_q2": 0.0799,
+     "sd_q2": 0.0067
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.51,
+     "bias_q1": 0.0018,
+     "bias_q2": 0.0017,
+     "sd_q2": 0.0262
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.79,
+     "bias_q1": 0.0008,
+     "bias_q2": 0.0008,
+     "sd_q2": 0.0163
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0016,
+     "bias_q2": 0.0016,
+     "sd_q2": 0.0004
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "13": {
+   "params": {
+    "seed": 13,
+    "k": 2,
+    "wseed": 403741122,
+    "L0": 1000.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.5983333333333334,
+    "pass_B": 0.6316666666666667,
+    "D": 0.033333333333333326,
+    "decision": "SHIP"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1533,
+     "bias_q2": 0.14,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1233,
+     "bias_q2": 0.125,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.136,
+     "bias_q2": 0.119,
+     "sd_q2": 0.0107
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.124,
+     "bias_q2": 0.1256,
+     "sd_q2": 0.0069
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4367,
+     "bias_q1": 0.0013,
+     "bias_q2": 0.0008,
+     "sd_q2": 0.035
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.7233,
+     "bias_q1": 0.0019,
+     "bias_q2": 0.0036,
+     "sd_q2": 0.0202
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.002,
+     "bias_q2": 0.0036,
+     "sd_q2": 0.0016
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "14": {
+   "params": {
+    "seed": 14,
+    "k": 1,
+    "wseed": 146600602,
+    "L0": 850.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7566666666666667,
+    "pass_B": 0.7083333333333334,
+    "D": -0.04833333333333334,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0817,
+     "bias_q2": 0.0983,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.08,
+     "bias_q2": 0.0867,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0751,
+     "bias_q2": 0.0744,
+     "sd_q2": 0.011
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0808,
+     "bias_q2": 0.0872,
+     "sd_q2": 0.006
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4833,
+     "bias_q1": 0.0005,
+     "bias_q2": 0.0004,
+     "sd_q2": 0.0274
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.7267,
+     "bias_q1": 0.0008,
+     "bias_q2": 0.0075,
+     "sd_q2": 0.016
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0033,
+     "bias_q2": 0.0099,
+     "sd_q2": 0.0008
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "15": {
+   "params": {
+    "seed": 15,
+    "k": 0,
+    "wseed": 159471750,
+    "L0": 1000.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6783333333333333,
+    "pass_B": 0.6233333333333333,
+    "D": -0.05500000000000005,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1433,
+     "bias_q2": 0.1767,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0933,
+     "bias_q2": 0.0967,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.122,
+     "bias_q2": 0.1145,
+     "sd_q2": 0.0111
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.0936,
+     "bias_q2": 0.0966,
+     "sd_q2": 0.0069
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4467,
+     "bias_q1": -0.0017,
+     "bias_q2": -0.0022,
+     "sd_q2": 0.0309
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6967,
+     "bias_q1": -0.0015,
+     "bias_q2": 0.0019,
+     "sd_q2": 0.0181
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0057,
+     "bias_q2": -0.0024,
+     "sd_q2": 0.0011
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "16": {
+   "params": {
+    "seed": 16,
+    "k": 0,
+    "wseed": 20955093,
+    "L0": 850.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6166666666666667,
+    "pass_B": 0.5866666666666667,
+    "D": -0.030000000000000027,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.155,
+     "bias_q2": 0.16,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.115,
+     "bias_q2": 0.1117,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1353,
+     "bias_q2": 0.1159,
+     "sd_q2": 0.01
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1152,
+     "bias_q2": 0.1114,
+     "sd_q2": 0.0073
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.32,
+     "bias_q1": -0.0011,
+     "bias_q2": -0.0018,
+     "sd_q2": 0.0343
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.67,
+     "bias_q1": 0.0021,
+     "bias_q2": -0.0012,
+     "sd_q2": 0.0183
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0066,
+     "bias_q2": 0.0033,
+     "sd_q2": 0.0015
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "17": {
+   "params": {
+    "seed": 17,
+    "k": 0,
+    "wseed": 91768033,
+    "L0": 1000.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.6716666666666666,
+    "pass_B": 0.5833333333333334,
+    "D": -0.08833333333333326,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1433,
+     "bias_q2": 0.1517,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.125,
+     "bias_q2": 0.1233,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1383,
+     "bias_q2": 0.1333,
+     "sd_q2": 0.0104
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1249,
+     "bias_q2": 0.1232,
+     "sd_q2": 0.0066
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4667,
+     "bias_q1": -0.0007,
+     "bias_q2": -0.0009,
+     "sd_q2": 0.0308
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.67,
+     "bias_q1": -0.0008,
+     "bias_q2": -0.0024,
+     "sd_q2": 0.0212
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0032,
+     "bias_q2": 0.0015,
+     "sd_q2": 0.0013
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "18": {
+   "params": {
+    "seed": 18,
+    "k": 2,
+    "wseed": 721304038,
+    "L0": 1150.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.7116666666666667,
+    "pass_B": 0.6666666666666666,
+    "D": -0.04500000000000004,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1083,
+     "bias_q2": 0.115,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.09,
+     "bias_q2": 0.09,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1018,
+     "bias_q2": 0.0997,
+     "sd_q2": 0.0104
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.09,
+     "bias_q2": 0.0901,
+     "sd_q2": 0.0062
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.4367,
+     "bias_q1": 0.0005,
+     "bias_q2": 0.0002,
+     "sd_q2": 0.0314
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.61,
+     "bias_q1": -0.0019,
+     "bias_q2": -0.0019,
+     "sd_q2": 0.0202
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": -0.0048,
+     "bias_q2": -0.0048,
+     "sd_q2": 0.0012
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  },
+  "19": {
+   "params": {
+    "seed": 19,
+    "k": 1,
+    "wseed": 243488227,
+    "L0": 850.0
+   },
+   "ok": true,
+   "truth": {
+    "pass_A": 0.62,
+    "pass_B": 0.5716666666666667,
+    "D": -0.04833333333333334,
+    "decision": "HOLD"
+   },
+   "policies": {
+    "judge_only": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1467,
+     "bias_q2": 0.145,
+     "sd_q2": 0.0
+    },
+    "review_all": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1083,
+     "bias_q2": 0.115,
+     "sd_q2": 0.0
+    },
+    "crowd5_majority": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.137,
+     "bias_q2": 0.121,
+     "sd_q2": 0.0109
+    },
+    "judge_corrected_by_review": {
+     "pass_rate": 0.0,
+     "bias_q1": 0.1082,
+     "bias_q2": 0.1148,
+     "sd_q2": 0.0072
+    },
+    "info_ppi_random": {
+     "pass_rate": 0.35,
+     "bias_q1": 0.0017,
+     "bias_q2": 0.0013,
+     "sd_q2": 0.0334
+    },
+    "info_ppi_random_B_only": {
+     "pass_rate": 0.6067,
+     "bias_q1": 0.0003,
+     "bias_q2": 0.007,
+     "sd_q2": 0.0183
+    },
+    "reference": {
+     "pass_rate": 1.0,
+     "bias_q1": 0.0033,
+     "bias_q2": 0.0099,
+     "sd_q2": 0.0012
+    }
+   },
+   "decoys": [
+    "judge_only",
+    "review_all",
+    "crowd5_majority",
+    "judge_corrected_by_review"
+   ]
+  }
+ }
+}

@@ -1,0 +1,13 @@
+[task]
+name = "k2-mix-ws2"
+module = "k2_mix"
+seed = 10
+
+[verifier]
+artifacts = ["mixture.json"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 5e+19
+unit = "FLOPs"

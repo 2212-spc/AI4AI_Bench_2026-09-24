@@ -1,0 +1,32 @@
+select wd=0.03   holdout crowd nll 0.0196 acc 0.9955  (7.3s)
+select wd=0.1    holdout crowd nll 0.0294 acc 0.9971  (7.1s)
+select wd=0.3    holdout crowd nll 0.1047 acc 0.9898  (7.1s)
+select wd=1      holdout crowd nll 0.8052 acc 0.7570  (7.1s)
+select wd=3      holdout crowd nll 1.4129 acc 0.5623  (7.2s)
+chosen weight_decay = 0.03
+ensemble member 1 trained (18.2s)
+ensemble member 2 trained (18.6s)
+trained 20000 steps (2 models) in 82.4s wall, 73.0s cpu
+	Command being timed: "python3 train.py --data /app/work/big.npz --steps 20000 --predict /app/work/test_X.npy --out /app/work/preds0.npy --seed 0"
+	User time (seconds): 72.99
+	System time (seconds): 0.01
+	Percent of CPU this job got: 88%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:22.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 80292
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 14877
+	Voluntary context switches: 3
+	Involuntary context switches: 6521
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

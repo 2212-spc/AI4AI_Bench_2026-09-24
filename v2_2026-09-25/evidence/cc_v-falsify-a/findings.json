@@ -1,0 +1,26 @@
+{
+ "V1": {
+  "status": "violated",
+  "witness": "witnesses/v1.json"
+ },
+ "V2": {
+  "status": "violated",
+  "witness": "witnesses/v2.json"
+ },
+ "V3": {
+  "status": "violated",
+  "witness": "witnesses/v3.json"
+ },
+ "V4": {
+  "status": "holds",
+  "argument": "pack clamps every length to min(L, max_tokens) before use, so a document alone never exceeds max_tokens; a document is only appended to a non-empty batch when tot + L <= max_tokens, otherwise the batch is flushed first. By induction every batch total, computed with clamped lengths, stays <= max_tokens for all inputs in scope."
+ },
+ "V5": {
+  "status": "holds",
+  "argument": "shuffle_stream stores each incoming item in the buffer (either appended while the buffer is below max(1, buffer_size), or written into slot j immediately after the previous occupant of slot j is emitted). Every item is emitted exactly once: either when evicted from its slot or in the final drain that pops the buffer until empty. Hence the output is a multiset permutation of the input for every buffer_size >= 1."
+ },
+ "V6": {
+  "status": "violated",
+  "witness": "witnesses/v6.json"
+ }
+}

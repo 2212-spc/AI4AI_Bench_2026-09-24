@@ -1,0 +1,60 @@
+{
+ "pass": false,
+ "score": 0.6169,
+ "items": {
+  "R0_report": {
+   "ok": true,
+   "detail": "report.json declares a cause from ['capacity', 'mixture', 'lr_scale'] and a fix config"
+  },
+  "R1_fix_recovers": {
+   "ok": false,
+   "detail": "your fix reaches online 0.8531 (release 0.7929, best reachable under the release constraints 0.8904) -> recovers 61.7% of what is reachable, need 90%"
+  },
+  "R2_cause_survives_intervention": {
+   "ok": true,
+   "detail": "holding `capacity` at its release value costs 28.4% of the regression once the other knobs are re-tuned; the knobs rank capacity 28%, mixture 0%, lr_scale 0% - the cause must rank first by >= 15 points"
+  },
+  "R3_fix_acts_on_cause": {
+   "ok": true,
+   "detail": "fix moves `capacity`, the knob you diagnosed"
+  }
+ },
+ "diag": {
+  "declared_cause": "capacity",
+  "true_cause": "capacity",
+  "fix": {
+   "capacity": 0.773
+  },
+  "q_fixed": 0.8531,
+  "recovered": 0.6169,
+  "n_rerun": 4,
+  "n_canary": 1,
+  "n_decon": 0,
+  "spent": 16.25
+ },
+ "ref": {
+  "q_healthy": 0.90932,
+  "q_sick": 0.79287,
+  "cause": "capacity",
+  "gap": 0.11644,
+  "sick_value": 0.6757,
+  "q_best": 0.89045,
+  "cfg_best": {
+   "capacity": 0.773,
+   "mixture": 1.0,
+   "lr_scale": 1.175,
+   "leak": 0.5402
+  },
+  "gap_reachable": 0.09758
+ },
+ "run": "k8a1__haiku45__r1",
+ "task": "k8-post-a1",
+ "model": "claude-haiku-4-5-20251001",
+ "hint": 0,
+ "lab_calls": 5,
+ "budget_spent_frac": 0.812,
+ "status": "done",
+ "agent_min": 3.2,
+ "api_errors": 0,
+ "truncated": false
+}

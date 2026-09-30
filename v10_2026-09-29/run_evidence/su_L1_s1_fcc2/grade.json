@@ -1,0 +1,67 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "production job ran for both seeds and wrote valid predictions"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "production accuracy (mean of seeds 0,1) 0.8505 vs target 0.785"
+  }
+ },
+ "diag": {
+  "replicas": [
+   {
+    "seed": 0,
+    "exit": 0,
+    "cpu_s": 36.4,
+    "acc": 0.85165
+   },
+   {
+    "seed": 1,
+    "exit": 0,
+    "cpu_s": 36.5,
+    "acc": 0.8493
+   }
+  ],
+  "acc": 0.85048,
+  "shipped_cfg": {
+   "hidden": 256,
+   "lr": 0.003,
+   "batch_size": 128,
+   "aug_sigma": 0.0,
+   "label_smoothing": 0.0,
+   "warmup_frac": 0.02,
+   "weight_decay": 3.0,
+   "wd_ref_n": 4000,
+   "wd_scale_pow": 0.5,
+   "wd_min": 0.3,
+   "wd_max": 5.0,
+   "avg_frac": 0.25,
+   "ensemble": 2,
+   "cpu_budget_s": 80
+  },
+  "wd_ratio_vs_team": 1.0,
+  "train_py_changed": true
+ },
+ "ref": {
+  "T": 0.785,
+  "ref_acc": 0.8447,
+  "decoys": {
+   "ship_as_is": 0.734325,
+   "retune_sample": 0.734325
+  }
+ },
+ "run": "su_L1_s1_fcc2",
+ "task": "su_L1_s1",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 0,
+ "budget_spent_frac": 0.0,
+ "status": "done",
+ "agent_min": 37.5,
+ "api_errors": 0,
+ "truncated": false
+}

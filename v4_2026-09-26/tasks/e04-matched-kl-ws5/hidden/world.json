@@ -1,0 +1,126 @@
+{
+ "params": {
+  "sizes": {
+   "rm_v3": {
+    "acc_max": 0.78,
+    "cost": 1.0
+   }
+  },
+  "alpha": 1.2170569278420102,
+  "beta": 0.5093138466204247,
+  "beta_bon": 0.12062990156067177,
+  "R0": 0.0,
+  "kg": 14.791715635781689,
+  "q_ref": 1.9720624428390525,
+  "steps0": 829.5706299198928,
+  "kl_cap": 144.68274586649255,
+  "rm_floor": 2000.0,
+  "rm_ref": 100000.0,
+  "rm_b": 0.0,
+  "noise": 0.0,
+  "len0": 259.6525228395046,
+  "lam": 0.8540518802105846,
+  "cl": 0.7140599454314119,
+  "sl": 101.89036961733952,
+  "wq": 0.669416422052464,
+  "wl": 0.7976545526290215,
+  "H0": 1.1,
+  "dh": 1.6,
+  "ent_a": 0.0,
+  "ent_b": 0.0,
+  "use_sigmoid": 0,
+  "train_cost": 1.0,
+  "human_cost": 40.0,
+  "rm_eval_cost": 5.0,
+  "q_N": 72.0,
+  "q_K": 3.290555007904944,
+  "q_KLT": 5.329787151816076,
+  "q_ST": 797.0,
+  "q_b0": 0.20985987867614558,
+  "q_b1": 0.3747075264353481,
+  "q_b2": 0.5093138466204247,
+  "q_nlogn": 26.857765792438187,
+  "q_nmemo": 206.39403888435336,
+  "q_nreach": 560.0362720706614,
+  "q_wrbon": 0.5330371205246698,
+  "q_wr0": 0.8278614929174801,
+  "q_wr1": 0.5164986876345539,
+  "q_wr2": 0.2382127481318594,
+  "q_share": 0.35036416525050706,
+  "q_vbase": 0.04950707865667858,
+  "q_vstop": 0.16503399793387746,
+  "q_nA": 51.0,
+  "q_nB": 135.0,
+  "q_Slight": 529.0,
+  "q_lpB": 6.734950606710899,
+  "q_guess_geo": 82.97590011563598,
+  "q_guess_ari": 93.0
+ },
+ "spec": {
+  "lab": "rllab",
+  "knobs": {
+   "svc": {
+    "type": "choice",
+    "values": [
+     "train",
+     "gold"
+    ],
+    "default": "train"
+   },
+   "method": {
+    "type": "choice",
+    "values": [
+     "bon",
+     "ppo"
+    ],
+    "default": "ppo"
+   },
+   "kl": {
+    "type": "float",
+    "min": 0.05,
+    "max": 12.0,
+    "default": 1.0
+   },
+   "steps": {
+    "type": "float",
+    "min": 10,
+    "max": 2000,
+    "int": true,
+    "default": 400
+   },
+   "n": {
+    "type": "float",
+    "min": 1,
+    "max": 4096,
+    "int": true,
+    "default": 1
+   },
+   "len_pen": {
+    "type": "float",
+    "min": 0.0,
+    "max": 8.0,
+    "default": 0.0
+   },
+   "gold_n": {
+    "type": "float",
+    "min": 50,
+    "max": 20000,
+    "int": true,
+    "default": 200
+   }
+  },
+  "fixed": {
+   "rm_size": "rm_v3",
+   "rm_data": 40000.0
+  },
+  "caps": {
+   "run_cost": 8000.0,
+   "total_cost": 20000.0,
+   "max_runs": 240
+  }
+ },
+ "salt": "df5562d692cd6873",
+ "blueprint": "e04-matched-kl",
+ "module": "e04_matched_kl_prereg",
+ "world_seed": 5
+}

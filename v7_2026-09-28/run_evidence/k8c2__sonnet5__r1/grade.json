@@ -1,0 +1,61 @@
+{
+ "pass": true,
+ "score": 0.9992,
+ "items": {
+  "R0_report": {
+   "ok": true,
+   "detail": "report.json declares a cause from ['capacity', 'mixture', 'lr_scale'] and a fix config"
+  },
+  "R1_fix_recovers": {
+   "ok": true,
+   "detail": "your fix reaches online 0.8107 (release 0.7510, best reachable under the release constraints 0.8108) -> recovers 99.9% of what is reachable, need 90%"
+  },
+  "R2_cause_survives_intervention": {
+   "ok": true,
+   "detail": "holding `mixture` at its release value costs 59.7% of the regression once the other knobs are re-tuned; the knobs rank mixture 60%, capacity 20%, lr_scale 13% - the cause must rank first by >= 15 points"
+  },
+  "R3_fix_acts_on_cause": {
+   "ok": true,
+   "detail": "fix moves `mixture`, the knob you diagnosed"
+  }
+ },
+ "diag": {
+  "declared_cause": "mixture",
+  "true_cause": "mixture",
+  "fix": {
+   "mixture": 0.76,
+   "capacity": 0.759
+  },
+  "q_fixed": 0.8107,
+  "recovered": 0.9992,
+  "n_rerun": 0,
+  "n_canary": 2,
+  "n_decon": 7,
+  "spent": 20.0
+ },
+ "ref": {
+  "q_healthy": 0.87049,
+  "q_sick": 0.75095,
+  "cause": "mixture",
+  "gap": 0.11954,
+  "sick_value": 0.6422,
+  "q_best": 0.81078,
+  "cfg_best": {
+   "capacity": 0.7587,
+   "mixture": 0.7596,
+   "lr_scale": 1.225,
+   "leak": 0.4368
+  },
+  "gap_reachable": 0.05983
+ },
+ "run": "k8c2__sonnet5__r1",
+ "task": "k8-post-c2",
+ "model": "claude-sonnet-5",
+ "hint": 0,
+ "lab_calls": 9,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 8.7,
+ "api_errors": 0,
+ "truncated": false
+}

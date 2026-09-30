@@ -1,0 +1,912 @@
+{
+ "tasks": {
+  "b-bounds-a": {
+   "A1_threshold_margin": {
+    "status": "pass",
+    "threshold_fields": {
+     "decisions": "margin"
+    },
+    "tolerance": 0.0005,
+    "ladder": [
+     0.0005,
+     0.001,
+     0.005
+    ],
+    "ladder_stopped": null,
+    "n_items_with_a_threshold": 8,
+    "margin_profile": {
+     "moves_within_1x_tol": [],
+     "moves_within_2x_tol": [
+      "decisions/d02"
+     ],
+     "moves_within_10x_tol": [
+      "decisions/d01",
+      "decisions/d02",
+      "decisions/d03"
+     ]
+    },
+    "n_items_that_never_move": 5,
+    "detail": [
+     {
+      "item": "decisions/d02",
+      "moves_at": "-0.001",
+      "multiple_of_tol": 2,
+      "key": "no",
+      "under_perturbation": "cannot_tell"
+     },
+     {
+      "item": "decisions/d01",
+      "moves_at": "+0.005",
+      "multiple_of_tol": 10,
+      "key": "yes",
+      "under_perturbation": "cannot_tell"
+     },
+     {
+      "item": "decisions/d03",
+      "moves_at": "+0.005",
+      "multiple_of_tol": 10,
+      "key": "cannot_tell",
+      "under_perturbation": "no"
+     }
+    ],
+    "why": "no answer moves when its own threshold is shifted by the tolerance the task promises to accept; 5 of 8 survive a 10x shift as well"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "cells.hi": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "cells.lo": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "contrasts.hi": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "contrasts.lo": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "decisions": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 3,
+      "majority_share": 0.625,
+      "n_observable_features": 11,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 1,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "n_surviving_readings": 0,
+    "why": "the evidence pins the mechanism to one reading, so there is no class to guess in"
+   }
+  },
+  "b-bounds-sealed": {
+   "A1_threshold_margin": {
+    "status": "pass",
+    "threshold_fields": {
+     "decisions": "margin"
+    },
+    "tolerance": 0.0005,
+    "ladder": [
+     0.0005,
+     0.001,
+     0.005
+    ],
+    "ladder_stopped": null,
+    "n_items_with_a_threshold": 8,
+    "margin_profile": {
+     "moves_within_1x_tol": [],
+     "moves_within_2x_tol": [
+      "decisions/d02"
+     ],
+     "moves_within_10x_tol": [
+      "decisions/d01",
+      "decisions/d02",
+      "decisions/d03"
+     ]
+    },
+    "n_items_that_never_move": 5,
+    "detail": [
+     {
+      "item": "decisions/d02",
+      "moves_at": "-0.001",
+      "multiple_of_tol": 2,
+      "key": "no",
+      "under_perturbation": "cannot_tell"
+     },
+     {
+      "item": "decisions/d01",
+      "moves_at": "+0.005",
+      "multiple_of_tol": 10,
+      "key": "yes",
+      "under_perturbation": "cannot_tell"
+     },
+     {
+      "item": "decisions/d03",
+      "moves_at": "+0.005",
+      "multiple_of_tol": 10,
+      "key": "cannot_tell",
+      "under_perturbation": "no"
+     }
+    ],
+    "why": "no answer moves when its own threshold is shifted by the tolerance the task promises to accept; 5 of 8 survive a 10x shift as well"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "cells.hi": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "cells.lo": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "contrasts.hi": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "contrasts.lo": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 8,
+      "why": "effectively continuous (8 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "decisions": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 3,
+      "majority_share": 0.625,
+      "n_observable_features": 11,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "supports.hi": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 5,
+      "majority_share": 0.5,
+      "n_observable_features": 25,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "supports.lo": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 5,
+      "majority_share": 0.25,
+      "n_observable_features": 25,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 3,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "n_surviving_readings": 0,
+    "why": "the evidence pins the mechanism to one reading, so there is no class to guess in"
+   }
+  },
+  "c-audit-a": {
+   "A1_threshold_margin": {
+    "status": "n/a",
+    "why": "queries are a bare list with no named threshold fields"
+   },
+   "A2_cheap_predicate": {
+    "status": "n/a",
+    "why": "no graded section whose items can be matched to a query by id"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "why": "no certificate naming the readings the evidence leaves standing"
+   }
+  },
+  "d-design-a": {
+   "A1_threshold_margin": {
+    "status": "pass",
+    "threshold_fields": {
+     "plans": "target"
+    },
+    "tolerance": 0.0005,
+    "ladder": [
+     0.0005,
+     0.001
+    ],
+    "ladder_stopped": {
+     "multiple_of_tol": 10,
+     "sign": -1,
+     "error": "IndexError: list index out of range"
+    },
+    "n_items_with_a_threshold": 3,
+    "margin_profile": {
+     "moves_within_1x_tol": [],
+     "moves_within_2x_tol": []
+    },
+    "n_items_that_never_move": 3,
+    "detail": [],
+    "why": "no answer moves when its own threshold is shifted by the tolerance the task promises to accept; 3 of 3 survive a 2x shift as well"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "contrasts.hi": {
+      "status": "n/a",
+      "n_items": 4,
+      "n_labels": 4,
+      "why": "only 4 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "contrasts.lo": {
+      "status": "n/a",
+      "n_items": 4,
+      "n_labels": 4,
+      "why": "only 4 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "values": {
+      "status": "pass",
+      "n_items": 12,
+      "n_labels": 2,
+      "majority_share": 0.667,
+      "n_observable_features": 35,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "widths": {
+      "status": "n/a",
+      "n_items": 8,
+      "n_labels": 7,
+      "why": "effectively continuous (7 distinct over 8 items); a low-cardinality lookup is not the exposure here"
+     },
+     "plans.k": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 2,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 1,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "n_surviving_readings": 0,
+    "why": "the evidence pins the mechanism to one reading, so there is no class to guess in"
+   }
+  },
+  "d-design-open": {
+   "A1_threshold_margin": {
+    "status": "pass",
+    "threshold_fields": {
+     "plans": "target"
+    },
+    "tolerance": 0.0005,
+    "ladder": [
+     0.0005,
+     0.001,
+     0.005
+    ],
+    "ladder_stopped": null,
+    "n_items_with_a_threshold": 2,
+    "margin_profile": {
+     "moves_within_1x_tol": [],
+     "moves_within_2x_tol": [],
+     "moves_within_10x_tol": [
+      "plans/p01",
+      "plans/p02"
+     ]
+    },
+    "n_items_that_never_move": 0,
+    "detail": [
+     {
+      "item": "plans/p01",
+      "moves_at": "-0.005",
+      "multiple_of_tol": 10,
+      "key": {
+       "k": 2,
+       "sets": [
+        [
+         "r02612",
+         "r02613"
+        ]
+       ]
+      },
+      "under_perturbation": {
+       "k": 3,
+       "runs": [
+        "r02601",
+        "r02612",
+        "r02613"
+       ]
+      }
+     },
+     {
+      "item": "plans/p02",
+      "moves_at": "-0.005",
+      "multiple_of_tol": 10,
+      "key": {
+       "k": 1,
+       "sets": [
+        [
+         "r02608"
+        ]
+       ]
+      },
+      "under_perturbation": {
+       "k": 2,
+       "runs": [
+        "r02601",
+        "r02602"
+       ]
+      }
+     }
+    ],
+    "why": "no answer moves when its own threshold is shifted by the tolerance the task promises to accept; 0 of 2 survive a 10x shift as well"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "contrasts.hi": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 3,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "contrasts.lo": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 3,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "recovery": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 4,
+      "majority_share": 0.375,
+      "n_observable_features": 26,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "values": {
+      "status": "pass",
+      "n_items": 11,
+      "n_labels": 2,
+      "majority_share": 0.727,
+      "n_observable_features": 36,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "widths": {
+      "status": "pass",
+      "n_items": 7,
+      "n_labels": 6,
+      "majority_share": 0.286,
+      "n_observable_features": 33,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "plans.k": {
+      "status": "n/a",
+      "n_items": 2,
+      "n_labels": 2,
+      "why": "only 2 items: on so short a column almost any feature is injective and the test has no power either way"
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 3,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "pass",
+    "variants": {
+     "flattened": {
+      "n_answers_that_moved": 16,
+      "sections": [
+       "plans",
+       "recovery",
+       "values",
+       "widths"
+      ],
+      "examples": [
+       "recovery/r03",
+       "recovery/r04",
+       "recovery/r05",
+       "recovery/r06",
+       "recovery/r07",
+       "recovery/r08"
+      ]
+     },
+     "rescaled_1.2x": {
+      "n_answers_that_moved": 5,
+      "sections": [
+       "plans",
+       "recovery",
+       "widths"
+      ],
+      "examples": [
+       "recovery/r03",
+       "recovery/r04",
+       "recovery/r06",
+       "widths/w04",
+       "plans/p01"
+      ]
+     }
+    },
+    "n_positive_width_runs": 293,
+    "n_distinct_widths": 4,
+    "inert_variants": [],
+    "why": "both a flattened and a rescaled mechanism change graded answers, so the parameter is load-bearing"
+   },
+   "A4_wording_ambiguity": {
+    "status": "pass",
+    "n_items": 8,
+    "n_items_the_two_readings_disagree_on": 2,
+    "disagreements": [
+     {
+      "item": "r07",
+      "run": "r02606",
+      "own_record": 0.75,
+      "archive_sharp": 0.3
+     },
+     {
+      "item": "r08",
+      "run": "r02611",
+      "own_record": 0.75,
+      "archive_sharp": 0.4298
+     }
+    ],
+    "key_follows": [
+     "own_record"
+    ],
+    "instruction_names": {
+     "own_record": [
+      "that run's own record alone"
+     ],
+     "archive_sharp": []
+    },
+    "orphans": [],
+    "readings": [
+     {
+      "item": "r01",
+      "run": "r00509",
+      "own_record": 0.0,
+      "archive_sharp": 0.0
+     },
+     {
+      "item": "r02",
+      "run": "r01682",
+      "own_record": 0.0,
+      "archive_sharp": 0.0
+     },
+     {
+      "item": "r03",
+      "run": "r01932",
+      "own_record": 0.025,
+      "archive_sharp": 0.025
+     },
+     {
+      "item": "r04",
+      "run": "r02049",
+      "own_record": 0.025,
+      "archive_sharp": 0.025
+     }
+    ],
+    "why": "2 items turn on the wording, and the instruction names exactly the reading the key follows (own_record)"
+   },
+   "A5_point_hypothesis": {
+    "status": "diagnostic",
+    "n_surviving_readings": 3,
+    "surviving_readings": [
+     "the_outage_left_only_an_audit_line_for_those_runs",
+     "the_outage_stopped_at_the_archive_and_the_bundle_is_intact",
+     "the_sink_finalises_the_bundle_and_the_screen_redacts_it"
+    ],
+    "score_of_each_if_guessed": {
+     "the_outage_left_only_an_audit_line_for_those_runs": {
+      "score": 22,
+      "n_items": 31,
+      "by_section": {
+       "contrasts": 3,
+       "recovery": 5,
+       "values": 8,
+       "widths": 5,
+       "plans": 1
+      },
+      "is_the_key": false
+     },
+     "the_outage_stopped_at_the_archive_and_the_bundle_is_intact": {
+      "score": 22,
+      "n_items": 31,
+      "by_section": {
+       "contrasts": 3,
+       "recovery": 5,
+       "values": 8,
+       "widths": 5,
+       "plans": 1
+      },
+      "is_the_key": false
+     },
+     "the_sink_finalises_the_bundle_and_the_screen_redacts_it": {
+      "score": 31,
+      "n_items": 31,
+      "by_section": {
+       "contrasts": 3,
+       "recovery": 8,
+       "values": 11,
+       "widths": 7,
+       "plans": 2
+      },
+      "is_the_key": true
+     }
+    },
+    "best_single_guess": 31,
+    "n_graded_items": 31,
+    "ceiling_for_a_guesser": 1.0,
+    "expected_score_of_a_uniform_guess": 25.0,
+    "expected_share_of_a_uniform_guess": 0.806,
+    "why": "guaranteed widths are monotone in evidence, so the worst case over the class always coincides with the member that concedes the most; a guess at that member is indistinguishable from worst-case reasoning, and the ceiling is therefore 1.0 by construction, not by oversight.  What carries information is the spread: a uniform guess over the 3 surviving readings scores 25.0/31 on average.  A later arm with a non-monotone objective is recognisable by the ceiling falling below 1.0."
+   }
+  },
+  "d-design-sealed": {
+   "A1_threshold_margin": {
+    "status": "pass",
+    "threshold_fields": {
+     "plans": "target"
+    },
+    "tolerance": 0.0005,
+    "ladder": [
+     0.0005,
+     0.001,
+     0.005
+    ],
+    "ladder_stopped": null,
+    "n_items_with_a_threshold": 3,
+    "margin_profile": {
+     "moves_within_1x_tol": [],
+     "moves_within_2x_tol": [],
+     "moves_within_10x_tol": [
+      "plans/p01",
+      "plans/p03"
+     ]
+    },
+    "n_items_that_never_move": 1,
+    "detail": [
+     {
+      "item": "plans/p03",
+      "moves_at": "+0.005",
+      "multiple_of_tol": 10,
+      "key": {
+       "k": 2,
+       "sets": [
+        [
+         "r02608",
+         "r02612"
+        ],
+        [
+         "r02608",
+         "r02613"
+        ],
+        [
+         "r02612",
+         "r02613"
+        ]
+       ]
+      },
+      "under_perturbation": {
+       "k": 2,
+       "runs": [
+        "r02601",
+        "r02602"
+       ]
+      }
+     },
+     {
+      "item": "plans/p01",
+      "moves_at": "-0.005",
+      "multiple_of_tol": 10,
+      "key": {
+       "k": 2,
+       "sets": [
+        [
+         "r02601",
+         "r02602"
+        ]
+       ]
+      },
+      "under_perturbation": {
+       "k": 3,
+       "runs": [
+        "r02601",
+        "r02602",
+        "r02608"
+       ]
+      }
+     }
+    ],
+    "why": "no answer moves when its own threshold is shifted by the tolerance the task promises to accept; 1 of 3 survive a 10x shift as well"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "contrasts.hi": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 3,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "contrasts.lo": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 3,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     },
+     "recovery": {
+      "status": "pass",
+      "n_items": 8,
+      "n_labels": 4,
+      "majority_share": 0.375,
+      "n_observable_features": 26,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "values": {
+      "status": "pass",
+      "n_items": 10,
+      "n_labels": 2,
+      "majority_share": 0.7,
+      "n_observable_features": 36,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     },
+     "widths": {
+      "status": "n/a",
+      "n_items": 7,
+      "n_labels": 7,
+      "why": "effectively continuous (7 distinct over 7 items); a low-cardinality lookup is not the exposure here"
+     },
+     "plans.k": {
+      "status": "n/a",
+      "n_items": 3,
+      "n_labels": 1,
+      "why": "only 3 items: on so short a column almost any feature is injective and the test has no power either way"
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 2,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "pass",
+    "variants": {
+     "flattened": {
+      "n_answers_that_moved": 13,
+      "sections": [
+       "plans",
+       "recovery",
+       "values",
+       "widths"
+      ],
+      "examples": [
+       "recovery/r01",
+       "recovery/r02",
+       "recovery/r04",
+       "recovery/r05",
+       "recovery/r06",
+       "recovery/r07"
+      ]
+     },
+     "rescaled_1.2x": {
+      "n_answers_that_moved": 4,
+      "sections": [
+       "recovery",
+       "widths"
+      ],
+      "examples": [
+       "recovery/r05",
+       "recovery/r06",
+       "recovery/r07",
+       "widths/w04"
+      ]
+     }
+    },
+    "n_positive_width_runs": 293,
+    "n_distinct_widths": 4,
+    "inert_variants": [],
+    "why": "both a flattened and a rescaled mechanism change graded answers, so the parameter is load-bearing"
+   },
+   "A4_wording_ambiguity": {
+    "status": "pass",
+    "n_items": 8,
+    "n_items_the_two_readings_disagree_on": 1,
+    "disagreements": [
+     {
+      "item": "r08",
+      "run": "r02606",
+      "own_record": 0.75,
+      "archive_sharp": 0.3
+     }
+    ],
+    "key_follows": [
+     "own_record"
+    ],
+    "instruction_names": {
+     "own_record": [
+      "that run's own record alone"
+     ],
+     "archive_sharp": []
+    },
+    "orphans": [],
+    "readings": [
+     {
+      "item": "r01",
+      "run": "r00603",
+      "own_record": 0.75,
+      "archive_sharp": 0.75
+     },
+     {
+      "item": "r02",
+      "run": "r00666",
+      "own_record": 0.75,
+      "archive_sharp": 0.75
+     },
+     {
+      "item": "r03",
+      "run": "r01682",
+      "own_record": 0.0,
+      "archive_sharp": 0.0
+     },
+     {
+      "item": "r04",
+      "run": "r01718",
+      "own_record": 1.0,
+      "archive_sharp": 1.0
+     }
+    ],
+    "why": "1 items turn on the wording, and the instruction names exactly the reading the key follows (own_record)"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "n_surviving_readings": 1,
+    "why": "the evidence pins the mechanism to one reading, so there is no class to guess in"
+   }
+  },
+  "o-pack-a": {
+   "A1_threshold_margin": {
+    "status": "n/a",
+    "why": "task does not ship queries.json + an answer key"
+   },
+   "A2_cheap_predicate": {
+    "status": "n/a",
+    "why": "task does not ship queries + an id-keyed answer key"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "why": "no certificate naming the readings the evidence leaves standing"
+   }
+  },
+  "s-censored-a": {
+   "A1_threshold_margin": {
+    "status": "n/a",
+    "why": "queries are a bare list with no named threshold fields"
+   },
+   "A2_cheap_predicate": {
+    "status": "pass",
+    "columns": {
+     "queries.verdict": {
+      "status": "pass",
+      "n_items": 13,
+      "n_labels": 2,
+      "majority_share": 0.692,
+      "n_observable_features": 9,
+      "cheap_predicates": [],
+      "n_cheap": 0
+     }
+    },
+    "failing_columns": [],
+    "n_columns_tested": 1,
+    "why": "no single raw observable determines any graded column"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "why": "no certificate naming the readings the evidence leaves standing"
+   }
+  },
+  "v-falsify-a": {
+   "A1_threshold_margin": {
+    "status": "n/a",
+    "why": "task does not ship queries.json + an answer key"
+   },
+   "A2_cheap_predicate": {
+    "status": "n/a",
+    "why": "task does not ship queries + an id-keyed answer key"
+   },
+   "A3_mechanism_load_bearing": {
+    "status": "n/a",
+    "why": "the reference solver takes no explicit mechanism artefact this gate knows how to perturb"
+   },
+   "A4_wording_ambiguity": {
+    "status": "n/a",
+    "why": "no section whose wording this gate knows two readings of"
+   },
+   "A5_point_hypothesis": {
+    "status": "n/a",
+    "why": "no certificate naming the readings the evidence leaves standing"
+   }
+  }
+ },
+ "all_pass": true
+}

@@ -1,0 +1,21 @@
+{
+  "hidden": 256,
+  "lr": 0.003,
+  "batch_size": 128,
+  "warmup_frac": 0.02,
+  "aug_sigma": 0.0,
+  "loss": "gce",
+  "gce_q": 0.5,
+  "wd_candidates": [0.5, 0.7, 1.0, 1.5, 2.0, 3.0, 5.0],
+  "prior_wd_at_4000": 2.5,
+  "prior_wd_exponent": 0.35,
+  "epochs_per_candidate": 32,
+  "min_steps": 500,
+  "val_frac": 0.12,
+  "val_max": 4000,
+  "val_min": 150,
+  "ensemble_tol": 0.01,
+  "lda_shrink": 0.02,
+  "final_models": 3,
+  "cpu_budget_s": 75
+}

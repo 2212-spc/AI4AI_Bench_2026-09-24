@@ -1,0 +1,13 @@
+[task]
+name = "k6-ramp-f2"
+module = "k6_ramp"
+seed = 18
+
+[verifier]
+artifacts = ["sched.py"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 8.32
+unit = "GPU-seconds"

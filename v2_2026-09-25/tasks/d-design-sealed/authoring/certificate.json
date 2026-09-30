@@ -1,0 +1,303 @@
+{
+ "accepted": true,
+ "n_items": 31,
+ "gates": {
+  "G2_validity": {
+   "unrecorded_runs": 310,
+   "worst_day_total_error": 0.0,
+   "tightest_run_slack": 0.4996,
+   "tightest_contrast_slack": 0.00042571
+  },
+  "G3_attainment": {
+   "items": 10,
+   "all_attained": true,
+   "sample": [
+    {
+     "item": "w01",
+     "k": 1,
+     "width": 0.218560784314,
+     "witness_width": 0.218560784314,
+     "attained": true
+    },
+    {
+     "item": "w02",
+     "k": 0,
+     "width": 0.06,
+     "witness_width": 0.06,
+     "attained": true
+    },
+    {
+     "item": "w03",
+     "k": 2,
+     "width": 0.052684615385,
+     "witness_width": 0.052684615385,
+     "attained": true
+    },
+    {
+     "item": "w04",
+     "k": 1,
+     "width": 0.1283,
+     "witness_width": 0.1283,
+     "attained": true
+    }
+   ]
+  },
+  "G4_soundness_sampling": {
+   "outcomes_checked": 360,
+   "items_where_sampling_also_hit_the_max": 9,
+   "items": 9
+  },
+  "G9_identifiability": {
+   "log_rows": 40,
+   "candidate_readings": 13,
+   "readings_consistent_with_the_log": [
+    "the_sink_finalises_the_bundle_and_the_screen_redacts_it"
+   ],
+   "outcome_mix": {
+    "value": 4,
+    "range": 22,
+    "no_bundle": 14
+   }
+  },
+  "G10_no_lookup": {
+   "runs_named_by_items": 35,
+   "runs_in_the_log": 40,
+   "overlap": []
+  },
+  "G5_decoys": {
+   "min_fail": 2,
+   "still_needed": {},
+   "items_each_reading_gets_wrong": {
+    "analysis__day_totals_ignored": 9,
+    "analysis__recovered_value_is_best_case": 3,
+    "analysis__recovered_value_is_the_box_midpoint": 3,
+    "analysis__recovered_value_is_the_box_top": 2,
+    "analysis__surplus_stays_put": 2,
+    "analysis__value_is_box_width_over_n": 6,
+    "recovery__cold_storage_is_the_backup_for_whatever_the_archive_lost": 13,
+    "recovery__every_request_returns_the_exact_value": 13,
+    "recovery__nothing_that_finished_during_the_outage_survived": 2,
+    "recovery__nothing_the_archive_lost_can_be_recovered": 12,
+    "recovery__one_audit_resolution_for_the_whole_fleet": 6,
+    "recovery__the_audit_resolution_is_the_suites_chance_rate": 6,
+    "recovery__the_lost_shard_took_its_bundles_too": 3,
+    "recovery__the_screen_deleted_the_bundles_and_the_sink_left_them_alone": 16,
+    "recovery__the_screen_redacted_what_the_sink_delivered": 13,
+    "recovery__the_sink_outage_took_the_bundles_and_the_screen_left_them_alone": 6,
+    "recovery__the_three_sink_workers_lost_everything": 2,
+    "recovery__the_two_outage_workers_lost_everything": 2
+   },
+   "items_in_pool_each_reading_could_lose": {
+    "analysis__day_totals_ignored": 301,
+    "analysis__recovered_value_is_best_case": 63,
+    "analysis__recovered_value_is_the_box_midpoint": 49,
+    "analysis__recovered_value_is_the_box_top": 32,
+    "analysis__surplus_stays_put": 32,
+    "analysis__value_is_box_width_over_n": 92,
+    "recovery__cold_storage_is_the_backup_for_whatever_the_archive_lost": 379,
+    "recovery__every_request_returns_the_exact_value": 379,
+    "recovery__nothing_that_finished_during_the_outage_survived": 44,
+    "recovery__nothing_the_archive_lost_can_be_recovered": 260,
+    "recovery__one_audit_resolution_for_the_whole_fleet": 187,
+    "recovery__the_audit_resolution_is_the_suites_chance_rate": 183,
+    "recovery__the_lost_shard_took_its_bundles_too": 41,
+    "recovery__the_screen_deleted_the_bundles_and_the_sink_left_them_alone": 409,
+    "recovery__the_screen_redacted_what_the_sink_delivered": 379,
+    "recovery__the_sink_outage_took_the_bundles_and_the_screen_left_them_alone": 190,
+    "recovery__the_three_sink_workers_lost_everything": 29,
+    "recovery__the_two_outage_workers_lost_everything": 35
+   }
+  },
+  "G6_coverage": {
+   "value_labels": [
+    "no",
+    "yes"
+   ],
+   "yes_for_a_run_in_neither_cell": [
+    "v07"
+   ],
+   "no_for_the_widest_box_on_its_day": [
+    "v01",
+    "v03",
+    "v05",
+    "v06"
+   ],
+   "recovery_outcomes_graded": [
+    "band",
+    "empty",
+    "exact"
+   ]
+  },
+  "G7_search": {
+   "plans": [
+    {
+     "item": "p01",
+     "k": 2,
+     "greedy_needs": 3,
+     "unrecoverable_runs_offered": [
+      "r02593",
+      "r02594",
+      "r02595",
+      "r02596",
+      "r02597"
+     ],
+     "optimal_sets": [
+      [
+       "r02601",
+       "r02602"
+      ]
+     ]
+    },
+    {
+     "item": "p02",
+     "k": 2,
+     "greedy_needs": 2,
+     "unrecoverable_runs_offered": [
+      "r02593",
+      "r02594",
+      "r02595",
+      "r02596",
+      "r02597"
+     ],
+     "optimal_sets": [
+      [
+       "r02601",
+       "r02602"
+      ],
+      [
+       "r02601",
+       "r02608"
+      ],
+      [
+       "r02602",
+       "r02608"
+      ]
+     ]
+    },
+    {
+     "item": "p03",
+     "k": 2,
+     "greedy_needs": 2,
+     "unrecoverable_runs_offered": [
+      "r02593",
+      "r02594",
+      "r02595",
+      "r02596",
+      "r02597"
+     ],
+     "optimal_sets": [
+      [
+       "r02608",
+       "r02612"
+      ],
+      [
+       "r02608",
+       "r02613"
+      ],
+      [
+       "r02612",
+       "r02613"
+      ]
+     ]
+    }
+   ],
+   "with_unrecoverable_bait": [
+    "p01",
+    "p02",
+    "p03"
+   ],
+   "with_greedy_strictly_worse": [
+    "p01"
+   ]
+  },
+  "G8_regimes": {
+   "members_only": [
+    "2026-07-04@w01",
+    "2026-07-04@v01",
+    "2026-07-04@v02"
+   ],
+   "non_members_only": [
+    "2026-07-11@w02",
+    "2026-07-12@w02",
+    "2026-07-11@w03"
+   ],
+   "non_members_only_surplus_forced_down": [
+    "2026-07-13@w01",
+    "2026-07-13@w04",
+    "2026-07-13@w05"
+   ],
+   "nothing_helps": [
+    "2026-07-01@w06",
+    "2026-07-02@w06",
+    "2026-07-03@w06"
+   ]
+  },
+  "G11_inversion_is_load_bearing": {
+   "reading": "every_request_returns_the_exact_value",
+   "items_it_gets_wrong": {
+    "recovery": [
+     "r01",
+     "r02",
+     "r04",
+     "r05",
+     "r06",
+     "r07",
+     "r08"
+    ],
+    "values": [
+     "v09",
+     "v10"
+    ],
+    "widths": [
+     "w03",
+     "w04",
+     "w06"
+    ],
+    "plans": [
+     "p03"
+    ]
+   },
+   "unrecoverable_runs_named_by_items": [
+    "r00084",
+    "r00097",
+    "r00603",
+    "r00666",
+    "r01718",
+    "r02596",
+    "r02603",
+    "r02606",
+    "r02609"
+   ],
+   "banded_runs_named_by_items": [
+    "r00055",
+    "r01830",
+    "r01974",
+    "r02049",
+    "r02613"
+   ]
+  },
+  "G12_resolutions": {
+   "suites_items_depend_on": [
+    "arc_lite",
+    "code_ms",
+    "gsm_plus"
+   ],
+   "band_widths_shown_in_the_log": {
+    "arc_lite": [
+     0.04
+    ],
+    "code_ms": [
+     0.025
+    ],
+    "gsm_plus": [
+     0.02
+    ]
+   },
+   "banded_rows_per_suite": {
+    "arc_lite": 2,
+    "code_ms": 18,
+    "gsm_plus": 2
+   }
+  }
+ }
+}

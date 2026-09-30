@@ -1,0 +1,148 @@
+[
+ {
+  "id": "q1",
+  "kind": "point",
+  "text": "log10 of the loss-minimising peak learning rate for N=1e9, D=2e10 tokens, batch 0.5M tokens.",
+  "unit": "log10(lr)",
+  "key": {
+   "lo": -2.69342561702976,
+   "hi": -2.69342561702976
+  },
+  "tol": 0.03,
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [],
+  "floor": 0.03
+ },
+ {
+  "id": "q2",
+  "kind": "point",
+  "text": "log10 of the loss-minimising peak learning rate for N=1e9, D=1e12 tokens, batch 0.5M tokens.",
+  "unit": "log10(lr)",
+  "key": {
+   "lo": -3.011256824573691,
+   "hi": -3.011256824573691
+  },
+  "tol": 0.051448383177186696,
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O1",
+   "O9"
+  ],
+  "floor": 0.03
+ },
+ {
+  "id": "q3",
+  "kind": "point",
+  "text": "Excess final loss (nats/token) of training N=1e9, D=1e12, batch 0.5M at the notes' planned lr_prod = 0.001453 instead of at the loss-minimising learning rate.",
+  "unit": "nats",
+  "key": {
+   "lo": 0.019115515658262354,
+   "hi": 0.019115515658262354
+  },
+  "tol": 0.01386446700709756,
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O9"
+  ],
+  "floor": 0.005
+ },
+ {
+  "id": "q4",
+  "kind": "set",
+  "text": "log10 of the loss-minimising peak learning rate for the production run as planned: N=1e9, D=1e12 tokens, batch 4M tokens.",
+  "unit": "log10(lr)",
+  "key": {
+   "lo": -3.011256824573691,
+   "hi": -2.559711831077719
+  },
+  "tol": 0.051448383177187695,
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O5",
+   "O9"
+  ],
+  "floor": 0.03
+ },
+ {
+  "id": "q5",
+  "kind": "verdict",
+  "text": "Holding the number of training tokens fixed (batch 0.5M), making the model 10x larger lowers its loss-minimising learning rate by at least 35%.",
+  "key": {
+   "verdict": "refuted"
+  },
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O1"
+  ]
+ },
+ {
+  "id": "q6",
+  "kind": "verdict",
+  "text": "A colleague proposes peak lr = 0.00157 for the production run as planned (N=1e9, D=1e12, batch 4M). This value is above that run's loss-minimising learning rate.",
+  "key": {
+   "verdict": "undetermined"
+  },
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O5"
+  ]
+ },
+ {
+  "id": "q7",
+  "kind": "decision",
+  "text": "Which peak learning rate gives the lowest final loss for N=1e9, D=2e11, batch 0.5M? Options: A: 0.000542, B: 0.00108, C: 0.00217, D: 0.00434",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "key": {
+   "choice": "B",
+   "regret": {
+    "A": 0.04383400275404593,
+    "B": 0.0,
+    "C": 0.027623041081938995,
+    "D": 0.16826686779028246
+   }
+  },
+  "r_tol": 0.009207680360646332,
+  "cards": [
+   "C2"
+  ],
+  "obstacles": [
+   "O9"
+  ],
+  "gap": 0.027623041081938995
+ },
+ {
+  "id": "q8",
+  "kind": "point",
+  "text": "Final validation loss (nats/token) of N=1e9, D=1e12, batch 0.5M trained at its loss-minimising learning rate.",
+  "unit": "nats",
+  "key": {
+   "lo": 2.4152201861196096,
+   "hi": 2.4152201861196096
+  },
+  "tol": 0.04072481013792195,
+  "cards": [
+   "C1"
+  ],
+  "obstacles": [
+   "O3"
+  ],
+  "floor": 0.005
+ }
+]

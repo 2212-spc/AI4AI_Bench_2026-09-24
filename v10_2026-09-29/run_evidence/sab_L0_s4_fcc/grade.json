@@ -1,0 +1,96 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": true,
+   "detail": "expected daily score change of your schedule +0.04455 vs the best achievable +0.04455: regret 0.00000 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth +0.04455; you said [+0.04250, +0.04550] (covers, width 0.00300, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.04455; you said [+0.04250, +0.04550] (covers, width 0.00300, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 0.0,
+  "D_submitted": 0.04455,
+  "closest_schedule": "ship_all",
+  "closest_dist": 0.0,
+  "peak_fraction": 1.0,
+  "q1_centre_minus_truth": -0.00055,
+  "q1_centre_minus_naive": 0.0007,
+  "q1_centre_minus_fluid": 0.000163,
+  "q1_centre_minus_lossmodel": -0.029013,
+  "q2_centre_minus_truth": -0.00055,
+  "n_tests": 5,
+  "n_drills": 1,
+  "drill_days": 1,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L0",
+  "D_star": 0.04455,
+  "x_star": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "D_full": 0.04455,
+  "naive_ab_delta": 0.0433,
+  "fluid_full": 0.043837,
+  "loss_full": 0.073013,
+  "decoy_regret": {
+   "ship_all": 0.0,
+   "guard_safe": 0.021934,
+   "keep_target": 0.0,
+   "no_ship": 0.04455,
+   "rho_0.85": 0.0,
+   "rho_0.90": 0.0,
+   "rho_0.95": 0.0
+  },
+  "peak_hour": 14,
+  "peak_full_util_at_quota": 0.564,
+  "peak_full_abandon": 0.0008,
+  "peak_full_wait_s": 0.05
+ },
+ "run": "sab_L0_s4_fcc",
+ "task": "sab_L0_s4",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 5,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 19.3,
+ "api_errors": 0,
+ "truncated": false
+}

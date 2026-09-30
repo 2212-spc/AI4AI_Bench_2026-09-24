@@ -1,0 +1,228 @@
+{
+ "seed": 20260925,
+ "n_launched": 96000,
+ "n_recorded": 65053,
+ "n_missing": 30947,
+ "G1_reference_clears_every_item": true,
+ "G2_tolerances_are_5_sigma_of_reference": {
+  "ref_sd": {
+   "q01": 0.00189,
+   "q02": 0.00347,
+   "q03": 0.00233,
+   "q04": 0.00638,
+   "q05": 0.0038,
+   "q06": 0.0039,
+   "q10": 0.00713,
+   "q11": 0.00311,
+   "q12": 0.00442
+  },
+  "ref_worst_abs": {
+   "q01": 0.0032,
+   "q02": 0.00575,
+   "q03": 0.0059,
+   "q04": 0.01138,
+   "q05": 0.00632,
+   "q06": 0.0061,
+   "q10": 0.01217,
+   "q11": 0.00683,
+   "q12": 0.0082
+  },
+  "tol_delta": {
+   "q01": 0.03,
+   "q02": 0.03,
+   "q03": 0.03,
+   "q04": 0.033,
+   "q05": 0.03,
+   "q06": 0.03,
+   "q10": 0.037,
+   "q11": 0.03,
+   "q12": 0.03
+  },
+  "tol_censor": {
+   "r1": 0.04,
+   "r2": 0.04,
+   "r3": 0.048,
+   "r4": 0.04,
+   "r5": 0.04,
+   "r6": 0.04
+  },
+  "ok": true
+ },
+ "G3_every_wrong_candidate_fails": true,
+ "G4_alternative_correct_routes_pass": true,
+ "candidate_scan": {
+  "REFERENCE": [
+   0,
+   0,
+   0
+  ],
+  "guard_threshold_read_off_max": [
+   0,
+   0,
+   0
+  ],
+  "model_based_censoring_report": [
+   0,
+   0,
+   0
+  ],
+  "moment_matching_under_heavy_truncation": [
+   0,
+   2,
+   0
+  ],
+  "complete_case": [
+   3,
+   3,
+   3
+  ],
+  "complete_case_median": [
+   3,
+   3,
+   3
+  ],
+  "complete_case_with_extrapolation": [
+   5,
+   5,
+   5
+  ],
+  "correct_fit_but_abstains_on_any_hole": [
+   9,
+   9,
+   9
+  ],
+  "correct_fit_but_abstains_when_censored": [
+   9,
+   9,
+   9
+  ],
+  "correct_fit_but_extrapolates_dead_cell": [
+   2,
+   2,
+   2
+  ],
+  "impute_above_guard": [
+   3,
+   4,
+   3
+  ],
+  "impute_at_guard": [
+   4,
+   4,
+   4
+  ],
+  "reports_no_censoring": [
+   3,
+   3,
+   3
+  ],
+  "reports_raw_missing_fraction": [
+   5,
+   4,
+   3
+  ],
+  "reweight_preemption_only": [
+   3,
+   3,
+   3
+  ],
+  "survival_rate_ignoring_preemption": [
+   11,
+   11,
+   10
+  ],
+  "survival_rate_with_preemption_model": [
+   7,
+   7,
+   5
+  ]
+ },
+ "borderline": {
+  "moment_matching_under_heavy_truncation": [
+   0,
+   2,
+   0
+  ]
+ },
+ "calibration_seeds": [
+  7,
+  11,
+  23,
+  101,
+  5,
+  77,
+  313,
+  929,
+  1217,
+  4001
+ ],
+ "candidate_seeds": [
+  7,
+  11,
+  23
+ ],
+ "G5_dead_region_has_no_row": true,
+ "G5_indistinguishable_worlds": [
+  {
+   "free_term": 0.2,
+   "max_per_run_survival": 4.016000583859125e-11,
+   "n_runs_in_region": 8000,
+   "prob_any_row_appears": 3.2127983995433596e-07,
+   "true_delta_q07": 0.91
+  },
+  {
+   "free_term": 0.35,
+   "max_per_run_survival": 1.5851365242201444e-16,
+   "n_runs_in_region": 8000,
+   "prob_any_row_appears": 8.881784197001252e-13,
+   "true_delta_q07": 1.06
+  },
+  {
+   "free_term": 0.6,
+   "max_per_run_survival": 3.532475467792065e-28,
+   "n_runs_in_region": 8000,
+   "prob_any_row_appears": 0.0,
+   "true_delta_q07": 1.31
+  }
+ ],
+ "G5_ok": true,
+ "G6_raw_missing_vs_truth": {
+  "r1": {
+   "raw_missing": 0.102,
+   "true_guard_fraction": 9.9e-05,
+   "tol": 0.04
+  },
+  "r2": {
+   "raw_missing": 0.4455,
+   "true_guard_fraction": 0.390591,
+   "tol": 0.04
+  },
+  "r3": {
+   "raw_missing": 0.6685,
+   "true_guard_fraction": 0.638913,
+   "tol": 0.048
+  },
+  "r4": {
+   "raw_missing": 0.277,
+   "true_guard_fraction": 5.8e-05,
+   "tol": 0.04
+  },
+  "r5": {
+   "raw_missing": 0.0705,
+   "true_guard_fraction": 0.02275,
+   "tol": 0.04
+  },
+  "r6": {
+   "raw_missing": 1.0,
+   "true_guard_fraction": 1.0,
+   "tol": 0.04
+  }
+ },
+ "G6_ok": true,
+ "reference_solve_seconds": 1.0,
+ "G1_exported_reference_reward": 1,
+ "G7_all_identified_reward": 0,
+ "G7_all_underdetermined_reward": 0,
+ "G7_ok": true,
+ "accepted": true
+}

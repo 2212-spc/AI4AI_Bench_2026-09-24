@@ -1,0 +1,79 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_recipe": {
+   "ok": true,
+   "detail": "recipe.json is well-formed"
+  },
+  "R1_recipe": {
+   "ok": true,
+   "detail": "expected final val loss of your recipe at the new setup exceeds the best achievable by 0.00001 (allowed 0.0008): lr part 0.00000, lr*wd part 0.00001.  Best recipe lr=0.000556 wd=0.11; yours lr=0.00056 wd=0.11 (log2 offsets: lr +0.01, lr*wd +0.01)."
+  },
+  "R2_loss": {
+   "ok": true,
+   "detail": "expected final val loss of YOUR recipe at the new setup is 2.96418; you reported [2.96120, 2.97220] (covers, width 0.01100, cap 0.0110)."
+  }
+ },
+ "diag": {
+  "variant": "tokens4x",
+  "penalty": 1e-05,
+  "pen_lr": 4e-06,
+  "pen_lrwd": 6e-06,
+  "du_log2": 0.01,
+  "dw_log2": 0.009,
+  "wd_changed": true,
+  "closest_decoy": "lr_measured__wd_keep",
+  "closest_decoy_dist": 0.449,
+  "interval_centre_minus_truth": 0.00252,
+  "n_runs": 41,
+  "n_full_length": 0,
+  "shortest_octaves_below": -8.0,
+  "wd_varied_at_fixed_lr_max_octave": -1.0,
+  "spent": 223.25
+ },
+ "ref": {
+  "variant": "tokens4x",
+  "u_star": -10.81259,
+  "v_star": -3.18308,
+  "w_star": -13.99567,
+  "lr_star": 0.000556,
+  "wd_star": 0.11,
+  "best_loss": 2.96417,
+  "decoy_penalty": {
+   "lr_rho0__wd_keep": 0.04927,
+   "lr_rho0__lrwd_keep": 0.04927,
+   "lr_rho0__steps_pow_half": 0.054172,
+   "lr_rho0__steps_pow_one": 0.208513,
+   "lr_rho0__batch1_tokens_half": 0.054172,
+   "lr_rho0.5__wd_keep": 0.04927,
+   "lr_rho0.5__lrwd_keep": 0.04927,
+   "lr_rho0.5__steps_pow_half": 0.054172,
+   "lr_rho0.5__steps_pow_one": 0.208513,
+   "lr_rho0.5__batch1_tokens_half": 0.054172,
+   "lr_rho1__wd_keep": 0.04927,
+   "lr_rho1__lrwd_keep": 0.04927,
+   "lr_rho1__steps_pow_half": 0.054172,
+   "lr_rho1__steps_pow_one": 0.208513,
+   "lr_rho1__batch1_tokens_half": 0.054172,
+   "lr_measured__wd_keep": 0.015131,
+   "lr_measured__lrwd_keep": 0.01631,
+   "lr_measured__steps_pow_half": 0.021211,
+   "lr_measured__steps_pow_one": 0.175553,
+   "lr_measured__batch1_tokens_half": 0.021211,
+   "proxy_optimum": 0.19708
+  },
+  "ofat_penalty": 0.005205,
+  "carry_over_penalty": 0.04927
+ },
+ "run": "rr14__fable__r1",
+ "task": "r_retune_s14",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 41,
+ "budget_spent_frac": 0.997,
+ "status": "done",
+ "agent_min": 12.8,
+ "api_errors": 0,
+ "truncated": false
+}

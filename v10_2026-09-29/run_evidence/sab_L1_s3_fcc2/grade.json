@@ -1,0 +1,96 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": true,
+   "detail": "expected daily score change of your schedule +0.02257 vs the best achievable +0.02267: regret 0.00010 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth -0.01638; you said [-0.02050, -0.01450] (covers, width 0.00600, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.02257; you said [+0.02060, +0.02460] (covers, width 0.00400, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 0.000105,
+  "D_submitted": 0.022566,
+  "closest_schedule": "keep_target",
+  "closest_dist": 0.0045,
+  "peak_fraction": 0.38,
+  "q1_centre_minus_truth": -0.001123,
+  "q1_centre_minus_naive": -0.0461,
+  "q1_centre_minus_fluid": -0.012262,
+  "q1_centre_minus_lossmodel": -0.02553,
+  "q2_centre_minus_truth": 3.4e-05,
+  "n_tests": 5,
+  "n_drills": 2,
+  "drill_days": 2,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L1",
+  "D_star": 0.022671,
+  "x_star": [
+   0.996,
+   0.983,
+   0.983,
+   0.992,
+   0.972,
+   1.0,
+   0.996,
+   1.0,
+   1.0,
+   0.926,
+   0.752,
+   0.606,
+   0.496,
+   0.425,
+   0.396,
+   0.41,
+   0.471,
+   0.589,
+   0.773,
+   1.0,
+   1.0,
+   1.0,
+   0.968,
+   0.994
+  ],
+  "D_full": -0.016377,
+  "naive_ab_delta": 0.0286,
+  "fluid_full": -0.005238,
+  "loss_full": 0.00803,
+  "decoy_regret": {
+   "ship_all": 0.039048,
+   "guard_safe": 0.007209,
+   "keep_target": 7.3e-05,
+   "no_ship": 0.022671,
+   "rho_0.85": 0.002567,
+   "rho_0.90": 0.005975,
+   "rho_0.95": 0.011699
+  },
+  "peak_hour": 14,
+  "peak_full_util_at_quota": 1.13,
+  "peak_full_abandon": 0.1199,
+  "peak_full_wait_s": 7.11
+ },
+ "run": "sab_L1_s3_fcc2",
+ "task": "sab_L1_s3",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 5,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 9.7,
+ "api_errors": 0,
+ "truncated": false
+}

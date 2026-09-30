@@ -1,0 +1,42 @@
+{
+ "pass": false,
+ "score": 0.8164,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "scheduler completed all 40 segments on all 5 hidden runs"
+  },
+  "R1_time": {
+   "ok": false,
+   "detail": "mean 3.528 s (best constant batch 3.781 s, reference scheduler 3.472 s) -> s=0.816, need 0.90"
+  }
+ },
+ "diag": {
+  "seconds_by_run": [
+   3.2793,
+   4.1647,
+   4.5371,
+   2.9836,
+   2.6776
+  ],
+  "T_const_best": 3.781,
+  "T_ref": 3.4717,
+  "profile_seconds": 5.44,
+  "n_evaluate": 3
+ },
+ "ref": {
+  "T_const_best": 3.780986810275608,
+  "T_ref": 3.471659998552421
+ },
+ "run": "k6f2__sonnet5__r1",
+ "task": "k6-ramp-f2",
+ "model": "claude-sonnet-5",
+ "hint": 0,
+ "lab_calls": 31,
+ "budget_spent_frac": 0.924,
+ "status": "timeout",
+ "agent_min": 100.2,
+ "api_errors": 0,
+ "truncated": true,
+ "truncate_reason": "timeout"
+}

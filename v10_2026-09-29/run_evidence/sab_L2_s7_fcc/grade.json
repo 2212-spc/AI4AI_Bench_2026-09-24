@@ -1,0 +1,96 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": true,
+   "detail": "expected daily score change of your schedule +0.01960 vs the best achievable +0.01983: regret 0.00023 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth +0.00336; you said [+0.00000, +0.00600] (covers, width 0.00600, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.01960; you said [+0.01820, +0.02220] (covers, width 0.00400, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 0.000234,
+  "D_submitted": 0.019596,
+  "closest_schedule": "keep_target",
+  "closest_dist": 0.0067,
+  "peak_fraction": 0.52,
+  "q1_centre_minus_truth": -0.000356,
+  "q1_centre_minus_naive": -0.021498,
+  "q1_centre_minus_fluid": -0.000249,
+  "q1_centre_minus_lossmodel": -0.018479,
+  "q2_centre_minus_truth": 0.000604,
+  "n_tests": 7,
+  "n_drills": 2,
+  "drill_days": 2,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L2",
+  "D_star": 0.01983,
+  "x_star": [
+   0.93,
+   0.962,
+   0.966,
+   0.934,
+   0.937,
+   0.943,
+   0.997,
+   0.974,
+   0.988,
+   0.968,
+   0.817,
+   0.69,
+   0.59,
+   0.52,
+   0.492,
+   0.506,
+   0.57,
+   0.675,
+   0.976,
+   0.998,
+   0.984,
+   0.972,
+   0.986,
+   0.927
+  ],
+  "D_full": 0.003356,
+  "naive_ab_delta": 0.024498,
+  "fluid_full": 0.003249,
+  "loss_full": 0.021479,
+  "decoy_regret": {
+   "ship_all": 0.016473,
+   "guard_safe": 0.007965,
+   "keep_target": 0.000182,
+   "no_ship": 0.01983,
+   "rho_0.85": 0.00179,
+   "rho_0.90": 0.004305,
+   "rho_0.95": 0.007728
+  },
+  "peak_hour": 14,
+  "peak_full_util_at_quota": 1.067,
+  "peak_full_abandon": 0.085,
+  "peak_full_wait_s": 4.99
+ },
+ "run": "sab_L2_s7_fcc",
+ "task": "sab_L2_s7",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 7,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 19.3,
+ "api_errors": 0,
+ "truncated": false
+}

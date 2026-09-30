@@ -1,0 +1,1 @@
+The lab service is `scalelab/lab_server.py`.  It loads `hidden/world.json`, keeps the budget ledger outside the agent's filesystem, and executes every request through `scalelab.lab.Session` - the same code the builder's oracle, rivals and gates used.

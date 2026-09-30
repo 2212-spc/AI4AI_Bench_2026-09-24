@@ -1,0 +1,65 @@
+{
+ "pass": false,
+ "score": 0.6275,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.7675 (majority@6 0.5050, reference 0.9233) -> s=0.627, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.795,
+   0.76,
+   0.7475
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.9286,
+    "geometry": 0.6023,
+    "combinatorics": 0.6701,
+    "number_theory": 0.9316
+   },
+   {
+    "algebra": 0.8788,
+    "geometry": 0.646,
+    "combinatorics": 0.5543,
+    "number_theory": 0.9688
+   },
+   {
+    "algebra": 0.95,
+    "geometry": 0.5455,
+    "combinatorics": 0.57,
+    "number_theory": 0.9208
+   }
+  ],
+  "n_dev_samples": 5550,
+  "n_evaluate": 4
+ },
+ "ref": {
+  "maj": [
+   0.525,
+   0.51,
+   0.48
+  ],
+  "ref": [
+   0.9225,
+   0.9275,
+   0.92
+  ]
+ },
+ "run": "k4w2__gpt55__r1",
+ "task": "k4-tts-w2",
+ "model": "gpt-5.5",
+ "hint": 0,
+ "lab_calls": 19,
+ "budget_spent_frac": 0.955,
+ "status": "done",
+ "agent_min": 21.5,
+ "api_errors": 3,
+ "truncated": false
+}

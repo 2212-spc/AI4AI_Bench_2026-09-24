@@ -1,0 +1,21 @@
+3000 steps: 2.65s
+         180059 function calls (180057 primitive calls) in 2.652 seconds
+
+   Ordered by: internal time
+   List reduced from 58 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     3000    1.238    0.000    1.265    0.000 /app/repo/train.py:33(backward)
+     3000    0.782    0.000    0.782    0.000 /app/repo/train.py:26(forward)
+     3000    0.450    0.000    0.480    0.000 /app/repo/train.py:61(step)
+    24004    0.043    0.000    0.043    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     3000    0.038    0.000    0.076    0.000 /app/repo/train.py:43(softmax_xent_grad)
+        1    0.031    0.031    2.652    2.652 /app/repo/train.py:88(train)
+    18004    0.028    0.000    0.028    0.000 {method 'astype' of 'numpy.ndarray' objects}
+     3001    0.008    0.000    0.015    0.000 /usr/local/lib/python3.10/dist-packages/numpy/_core/_methods.py:118(_mean)
+     3000    0.004    0.000    0.004    0.000 /app/repo/train.py:75(lr_multiplier)
+     3000    0.003    0.000    0.004    0.000 /usr/local/lib/python3.10/dist-packages/numpy/_core/numeric.py:290(full)
+     3000    0.003    0.000    0.008    0.000 /usr/local/lib/python3.10/dist-packages/numpy/_core/fromnumeric.py:69(_wrapreduction)
+     3002    0.003    0.000    0.003    0.000 /usr/local/lib/python3.10/dist-packages/numpy/_core/_methods.py:76(_count_reduce_items)
+
+

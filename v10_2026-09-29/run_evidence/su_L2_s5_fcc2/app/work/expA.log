@@ -1,0 +1,13 @@
+(A) dedupe vs keep duplicates, wd=3, 1000 steps, 4 seeds
+  with dups (4000)   dev 0.692 (+-0.003)
+  unique (3688)      dev 0.691 (+-0.001)
+(B) ensembles vs epochs on unique rows, wd=3 (single-model budget = 1000 steps)
+  1 members x 1000 steps (total 1000): dev 0.694
+  1 members x  500 steps (total  500): dev 0.694
+  1 members x  250 steps (total  250): dev 0.654
+  3 members x  333 steps (total  999): dev 0.681
+  3 members x 1000 steps (total 3000): dev 0.695
+  5 members x  200 steps (total 1000): dev 0.651
+  5 members x 1000 steps (total 5000): dev 0.699
+  2 members x  500 steps (total 1000): dev 0.690
+  4 members x  250 steps (total 1000): dev 0.663

@@ -1,0 +1,701 @@
+{
+ "accepted": true,
+ "n_items": 34,
+ "gates": {
+  "G2_validity": {
+   "runs_checked": 2337,
+   "cells_checked": 68,
+   "worst_support_violation": 1.1102230246251565e-16,
+   "worst_day_total_error": 3.6193270602780103e-14,
+   "reference_surplus_clamped": 0.0,
+   "tightest_cell_slack": 0.316947
+  },
+  "G3_sharpness": {
+   "cell_lo": {
+    "endpoint": 0.45503611,
+    "witness": 0.45503611,
+    "attained": true
+   },
+   "cell_hi": {
+    "endpoint": 0.593925,
+    "witness": 0.593925,
+    "attained": true
+   },
+   "contrast_lo": {
+    "endpoint": -0.11038036,
+    "witness": -0.11038036,
+    "attained": true
+   },
+   "contrast_hi": {
+    "endpoint": 0.02140958,
+    "witness": 0.02140958,
+    "attained": true
+   }
+  },
+  "G3b_equivalences_hold": {
+   "contrast_from_two_independent_cell_intervals": {
+    "disagreements": []
+   },
+   "survivorship_floor_read_at_the_deletion_timestamp": {
+    "disagreements": []
+   }
+  },
+  "G3c_within_tolerance_readings": {
+   "screened_row_bounded_by_the_floor_itself": {
+    "worst_endpoint_gap": 3.1e-05,
+    "headroom_vs_tol": 16.1,
+    "decisions_moved": []
+   }
+  },
+  "G4_independent_agreement": {
+   "disagreements": [],
+   "compared_at": 1e-06,
+   "n_items": 32
+  },
+  "G6_coverage": {
+   "decision_labels": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "flipped_by_point_estimate": [
+    "d03",
+    "d04",
+    "d06",
+    "d07",
+    "d08"
+   ]
+  },
+  "G8_mechanism_is_inferable": {
+   "rows_confirming_the_screen": 1895,
+   "rows_violating_it": [],
+   "quality_removals_timed_at_the_finish": 153,
+   "quality_removals_mistimed": [],
+   "shard_lost_runs": 17,
+   "shard_lost_cells": 11,
+   "shard_lost_runs_with_a_recovered_value": [],
+   "outage_values_below_their_floor": 5,
+   "key_movement_if_the_deduction_is_skipped": 0.0225
+  },
+  "G9a_mechanism_recoverable_by_program": {
+   "surviving_rows_below_the_latest_floor": 211,
+   "surviving_rows_below_their_own_finish_floor": 0,
+   "code_profiles": {
+    "RSN-04": {
+     "n": 153,
+     "removal_instant_equals_the_finish": 153,
+     "removal_instant_is_later": 0,
+     "distinct_removal_instants": 153,
+     "distinct_worker_days": 75,
+     "recovered_values_seen": 30,
+     "recovered_values_below_the_finish_floor": 30
+    },
+    "RSN-11": {
+     "n": 17,
+     "removal_instant_equals_the_finish": 0,
+     "removal_instant_is_later": 17,
+     "distinct_removal_instants": 1,
+     "distinct_worker_days": 1,
+     "recovered_values_seen": 0,
+     "recovered_values_below_the_finish_floor": 0
+    }
+   },
+   "screen_code": "RSN-04",
+   "batch_code": "RSN-11",
+   "grid": 0.0001,
+   "grid_per_source": {
+    "recorded": 0.0001,
+    "scraped": 0.0001,
+    "both": 0.0001
+   },
+   "class_sizes": {
+    "screened": 153,
+    "worker_day_lost": 17,
+    "no_row_no_entry": 272
+   },
+   "bounded_side": {
+    "screened": "above",
+    "worker_day_lost": "below",
+    "no_row_no_entry": "neither"
+   },
+   "runs_refuting_a_bound_on_the_unlogged_class": 5,
+   "worker_day_lost_runs_whose_bound_actually_lifts": 17
+  },
+  "G9b_grid_over_determined": {
+   "recorded": 0.0001,
+   "scraped": 0.0001,
+   "both": 0.0001
+  },
+  "G9c_single_run_items": {
+   "items": [
+    {
+     "id": "s01",
+     "run_id": "r00084",
+     "class": "no_row_no_entry",
+     "role": "unlogged_raw_suite",
+     "lo": 0.25,
+     "hi": 1.0,
+     "box": [
+      0.25,
+      1.0
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 28,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.4119
+    },
+    {
+     "id": "s02",
+     "run_id": "r01116",
+     "class": "no_row_no_entry",
+     "role": "unlogged_normalised_suite",
+     "lo": 0.0,
+     "hi": 1.0,
+     "box": [
+      0.0,
+      1.0
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 28,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.4037
+    },
+    {
+     "id": "s03",
+     "run_id": "r00003",
+     "class": "screened",
+     "role": "box_is_the_answer",
+     "lo": 0.25,
+     "hi": 0.3599,
+     "box": [
+      0.25,
+      0.3599
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 13,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.3289
+    },
+    {
+     "id": "s04",
+     "run_id": "r02210",
+     "class": "screened",
+     "role": "lifted_but_not_pinned",
+     "lo": 0.1667,
+     "hi": 0.1799,
+     "box": [
+      0.0,
+      0.1799
+     ],
+     "tightened_by_the_daily_total": 0.1667,
+     "unknown_peers_that_day": 1,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.1755
+    },
+    {
+     "id": "s05",
+     "run_id": "r02257",
+     "class": "screened",
+     "role": "finished_on_a_policy_edge",
+     "lo": 0.0,
+     "hi": 0.2699,
+     "box": [
+      0.0,
+      0.2699
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 28,
+     "finished_on_a_policy_edge": true,
+     "hidden": 0.2343
+    },
+    {
+     "id": "s06",
+     "run_id": "r02507",
+     "class": "screened",
+     "role": "pinned_by_its_day_total",
+     "lo": 0.3247,
+     "hi": 0.3247,
+     "box": [
+      0.0,
+      0.3599
+     ],
+     "tightened_by_the_daily_total": 0.3599,
+     "unknown_peers_that_day": 0,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.3247
+    },
+    {
+     "id": "s07",
+     "run_id": "r00015",
+     "class": "worker_day_lost",
+     "role": "worker_day_lost_high_base",
+     "lo": 0.36,
+     "hi": 1.0,
+     "box": [
+      0.36,
+      1.0
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 34,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.4688
+    },
+    {
+     "id": "s08",
+     "run_id": "r00880",
+     "class": "worker_day_lost",
+     "role": "worker_day_lost_low_base",
+     "lo": 0.36,
+     "hi": 1.0,
+     "box": [
+      0.36,
+      1.0
+     ],
+     "tightened_by_the_daily_total": 0.0,
+     "unknown_peers_that_day": 34,
+     "finished_on_a_policy_edge": false,
+     "hidden": 0.5332
+    }
+   ],
+   "independent_agreement": 0.0,
+   "bound_shape": {
+    "s01": "neither",
+    "s02": "neither",
+    "s03": "above",
+    "s04": "above",
+    "s05": "above",
+    "s06": "above",
+    "s07": "below",
+    "s08": "below"
+   },
+   "classes": [
+    "no_row_no_entry",
+    "screened",
+    "worker_day_lost"
+   ],
+   "pinned_outright": [
+    "s06"
+   ],
+   "box_width_of_the_pinned_items": [
+    0.3599
+   ]
+  },
+  "G9c_decoys_the_support_items_expose": {
+   "daily_totals_ignored_runs_bounded_one_at_a_time": [
+    "s04",
+    "s06"
+   ],
+   "daily_total_read_as_a_daily_mean": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08"
+   ],
+   "day_taken_from_the_start_time": [
+    "s03",
+    "s04",
+    "s05",
+    "s06"
+   ],
+   "percent_read_as_fraction": [
+    "s01",
+    "s02",
+    "s03",
+    "s05",
+    "s07",
+    "s08"
+   ],
+   "floor_is_random_guess_everywhere": [
+    "s02",
+    "s05"
+   ],
+   "floor_is_zero_everywhere": [
+    "s01",
+    "s03"
+   ],
+   "one_global_retention_floor": [
+    "s04",
+    "s05"
+   ],
+   "retention_bound_discarded": [
+    "s03",
+    "s04",
+    "s05"
+   ],
+   "policy_interval_closed_on_the_right": [
+    "s05"
+   ],
+   "lost_shard_treated_as_a_quality_deletion": [
+    "s07",
+    "s08"
+   ],
+   "surviving_row_evidence_ignored": [
+    "s07",
+    "s08"
+   ],
+   "survivorship_applied_to_every_unrecorded_run": [
+    "s01",
+    "s02"
+   ]
+  },
+  "G9d_no_leak_in_the_environment": {
+   "documents_scanned": [
+    "archive_notes.md",
+    "metric_card.md",
+    "retention_policy.json",
+    "suites.json"
+   ],
+   "leaks": []
+  },
+  "G5_selection": {
+   "underkilled": {},
+   "items_able_to_kill_each_decoy": {
+    "daily_totals_ignored_runs_bounded_one_at_a_time": 46,
+    "daily_total_read_as_a_daily_mean": 684,
+    "day_taken_from_the_start_time": 110,
+    "complete_case_point_estimate": 686,
+    "unknown_runs_imputed_at_the_floor": 684,
+    "denominator_counts_planned_runs": 404,
+    "denominator_counts_recovery_ghosts": 46,
+    "duplicate_recovery_rows_counted_twice": 273,
+    "recovery_shards_ignored": 279,
+    "percent_read_as_fraction": 816,
+    "floor_is_random_guess_everywhere": 158,
+    "floor_is_zero_everywhere": 87,
+    "one_global_retention_floor": 86,
+    "retention_bound_discarded": 242,
+    "policy_interval_closed_on_the_right": 6,
+    "lost_shard_treated_as_a_quality_deletion": 175,
+    "surviving_row_evidence_ignored": 74,
+    "survivorship_applied_to_every_unrecorded_run": 205,
+    "contrast_endpoints_subtracted_pairwise": 463,
+    "decision_read_off_the_midpoint": 458,
+    "decision_yes_if_any_feasible_value_clears": 458
+   },
+   "decoys": {
+    "daily_totals_ignored_runs_bounded_one_at_a_time": {
+     "n_fail": 7,
+     "items": [
+      "b02",
+      "b05",
+      "k01",
+      "k02",
+      "k07",
+      "s04"
+     ],
+     "worst_endpoint_error": 0.3247,
+     "support_items_failed": [
+      "s04",
+      "s06"
+     ]
+    },
+    "daily_total_read_as_a_daily_mean": {
+     "n_fail": 27,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "worst_endpoint_error": 10772.9692,
+     "support_items_failed": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05",
+      "s06",
+      "s07",
+      "s08"
+     ]
+    },
+    "day_taken_from_the_start_time": {
+     "n_fail": 13,
+     "items": [
+      "b02",
+      "b05",
+      "k01",
+      "k02",
+      "k03",
+      "k04"
+     ],
+     "worst_endpoint_error": 2.1496,
+     "support_items_failed": [
+      "s03",
+      "s04",
+      "s05",
+      "s06"
+     ]
+    },
+    "complete_case_point_estimate": {
+     "n_fail": 19,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "worst_endpoint_error": 0.14205,
+     "support_items_failed": []
+    },
+    "unknown_runs_imputed_at_the_floor": {
+     "n_fail": 19,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "worst_endpoint_error": 0.21647,
+     "support_items_failed": []
+    },
+    "denominator_counts_planned_runs": {
+     "n_fail": 17,
+     "items": [
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06",
+      "b07"
+     ],
+     "worst_endpoint_error": 0.10673,
+     "support_items_failed": []
+    },
+    "denominator_counts_recovery_ghosts": {
+     "n_fail": 4,
+     "items": [
+      "b07",
+      "k01",
+      "d02",
+      "d03"
+     ],
+     "worst_endpoint_error": 0.01279,
+     "support_items_failed": []
+    },
+    "duplicate_recovery_rows_counted_twice": {
+     "n_fail": 17,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "worst_endpoint_error": 0.03234,
+     "support_items_failed": []
+    },
+    "recovery_shards_ignored": {
+     "n_fail": 15,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b05",
+      "b06",
+      "b07"
+     ],
+     "worst_endpoint_error": 0.15672,
+     "support_items_failed": []
+    },
+    "percent_read_as_fraction": {
+     "n_fail": 28,
+     "items": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "worst_endpoint_error": 757.9359,
+     "support_items_failed": [
+      "s01",
+      "s02",
+      "s03",
+      "s05",
+      "s07",
+      "s08"
+     ]
+    },
+    "floor_is_random_guess_everywhere": {
+     "n_fail": 13,
+     "items": [
+      "b01",
+      "b02",
+      "b04",
+      "b05",
+      "b06",
+      "k01"
+     ],
+     "worst_endpoint_error": 0.05,
+     "support_items_failed": [
+      "s02",
+      "s05"
+     ]
+    },
+    "floor_is_zero_everywhere": {
+     "n_fail": 8,
+     "items": [
+      "b03",
+      "b07",
+      "k04",
+      "k06",
+      "s01",
+      "s03"
+     ],
+     "worst_endpoint_error": 0.25,
+     "support_items_failed": [
+      "s01",
+      "s03"
+     ]
+    },
+    "one_global_retention_floor": {
+     "n_fail": 7,
+     "items": [
+      "b02",
+      "k01",
+      "k02",
+      "k03",
+      "k07",
+      "s04"
+     ],
+     "worst_endpoint_error": 0.1667,
+     "support_items_failed": [
+      "s04",
+      "s05"
+     ]
+    },
+    "retention_bound_discarded": {
+     "n_fail": 14,
+     "items": [
+      "b02",
+      "b04",
+      "b05",
+      "k01",
+      "k02",
+      "k03"
+     ],
+     "worst_endpoint_error": 0.7301,
+     "support_items_failed": [
+      "s03",
+      "s04",
+      "s05"
+     ]
+    },
+    "policy_interval_closed_on_the_right": {
+     "n_fail": 3,
+     "items": [
+      "k01",
+      "k02",
+      "s05"
+     ],
+     "worst_endpoint_error": 0.09,
+     "support_items_failed": [
+      "s05"
+     ]
+    },
+    "lost_shard_treated_as_a_quality_deletion": {
+     "n_fail": 10,
+     "items": [
+      "b02",
+      "b03",
+      "b04",
+      "k01",
+      "k02",
+      "k03"
+     ],
+     "worst_endpoint_error": 1.4808,
+     "support_items_failed": [
+      "s07",
+      "s08"
+     ]
+    },
+    "surviving_row_evidence_ignored": {
+     "n_fail": 6,
+     "items": [
+      "b03",
+      "k03",
+      "k04",
+      "s07",
+      "s08",
+      "d01"
+     ],
+     "worst_endpoint_error": 0.36,
+     "support_items_failed": [
+      "s07",
+      "s08"
+     ]
+    },
+    "survivorship_applied_to_every_unrecorded_run": {
+     "n_fail": 13,
+     "items": [
+      "b01",
+      "b03",
+      "b05",
+      "b06",
+      "b07",
+      "k01"
+     ],
+     "worst_endpoint_error": 0.27,
+     "support_items_failed": [
+      "s01",
+      "s02"
+     ]
+    },
+    "contrast_endpoints_subtracted_pairwise": {
+     "n_fail": 9,
+     "items": [
+      "k01",
+      "k02",
+      "k03",
+      "k04",
+      "k05",
+      "k06"
+     ],
+     "worst_endpoint_error": 0.21647,
+     "support_items_failed": []
+    },
+    "decision_read_off_the_midpoint": {
+     "n_fail": 5,
+     "items": [
+      "d03",
+      "d04",
+      "d06",
+      "d07",
+      "d08"
+     ],
+     "worst_endpoint_error": 0.0,
+     "support_items_failed": []
+    },
+    "decision_yes_if_any_feasible_value_clears": {
+     "n_fail": 5,
+     "items": [
+      "d03",
+      "d04",
+      "d06",
+      "d07",
+      "d08"
+     ],
+     "worst_endpoint_error": 0.0,
+     "support_items_failed": []
+    }
+   }
+  },
+  "G7_tolerance": {
+   "tol": 0.0005,
+   "min_decoy_endpoint_error": 0.01279
+  }
+ }
+}

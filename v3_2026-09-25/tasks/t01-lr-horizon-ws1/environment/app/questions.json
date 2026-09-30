@@ -1,0 +1,68 @@
+[
+ {
+  "id": "q1",
+  "question": "log10 of the loss-minimising peak learning rate for N=1e9, D=2e10 tokens, batch 0.5M tokens.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "log10(lr)"
+ },
+ {
+  "id": "q2",
+  "question": "log10 of the loss-minimising peak learning rate for N=1e9, D=1e12 tokens, batch 0.5M tokens.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "log10(lr)"
+ },
+ {
+  "id": "q3",
+  "question": "Excess final loss (nats/token) of training N=1e9, D=1e12, batch 0.5M at the notes' planned lr_prod = 0.0007182 instead of at the loss-minimising learning rate.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "nats"
+ },
+ {
+  "id": "q4",
+  "question": "log10 of the loss-minimising peak learning rate for the production run as planned: N=1e9, D=1e12 tokens, batch 4M tokens.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "log10(lr)"
+ },
+ {
+  "id": "q5",
+  "question": "Holding the number of training tokens fixed (batch 0.5M), making the model 10x larger lowers its loss-minimising learning rate by at least 40%.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ },
+ {
+  "id": "q6",
+  "question": "A colleague proposes peak lr = 0.00173 for the production run as planned (N=1e9, D=1e12, batch 4M). This value is above that run's loss-minimising learning rate.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ },
+ {
+  "id": "q7",
+  "question": "Which peak learning rate gives the lowest final loss for N=1e9, D=2e11, batch 0.5M? Options: A: 0.000165, B: 0.00033, C: 0.000661, D: 0.00132",
+  "answer_format": {
+   "choice": "one of A, B, C, D"
+  }
+ },
+ {
+  "id": "q8",
+  "question": "Final validation loss (nats/token) of N=1e9, D=1e12, batch 0.5M trained at its loss-minimising learning rate.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "nats"
+ }
+]

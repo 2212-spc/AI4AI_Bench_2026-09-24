@@ -1,0 +1,23 @@
+# Agent container `main` + budgeted lab sidecar `lab` on an internal network (no internet for either).
+# [unverified] service name `main` and how harbor merges this file with its own compose must be checked on a live install.
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - LAB_URL=http://lab:18777/
+    depends_on:
+      - lab
+    networks: [labnet]
+  lab:
+    build:
+      context: ./lab
+    environment:
+      - LAB_BUDGET=80
+    expose:
+      - "18777"
+    networks: [labnet]
+networks:
+  labnet:
+    internal: true

@@ -1,0 +1,782 @@
+{
+ "gates": {
+  "G0_wellposed": {
+   "pass": true,
+   "why": "admissible; notebook max |z| 1.76, sum z^2 8.6 of 42.3; worlds ppo/undetermined/bon"
+  },
+  "G1_solvable": {
+   "pass": true,
+   "ver_allpass": 1.0,
+   "min_item_pass": 1.0,
+   "shipped_oracle_all_pass": true
+  },
+  "G2_kill_matrix": {
+   "pass": true,
+   "unkilled_must_kill": []
+  },
+  "G3_set_width": {
+   "pass": true,
+   "narrow": []
+  },
+  "G4_identifiability": {
+   "pass": true,
+   "certs": []
+  },
+  "G5_replay": {
+   "n_rows": 6,
+   "n_mismatch": 0,
+   "pass": true
+  },
+  "G6_leakage": {
+   "hits": [],
+   "pass": true
+  },
+  "G7_key_types": {
+   "pass": true,
+   "kinds": [
+    "decision",
+    "point",
+    "prereg"
+   ],
+   "has_ignorance_item": true
+  },
+  "G8_decision_gap": {
+   "pass": true,
+   "gaps": [
+    [
+     "q4",
+     0.44288491972439503
+    ]
+   ]
+  },
+  "G9_load_bearing": {
+   "pass": true,
+   "cards": {
+    "R1": "killed by drop:R1",
+    "R2": "killed by drop:R2",
+    "R4": "killed by drop:R4"
+   }
+  },
+  "G10_item_useful": {
+   "pass": true,
+   "note": "informational: which rivals each item kills with margin",
+   "free_items": [],
+   "item_kills": {
+    "q1": [
+     "B_prior",
+     "skip:bon_identity",
+     "skip:reach",
+     "naive_ignore:R2",
+     "B_guess:geo",
+     "B_guess:ari",
+     "drop:R2",
+     "widen_points"
+    ],
+    "q2": [
+     "skip:separate",
+     "skip:len_pen",
+     "skip:baseline",
+     "skip:extrapolate",
+     "naive_ignore:R4",
+     "drop:R1",
+     "drop:R4",
+     "widen_points"
+    ],
+    "q3": [
+     "naive_ignore:R1",
+     "skip:gold",
+     "plan:underconverged",
+     "plan:underpowered",
+     "drop:R2"
+    ],
+    "q4": [
+     "naive_ignore:R1",
+     "skip:gold",
+     "drop:R1",
+     "drop:R2"
+    ]
+   }
+  },
+  "G11_depth": {
+   "pass": true,
+   "declared_depth": {
+    "q1": 2,
+    "q2": 4,
+    "q4": 1
+   },
+   "max_depth": 4,
+   "claimed": 4,
+   "steps_without_a_killed_shortcut": []
+  },
+  "G12_nuisance": {
+   "pass": true,
+   "nuisance_cards": [
+    "R1",
+    "R2",
+    "R4"
+   ],
+   "not_killed": []
+  },
+  "G13_anti_prior": {
+   "pass": true,
+   "items": [
+    {
+     "item": "q1",
+     "prior_rival_killed": true,
+     "gap_over_T": 51.09
+    }
+   ],
+   "failing": []
+  },
+  "G14_witness": {
+   "pass": true,
+   "vol_max": 0.1,
+   "items": []
+  },
+  "G15_plan": {
+   "pass": true,
+   "need_sd": 4.0,
+   "n_salt": 9,
+   "items": [
+    {
+     "item": "q3",
+     "worlds_inconsistent_with_notebook": [],
+     "stats": {
+      "w0": {
+       "mean": -0.230187,
+       "sd": 0.005497,
+       "label": "ppo"
+      },
+      "w1": {
+       "mean": -0.016633,
+       "sd": 0.006159,
+       "label": "undetermined"
+      },
+      "w2": {
+       "mean": 0.230243,
+       "sd": 0.014818,
+       "label": "bon"
+      }
+     },
+     "min_margin_sd": 8.79,
+     "naive_plan_fails": true,
+     "pass": true
+    }
+   ]
+  },
+  "G16_audit": {
+   "pass": true,
+   "herring_max": 0.25,
+   "defect_min": 2.0,
+   "items": []
+  },
+  "G17_oracle_bias": {
+   "pass": true,
+   "biased_items": {},
+   "median_over_p90": {
+    "q2": {
+     "median": 0.008252960094488726,
+     "p90": 0.021619028067172752,
+     "ratio": 0.382,
+     "median_over_tol": 0.17,
+     "tol_above_floor": true
+    }
+   },
+   "ratio_max": 0.9,
+   "share_max": 0.05
+  }
+ },
+ "ok": true,
+ "kill_matrix": {
+  "B_prior": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 52.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:bon_identity": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 52.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:reach": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3330.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "naive_ignore:R2": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 1174.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "B_guess:geo": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 26.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "B_guess:ari": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 10.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:separate": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.98
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:len_pen": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 12.58
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:baseline": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.06
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "skip:extrapolate": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 3.79
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "naive_ignore:R4": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.98
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "naive_ignore:R1": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "the rule does not return the correct conclusion in every world consistent with what was disclosed (24 of 36 world/salt c"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "ppo_ship"
+    }
+   }
+  },
+  "skip:gold": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "the rule does not return the correct conclusion in every world consistent with what was disclosed (24 of 36 world/salt c"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "ppo_ship"
+    }
+   }
+  },
+  "plan:underconverged": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "the rule does not return the correct conclusion in every world consistent with what was disclosed (24 of 36 world/salt c"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "plan:underpowered": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "the rule does not return the correct conclusion in every world consistent with what was disclosed (7 of 36 world/salt co"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "drop:R1": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q2",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 12.66
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "ppo_ship"
+    }
+   }
+  },
+  "drop:R2": {
+   "score": 0.0,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3330.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 1.93
+    },
+    "q3": {
+     "pass": false,
+     "answer": "the rule does not return the correct conclusion in every world consistent with what was disclosed (24 of 36 world/salt c"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "ppo_ship"
+    }
+   }
+  },
+  "drop:R4": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.98
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  },
+  "widen_points": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 3.6
+    },
+    "q3": {
+     "pass": true,
+     "answer": "the plan discriminates in every consistent world, under every salt"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "bon_b"
+    }
+   }
+  }
+ },
+ "calibration": {
+  "tol": {
+   "q1": 0.5,
+   "q2": 0.04864281315113869
+  },
+  "cal_errs": {
+   "q1": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q2": [
+    0.0007717552564741048,
+    0.021619028067172752,
+    0.01800271679101939,
+    0.03342402228516428,
+    0.00014980596119995582,
+    0.006804119138547504,
+    0.0025196733855565867,
+    0.0005784938103434722,
+    0.009701801050429948,
+    0.021265779150512865
+   ],
+   "q3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q4": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ver_pass": {
+   "q1": 1.0,
+   "q2": 1.0,
+   "q3": 1.0,
+   "q4": 1.0
+  },
+  "ver_allpass": 1.0,
+  "oracle_usage": {
+   "cost_unit": "GPU-hours",
+   "cost_used": 6745.099999999999,
+   "cost_left": 13254.900000000001,
+   "runs_used": 93,
+   "runs_left": 147,
+   "run_cost_cap": 8000.0
+  }
+ }
+}

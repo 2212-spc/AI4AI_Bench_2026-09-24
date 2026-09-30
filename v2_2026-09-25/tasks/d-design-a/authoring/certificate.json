@@ -1,0 +1,169 @@
+{
+ "accepted": true,
+ "n_items": 27,
+ "gates": {
+  "G2_validity": {
+   "unrecorded_runs": 310,
+   "worst_day_total_error": 0.0,
+   "tightest_run_slack": 0.4996,
+   "tightest_contrast_slack": 0.0
+  },
+  "G3_attainment": {
+   "items": 11,
+   "all_attained": true,
+   "sample": [
+    {
+     "item": "w01",
+     "k": 1,
+     "width": 0.135294117647,
+     "witness_width": 0.135294117647,
+     "attained": true
+    },
+    {
+     "item": "w02",
+     "k": 2,
+     "width": 0.126055656109,
+     "witness_width": 0.126055656109,
+     "attained": true
+    },
+    {
+     "item": "w03",
+     "k": 1,
+     "width": 0.78297254902,
+     "witness_width": 0.78297254902,
+     "attained": true
+    },
+    {
+     "item": "w04",
+     "k": 0,
+     "width": 0.06,
+     "witness_width": 0.06,
+     "attained": true
+    }
+   ]
+  },
+  "G4_soundness_sampling": {
+   "outcomes_checked": 600,
+   "items_where_sampling_also_hit_the_max": 5,
+   "items": 10
+  },
+  "G5_decoys": {
+   "min_fail": 2,
+   "still_needed": {},
+   "items_each_rule_gets_wrong": {
+    "surplus_stays_put": 3,
+    "recovered_value_is_best_case": 11,
+    "recovered_value_is_the_box_midpoint": 11,
+    "recovered_value_is_the_box_top": 8,
+    "day_totals_ignored": 18,
+    "value_is_box_width_over_n": 16
+   },
+   "items_in_pool_each_rule_could_lose": {
+    "surplus_stays_put": 80,
+    "recovered_value_is_best_case": 265,
+    "recovered_value_is_the_box_midpoint": 265,
+    "recovered_value_is_the_box_top": 188,
+    "day_totals_ignored": 380,
+    "value_is_box_width_over_n": 305
+   }
+  },
+  "G6_coverage": {
+   "value_labels": [
+    "no",
+    "yes"
+   ],
+   "yes_for_a_run_in_neither_cell": [
+    "v09",
+    "v11"
+   ],
+   "no_for_the_widest_box_on_its_day": [
+    "v01",
+    "v02",
+    "v05",
+    "v06",
+    "v07",
+    "v08",
+    "v10"
+   ],
+   "plans_whose_optimum_is_all_non_members": [
+    "p01",
+    "p02",
+    "p03"
+   ]
+  },
+  "G7_search": {
+   "plans": [
+    {
+     "item": "p01",
+     "k": 3,
+     "greedy_needs": 3,
+     "greedy_order": [
+      "r02608",
+      "r02601",
+      "r02602"
+     ],
+     "optimal_sets": [
+      [
+       "r02601",
+       "r02602",
+       "r02608"
+      ]
+     ]
+    },
+    {
+     "item": "p02",
+     "k": 2,
+     "greedy_needs": 3,
+     "greedy_order": [
+      "r02608",
+      "r02601",
+      "r02602"
+     ],
+     "optimal_sets": [
+      [
+       "r02601",
+       "r02602"
+      ]
+     ]
+    },
+    {
+     "item": "p03",
+     "k": 3,
+     "greedy_needs": 3,
+     "greedy_order": [
+      "r02608",
+      "r02601",
+      "r02602"
+     ],
+     "optimal_sets": [
+      [
+       "r02601",
+       "r02602",
+       "r02608"
+      ]
+     ]
+    }
+   ],
+   "with_greedy_strictly_worse": [
+    "p02"
+   ]
+  },
+  "G8_regimes": {
+   "members_only": [
+    "2026-07-04@w01",
+    "2026-07-04@w02",
+    "2026-06-27@w03"
+   ],
+   "non_members_only": [
+    "2026-07-11@w01",
+    "2026-07-12@w01",
+    "2026-07-11@w02"
+   ],
+   "non_members_only_surplus_forced_down": [
+    "2026-07-13@w03",
+    "2026-07-13@w06",
+    "2026-07-13@w07"
+   ]
+  }
+ }
+}

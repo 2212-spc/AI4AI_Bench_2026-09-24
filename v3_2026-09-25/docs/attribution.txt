@@ -1,0 +1,45 @@
+# rebuilt t01b-lr-horizon-tight-ws1: key identical to shipped = True
+t01bws1_fable51_H0           score=1.00 all=True  -
+t01bws1_gpt6astra_H0         score=1.00 all=True  -
+# rebuilt t01b-lr-horizon-tight-ws2: key identical to shipped = True
+t01bws2_fable51_H0           score=0.50 all=False  q1:point err=2.92T -> unattributed | q2:point err=4.03T -> rival B2_notebook_allcards (0.13T away; rival err 3.90T, strong) | q3:point err=4.07T -> unattributed | q4:set err=4.04T -> rival B2_notebook_allcards (0.14T away; rival err 3.90T, strong)
+t01bws2_gpt6astra_H0         score=1.00 all=True  -
+# rebuilt t01-lr-horizon-ws1: key identical to shipped = True
+t01ws1_fable51_H0            score=0.50 all=False  q1:point err=2.38T -> unattributed | q2:point err=1.20T -> rival B2_notebook_allcards (0.02T away; rival err 1.21T, weak) | q4:set err=1.20T -> rival B2_notebook_allcards (0.02T away; rival err 1.21T, weak) | q7:decision answered B (key C) -> same as B2_notebook_allcards,B5_notebook_horizon_only
+t01ws1_gpt6astra_H0          score=1.00 all=True  -
+t01ws1_haiku45_H0            score=0.12 all=False  q1:point err=3.65T -> unattributed | q2:point err=5.40T -> unattributed | q3:point err=6.63T -> unattributed | q4:set err=5.23T -> unattributed | q5:verdict answered supported (key refuted) -> same as B1_notebook_naive | q7:decision answered B (key C) -> same as B2_notebook_allcards,B5_notebook_horizon_only | q8:point err=16.09T -> unattributed
+# rebuilt t01-lr-horizon-ws2: key identical to shipped = True
+t01ws2_fable51_H0            score=0.62 all=False  q1:point err=2.05T -> unattributed | q2:point err=1.57T -> precision | q4:set err=1.57T -> precision
+t01ws2_gpt6astra_H0          score=1.00 all=True  -
+# rebuilt t02-stability-edge-ws2: key identical to shipped = True
+t02ws2_fable51_H0            score=0.86 all=False  q2:set err=1.65T -> precision
+t02ws2_fable51_H0r2          score=1.00 all=True  -
+t02ws2_fable51_H2            score=1.00 all=True  -
+t02ws2_gpt55_H0              score=0.86 all=False  q2:set err=5.86T -> rival drop:C4:warmup (0.15T away; rival err 5.71T, strong)
+t02ws2_gpt6astra_H0          score=0.57 all=False  q2:set err=40.74T -> rival B2_doc_range_only (0.88T away; rival err 39.86T, strong) | q3:verdict answered refuted (key supported) -> same as B0_textbook,B1_notes_reading,drop:C4:delta | q4:verdict answered undetermined (key supported) -> same as B2_doc_range_only
+t02ws2_gpt6astra_H0r2        score=0.86 all=False  q2:set err=40.19T -> rival B2_doc_range_only (0.33T away; rival err 39.86T, strong)
+t02ws2_gpt6astra_H2          score=0.00 all=False  q1:blank | q2:blank | q3:verdict answered None (key supported) -> same as no rival | q4:verdict answered None (key supported) -> same as no rival | q5:verdict answered None (key undetermined) -> same as no rival | q6:decision answered None (key C) -> same as no rival | q7:verdict answered None (key supported) -> same as no rival
+t02ws2_gpt6astra_H2r2        score=0.86 all=False  q2:set err=1.12T -> precision
+t02ws2_haiku45_H0            score=0.43 all=False  q1:point err=9.45T -> unattributed | q2:set err=34.45T -> unattributed | q4:verdict answered undetermined (key supported) -> same as B2_doc_range_only | q6:decision answered D (key C) -> same as B0_textbook,B1_notes_reading,drop:C4:delta
+t02ws2_sonnet46_H0           status=aborted_livelock (not graded)
+# rebuilt t02-stability-edge-ws3: key identical to shipped = True
+t02ws3_fable51_H0            score=0.86 all=False  q2:set err=4.08T -> rival drop:C4:warmup (0.02T away; rival err 4.10T, strong)
+t02ws3_gpt6astra_H0          score=0.71 all=False  q1:point err=1.09T -> precision | q2:set err=1.09T -> precision
+# rebuilt t03b-filter-repeat-tight-ws11: key identical to shipped = True
+t03bws11_fable51_H0          score=0.50 all=False  q2:point err=9.52T -> unattributed | q5:set err=3.37T -> unattributed | q6:verdict answered refuted (key undetermined) -> same as B1_notebook_naive,drop:C7:mu,drop:C1:textbook
+t03bws11_gpt6astra_H0        score=0.33 all=False  q1:point err=116.46T -> unattributed | q2:point err=16.42T -> unattributed | q3:decision answered D (key A) -> same as drop:C6:Rs | q5:set err=4.55T -> unattributed
+# rebuilt t03-filter-repeat-ws11: key identical to shipped = True
+t03ws11_fable51_H0           score=1.00 all=True  -
+t03ws11_gpt6astra_H0         score=1.00 all=True  -
+# rebuilt t03-filter-repeat-ws28: key identical to shipped = True
+t03ws28_fable51_H0           score=1.00 all=True  -
+t03ws28_gpt6astra_H0         score=1.00 all=True  -
+# rebuilt t07-checkpoint-ledger-ws1: key identical to shipped = True
+t07ws1_fable51_H0            score=0.80 all=False  q3:point err=1.89T -> rival B3_linear_in_lr (0.38T away; rival err 2.27T, strong)
+t07ws1_gpt6astra_H0          score=1.00 all=True  -
+# rebuilt t07-checkpoint-ledger-ws3: key identical to shipped = True
+t07ws3_fable51_H0            score=0.60 all=False  q2:point err=1.12T -> rival drop:C11:ca (0.11T away; rival err 1.01T, weak) | q5:verdict answered refuted (key supported) -> same as drop:C1:textbook
+t07ws3_gpt6astra_H0          score=0.80 all=False  q4:set err=2.01T -> unattributed
+# rebuilt t07-checkpoint-ledger-ws4: key identical to shipped = True
+t07ws4_fable51_H0            score=0.80 all=False  q2:point err=1.01T -> precision
+t07ws4_gpt6astra_H0          score=0.80 all=False  q3:point err=1.55T -> rival B4_cosine_grid_full_law (0.53T away; rival err 1.01T, weak)

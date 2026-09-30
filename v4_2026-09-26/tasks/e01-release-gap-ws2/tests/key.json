@@ -1,0 +1,117 @@
+[
+ {
+  "id": "q1",
+  "kind": "point",
+  "text": "Under the release convention (an item whose answer cannot be extracted counts wrong, over every item presented), `M_new`'s accuracy (a fraction in [0, 1]) on the items of the bank that do **not** occur in the pretraining corpus, format `mc_letter`, whole bank, noise-free expected value.",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.44449994344379834,
+   "hi": 0.44449994344379834
+  },
+  "tol": 0.022926501401750482,
+  "floor": 0.006,
+  "cards": [
+   "E2",
+   "E3"
+  ],
+  "obstacles": [
+   "O4"
+  ],
+  "chain": [
+   "denominator",
+   "clean"
+  ]
+ },
+ {
+  "id": "q2",
+  "kind": "point",
+  "text": "The contamination premium of `M_new` under the release convention (an item whose answer cannot be extracted counts wrong, over every item presented): its accuracy over the whole bank minus its accuracy over the items that do not occur in the corpus (a difference of fractions, format `mc_letter`, noise-free expected values).",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.11656443546833123,
+   "hi": 0.11656443546833123
+  },
+  "tol": 0.021586296597638277,
+  "floor": 0.004,
+  "cards": [
+   "E3",
+   "E8"
+  ],
+  "obstacles": [
+   "O4"
+  ],
+  "chain": [
+   "clean",
+   "detector"
+  ]
+ },
+ {
+  "id": "q3",
+  "kind": "set",
+  "text": "The accuracy the **release report** will publish for `M_new` on the whole bank under the release convention (an item whose answer cannot be extracted counts wrong, over every item presented): the three slices aggregated with weight w0 on slice 0 and the remaining 1 - w0 split 2:1 between slices 1 and 2, format `mc_letter`.  Give the set of values this takes over the documented range of w0 (noise-free expected values).",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.5332225597659989,
+   "hi": 0.6228746983739238
+  },
+  "tol": 0.012296854527113737,
+  "floor": 0.006,
+  "cards": [
+   "E2",
+   "E7"
+  ],
+  "obstacles": [
+   "O10",
+   "O5"
+  ],
+  "chain": [
+   "denominator",
+   "slices"
+  ]
+ },
+ {
+  "id": "q4",
+  "kind": "point",
+  "text": "The standard deviation, across repeated calls, of the `acc` that one `svc=score model=M_new split=all fmt=mc_letter n=1500 reps=1` request reports.",
+  "unit": "fraction",
+  "key": {
+   "lo": 0.05273018157288251,
+   "hi": 0.05273018157288251
+  },
+  "tol": 0.011180713368610219,
+  "floor": 0.002,
+  "cards": [
+   "E6"
+  ],
+  "obstacles": [
+   "O4"
+  ],
+  "prior_key": {
+   "lo": 0.01325701161507746,
+   "hi": 0.01325701161507746
+  }
+ },
+ {
+  "id": "q5",
+  "kind": "verdict",
+  "text": "On the release report's own aggregate (weights as in q3), restricted to the items that do not occur in the pretraining corpus and under the release convention (an item whose answer cannot be extracted counts wrong, over every item presented), `M_new` scores higher than `M_ref`.",
+  "key": {
+   "verdict": "undetermined"
+  },
+  "cards": [
+   "E2",
+   "E3",
+   "E7"
+  ],
+  "obstacles": [
+   "O16",
+   "O10",
+   "O5"
+  ],
+  "chain": [
+   "denominator",
+   "clean",
+   "slices"
+  ]
+ }
+]

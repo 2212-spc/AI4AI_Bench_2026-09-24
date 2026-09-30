@@ -1,0 +1,6414 @@
+{
+ "card": "K4_passk",
+ "tpl": "M1",
+ "mode": "search_t1",
+ "spent": 2271,
+ "na": false,
+ "results": [
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.130171542968014,
+    "h": 0.629600587345498,
+    "u": 0.558043849506016,
+    "n": 400,
+    "r_nb": 2.103285668918355
+   },
+   "seed": 859649261,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:offset@near",
+   "noise_limited": true,
+   "truth": 0.7457952536834238,
+   "T": 0.003556749214280606,
+   "T_hi": 0.003855999792306215,
+   "fair": 1.0,
+   "oracle_bias_share": 0.19972272169958002,
+   "bias_buy": 1.4299838906553082,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9493506598225279,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.149,
+     3.779,
+     4.408,
+     5.038
+    ],
+    "target": 4.13,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.98,
+     "R2:endpoint": 1.08,
+     "R3:local@op": 2.06,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 2.09,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.95,
+     "R7:average": 1.53,
+     "R8:saturated": 0.92
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.1)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.436010752022485,
+   "B": 4.809238860526909,
+   "B_lo_red": 0.41256408456824295,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.88
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 7.79,
+    "shown:pilot@xr": 1.0
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.231,
+    "valid:R3:local@near": 0.157,
+    "valid:R4:secant@op": 1.875,
+    "valid:R4:secant@near": 0.233,
+    "valid:R6:loglinear": 0.327,
+    "valid:R7:average": 1.701,
+    "valid:control_variate": 0.261
+   },
+   "min_route_sep_over_T": 0.33829863582798064,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3495771982206379,
+    "s": 2.849929438774,
+    "s1": 1.0531718944622992,
+    "tau": 1.003161231620486,
+    "tau2": 0.12118723863914081,
+    "tau_r": 0.025767743694381742
+   },
+   "probes": 48,
+   "first_cert_probe": 16,
+   "world_idx": 0,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.327,
+    "s": 0.161,
+    "s1": 0.14,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.81
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 14.58
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 19.65
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 44.34
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.7003604960167635,
+    "h": 1.4214838546159592,
+    "u": 0.5375835882171801,
+    "n": 46,
+    "r_nb": 1.991191266970824
+   },
+   "seed": 261781523,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.5821599494441508,
+   "T": 0.014734186116251814,
+   "T_hi": 0.016051697426711458,
+   "fair": 1.0,
+   "oracle_bias_share": 0.16908134544442796,
+   "bias_buy": 1.2319491351136234,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 46,
+   "eff": 1.0223367067989257,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.515,
+     3.936,
+     5.358,
+     6.779
+    ],
+    "target": 4.7,
+    "n": 46,
+    "route_order": {
+     "R1:readoff": 0.96,
+     "R2:endpoint": 1.1,
+     "R3:local@op": 1.8,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 1.95,
+     "R4:secant@near": 1.98,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.69,
+     "R7:average": 1.67,
+     "R8:saturated": 0.89
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.677923977773652,
+   "B": 2.917380375394167,
+   "B_lo_red": 0.18625392913042818,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.91
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.31,
+    "shown:pilot@xr": 2.83
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.403,
+    "valid:R3:local@near": 0.143,
+    "valid:R4:secant@op": 1.486,
+    "valid:R4:secant@near": 0.174,
+    "valid:R6:loglinear": 0.23,
+    "valid:R7:average": 1.079,
+    "valid:control_variate": 0.269
+   },
+   "min_route_sep_over_T": 0.20290850755849765,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.1850565510916246,
+    "s": 2.9858357798837925,
+    "s1": 1.3152225021816402,
+    "tau": 0.5498389812916987,
+    "tau2": 0.07926122712168719,
+    "tau_r": 0.0228857608996751
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 1,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.92
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 8.29
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 11.69
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 11.77
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.698334612510218,
+    "h": 0.660652108409815,
+    "u": 0.46031726416866287,
+    "n": 297,
+    "r_nb": 2.878441807460844
+   },
+   "seed": 933169220,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6891409789088909,
+   "T": 0.005413038047685694,
+   "T_hi": 0.00578585894823247,
+   "fair": 1.0,
+   "oracle_bias_share": 0.16229864806285138,
+   "bias_buy": 1.2156001502013776,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 297,
+   "eff": 0.9334702661179254,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.734,
+     4.394,
+     5.055,
+     5.716
+    ],
+    "target": 4.698,
+    "n": 297,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.92,
+     "R3:local@op": 1.93,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.94,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.98,
+     "R7:average": 4.27,
+     "R8:saturated": 0.92
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.9)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.162160545291885,
+   "B": 4.44882774198366,
+   "B_lo_red": 0.041779902436496805,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.2
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 13.02,
+    "shown:pilot@xr": 10.48
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.456,
+    "valid:R3:local@near": 0.145,
+    "valid:R4:secant@op": 1.494,
+    "valid:R4:secant@near": 0.154,
+    "valid:R6:loglinear": 0.438,
+    "valid:R7:average": 0.46,
+    "valid:control_variate": 0.039
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.20386132694706982,
+    "s": 2.2125380945310495,
+    "s1": 1.821058705995791,
+    "tau": 0.7977997600322346,
+    "tau2": 0.013187710731101315,
+    "tau_r": 0.005104787803866682
+   },
+   "probes": 48,
+   "first_cert_probe": 21,
+   "world_idx": 2,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.055,
+    "s": 0.046,
+    "s1": 0.025,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.45
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 7.52
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.87
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.87
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.4200622245911205,
+    "h": 0.5740241920122197,
+    "u": 0.4916537476878039,
+    "n": 400,
+    "r_nb": 1.9034149821525153
+   },
+   "seed": 261567424,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_prior:ctx0",
+   "noise_limited": true,
+   "truth": 0.3616747662461208,
+   "T": 0.004329113710517535,
+   "T_hi": 0.004745266521985727,
+   "fair": 1.0,
+   "oracle_bias_share": 0.02190114944929114,
+   "bias_buy": 0.9822207851424626,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9971826590187355,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     4.564,
+     5.138,
+     5.712,
+     6.286
+    ],
+    "target": 5.42,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.01,
+     "R2:endpoint": 0.98,
+     "R3:local@op": 2.0,
+     "R3:local@near": 1.99,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 2.02,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.87,
+     "R7:average": 3.31,
+     "R8:saturated": 0.98
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.9)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.520071081276879,
+   "B": 2.76232266802203,
+   "B_lo_red": 0.037464183944995205,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.94
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 11.41,
+    "shown:pilot@xr": 7.85
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.24,
+    "valid:R3:local@near": 0.025,
+    "valid:R4:secant@op": 0.235,
+    "valid:R4:secant@near": 0.027,
+    "valid:R6:loglinear": 0.001,
+    "valid:R7:average": 0.082,
+    "valid:control_variate": 0.003
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.10123374050005124,
+    "s": 1.068963441805263,
+    "s1": 1.0007635832839084,
+    "tau": 0.8949304672873619,
+    "tau2": 0.0767123297603464,
+    "tau_r": 0.014370678913040887
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 3,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 2.76
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 2.92
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 8.63
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 8.63
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.8844974178971454,
+    "h": 0.5292277575255047,
+    "u": 0.49040158482573804,
+    "n": 262,
+    "r_nb": 2.509192103048279
+   },
+   "seed": 218301848,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6037994442532266,
+   "T": 0.005711890728280454,
+   "T_hi": 0.006373278195242027,
+   "fair": 1.0,
+   "oracle_bias_share": 0.09984705958892053,
+   "bias_buy": 1.0525720646818562,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 262,
+   "eff": 0.9574569262145758,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.096,
+     3.625,
+     4.154,
+     4.683
+    ],
+    "target": 3.884,
+    "n": 262,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.94,
+     "R3:local@op": 2.01,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 1.98,
+     "R4:secant@near": 2.07,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.95,
+     "R7:average": 2.29,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.5)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.0864419677953965,
+   "B": 4.559616548776798,
+   "B_lo_red": 1.0224644234899456,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 12.39
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 14.3,
+    "shown:pilot@xr": 10.4
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.024,
+    "valid:R3:local@near": 0.102,
+    "valid:R4:secant@op": 0.968,
+    "valid:R4:secant@near": 0.12,
+    "valid:R6:loglinear": 0.25,
+    "valid:R7:average": 0.451,
+    "valid:control_variate": 0.087
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.17649449784132448,
+    "s": 0.6482152670672259,
+    "s1": 2.234429827894185,
+    "tau": 0.944308699690503,
+    "tau2": 0.04461402686268732,
+    "tau_r": 0.006214304118133672
+   },
+   "probes": 48,
+   "first_cert_probe": 14,
+   "world_idx": 4,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.388,
+    "pbar": 0.144,
+    "s1": 0.097,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.56
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.7
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.7
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 37.95
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.6048183945982366,
+    "h": 1.5727701933353353,
+    "u": 0.5138321949382244,
+    "n": 149,
+    "r_nb": 2.542527197750228
+   },
+   "seed": 523924487,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.4265619573296797,
+   "T": 0.009372184472705672,
+   "T_hi": 0.010112174197862834,
+   "fair": 1.0,
+   "oracle_bias_share": 0.20661318705070436,
+   "bias_buy": 1.4290719648284547,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 149,
+   "eff": 0.936447946182863,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.224,
+     2.797,
+     4.369,
+     5.942
+    ],
+    "target": 3.605,
+    "n": 149,
+    "route_order": {
+     "R1:readoff": 0.97,
+     "R2:endpoint": 0.98,
+     "R3:local@op": 3.73,
+     "R3:local@near": 2.13,
+     "R4:secant@op": 1.68,
+     "R4:secant@near": 2.8,
+     "R5:two_point": 1.96,
+     "R6:loglinear": 4.92,
+     "R7:average": 1.54,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.5)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.494117227125598,
+   "B": 4.848954520545267,
+   "B_lo_red": 0.381094962077494,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.17
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 13.08,
+    "shown:pilot@xr": 16.61
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.822,
+    "valid:R3:local@near": 0.282,
+    "valid:R4:secant@op": 1.578,
+    "valid:R4:secant@near": 0.118,
+    "valid:R6:loglinear": 0.398,
+    "valid:R7:average": 1.105,
+    "valid:control_variate": 0.065
+   },
+   "min_route_sep_over_T": 0.1897870809665985,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.11909872890776091,
+    "s": 1.5738720839304108,
+    "s1": 2.131050546665907,
+    "tau": 0.9530742305255331,
+    "tau2": 0.08653997152273629,
+    "tau_r": 0.026464355459816114
+   },
+   "probes": 48,
+   "first_cert_probe": 44,
+   "world_idx": 5,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.214,
+    "s1": 0.166,
+    "pbar": 0.056,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 4.85
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 7.07
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 19.66
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 23.22
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.246644213966231,
+    "h": 0.5905813057564958,
+    "u": 0.728113979320868,
+    "n": 330,
+    "r_nb": 1.567603599374658
+   },
+   "seed": 84420270,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_prior:ctx0",
+   "noise_limited": true,
+   "truth": 0.3728698636147375,
+   "T": 0.004541643019962176,
+   "T_hi": 0.004808261588176072,
+   "fair": 1.0,
+   "oracle_bias_share": 0.037350178888574975,
+   "bias_buy": 1.0273904069500979,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 330,
+   "eff": 0.9564204480151764,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     4.226,
+     4.817,
+     5.407,
+     5.998
+    ],
+    "target": 5.247,
+    "n": 330,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 1.02,
+     "R3:local@op": 1.85,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.98,
+     "R4:secant@near": 1.91,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 1.91,
+     "R7:average": 1.07,
+     "R8:saturated": 0.98
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.4479997728734568,
+   "B": 1.5330050505935855,
+   "B_lo_red": 0.01215983854121031,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 6.73
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 14.07,
+    "shown:pilot@xr": 3.99
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.372,
+    "valid:R3:local@near": 0.011,
+    "valid:R4:secant@op": 0.314,
+    "valid:R4:secant@near": 0.026,
+    "valid:R6:loglinear": 0.061,
+    "valid:control_variate": 0.002
+   },
+   "min_route_sep_over_T": 0.010353688335371806,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.08047854024205107,
+    "s": 1.559527926868637,
+    "s1": 1.6205569116014171,
+    "tau": 0.5539200148639405,
+    "tau2": 0.018245663821093133,
+    "tau_r": 0.023064511628958916
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 6,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 1.53
+    },
+    {
+     "route": "R7:average",
+     "over_T": 1.82
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 1.94
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 8.88
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.8
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.441250832688193,
+    "h": 0.5856909263109134,
+    "u": 0.5550173799302229,
+    "n": 400,
+    "r_nb": 1.0
+   },
+   "seed": 194350610,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:offset@near",
+   "noise_limited": true,
+   "truth": 0.8524486129461226,
+   "T": 0.004275534105075896,
+   "T_hi": 0.0044977431890180775,
+   "fair": 1.0,
+   "oracle_bias_share": 0.21726202523984256,
+   "bias_buy": 1.495839253741783,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9674446200162505,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.53,
+     4.116,
+     4.702,
+     5.288
+    ],
+    "target": 4.441,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.96,
+     "R2:endpoint": 1.12,
+     "R3:local@op": 2.1,
+     "R3:local@near": 1.96,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 2.13,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.98,
+     "R7:average": 1.64,
+     "R8:saturated": 0.89
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.325617607894641,
+   "B": 3.4984574038197724,
+   "B_lo_red": 0.23564215783515757,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 3.04
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.14,
+    "shown:pilot@xr": 6.4
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.58,
+    "valid:R3:local@near": 0.172,
+    "valid:R4:secant@op": 2.065,
+    "valid:R4:secant@near": 0.273,
+    "valid:R6:loglinear": 0.663,
+    "valid:R7:average": 1.61,
+    "valid:control_variate": 0.042
+   },
+   "min_route_sep_over_T": 0.06710864550697997,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3416306155739963,
+    "s": 2.3374406180532015,
+    "s1": 1.80476766779007,
+    "tau": 1.0231925780635966,
+    "tau2": 0.03569648639824099,
+    "tau_r": 0.02853968247966269
+   },
+   "probes": 48,
+   "first_cert_probe": 37,
+   "world_idx": 7,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.139,
+    "s1": 0.111,
+    "pbar": 0.058,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.5
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 8.95
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 10.18
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 15.24
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.091199578382733,
+    "h": 0.3028237834593732,
+    "u": 0.28822975790457667,
+    "n": 400,
+    "r_nb": 2.526965735254464
+   },
+   "seed": 488597133,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.6448822171789577,
+   "T": 0.004502571916562351,
+   "T_hi": 0.004846705668050066,
+   "fair": 1.0,
+   "oracle_bias_share": 0.009662610364444456,
+   "bias_buy": 1.0191352821053217,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9880119582816883,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     4.701,
+     5.004,
+     5.307,
+     5.61
+    ],
+    "target": 5.091,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.01,
+     "R2:endpoint": 0.97,
+     "R3:local@op": 1.98,
+     "R3:local@near": 2.0,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 1.98,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.0,
+     "R7:average": 0.86,
+     "R8:saturated": 0.97
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.5)"
+   },
+   "clauses_added": [],
+   "B_lo": 0.8148996182050261,
+   "B": 0.8771827905553105,
+   "B_lo_red": 0.0007040536031695437,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.63
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.03,
+    "shown:pilot@xr": 8.2
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.395,
+    "valid:R3:local@near": 0.012,
+    "valid:R4:secant@op": 0.305,
+    "valid:R4:secant@near": 0.028,
+    "valid:R6:loglinear": 0.094,
+    "valid:control_variate": 0.001
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.16323995584809275,
+    "s": 1.950482029274172,
+    "s1": 1.9135451780986559,
+    "tau": 0.9380730845037144,
+    "tau2": 0.12152571893645352,
+    "tau_r": 0.018879510664488782
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 8,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 0.88
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 0.95
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 1.45
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 8.13
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 8.13
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.486213796581789,
+    "h": 1.4229698702002742,
+    "u": 0.44741511737911344,
+    "n": 143,
+    "r_nb": 3.359018829775192
+   },
+   "seed": 195345572,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.589718353324362,
+   "T": 0.008649102304233344,
+   "T_hi": 0.009256338539845792,
+   "fair": 1.0,
+   "oracle_bias_share": 0.2061311489611694,
+   "bias_buy": 1.4853874315064353,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 143,
+   "eff": 0.9425382783604757,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.427,
+     3.85,
+     5.273,
+     6.695
+    ],
+    "target": 4.486,
+    "n": 143,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.9,
+     "R3:local@op": 1.87,
+     "R3:local@near": 2.03,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.87,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.8,
+     "R7:average": 4.42,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x3.4)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.03181864951508,
+   "B": 4.314884601712834,
+   "B_lo_red": 0.18174402033965834,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 3.1
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 9.42,
+    "shown:pilot@xr": 4.7
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.769,
+    "valid:R3:local@near": 0.181,
+    "valid:R4:secant@op": 1.925,
+    "valid:R4:secant@near": 0.179,
+    "valid:R6:loglinear": 0.037,
+    "valid:R7:average": 0.585,
+    "valid:control_variate": 0.44
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2628631637824134,
+    "s": 2.005274200364866,
+    "s1": 0.7573383180789925,
+    "tau": 0.9457843310749292,
+    "tau2": 0.04868957299541984,
+    "tau_r": 0.011627442408598105
+   },
+   "probes": 48,
+   "first_cert_probe": 47,
+   "world_idx": 9,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.198,
+    "s1": 0.197,
+    "s": 0.07,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.31
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.43
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.43
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 22.75
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.3233821067963216,
+    "h": 0.704750724765249,
+    "u": 0.531946981149075,
+    "n": 289,
+    "r_nb": 2.1968293947763
+   },
+   "seed": 911105762,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.563914387820745,
+   "T": 0.006436595674277927,
+   "T_hi": 0.006775879592711087,
+   "fair": 1.0,
+   "oracle_bias_share": 0.15228433225472057,
+   "bias_buy": 1.2085646257974032,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 289,
+   "eff": 1.0201558649729063,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.244,
+     2.948,
+     3.653,
+     4.358
+    ],
+    "target": 3.323,
+    "n": 289,
+    "route_order": {
+     "R1:readoff": 0.98,
+     "R2:endpoint": 1.04,
+     "R3:local@op": 1.56,
+     "R3:local@near": 2.04,
+     "R4:secant@op": 1.95,
+     "R4:secant@near": 1.7,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 1.69,
+     "R7:average": 1.57,
+     "R8:saturated": 0.93
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.2)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.525179546206081,
+   "B": 4.763709465707763,
+   "B_lo_red": 0.12423391008855529,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 9.75
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 7.1,
+    "shown:pilot@xr": 12.09
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.945,
+    "valid:R3:local@near": 0.149,
+    "valid:R4:secant@op": 1.376,
+    "valid:R4:secant@near": 0.11,
+    "valid:R6:loglinear": 0.169,
+    "valid:R7:average": 1.138,
+    "valid:control_variate": 0.036
+   },
+   "min_route_sep_over_T": 0.1201528257667365,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.18883823982927475,
+    "s": 2.572532923980199,
+    "s1": 2.127474021977169,
+    "tau": 1.0258218895662363,
+    "tau2": 0.1408523927994756,
+    "tau_r": 0.020248476622862464
+   },
+   "probes": 48,
+   "first_cert_probe": 8,
+   "world_idx": 10,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.081,
+    "s": 0.057,
+    "pbar": 0.041,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 4.76
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 5.3
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 15.59
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 19.08
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.938879572818663,
+    "h": 0.6301598976987962,
+    "u": 0.4662458449646062,
+    "n": 294,
+    "r_nb": 1.4820000845922296
+   },
+   "seed": 938329765,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6992970244538634,
+   "T": 0.0051382166299956305,
+   "T_hi": 0.005563659133981319,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1762252370494051,
+   "bias_buy": 1.2368819704778864,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 294,
+   "eff": 0.9333514691472512,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     4.015,
+     4.645,
+     5.275,
+     5.905
+    ],
+    "target": 4.939,
+    "n": 294,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.92,
+     "R3:local@op": 1.93,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.94,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.98,
+     "R7:average": 3.37,
+     "R8:saturated": 0.92
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.5)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.178369919797664,
+   "B": 4.524337458589175,
+   "B_lo_red": 0.11368850464360813,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.48
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 6.63,
+    "shown:pilot@xr": 2.26
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.432,
+    "valid:R3:local@near": 0.147,
+    "valid:R4:secant@op": 1.481,
+    "valid:R4:secant@near": 0.152,
+    "valid:R6:loglinear": 0.48,
+    "valid:R7:average": 0.507,
+    "valid:control_variate": 0.055
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.18557297599028774,
+    "s": 2.719490271896241,
+    "s1": 2.068641273566398,
+    "tau": 0.6781966868824606,
+    "tau2": 0.10731688027771279,
+    "tau_r": 0.01668373237474234
+   },
+   "probes": 48,
+   "first_cert_probe": 14,
+   "world_idx": 11,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.088,
+    "s": 0.062,
+    "s1": 0.039,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.52
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 11.18
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.9
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.9
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.649463107313283,
+    "h": 0.9926644894960943,
+    "u": 0.49070634232516,
+    "n": 35,
+    "r_nb": 2.5871253115907065
+   },
+   "seed": 191301633,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.7713467746794188,
+   "T": 0.02084172504471381,
+   "T_hi": 0.022384136425162376,
+   "fair": 1.0,
+   "oracle_bias_share": 0.20344838601227228,
+   "bias_buy": 1.3867490191080865,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 35,
+   "eff": 0.961317440505472,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.17,
+     3.162,
+     4.155,
+     5.148
+    ],
+    "target": 3.649,
+    "n": 35,
+    "route_order": {
+     "R1:readoff": 1.06,
+     "R2:endpoint": 0.8,
+     "R3:local@op": 1.82,
+     "R3:local@near": 2.0,
+     "R4:secant@op": 1.94,
+     "R4:secant@near": 1.98,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 1.86,
+     "R7:average": 2.01,
+     "R8:saturated": 0.8
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.357195113307372,
+   "B": 2.53164154520794,
+   "B_lo_red": 0.5309356237018991,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 4.5
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 10.35,
+    "shown:pilot@xr": 1.57
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.524,
+    "valid:R3:local@near": 0.198,
+    "valid:R4:secant@op": 1.738,
+    "valid:R4:secant@near": 0.192,
+    "valid:R6:loglinear": 0.527,
+    "valid:R7:average": 0.926,
+    "valid:control_variate": 0.169
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.26523429039058954,
+    "s": 0.5926942063040932,
+    "s1": 2.7290028198541982,
+    "tau": 0.866500919844142,
+    "tau2": 0.13144332212472942,
+    "tau_r": 0.02694210954818444
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 12,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.53
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 5.46
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 5.46
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 12.89
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.186677940513865,
+    "h": 0.7060703550948529,
+    "u": 0.6665167366759175,
+    "n": 180,
+    "r_nb": 1.0187010961206326
+   },
+   "seed": 174843652,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.7012755994184565,
+   "T": 0.00859310204789857,
+   "T_hi": 0.009118391430371797,
+   "fair": 1.0,
+   "oracle_bias_share": 0.18835534909927146,
+   "bias_buy": 1.307354025685905,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 180,
+   "eff": 1.0474886578837423,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.01,
+     2.716,
+     3.422,
+     4.128
+    ],
+    "target": 3.187,
+    "n": 180,
+    "route_order": {
+     "R1:readoff": 0.98,
+     "R2:endpoint": 1.09,
+     "R3:local@op": 1.76,
+     "R3:local@near": 2.0,
+     "R4:secant@op": 1.95,
+     "R4:secant@near": 1.9,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 1.79,
+     "R7:average": 1.32,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.374285139365777,
+   "B": 2.519423270825278,
+   "B_lo_red": 0.013068234105414047,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.27
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 8.33,
+    "shown:pilot@xr": 4.58
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.871,
+    "valid:R3:local@near": 0.095,
+    "valid:R4:secant@op": 1.802,
+    "valid:R4:secant@near": 0.17,
+    "valid:R6:loglinear": 0.342,
+    "valid:control_variate": 0.06
+   },
+   "min_route_sep_over_T": 0.0138670846933606,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2734643888972825,
+    "s": 2.9752055619527114,
+    "s1": 2.21236326813227,
+    "tau": 0.5184246481429255,
+    "tau2": 0.06683012061521722,
+    "tau_r": 0.005077219606634824
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 13,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 2.52
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 2.88
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 5.19
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 10.38
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 17.02
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 1.8788965757815186,
+    "h": 0.9436497376325563,
+    "u": 0.7148846308580077,
+    "n": 400,
+    "r_nb": 1.0
+   },
+   "seed": 19855322,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.48500597471258755,
+   "T": 0.005802918760723617,
+   "T_hi": 0.006062049882865747,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1272283504649888,
+   "bias_buy": 1.2045385751579818,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0585120425563923,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.261,
+     1.204,
+     2.148,
+     3.092
+    ],
+    "target": 1.879,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 0.97,
+     "R3:local@op": 6.98,
+     "R3:local@near": 2.16,
+     "R4:secant@op": 1.57,
+     "R4:secant@near": 4.85,
+     "R5:two_point": 1.76,
+     "R6:loglinear": 2.27,
+     "R7:average": 1.04,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.80647543596094,
+   "B": 5.021110074946276,
+   "B_lo_red": 1.6415099967050737,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.19
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 8.17,
+    "shown:pilot@xr": 6.32
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.633,
+    "valid:R3:local@near": 0.079,
+    "valid:R4:secant@op": 1.053,
+    "valid:R4:secant@near": 0.125,
+    "valid:R6:loglinear": 3.017,
+    "valid:control_variate": 0.021
+   },
+   "min_route_sep_over_T": 0.04078577117593778,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.24750371489587186,
+    "s": 0.7162830716127561,
+    "s1": 1.9329978374057006,
+    "tau": 1.1411160933078803,
+    "tau2": 0.0027101335305051376,
+    "tau_r": 0.02480807093640219
+   },
+   "probes": 48,
+   "first_cert_probe": 28,
+   "world_idx": 14,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.564,
+    "s1": 0.242,
+    "pbar": 0.005,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 5.02
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 5.89
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 16.25
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 24.94
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 35.74
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.170395508522325,
+    "h": 0.9678095152690809,
+    "u": 0.48621928003076376,
+    "n": 288,
+    "r_nb": 3.4396389521348096
+   },
+   "seed": 97949969,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.5022671626642348,
+   "T": 0.007348210250600521,
+   "T_hi": 0.007732021103761231,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1876921245319234,
+   "bias_buy": 1.3870537563203402,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 288,
+   "eff": 0.9842793592452093,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.732,
+     1.7,
+     2.668,
+     3.635
+    ],
+    "target": 2.17,
+    "n": 288,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.92,
+     "R3:local@op": 2.05,
+     "R3:local@near": 1.87,
+     "R4:secant@op": 1.91,
+     "R4:secant@near": 2.26,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 2.3,
+     "R7:average": 2.28,
+     "R8:saturated": 0.92
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x3.4)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.123945001287358,
+   "B": 6.443810176002694,
+   "B_lo_red": 2.1703176110747533,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 3.72
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.84,
+    "shown:pilot@xr": 5.7
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.07,
+    "valid:R3:local@near": 0.158,
+    "valid:R4:secant@op": 1.618,
+    "valid:R4:secant@near": 0.287,
+    "valid:R6:loglinear": 1.448,
+    "valid:R7:average": 0.73,
+    "valid:control_variate": 0.11
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2743937550972894,
+    "s": 0.45155258824971534,
+    "s1": 1.1514438341527917,
+    "tau": 0.42782292431981994,
+    "tau2": 0.005816896761886597,
+    "tau_r": 0.023552975491418503
+   },
+   "probes": 15,
+   "first_cert_probe": 14,
+   "world_idx": 15,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 1.105,
+    "s1": 0.592,
+    "pbar": 0.02,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 6.44
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 13.71
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 17.55
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 17.55
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.2976497532775735,
+    "h": 0.7883130378228622,
+    "u": 0.4608628497747305,
+    "n": 118,
+    "r_nb": 2.058146665659241
+   },
+   "seed": 546970143,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_prior:ctx0",
+   "noise_limited": true,
+   "truth": 0.688361424659376,
+   "T": 0.008425258087869944,
+   "T_hi": 0.009159531572390939,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1324348242007583,
+   "bias_buy": 1.1685358742266172,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 118,
+   "eff": 0.9621585976821273,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.146,
+     3.934,
+     4.723,
+     5.511
+    ],
+    "target": 4.298,
+    "n": 118,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.91,
+     "R3:local@op": 1.91,
+     "R3:local@near": 2.02,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.91,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.94,
+     "R7:average": 3.45,
+     "R8:saturated": 0.91
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.1)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.8371504607931697,
+   "B": 3.0844122459195207,
+   "B_lo_red": 0.007940613713818013,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.59
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.64,
+    "shown:pilot@xr": 1.54
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.1,
+    "valid:R3:local@near": 0.114,
+    "valid:R4:secant@op": 1.165,
+    "valid:R4:secant@near": 0.115,
+    "valid:R6:loglinear": 0.22,
+    "valid:R7:average": 0.394,
+    "valid:control_variate": 0.021
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2737492571646062,
+    "s": 1.3753669844142404,
+    "s1": 1.208255712214009,
+    "tau": 0.973173886634604,
+    "tau2": 0.145810276630296,
+    "tau_r": 0.028942677759929113
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 16,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.08
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 3.11
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 8.84
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 8.84
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.588239393909279,
+    "h": 0.709042581465887,
+    "u": 0.446939898139681,
+    "n": 60,
+    "r_nb": 1.1458898874657155
+   },
+   "seed": 309209385,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.7822822587639519,
+   "T": 0.010615000903672362,
+   "T_hi": 0.012131069474693184,
+   "fair": 1.0,
+   "oracle_bias_share": 0.12387959052066362,
+   "bias_buy": 1.0680812748244892,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 60,
+   "eff": 1.045582076101206,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.562,
+     4.271,
+     4.98,
+     5.689
+    ],
+    "target": 4.588,
+    "n": 60,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.89,
+     "R3:local@op": 1.87,
+     "R3:local@near": 2.03,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.86,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.98,
+     "R7:average": 3.92,
+     "R8:saturated": 0.89
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.1)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.824596200956318,
+   "B": 2.0851908989856764,
+   "B_lo_red": 0.015946706960133932,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.14
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 2.49,
+    "shown:pilot@xr": 5.63
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.914,
+    "valid:R3:local@near": 0.093,
+    "valid:R4:secant@op": 0.995,
+    "valid:R4:secant@near": 0.092,
+    "valid:R6:loglinear": 0.291,
+    "valid:R7:average": 0.317,
+    "valid:control_variate": 0.013
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2879374402881485,
+    "s": 1.803291071263065,
+    "s1": 1.5924866095478434,
+    "tau": 0.9586442117159111,
+    "tau2": 0.0009361549444966032,
+    "tau_r": 0.02339786843875283
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 17,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.09
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 2.2
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 5.93
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 5.93
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 1.6501909102106205,
+    "h": 0.5550709504524867,
+    "u": 0.4816984196584255,
+    "n": 169,
+    "r_nb": 1.4821028269072931
+   },
+   "seed": 232619064,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6054705833691714,
+   "T": 0.007564648269240732,
+   "T_hi": 0.008108709570609461,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1107087854416223,
+   "bias_buy": 1.1131137175046348,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 169,
+   "eff": 0.9878401901302072,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.828,
+     1.383,
+     1.938,
+     2.493
+    ],
+    "target": 1.65,
+    "n": 169,
+    "route_order": {
+     "R1:readoff": 1.01,
+     "R2:endpoint": 0.93,
+     "R3:local@op": 2.21,
+     "R3:local@near": 1.8,
+     "R4:secant@op": 1.95,
+     "R4:secant@near": 2.36,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.16,
+     "R7:average": 2.99,
+     "R8:saturated": 0.93
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.5)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.3179253961106525,
+   "B": 5.700398884449083,
+   "B_lo_red": 2.2053169867072855,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.15
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 6.16,
+    "shown:pilot@xr": 2.16
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.728,
+    "valid:R3:local@near": 0.09,
+    "valid:R4:secant@op": 1.084,
+    "valid:R4:secant@near": 0.229,
+    "valid:R6:loglinear": 0.877,
+    "valid:R7:average": 0.395,
+    "valid:control_variate": 0.077
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3364730109504862,
+    "s": 0.6104917633433304,
+    "s1": 2.662876459191435,
+    "tau": 0.3839160582227431,
+    "tau2": 0.10665098246179294,
+    "tau_r": 0.01112162799957861
+   },
+   "probes": 48,
+   "first_cert_probe": 37,
+   "world_idx": 18,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.616,
+    "s1": 0.146,
+    "pbar": 0.038,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 5.7
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 16.16
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 16.16
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 17.71
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.4525984436867114,
+    "h": 0.5006736735546651,
+    "u": 0.49158367165478256,
+    "n": 400,
+    "r_nb": 2.2975851312864637
+   },
+   "seed": 525221589,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6167621976090987,
+   "T": 0.0048365773110478506,
+   "T_hi": 0.005288976164516977,
+   "fair": 1.0,
+   "oracle_bias_share": 0.13698773364721406,
+   "bias_buy": 1.1211578732188905,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0413252525240726,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.706,
+     3.206,
+     3.707,
+     4.208
+    ],
+    "target": 3.453,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.94,
+     "R3:local@op": 2.0,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 2.05,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.92,
+     "R7:average": 2.24,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.3)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.6073290941598986,
+   "B": 5.0382847608855705,
+   "B_lo_red": 0.2673215329570146,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 4.53
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 10.68,
+    "shown:pilot@xr": 1.83
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.102,
+    "valid:R3:local@near": 0.113,
+    "valid:R4:secant@op": 1.061,
+    "valid:R4:secant@near": 0.127,
+    "valid:R6:loglinear": 0.169,
+    "valid:R7:average": 0.506,
+    "valid:control_variate": 0.09
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.22708555682281334,
+    "s": 2.991947084197964,
+    "s1": 1.7602241220543253,
+    "tau": 0.31909433610510163,
+    "tau2": 0.11704445191853056,
+    "tau_r": 0.014459001950499133
+   },
+   "probes": 48,
+   "first_cert_probe": 19,
+   "world_idx": 19,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.117,
+    "s1": 0.091,
+    "s": 0.025,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 5.04
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 14.01
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 14.01
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 18.44
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.489040223986108,
+    "h": 1.8282365188713126,
+    "u": 0.28128953660280415,
+    "n": 231,
+    "r_nb": 1.4469828012499182
+   },
+   "seed": 521781042,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.3126449993674876,
+   "T": 0.005798877430381929,
+   "T_hi": 0.006036657858477044,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0052293704060060245,
+   "bias_buy": 1.004133139765684,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 231,
+   "eff": 0.9906015321024328,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.147,
+     1.975,
+     3.803,
+     5.631
+    ],
+    "target": 2.489,
+    "n": 231,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 0.9,
+     "R3:local@op": 2.61,
+     "R3:local@near": 2.58,
+     "R4:secant@op": 2.16,
+     "R4:secant@near": 2.94,
+     "R5:two_point": 0.8,
+     "R6:loglinear": 2.89,
+     "R7:average": 0.99,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.4)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.5183098687211727,
+   "B": 3.6625766232438126,
+   "B_lo_red": 0.6313846856235058,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.47
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 4.91,
+    "shown:pilot@xr": 21.33
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 7.662,
+    "valid:R3:local@near": 0.124,
+    "valid:R4:secant@op": 0.823,
+    "valid:R4:secant@near": 0.761,
+    "valid:R6:loglinear": 8.341,
+    "valid:control_variate": 0.053
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.11275182951805213,
+    "s": 2.8523532081559226,
+    "s1": 2.232942582503952,
+    "tau": 1.0947496170896325,
+    "tau2": 0.11456225813086829,
+    "tau_r": 0.011781196603828988
+   },
+   "probes": 48,
+   "first_cert_probe": 40,
+   "world_idx": 20,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.289,
+    "s": 0.229,
+    "pbar": 0.055,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.66
+    },
+    {
+     "route": "R7:average",
+     "over_T": 6.46
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 8.18
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 46.12
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 46.12
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.141744420277466,
+    "h": 0.7264392774135655,
+    "u": 0.5054594289987735,
+    "n": 195,
+    "r_nb": 5.275947887658678
+   },
+   "seed": 902835294,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:offset@near",
+   "noise_limited": true,
+   "truth": 0.7451581659920756,
+   "T": 0.008026343699815806,
+   "T_hi": 0.008446719162081047,
+   "fair": 1.0,
+   "oracle_bias_share": 0.21238714920657187,
+   "bias_buy": 1.4875313550801483,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 195,
+   "eff": 0.9483905186340101,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.048,
+     3.775,
+     4.501,
+     5.227
+    ],
+    "target": 4.142,
+    "n": 195,
+    "route_order": {
+     "R1:readoff": 0.96,
+     "R2:endpoint": 1.1,
+     "R3:local@op": 1.96,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 1.98,
+     "R4:secant@near": 2.04,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.95,
+     "R7:average": 1.92,
+     "R8:saturated": 0.88
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x5.3)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.603064029927242,
+   "B": 3.79177258313643,
+   "B_lo_red": 0.05467838874047312,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 9.65
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 9.71,
+    "shown:pilot@xr": 28.6
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.932,
+    "valid:R3:local@near": 0.204,
+    "valid:R4:secant@op": 1.897,
+    "valid:R4:secant@near": 0.232,
+    "valid:R6:loglinear": 0.602,
+    "valid:R7:average": 1.1,
+    "valid:control_variate": 0.04
+   },
+   "min_route_sep_over_T": 0.057542140132432876,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2323934620418418,
+    "s": 2.8343340110837,
+    "s1": 2.374035607295604,
+    "tau": 0.5638420004925955,
+    "tau2": 0.0008610039187385288,
+    "tau_r": 0.006418915384532293
+   },
+   "probes": 48,
+   "first_cert_probe": 40,
+   "world_idx": 21,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.068,
+    "s1": 0.04,
+    "s": 0.009,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x5.3"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.79
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.95
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 10.26
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 14.14
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.9404952532996065,
+    "h": 0.7489086605268931,
+    "u": 0.4950927541959898,
+    "n": 64,
+    "r_nb": 4.033565422393521
+   },
+   "seed": 946881504,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.7268070463915002,
+   "T": 0.012886009985111075,
+   "T_hi": 0.013364987442531496,
+   "fair": 1.0,
+   "oracle_bias_share": 0.15748325854851855,
+   "bias_buy": 1.2909379915876902,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 64,
+   "eff": 1.0570966656129224,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.821,
+     2.57,
+     3.319,
+     4.068
+    ],
+    "target": 2.94,
+    "n": 64,
+    "route_order": {
+     "R1:readoff": 1.04,
+     "R2:endpoint": 0.88,
+     "R3:local@op": 1.91,
+     "R3:local@near": 2.0,
+     "R4:secant@op": 1.97,
+     "R4:secant@near": 1.99,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.76,
+     "R7:average": 2.03,
+     "R8:saturated": 0.88
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x4.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.8729506889751217,
+   "B": 2.979739261845197,
+   "B_lo_red": 0.07742705411955329,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 5.17
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 13.05,
+    "shown:pilot@xr": 2.86
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.264,
+    "valid:R3:local@near": 0.151,
+    "valid:R4:secant@op": 1.343,
+    "valid:R4:secant@near": 0.15,
+    "valid:R6:loglinear": 0.178,
+    "valid:R7:average": 0.72,
+    "valid:control_variate": 0.047
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.34604439389107733,
+    "s": 2.2274871416004345,
+    "s1": 1.6745185066940849,
+    "tau": 0.3620244490827762,
+    "tau2": 0.13454013126811376,
+    "tau_r": 0.027269705766315388
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 22,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.98
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.21
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 7.26
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 7.26
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.083864301213449,
+    "h": 1.2820881892687321,
+    "u": 0.7152748998313755,
+    "n": 400,
+    "r_nb": 4.6419847237267335
+   },
+   "seed": 212118974,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.34884348381570673,
+   "T": 0.004676650112286675,
+   "T_hi": 0.0049456572342054805,
+   "fair": 1.0,
+   "oracle_bias_share": 0.09661554170878549,
+   "bias_buy": 1.113496664071312,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9473054947875217,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.885,
+     4.167,
+     5.449,
+     6.731
+    ],
+    "target": 5.084,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 1.04,
+     "R3:local@op": 1.58,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.94,
+     "R4:secant@near": 1.82,
+     "R5:two_point": 1.98,
+     "R6:loglinear": 3.36,
+     "R7:average": 1.13,
+     "R8:saturated": 0.96
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x4.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.195879561774862,
+   "B": 3.379710796156394,
+   "B_lo_red": 0.3689825184868994,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 21.04
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 13.68,
+    "shown:pilot@xr": 34.87
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.005,
+    "valid:R3:local@near": 0.041,
+    "valid:R4:secant@op": 1.046,
+    "valid:R4:secant@near": 0.085,
+    "valid:R6:loglinear": 0.092,
+    "valid:control_variate": 0.175
+   },
+   "min_route_sep_over_T": 0.1160503420718625,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.09722135203131332,
+    "s": 2.179649451663643,
+    "s1": 1.0854846597195498,
+    "tau": 0.9424873141947547,
+    "tau2": 0.13065132765311038,
+    "tau_r": 0.007361799039571238
+   },
+   "probes": 48,
+   "first_cert_probe": 29,
+   "world_idx": 23,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.127,
+    "s1": 0.12,
+    "s": 0.037,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x4.6",
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 3.38
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 3.62
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 15.67
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 23.36
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 28.39
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.6160663742097268,
+    "h": 0.9802265576882894,
+    "u": 0.4661826586297708,
+    "n": 109,
+    "r_nb": 3.195636007085671
+   },
+   "seed": 614325391,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.5874867370742975,
+   "T": 0.010869227243983143,
+   "T_hi": 0.011975102217274583,
+   "fair": 1.0,
+   "oracle_bias_share": 0.19391368104930135,
+   "bias_buy": 1.3753263777860214,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 109,
+   "eff": 0.9358156974668154,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.179,
+     3.159,
+     4.139,
+     5.12
+    ],
+    "target": 3.616,
+    "n": 109,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.89,
+     "R3:local@op": 1.98,
+     "R3:local@near": 1.93,
+     "R4:secant@op": 1.93,
+     "R4:secant@near": 2.17,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.73,
+     "R7:average": 2.85,
+     "R8:saturated": 0.89
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x3.2)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.049037604756785,
+   "B": 4.461001514656192,
+   "B_lo_red": 0.23652958310923344,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 5.84
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.93,
+    "shown:pilot@xr": 10.3
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.914,
+    "valid:R3:local@near": 0.155,
+    "valid:R4:secant@op": 1.643,
+    "valid:R4:secant@near": 0.245,
+    "valid:R6:loglinear": 0.312,
+    "valid:R7:average": 0.61,
+    "valid:control_variate": 0.059
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.183046828649728,
+    "s": 1.6103627188145317,
+    "s1": 2.191807983971995,
+    "tau": 0.9038246803533196,
+    "tau2": 0.14296340149977527,
+    "tau_r": 0.010827483408376835
+   },
+   "probes": 48,
+   "first_cert_probe": 25,
+   "world_idx": 24,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.133,
+    "s1": 0.093,
+    "pbar": 0.046,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.46
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 5.0
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 12.23
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.23
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.0534143268655902,
+    "h": 1.6140167086933812,
+    "u": 0.22867554854039274,
+    "n": 177,
+    "r_nb": 1.3342881391155994
+   },
+   "seed": 304337400,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.40500180237831584,
+   "T": 0.009399019478451814,
+   "T_hi": 0.010048319860057437,
+   "fair": 1.0,
+   "oracle_bias_share": 0.20171158148565696,
+   "bias_buy": 1.4038773346589382,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 177,
+   "eff": 0.9789837056188768,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.07,
+     1.684,
+     3.298,
+     4.912
+    ],
+    "target": 2.053,
+    "n": 177,
+    "route_order": {
+     "R1:readoff": 1.01,
+     "R2:endpoint": 0.87,
+     "R3:local@op": 2.12,
+     "R3:local@near": 1.69,
+     "R4:secant@op": 1.83,
+     "R4:secant@near": 2.42,
+     "R5:two_point": 2.13,
+     "R6:loglinear": 2.86,
+     "R7:average": 0.76,
+     "R8:saturated": 0.87
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.3)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.0291033408919823,
+   "B": 3.2383589935345913,
+   "B_lo_red": 1.03709163594275,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.53
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 3.73,
+    "shown:pilot@xr": 19.29
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 4.845,
+    "valid:R3:local@near": 0.03,
+    "valid:R4:secant@op": 1.704,
+    "valid:R4:secant@near": 0.36,
+    "valid:R6:loglinear": 5.821,
+    "valid:control_variate": 0.124
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.20924940998753105,
+    "s": 2.923538889705115,
+    "s1": 1.2886590217689031,
+    "tau": 0.9168440490196861,
+    "tau2": 0.09955241460474251,
+    "tau_r": 0.02606528569640693
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 25,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 3.24
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 3.8
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 8.36
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 24.92
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 24.92
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.169945526872697,
+    "h": 1.620740734923847,
+    "u": 0.2836810095500863,
+    "n": 160,
+    "r_nb": 2.6410175798616877
+   },
+   "seed": 126096178,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.35989688800494146,
+   "T": 0.00705680550936095,
+   "T_hi": 0.007910185947020516,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0025233691338282294,
+   "bias_buy": 1.0005445553803107,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 160,
+   "eff": 1.0827690418743063,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.089,
+     1.71,
+     3.331,
+     4.952
+    ],
+    "target": 2.17,
+    "n": 160,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 0.89,
+     "R3:local@op": 2.7,
+     "R3:local@near": 2.52,
+     "R4:secant@op": 1.67,
+     "R4:secant@near": 2.98,
+     "R5:two_point": -3.33,
+     "R6:loglinear": 2.83,
+     "R7:average": 0.96,
+     "R8:saturated": 0.89
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.1027847697508335,
+   "B": 5.719865217031982,
+   "B_lo_red": 2.645512608345701,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.82
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 7.24,
+    "shown:pilot@xr": 28.23
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 7.924,
+    "valid:R3:local@near": 0.125,
+    "valid:R4:secant@op": 0.634,
+    "valid:R4:secant@near": 0.72,
+    "valid:R6:loglinear": 8.483,
+    "valid:control_variate": 0.08
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.14273614327361664,
+    "s": 0.7277548744916533,
+    "s1": 2.611728821474395,
+    "tau": 0.6284618876507986,
+    "tau2": 0.08051247054198327,
+    "tau_r": 0.012745135362738823
+   },
+   "probes": 48,
+   "first_cert_probe": 17,
+   "world_idx": 26,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.704,
+    "s1": 0.262,
+    "pbar": 0.235,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 5.72
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 7.45
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 14.82
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 41.33
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 41.33
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 1.7531151550369994,
+    "h": 0.6365623050173003,
+    "u": 0.7435070507238568,
+    "n": 84,
+    "r_nb": 5.447555850661315
+   },
+   "seed": 132359767,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.3747580103738142,
+   "T": 0.010200310106319261,
+   "T_hi": 0.010830358417912207,
+   "fair": 1.0,
+   "oracle_bias_share": 0.020512775866286973,
+   "bias_buy": 0.9953415931230502,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 84,
+   "eff": 1.0062739697555607,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.643,
+     1.28,
+     1.916,
+     2.553
+    ],
+    "target": 1.753,
+    "n": 84,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 0.99,
+     "R3:local@op": 5.15,
+     "R3:local@near": 2.17,
+     "R4:secant@op": 1.5,
+     "R4:secant@near": 11.92,
+     "R5:two_point": 1.69,
+     "R6:loglinear": 2.09,
+     "R7:average": 1.01,
+     "R8:saturated": 0.98
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x5.4)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.453862624840944,
+   "B": 1.5436641781781946,
+   "B_lo_red": 0.37103510526112204,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 3.39
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 3.79,
+    "shown:pilot@xr": 5.86
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.298,
+    "valid:R3:local@near": 0.005,
+    "valid:R4:secant@op": 0.082,
+    "valid:R4:secant@near": 0.013,
+    "valid:R6:loglinear": 0.707,
+    "valid:control_variate": 0.026
+   },
+   "min_route_sep_over_T": 0.0012151327764259626,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.20600977650748026,
+    "s": 2.911775674851424,
+    "s1": 1.349471888850928,
+    "tau": 0.7201468495785763,
+    "tau2": 0.0387529540222194,
+    "tau_r": 0.029282133610582718
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 27,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 1.54
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 1.58
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 5.82
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 7.6
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 10.74
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.7531406050266143,
+    "h": 1.2344295221500454,
+    "u": 0.7171976087574173,
+    "n": 280,
+    "r_nb": 2.9231454000202284
+   },
+   "seed": 790470217,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.4784880536943754,
+   "T": 0.005706204519845359,
+   "T_hi": 0.006101944662427444,
+   "fair": 1.0,
+   "oracle_bias_share": 0.15153876492493232,
+   "bias_buy": 1.1166264455059756,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 280,
+   "eff": 1.0003537798477327,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.633,
+     2.868,
+     4.102,
+     5.337
+    ],
+    "target": 3.753,
+    "n": 280,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 1.07,
+     "R3:local@op": 1.96,
+     "R3:local@near": 1.99,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 2.02,
+     "R5:two_point": 2.01,
+     "R6:loglinear": 2.27,
+     "R7:average": 1.21,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.9)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.09427408255811,
+   "B": 3.30887004776771,
+   "B_lo_red": 0.5247087817390218,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 4.18
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 8.13,
+    "shown:pilot@xr": 2.62
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.188,
+    "valid:R3:local@near": 0.059,
+    "valid:R4:secant@op": 1.628,
+    "valid:R4:secant@near": 0.159,
+    "valid:R6:loglinear": 0.586,
+    "valid:control_variate": 0.527
+   },
+   "min_route_sep_over_T": 0.26895224036226884,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.23476136565249778,
+    "s": 2.240703776712582,
+    "s1": 0.6526284457861042,
+    "tau": 0.3684765093536611,
+    "tau2": 0.040991341401387396,
+    "tau_r": 0.019269299206306847
+   },
+   "probes": 48,
+   "first_cert_probe": 33,
+   "world_idx": 28,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.238,
+    "pbar": 0.165,
+    "s": 0.014,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.31
+    },
+    {
+     "route": "R7:average",
+     "over_T": 3.55
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 14.1
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 22.68
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 39.19
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.5818553384887615,
+    "h": 0.7085576397487094,
+    "u": 0.7398446540616769,
+    "n": 400,
+    "r_nb": 2.218949645681051
+   },
+   "seed": 742770576,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.45687718520338916,
+   "T": 0.0042920512933954345,
+   "T_hi": 0.00489241228335869,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0791631836490932,
+   "bias_buy": 1.0249960377641305,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9639396073302517,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.349,
+     4.058,
+     4.766,
+     5.475
+    ],
+    "target": 4.582,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 1.04,
+     "R3:local@op": 1.81,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.97,
+     "R4:secant@near": 1.9,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 1.8,
+     "R7:average": 1.11,
+     "R8:saturated": 0.97
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.2)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.5389001360224586,
+   "B": 2.8940348944131142,
+   "B_lo_red": 0.1864009692859071,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 12.43
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 12.8,
+    "shown:pilot@xr": 21.3
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.982,
+    "valid:R3:local@near": 0.027,
+    "valid:R4:secant@op": 0.837,
+    "valid:R4:secant@near": 0.067,
+    "valid:R6:loglinear": 0.115,
+    "valid:control_variate": 0.032
+   },
+   "min_route_sep_over_T": 0.015281173621077164,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.1236931858455125,
+    "s": 1.0193231708448867,
+    "s1": 1.5170285698946397,
+    "tau": 0.8639052653174846,
+    "tau2": 0.08060367951394301,
+    "tau_r": 0.019627021578252784
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 29,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.89
+    },
+    {
+     "route": "R7:average",
+     "over_T": 3.19
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 13.51
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 16.88
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 20.64
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.42492769617281,
+    "h": 1.267280029807785,
+    "u": 0.5052875957928689,
+    "n": 44,
+    "r_nb": 1.3059305453582086
+   },
+   "seed": 150163218,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.8245879081968129,
+   "T": 0.019929525727745305,
+   "T_hi": 0.02103906974762232,
+   "fair": 1.0,
+   "oracle_bias_share": 0.21307104682272932,
+   "bias_buy": 1.431934295947247,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 44,
+   "eff": 1.0348544537881526,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.517,
+     3.785,
+     5.052,
+     6.319
+    ],
+    "target": 4.425,
+    "n": 44,
+    "route_order": {
+     "R1:readoff": 0.93,
+     "R2:endpoint": 1.22,
+     "R3:local@op": 2.09,
+     "R3:local@near": 1.92,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 2.19,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.9,
+     "R7:average": 1.96,
+     "R8:saturated": 0.78
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.3)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.6902671777266807,
+   "B": 1.784370061290544,
+   "B_lo_red": 0.14632584625638453,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.83
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.29,
+    "shown:pilot@xr": 0.38
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.326,
+    "valid:R3:local@near": 0.184,
+    "valid:R4:secant@op": 1.875,
+    "valid:R4:secant@near": 0.29,
+    "valid:R6:loglinear": 0.531,
+    "valid:R7:average": 1.065,
+    "valid:control_variate": 0.122
+   },
+   "min_route_sep_over_T": 0.0820372727474432,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.33263443247370555,
+    "s": 0.7224822553841921,
+    "s1": 1.6177077353610634,
+    "tau": 0.4187823839858238,
+    "tau2": 0.061551399502129046,
+    "tau_r": 0.02519966523616152
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 30,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 1.78
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 4.39
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 7.7
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 8.19
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 1.3679097216111622,
+    "h": 0.9207883878994298,
+    "u": 0.48078443659902886,
+    "n": 400,
+    "r_nb": 1.5571320768936043
+   },
+   "seed": 81512038,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.286676568359722,
+   "T": 0.0044130575961082935,
+   "T_hi": 0.004973766433667542,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.09582762673719102,
+   "bias_buy": 1.0350171544995967,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9230146620202865,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.004,
+     0.925,
+     1.846,
+     2.767
+    ],
+    "target": 1.368,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.01,
+     "R2:endpoint": 0.96,
+     "R3:local@op": 1.91,
+     "R3:local@near": 2.0,
+     "R4:secant@op": 1.96,
+     "R4:secant@near": 1.99,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.45,
+     "R7:average": 3.73,
+     "R8:saturated": 0.96
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.3781905857717,
+   "B": 4.934469333668797,
+   "B_lo_red": 4.3781905857717,
+   "nearest_red": "R1:readoff",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.01
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 3.45,
+    "shown:pilot@xr": 1.63
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.775,
+    "valid:R3:local@near": 0.088,
+    "valid:R4:secant@op": 0.816,
+    "valid:R4:secant@near": 0.09,
+    "valid:R6:loglinear": 4.016,
+    "valid:R7:average": 0.261,
+    "valid:control_variate": 0.271
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.21699322121308795,
+    "s": 2.4979573278888045,
+    "s1": 0.4366433670135053,
+    "tau": 1.053695239715172,
+    "tau2": 0.12179347241228183,
+    "tau_r": 0.021380313194053164
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 31,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.93
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 14.49
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 14.49
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 22.99
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.726392550148392,
+    "h": 1.710030257348709,
+    "u": 0.455216878171692,
+    "n": 329,
+    "r_nb": 6.0
+   },
+   "seed": 216757396,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.40598314729645013,
+   "T": 0.007862280477776415,
+   "T_hi": 0.0084789405270777,
+   "fair": 1.0,
+   "oracle_bias_share": 0.19703163901640625,
+   "bias_buy": 1.4910716015951997,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 329,
+   "eff": 0.997198529967313,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.238,
+     2.948,
+     4.658,
+     6.368
+    ],
+    "target": 3.726,
+    "n": 329,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.92,
+     "R3:local@op": 1.92,
+     "R3:local@near": 1.99,
+     "R4:secant@op": 1.96,
+     "R4:secant@near": 2.02,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.39,
+     "R7:average": 5.35,
+     "R8:saturated": 0.92
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x6.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.88255815278347,
+   "B": 5.2655104730068985,
+   "B_lo_red": 0.7729221370277249,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 5.16
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 51.55,
+    "shown:pilot@xr": 50.36
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.688,
+    "valid:R3:local@near": 0.16,
+    "valid:R4:secant@op": 1.673,
+    "valid:R4:secant@near": 0.192,
+    "valid:R6:loglinear": 1.031,
+    "valid:R7:average": 0.433,
+    "valid:control_variate": 0.143
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.18937851635438424,
+    "s": 1.0145551230789167,
+    "s1": 0.6667114127963323,
+    "tau": 0.8343693562410543,
+    "tau2": 0.019690550432542524,
+    "tau_r": 0.02857075882013867
+   },
+   "probes": 48,
+   "first_cert_probe": 19,
+   "world_idx": 32,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.641,
+    "s": 0.413,
+    "pbar": 0.009,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x6.0",
+    "n=329 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 5.27
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 8.59
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 15.54
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 15.54
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.6338560207306307,
+    "h": 1.0905975900057103,
+    "u": 0.7184084054314764,
+    "n": 160,
+    "r_nb": 6.0
+   },
+   "seed": 849261064,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.3079904384827582,
+   "T": 0.00690517040470988,
+   "T_hi": 0.007387473466610874,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01893178188294283,
+   "bias_buy": 0.9858400464901095,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 160,
+   "eff": 0.9931250009367216,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.76,
+     2.85,
+     3.941,
+     5.032
+    ],
+    "target": 3.634,
+    "n": 160,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 1.03,
+     "R3:local@op": 1.53,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.93,
+     "R4:secant@near": 1.78,
+     "R5:two_point": 1.98,
+     "R6:loglinear": 2.17,
+     "R7:average": 1.1,
+     "R8:saturated": 0.97
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x6.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.7490878760913324,
+   "B": 1.8712558152919871,
+   "B_lo_red": 0.13362407137388574,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 19.64
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 25.71,
+    "shown:pilot@xr": 37.42
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.416,
+    "valid:R3:local@near": 0.018,
+    "valid:R4:secant@op": 0.454,
+    "valid:R4:secant@near": 0.035,
+    "valid:R6:loglinear": 0.397,
+    "valid:control_variate": 0.012
+   },
+   "min_route_sep_over_T": 0.023400559983333322,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.12992260360469812,
+    "s": 0.9356593981920522,
+    "s1": 0.7599327126492375,
+    "tau": 1.0956814235139054,
+    "tau2": 0.13270243238444873,
+    "tau_r": 0.014856584082514935
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 33,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 1.87
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 2.05
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.9
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 9.05
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 13.19
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.014340587003866,
+    "h": 1.0723598660784368,
+    "u": 0.4609865366109979,
+    "n": 103,
+    "r_nb": 1.0
+   },
+   "seed": 930110558,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.6757153255062104,
+   "T": 0.01009441081090063,
+   "T_hi": 0.010674911553950516,
+   "fair": 1.0,
+   "oracle_bias_share": 0.21227915254287252,
+   "bias_buy": 1.4414738991507916,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 103,
+   "eff": 0.9542920747234374,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.448,
+     3.52,
+     4.592,
+     5.665
+    ],
+    "target": 4.014,
+    "n": 103,
+    "route_order": {
+     "R1:readoff": 1.04,
+     "R2:endpoint": 0.88,
+     "R3:local@op": 1.87,
+     "R3:local@near": 2.02,
+     "R4:secant@op": 1.98,
+     "R4:secant@near": 1.9,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.8,
+     "R7:average": 2.74,
+     "R8:saturated": 0.88
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.4735005606641542,
+   "B": 3.673251659982633,
+   "B_lo_red": 0.003754698893109061,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.38
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 3.31,
+    "shown:pilot@xr": 0.89
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.64,
+    "valid:R3:local@near": 0.178,
+    "valid:R4:secant@op": 1.793,
+    "valid:R4:secant@near": 0.175,
+    "valid:R6:loglinear": 0.242,
+    "valid:R7:average": 0.702,
+    "valid:control_variate": 0.21
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.28730419342013946,
+    "s": 2.272766530284866,
+    "s1": 1.1387206125514355,
+    "tau": 0.5973946701353385,
+    "tau2": 0.13428944879508078,
+    "tau_r": 0.005787524399903777
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 34,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.67
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 9.89
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 9.89
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 12.62
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.144414061700123,
+    "h": 1.3408611547040796,
+    "u": 0.4000647415704026,
+    "n": 161,
+    "r_nb": 1.5519680651183838
+   },
+   "seed": 508305340,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:average",
+   "noise_limited": true,
+   "truth": 0.2886286452121879,
+   "T": 0.00663553013028716,
+   "T_hi": 0.0071139366282576425,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006631949646243563,
+   "bias_buy": 1.0000146820901261,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 161,
+   "eff": 0.988563887750668,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.267,
+     1.608,
+     2.949,
+     4.29
+    ],
+    "target": 2.144,
+    "n": 161,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 0.95,
+     "R3:local@op": 2.63,
+     "R3:local@near": 3.07,
+     "R4:secant@op": 5.97,
+     "R4:secant@near": 2.92,
+     "R5:two_point": 2.78,
+     "R6:loglinear": 2.47,
+     "R7:average": 1.02,
+     "R8:saturated": 0.95
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.4672349611049,
+   "B": 1.5730192354069858,
+   "B_lo_red": 0.40271732878118,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.2
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.41,
+    "shown:pilot@xr": 2.62
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.844,
+    "valid:R3:local@near": 0.051,
+    "valid:R4:secant@op": 0.114,
+    "valid:R4:secant@near": 0.279,
+    "valid:R6:loglinear": 3.852,
+    "valid:control_variate": 0.025
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.1341265166952886,
+    "s": 1.6457749361646172,
+    "s1": 1.3865865709228982,
+    "tau": 0.9236885061050382,
+    "tau2": 0.04949771608357343,
+    "tau_r": 0.019198755381919966
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 35,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 1.57
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 2.06
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 6.24
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 23.96
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 23.96
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.986057934818917,
+    "h": 1.4066259741739071,
+    "u": 0.24323397319881226,
+    "n": 400,
+    "r_nb": 6.0
+   },
+   "seed": 336265705,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.23219234725275684,
+   "T": 0.004238456493118398,
+   "T_hi": 0.004529640340612719,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0440068288347768,
+   "bias_buy": 1.0310557896785415,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9654619512487547,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.237,
+     2.644,
+     4.051,
+     5.457
+    ],
+    "target": 2.986,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 0.96,
+     "R3:local@op": 2.53,
+     "R3:local@near": 4.13,
+     "R4:secant@op": 1.61,
+     "R4:secant@near": 2.81,
+     "R5:two_point": 2.56,
+     "R6:loglinear": 2.3,
+     "R7:average": 0.97,
+     "R8:saturated": 0.96
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x6.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.1851458868263185,
+   "B": 4.472667271941331,
+   "B_lo_red": 0.9845992945756902,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 1.33
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 12.92,
+    "shown:pilot@xr": 45.68
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.954,
+    "valid:R3:local@near": 0.006,
+    "valid:R4:secant@op": 0.151,
+    "valid:R4:secant@near": 0.151,
+    "valid:R6:loglinear": 1.8,
+    "valid:control_variate": 0.04
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.08214696570853314,
+    "s": 2.590704991566895,
+    "s1": 1.404820001177233,
+    "tau": 0.7091484493763796,
+    "tau2": 0.004557479236291978,
+    "tau_r": 0.02537402499938959
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 36,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.47
+    },
+    {
+     "route": "R7:average",
+     "over_T": 4.53
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 13.26
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 31.06
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 31.06
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 2.202538556410754,
+    "h": 0.6253199974255467,
+    "u": 0.4964129900961593,
+    "n": 400,
+    "r_nb": 1.6385376957918856
+   },
+   "seed": 358432893,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.6278770095973176,
+   "T": 0.006884461527589083,
+   "T_hi": 0.007469749618636911,
+   "fair": 1.0,
+   "oracle_bias_share": 0.1897353921611472,
+   "bias_buy": 1.416278298334066,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0278434279562243,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.267,
+     1.892,
+     2.517,
+     3.143
+    ],
+    "target": 2.203,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.02,
+     "R2:endpoint": 0.91,
+     "R3:local@op": 2.11,
+     "R3:local@near": 1.86,
+     "R4:secant@op": 1.94,
+     "R4:secant@near": 2.28,
+     "R5:two_point": 1.99,
+     "R6:loglinear": 2.55,
+     "R7:average": 2.02,
+     "R8:saturated": 0.91
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.6)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.150370662874117,
+   "B": 6.6732494225395484,
+   "B_lo_red": 1.7533231506465212,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.2
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 12.63,
+    "shown:pilot@xr": 12.41
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.277,
+    "valid:R3:local@near": 0.164,
+    "valid:R4:secant@op": 1.694,
+    "valid:R4:secant@near": 0.309,
+    "valid:R6:loglinear": 0.268,
+    "valid:R7:average": 0.9,
+    "valid:control_variate": 0.122
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.29171350504779486,
+    "s": 0.8627068733896055,
+    "s1": 2.648579240157603,
+    "tau": 1.0873503152087751,
+    "tau2": 0.13383857411864453,
+    "tau_r": 0.012034128860658414
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 37,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 6.67
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 17.58
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 17.58
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 19.33
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.317718021660482,
+    "h": 0.6464482760899696,
+    "u": 0.47365326378107436,
+    "n": 113,
+    "r_nb": 3.790297015814202
+   },
+   "seed": 571037923,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.6821295808744695,
+   "T": 0.01051696011308933,
+   "T_hi": 0.011468992054907583,
+   "fair": 1.0,
+   "oracle_bias_share": 0.14842126900012914,
+   "bias_buy": 1.2261720998705399,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 113,
+   "eff": 0.9870471154458661,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.365,
+     3.012,
+     3.658,
+     4.304
+    ],
+    "target": 3.318,
+    "n": 113,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.9,
+     "R3:local@op": 1.99,
+     "R3:local@near": 1.96,
+     "R4:secant@op": 1.96,
+     "R4:secant@near": 2.1,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.91,
+     "R7:average": 2.57,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x3.8)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.3128490604645595,
+   "B": 3.61273972184108,
+   "B_lo_red": 0.4556617726273504,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.88
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 2.45,
+    "shown:pilot@xr": 4.57
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.452,
+    "valid:R3:local@near": 0.129,
+    "valid:R4:secant@op": 1.316,
+    "valid:R4:secant@near": 0.175,
+    "valid:R6:loglinear": 0.352,
+    "valid:R7:average": 0.541,
+    "valid:control_variate": 0.093
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.22451917729736293,
+    "s": 1.229427558412089,
+    "s1": 2.925391153383048,
+    "tau": 0.8685216211858988,
+    "tau2": 0.031987068350834515,
+    "tau_r": 0.023349476387831723
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 38,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.61
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 9.76
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 9.76
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 13.68
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.0726899096359346,
+    "h": 1.1158324325455158,
+    "u": 0.7813402801763913,
+    "n": 400,
+    "r_nb": 1.224830750422745
+   },
+   "seed": 486004134,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.2531863142389743,
+   "T": 0.00437089957235075,
+   "T_hi": 0.004779154488947347,
+   "fair": 1.0,
+   "oracle_bias_share": 0.012227492903587982,
+   "bias_buy": 1.009777172276847,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0364078525487344,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.085,
+     2.201,
+     3.317,
+     4.433
+    ],
+    "target": 3.073,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 0.95,
+     "R3:local@op": 3.28,
+     "R3:local@near": 2.52,
+     "R4:secant@op": 4.44,
+     "R4:secant@near": 3.22,
+     "R5:two_point": 5.06,
+     "R6:loglinear": 2.29,
+     "R7:average": 0.94,
+     "R8:saturated": 0.98
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.2)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.15509401669783,
+   "B": 3.449789107106562,
+   "B_lo_red": 0.6140535001391209,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.32
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 6.34,
+    "shown:pilot@xr": 4.74
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.626,
+    "valid:R3:local@near": 0.006,
+    "valid:R4:secant@op": 0.264,
+    "valid:R4:secant@near": 0.103,
+    "valid:R6:loglinear": 1.074,
+    "valid:control_variate": 0.08
+   },
+   "min_route_sep_over_T": 0.0010242490632011152,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.08345440415450987,
+    "s": 2.985960200068619,
+    "s1": 1.6114568413651167,
+    "tau": 0.4716553488407593,
+    "tau2": 0.016789447962603704,
+    "tau_r": 0.010909008127494414
+   },
+   "probes": 48,
+   "first_cert_probe": 31,
+   "world_idx": 39,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.134,
+    "s": 0.089,
+    "pbar": 0.056,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.45
+    },
+    {
+     "route": "R7:average",
+     "over_T": 4.23
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 13.88
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 18.91
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 27.0
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.8979722714568235,
+    "h": 0.7601584849130788,
+    "u": 0.5528994284963705,
+    "n": 314,
+    "r_nb": 2.019403257412491
+   },
+   "seed": 591969643,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.6923418018988029,
+   "T": 0.006390610040650243,
+   "T_hi": 0.006885305369417657,
+   "fair": 1.0,
+   "oracle_bias_share": 0.18799510000796496,
+   "bias_buy": 1.3004450157411787,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 314,
+   "eff": 0.9264043009250945,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.718,
+     4.478,
+     5.238,
+     5.998
+    ],
+    "target": 4.898,
+    "n": 314,
+    "route_order": {
+     "R1:readoff": 0.97,
+     "R2:endpoint": 1.09,
+     "R3:local@op": 1.97,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 1.98,
+     "R4:secant@near": 2.03,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.96,
+     "R7:average": 1.58,
+     "R8:saturated": 0.91
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.8271352346392193,
+   "B": 4.123392698495449,
+   "B_lo_red": 0.028178529336567098,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.04
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 2.65,
+    "shown:pilot@xr": 1.55
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.984,
+    "valid:R3:local@near": 0.161,
+    "valid:R4:secant@op": 1.828,
+    "valid:R4:secant@near": 0.216,
+    "valid:R6:loglinear": 0.609,
+    "valid:R7:average": 1.529,
+    "valid:control_variate": 0.117
+   },
+   "min_route_sep_over_T": 0.030359821379997258,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.17254667596567005,
+    "s": 1.1738210542111822,
+    "s1": 2.308926164952998,
+    "tau": 0.43472489988131013,
+    "tau2": 0.07667489937227591,
+    "tau_r": 0.007392952041163824
+   },
+   "probes": 48,
+   "first_cert_probe": 37,
+   "world_idx": 40,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 0.178,
+    "s1": 0.056,
+    "s": 0.045,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=314 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.12
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 12.22
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 16.9
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 23.15
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.479644391561774,
+    "h": 0.6521130567532507,
+    "u": 0.4979110717267164,
+    "n": 273,
+    "r_nb": 1.1936647831990634
+   },
+   "seed": 129694370,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.7575293504332613,
+   "T": 0.005670809266472461,
+   "T_hi": 0.006192540754640864,
+   "fair": 1.0,
+   "oracle_bias_share": 0.18948777417509136,
+   "bias_buy": 1.2767192199314443,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 273,
+   "eff": 0.9474649673016183,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.503,
+     4.155,
+     4.807,
+     5.459
+    ],
+    "target": 4.48,
+    "n": 273,
+    "route_order": {
+     "R1:readoff": 1.03,
+     "R2:endpoint": 0.9,
+     "R3:local@op": 1.9,
+     "R3:local@near": 2.02,
+     "R4:secant@op": 1.99,
+     "R4:secant@near": 1.9,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.97,
+     "R7:average": 2.02,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.2)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.076532501946006,
+   "B": 4.451585738418227,
+   "B_lo_red": 0.06532538439831422,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 2.42
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.07,
+    "shown:pilot@xr": 5.94
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.522,
+    "valid:R3:local@near": 0.196,
+    "valid:R4:secant@op": 1.711,
+    "valid:R4:secant@near": 0.166,
+    "valid:R6:loglinear": 0.51,
+    "valid:R7:average": 0.933,
+    "valid:control_variate": 0.027
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2566921410063169,
+    "s": 2.071245794071604,
+    "s1": 1.807283345972516,
+    "tau": 0.7403842409244281,
+    "tau2": 0.02792216487925765,
+    "tau_r": 0.012236141204562609
+   },
+   "probes": 48,
+   "first_cert_probe": 26,
+   "world_idx": 41,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s": 0.083,
+    "s1": 0.07,
+    "pbar": 0.033,
+    "tau": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 4.45
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 4.6
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 11.22
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 11.22
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.059294533410851,
+    "h": 0.6529283884440457,
+    "u": 0.7310457419534656,
+    "n": 400,
+    "r_nb": 3.6868662718900933
+   },
+   "seed": 402020295,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.4795055985993928,
+   "T": 0.004755533563239968,
+   "T_hi": 0.005077880513283361,
+   "fair": 1.0,
+   "oracle_bias_share": 0.06131206053647407,
+   "bias_buy": 1.0154143277440746,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0173133066603068,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     1.929,
+     2.582,
+     3.235,
+     3.888
+    ],
+    "target": 3.059,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.99,
+     "R2:endpoint": 1.03,
+     "R3:local@op": 1.51,
+     "R3:local@near": 2.02,
+     "R4:secant@op": 1.93,
+     "R4:secant@near": 1.71,
+     "R5:two_point": 1.97,
+     "R6:loglinear": 2.35,
+     "R7:average": 1.11,
+     "R8:saturated": 0.96
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x3.7)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.0796297240602737,
+   "B": 3.288377961374252,
+   "B_lo_red": 0.08457615962788476,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 11.63
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 40.01,
+    "shown:pilot@xr": 30.63
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.8,
+    "valid:R3:local@near": 0.034,
+    "valid:R4:secant@op": 0.914,
+    "valid:R4:secant@near": 0.063,
+    "valid:R6:loglinear": 0.203,
+    "valid:control_variate": 0.011
+   },
+   "min_route_sep_over_T": 0.038280624618885595,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.19064816603804746,
+    "s": 1.6086726791486101,
+    "s1": 1.4340971699946539,
+    "tau": 0.7095625415120725,
+    "tau2": 0.0955840837705269,
+    "tau_r": 0.006351664843050274
+   },
+   "probes": 48,
+   "first_cert_probe": 19,
+   "world_idx": 42,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.132,
+    "s": 0.111,
+    "pbar": 0.008,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.29
+    },
+    {
+     "route": "R7:average",
+     "over_T": 3.39
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 3.63
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 14.9
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 22.48
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 4.2316466759356075,
+    "h": 0.4505103003174413,
+    "u": 0.55900318240202,
+    "n": 400,
+    "r_nb": 2.027641351584074
+   },
+   "seed": 945097747,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_prior:ctx0",
+   "noise_limited": true,
+   "truth": 0.8532950605732823,
+   "T": 0.003942933260880821,
+   "T_hi": 0.0043710216228137165,
+   "fair": 1.0,
+   "oracle_bias_share": 0.18240835524678656,
+   "bias_buy": 1.2330733586316287,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.000856023439115,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     3.529,
+     3.98,
+     4.43,
+     4.881
+    ],
+    "target": 4.232,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 0.97,
+     "R2:endpoint": 1.11,
+     "R3:local@op": 2.07,
+     "R3:local@near": 1.97,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 2.1,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 1.99,
+     "R7:average": 1.6,
+     "R8:saturated": 0.9
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.0)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.4962183799221123,
+   "B": 2.767235403692107,
+   "B_lo_red": 0.04404723831416228,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 5.46
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 9.27,
+    "shown:pilot@xr": 17.07
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 2.183,
+    "valid:R3:local@near": 0.151,
+    "valid:R4:secant@op": 1.813,
+    "valid:R4:secant@near": 0.229,
+    "valid:R6:loglinear": 0.645,
+    "valid:R7:average": 1.501,
+    "valid:control_variate": 0.011
+   },
+   "min_route_sep_over_T": 0.04192580413781121,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2982674390468142,
+    "s": 2.7957249015508108,
+    "s1": 2.595703978608793,
+    "tau": 0.6385537444288136,
+    "tau2": 0.09332673428178322,
+    "tau_r": 0.009882179879738679
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 43,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 2.77
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 3.48
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 10.31
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 14.93
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.276735785372942,
+    "h": 0.6016836868479771,
+    "u": 0.45911331582948817,
+    "n": 400,
+    "r_nb": 2.0667423205090745
+   },
+   "seed": 961490079,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.9196867706422343,
+   "T": 0.00462095757196846,
+   "T_hi": 0.004989616091737926,
+   "fair": 1.0,
+   "oracle_bias_share": 0.21683590634744446,
+   "bias_buy": 1.4836057879186004,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.968523586514948,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     4.399,
+     5.0,
+     5.602,
+     6.204
+    ],
+    "target": 5.277,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.05,
+     "R2:endpoint": 0.83,
+     "R3:local@op": 1.79,
+     "R3:local@near": 2.06,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 1.69,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.0,
+     "R7:average": 2.44,
+     "R8:saturated": 0.83
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x2.1)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.656393327162974,
+   "B": 2.868319538703631,
+   "B_lo_red": 0.46313038349792635,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 6.57
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 9.04,
+    "shown:pilot@xr": 3.65
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.628,
+    "valid:R3:local@near": 0.208,
+    "valid:R4:secant@op": 2.046,
+    "valid:R4:secant@near": 0.152,
+    "valid:R6:loglinear": 0.827,
+    "valid:R7:average": 0.897,
+    "valid:control_variate": 0.045
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2837208360225374,
+    "s": 1.9080466126325395,
+    "s1": 2.9759492350074703,
+    "tau": 0.45192505525719484,
+    "tau2": 0.021936388938821053,
+    "tau_r": 0.0079171969032477
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 44,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 2.87
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 7.07
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 7.07
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 14.51
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 5.85699007940526,
+    "h": 0.38377284505483483,
+    "u": 0.5453524976328056,
+    "n": 397,
+    "r_nb": 1.1165176283934333
+   },
+   "seed": 171590050,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_prior:ctx0",
+   "noise_limited": true,
+   "truth": 0.8574017457728309,
+   "T": 0.0032831938983626666,
+   "T_hi": 0.0036009628927613536,
+   "fair": 1.0,
+   "oracle_bias_share": 0.06356433569294945,
+   "bias_buy": 0.9896537547711745,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 397,
+   "eff": 0.9905132523230629,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     5.264,
+     5.648,
+     6.031,
+     6.415
+    ],
+    "target": 5.857,
+    "n": 397,
+    "route_order": {
+     "R1:readoff": 0.98,
+     "R2:endpoint": 1.06,
+     "R3:local@op": 2.07,
+     "R3:local@near": 1.98,
+     "R4:secant@op": 2.0,
+     "R4:secant@near": 2.09,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.0,
+     "R7:average": 1.53,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.1)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.1779569470751705,
+   "B": 1.2919673302888142,
+   "B_lo_red": 0.016122478253547585,
+   "nearest_red": "naive_ignore:ctx:offset@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 3.43
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 6.19,
+    "shown:pilot@xr": 1.13
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.778,
+    "valid:R3:local@near": 0.059,
+    "valid:R4:secant@op": 0.662,
+    "valid:R4:secant@near": 0.082,
+    "valid:R6:loglinear": 0.219,
+    "valid:R7:average": 0.602,
+    "valid:control_variate": 0.001
+   },
+   "min_route_sep_over_T": 0.010833129427162242,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.3094255334939764,
+    "s": 1.4844184789848986,
+    "s1": 1.4500066455429774,
+    "tau": 1.133949890432695,
+    "tau2": 0.08600193306449365,
+    "tau_r": 0.02101466300933788
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 45,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 1.29
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 2.27
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 6.86
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 8.65
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 3.9702992909572394,
+    "h": 1.0539662357004382,
+    "u": 0.5119821148514454,
+    "n": 80,
+    "r_nb": 1.7941830205398366
+   },
+   "seed": 1017110715,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R1:readoff",
+   "noise_limited": true,
+   "truth": 0.4465417723805749,
+   "T": 0.00970280604161489,
+   "T_hi": 0.010502670663915583,
+   "fair": 1.0,
+   "oracle_bias_share": 0.050179010941294074,
+   "bias_buy": 0.9778656672814656,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 0.9600938562628101,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     2.377,
+     3.431,
+     4.485,
+     5.539
+    ],
+    "target": 3.97,
+    "n": 80,
+    "route_order": {
+     "R1:readoff": 0.98,
+     "R2:endpoint": 1.05,
+     "R3:local@op": 1.76,
+     "R3:local@near": 2.01,
+     "R4:secant@op": 1.96,
+     "R4:secant@near": 1.88,
+     "R5:two_point": 2.0,
+     "R6:loglinear": 2.56,
+     "R7:average": 1.76,
+     "R8:saturated": 0.94
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.8)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.0673272231344355,
+   "B": 3.320186707316881,
+   "B_lo_red": 0.35569933801380094,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 4
+   },
+   "free_over_T": {
+    "free:pilot_interp": 0.61
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 0.41,
+    "shown:pilot@xr": 1.58
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 0.635,
+    "valid:R3:local@near": 0.085,
+    "valid:R4:secant@op": 0.767,
+    "valid:R4:secant@near": 0.077,
+    "valid:R6:loglinear": 0.097,
+    "valid:R7:average": 0.511,
+    "valid:control_variate": 0.177
+   },
+   "min_route_sep_over_T": 0.26272645591682614,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.16498223214831967,
+    "s": 2.5033040768470225,
+    "s1": 1.0448706081138406,
+    "tau": 0.40445619497614693,
+    "tau2": 0.06529932430078207,
+    "tau_r": 0.016053985859825308
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 46,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:readoff",
+     "over_T": 3.32
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 9.59
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 11.29
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 16.59
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M1",
+   "design": {
+    "xs": 1.6737115432552565,
+    "h": 1.227367488905081,
+    "u": 0.26402671863792604,
+    "n": 400,
+    "r_nb": 1.3543163966912108
+   },
+   "seed": 174016421,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:ctx:ratio@near",
+   "noise_limited": true,
+   "truth": 0.209942514534731,
+   "T": 0.003917555502078444,
+   "T_hi": 0.004191919777382117,
+   "fair": 1.0,
+   "oracle_bias_share": 0.016538839750012226,
+   "bias_buy": 0.9719878000686114,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9780025003393943,
+   "T_at_floor": false,
+   "spec": {
+    "grid": [
+     0.122,
+     1.35,
+     2.577,
+     3.804
+    ],
+    "target": 1.674,
+    "n": 400,
+    "route_order": {
+     "R1:readoff": 1.0,
+     "R2:endpoint": 0.97,
+     "R3:local@op": 2.47,
+     "R3:local@near": 1.83,
+     "R4:secant@op": 1.65,
+     "R4:secant@near": 2.74,
+     "R5:two_point": 2.34,
+     "R6:loglinear": 2.47,
+     "R7:average": 0.97,
+     "R8:saturated": 0.97
+    },
+    "notebook": "ctx0 dense sweep (13 pts, 3-seed means) + one production-context pilot run at each bracket point (noise x1.4)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.3447496696171948,
+   "B": 3.5789977405608866,
+   "B_lo_red": 1.1763152607331497,
+   "nearest_red": "naive_ignore:ctx:ratio@near",
+   "census": {
+    "numerical": [
+     "R1",
+     "R2",
+     "R7",
+     "R8"
+    ],
+    "structural": [
+     "B_prior"
+    ],
+    "n_families": 5
+   },
+   "free_over_T": {
+    "free:pilot_interp": 7.36
+   },
+   "shown_over_T": {
+    "shown:pilot@xl": 1.89,
+    "shown:pilot@xr": 22.59
+   },
+   "valid_over_T": {
+    "valid:R3:local@op": 1.271,
+    "valid:R3:local@near": 0.002,
+    "valid:R4:secant@op": 0.165,
+    "valid:R4:secant@near": 0.108,
+    "valid:R6:loglinear": 6.021,
+    "valid:control_variate": 0.116
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.12716938384299842,
+    "s": 1.4035362672336018,
+    "s1": 0.783974555160581,
+    "tau": 0.6784165985049171,
+    "tau2": 0.09687016813495967,
+    "tau_r": 0.027729511809299855
+   },
+   "probes": 48,
+   "first_cert_probe": 33,
+   "world_idx": 47,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s1",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "s1": 0.578,
+    "s": 0.366,
+    "pbar": 0.176,
+    "tau": 0.0
+   },
+   "realism_flags": [
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R7:average",
+     "over_T": 3.58
+    },
+    {
+     "route": "R1:readoff",
+     "over_T": 4.18
+    },
+    {
+     "route": "B_prior:ctx0",
+     "over_T": 7.92
+    },
+    {
+     "route": "R2:endpoint",
+     "over_T": 26.61
+    },
+    {
+     "route": "R8:saturated",
+     "over_T": 26.61
+    }
+   ]
+  }
+ ],
+ "trace": []
+}

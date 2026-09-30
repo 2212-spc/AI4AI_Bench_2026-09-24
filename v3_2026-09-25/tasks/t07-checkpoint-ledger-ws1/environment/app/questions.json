@@ -1,0 +1,43 @@
+[
+ {
+  "id": "q1",
+  "question": "Among finished runs at the production compute 6*N*D = 1.08e+21 FLOPs (D = C/(6N), same schedule for all), which model size gives the lowest final loss?  Options: A: N=2.7e+08, B: N=5.3e+08, C: N=1.1e+09, D: N=2.1e+09",
+  "answer_format": {
+   "choice": "one of A, B, C, D"
+  }
+ },
+ {
+  "id": "q2",
+  "question": "Final validation loss (nats/token) of the production model N=3e9 trained on D=6e10 tokens with the WSD schedule, run to completion.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "nats"
+ },
+ {
+  "id": "q3",
+  "question": "The production cosine run (N=3e9, D=6e10) is evaluated at its checkpoint after 40% of its tokens.  By how much (nats/token) is that checkpoint's loss higher than the final loss of a separate WSD run of the same model trained to completion on 0.4*6e10 = 2.4e10 tokens?",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "nats"
+ },
+ {
+  "id": "q4",
+  "question": "If the production cosine run is stopped early (f_stop as documented), by how much (nats/token) will its loss at the stop exceed the final loss it would have reached had it completed?  Give the set over the documented range of f_stop.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "nats"
+ },
+ {
+  "id": "q5",
+  "question": "The production cosine run's checkpoint after 50% of its tokens has a lower loss than a finished WSD run of the same model trained to completion on 35% of the production tokens.",
+  "answer_format": {
+   "verdict": "supported | refuted | undetermined"
+  }
+ }
+]

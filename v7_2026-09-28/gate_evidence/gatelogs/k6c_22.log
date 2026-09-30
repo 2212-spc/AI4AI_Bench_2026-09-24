@@ -1,0 +1,12 @@
+seed 22 screen True {"gain_over_const": 0.1304, "crit_excess": 0.3304, "open_excess": 0.1888, "B_const": 820.035}
+  oracle       expect=pass pass=3/3 OK  | P s=1.0 ; P s=1.0 ; P s=1.0 
+  myopic       expect=fail pass=0/3 OK  | F s=0.7298 R1_time; F s=0.7343 R1_time; F s=0.7225 R1_time
+  bigdither    expect=fail pass=0/3 OK  | F s=0.5829 R1_time; F s=0.5485 R1_time; F s=0.6219 R1_time
+  open         expect=fail pass=0/2 OK  | F s=-1.6745 R1_time; F s=-1.3283 R1_time
+  crit         expect=fail pass=0/2 OK  | F s=-1.5589 R1_time; F s=-1.9265 R1_time
+  const_best   expect=fail pass=0/2 OK  | F s=0.0 R1_time; F s=0.0 R1_time
+  const_hw     expect=fail pass=0/2 OK  | F s=-103.9414 R1_time; F s=-106.6177 R1_time
+  crash        expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  nop          expect=fail pass=0/2 OK  | F s=0.0 R0_runs,R1_time; F s=0.0 R0_runs,R1_time
+  cheat_probe  expect=fail pass=0/2 OK  | F s=-103.9413 R1_time; F s=-106.6176 R1_time
+ACCEPT []

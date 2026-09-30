@@ -1,0 +1,5215 @@
+{
+ "card": "K4_passk",
+ "tpl": "M2",
+ "mode": "search",
+ "spent": 2304,
+ "na": false,
+ "results": [
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 2.5845285133640115,
+    "x_nb": 1.7690795088259064,
+    "n": 202
+   },
+   "seed": 8764061,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.45307659120290145,
+   "T": 0.020382056736377545,
+   "T_hi": 0.022697397642797573,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.006558654987302536,
+   "bias_buy": 1.0081125424335455,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 189,
+   "eff": 3.380259221123734,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.3797,
+    "target": 2.585,
+    "n": 189,
+    "runs_per_unit": 27,
+    "notebook": "all 7 units measured at the older config x=1.77"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.166990647593743,
+   "B": 2.413154327496007,
+   "B_lo_red": 0.04639606097220312,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.6,
+    "shown:notebook_median": 4.34
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.012116838654013612,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.141184428681888,
+    "s": 1.1177111998978217,
+    "s1": 2.602561117323325,
+    "tau": 0.9107562092892569,
+    "tau2": 0.08189630988679493,
+    "tau_r": 0.023067071723351793
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 0,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.41
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 2.43
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.6
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.34
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 4,
+    "xs": 6.979330189480819,
+    "x_nb": 3.132046785171592,
+    "n": 400
+   },
+   "seed": 665558101,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.6812614621682346,
+   "T": 0.016331284380868828,
+   "T_hi": 0.018001775071586318,
+   "fair": 1.0,
+   "oracle_bias_share": 0.02354847022391801,
+   "bias_buy": 0.9951962509798148,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.7271316724612706,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 4,
+    "c": 0.5624,
+    "target": 6.979,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=3.13"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.0353218017299834,
+   "B": 3.3457981056673245,
+   "B_lo_red": 1.232105646925231,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 7.28,
+    "shown:notebook_median": 3.35
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.9302712654542247,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.34860885427999305,
+    "s": 0.4228133102390901,
+    "s1": 1.226794278555627,
+    "tau": 1.0198592816819725,
+    "tau2": 0.12100465036770937,
+    "tau_r": 0.007055974633359819
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 1,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 3.35
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.68
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 6.07
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 7.28
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 5.921251343087796,
+    "x_nb": 1.2164515643657983,
+    "n": 171
+   },
+   "seed": 573747470,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.749274575510362,
+   "T": 0.01461348919273011,
+   "T_hi": 0.015786684325772952,
+   "fair": 1.0,
+   "oracle_bias_share": 0.03331002880716348,
+   "bias_buy": 1.006265434711368,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 161,
+   "eff": 3.2201459096903724,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.6625,
+    "target": 5.921,
+    "n": 161,
+    "runs_per_unit": 23,
+    "notebook": "all 7 units measured at the older config x=1.22"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 5.49685321286949,
+   "B": 5.938149699378514,
+   "B_lo_red": 4.681641780128194,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.94,
+    "shown:notebook_median": 24.94
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.44772491384424856,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.25850566858021734,
+    "s": 2.505372742181828,
+    "s1": 0.8534774766123179,
+    "tau": 0.5894191419279892,
+    "tau2": 0.129273419696734,
+    "tau_r": 0.011123752089273846
+   },
+   "probes": 48,
+   "first_cert_probe": 20,
+   "world_idx": 2,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "tau2",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau2": 0.709,
+    "s": 0.656,
+    "tau": 0.347,
+    "pbar": 0.172
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.94
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 7.59
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 13.17
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 24.94
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 3,
+    "xs": 5.272230585143394,
+    "x_nb": 4.255997918331181,
+    "n": 238
+   },
+   "seed": 964237882,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:notebook_config",
+   "noise_limited": true,
+   "truth": 0.6639226289904123,
+   "T": 0.025460760798586758,
+   "T_hi": 0.02787339988647925,
+   "fair": 1.0,
+   "oracle_bias_share": 0.018594497310458917,
+   "bias_buy": 1.0110760589316912,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 231,
+   "eff": 4.259105605711167,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 3,
+    "c": 0.5556,
+    "target": 5.272,
+    "n": 231,
+    "runs_per_unit": 21,
+    "notebook": "all 11 units measured at the older config x=4.26"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.413225072001667,
+   "B": 2.641900137238389,
+   "B_lo_red": 0.6959783146481294,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 4.25,
+    "shown:notebook_median": 2.64
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.07945140744119826,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2353507491097721,
+    "s": 0.7972914677232377,
+    "s1": 2.438171700343172,
+    "tau": 0.8225995161067257,
+    "tau2": 0.04193264253738994,
+    "tau_r": 0.025308094970158436
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 3,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 2.64
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 2.9
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.22
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 4.25
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 15,
+    "m": 1,
+    "xs": 3.8828219110782523,
+    "x_nb": 0.32813505178435554,
+    "n": 90
+   },
+   "seed": 653105705,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": false,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G4_tight",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.44167340169870506,
+   "T": 0.04139707407086565,
+   "T_hi": 0.04474334774387663,
+   "fair": 1.0,
+   "oracle_bias_share": 0.06475983790856354,
+   "bias_buy": 1.0431782640807472,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 75,
+   "eff": 3.851983702621846,
+   "T_at_floor": false,
+   "spec": {
+    "K": 15,
+    "m_censored": 1,
+    "c": 0.2117,
+    "target": 3.883,
+    "n": 75,
+    "runs_per_unit": 5,
+    "notebook": "all 15 units measured at the older config x=0.33"
+   },
+   "clauses_added": [],
+   "B_lo": 0.3251550569306615,
+   "B": 0.3514385040359053,
+   "B_lo_red": 0.3251550569306615,
+   "nearest_red": "drop:censored",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.55,
+    "shown:notebook_median": 7.58
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.14559907911224526,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.11857106418220087,
+    "s": 2.292793884785249,
+    "s1": 1.1331524441257297,
+    "tau": 0.9369330451296061,
+    "tau2": 0.06911226492512589,
+    "tau_r": 0.017203127958212168
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 4,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 0.35
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 1.0
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.55
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 7.58
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 6.056619100704395,
+    "x_nb": 3.807638210383983,
+    "n": 400
+   },
+   "seed": 941349652,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.866135325621453,
+   "T": 0.010749347794109214,
+   "T_hi": 0.011714814721192655,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006785123929820228,
+   "bias_buy": 0.9894784072414491,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.672896630805671,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.7204,
+    "target": 6.057,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=3.81"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.8989596452915776,
+   "B": 4.249149876332841,
+   "B_lo_red": 3.3746436148766725,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 13.56,
+    "shown:notebook_median": 14.13
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.5765943239194175,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.30146564553964117,
+    "s": 1.6982306803779443,
+    "s1": 1.698807400869375,
+    "tau": 1.0691877623677417,
+    "tau2": 0.14915373088071948,
+    "tau_r": 0.01766450678479594
+   },
+   "probes": 48,
+   "first_cert_probe": 21,
+   "world_idx": 5,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "tau2",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau2": 1.112,
+    "tau": 0.597,
+    "pbar": 0.419,
+    "s": 0.325
+   },
+   "realism_flags": [
+    "n=387 runs"
+   ],
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.25
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.88
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 13.56
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 14.13
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 4.998001918444197,
+    "x_nb": 3.462891352957573,
+    "n": 400
+   },
+   "seed": 1048595479,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.7695965389718005,
+   "T": 0.015902512819836366,
+   "T_hi": 0.01753115531789011,
+   "fair": 1.0,
+   "oracle_bias_share": 0.000949542052265278,
+   "bias_buy": 1.0017121019771627,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.682261812895437,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.7403,
+    "target": 4.998,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=3.46"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.2846497203434708,
+   "B": 1.4162160428088384,
+   "B_lo_red": 0.025154610111443515,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 1.84,
+    "shown:notebook_median": 4.97
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.01005303010175949,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.3316865620852069,
+    "s": 0.6903926681863481,
+    "s1": 1.8842306918196452,
+    "tau": 0.44530243429209715,
+    "tau2": 0.02506847619366707,
+    "tau_r": 0.027679007756430053
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 6,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 1.42
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 1.43
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 1.84
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.97
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 2,
+    "xs": 1.6356121661547403,
+    "x_nb": 0.06859481446247866,
+    "n": 201
+   },
+   "seed": 399784892,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.6449610902603528,
+   "T": 0.02860428388207132,
+   "T_hi": 0.031192036745570674,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007880675975250004,
+   "bias_buy": 0.9971537867329852,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 187,
+   "eff": 4.375790384435948,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 2,
+    "c": 0.5171,
+    "target": 1.636,
+    "n": 187,
+    "runs_per_unit": 17,
+    "notebook": "all 11 units measured at the older config x=0.07"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.4362879406820594,
+   "B": 2.656692378031407,
+   "B_lo_red": 0.2504432138044872,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 4.47,
+    "shown:notebook_median": 8.47
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.2731001398208295,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.3360153819771257,
+    "s": 2.0773923968830093,
+    "s1": 0.4224134131209969,
+    "tau": 0.6458194712444703,
+    "tau2": 0.03354205274443835,
+    "tau_r": 0.011727066680784418
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 7,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.66
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.77
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 4.47
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 8.47
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 5,
+    "m": 2,
+    "xs": 4.763533737650684,
+    "x_nb": 2.3687588582670784,
+    "n": 400
+   },
+   "seed": 388431323,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.567479272066261,
+   "T": 0.012169918835517707,
+   "T_hi": 0.01338249936904325,
+   "fair": 1.0,
+   "oracle_bias_share": 0.001416057212562572,
+   "bias_buy": 0.9989183237609545,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 395,
+   "eff": 2.78280611899506,
+   "T_at_floor": false,
+   "spec": {
+    "K": 5,
+    "m_censored": 2,
+    "c": 0.4952,
+    "target": 4.764,
+    "n": 395,
+    "runs_per_unit": 79,
+    "notebook": "all 5 units measured at the older config x=2.37"
+   },
+   "clauses_added": [
+    "the median is over all 5 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.8169422277989677,
+   "B": 3.0976153658585446,
+   "B_lo_red": 0.3026004321474836,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.94,
+    "shown:notebook_median": 10.42
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.3327507888111274,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.19685740596227266,
+    "s": 0.401856123222866,
+    "s1": 0.6046145764625563,
+    "tau": 1.072388148700378,
+    "tau2": 0.05852874267081428,
+    "tau_r": 0.006243293705268736
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 8,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.1
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.94
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 7.51
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 10.42
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 4.620568562486261,
+    "x_nb": 1.8846488545922524,
+    "n": 229
+   },
+   "seed": 839821978,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.8927471063897718,
+   "T": 0.013455491024503774,
+   "T_hi": 0.01421934820991058,
+   "fair": 1.0,
+   "oracle_bias_share": 0.06628081137224265,
+   "bias_buy": 1.0989890077142614,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 225,
+   "eff": 3.1421593770345373,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.8101,
+    "target": 4.621,
+    "n": 225,
+    "runs_per_unit": 25,
+    "notebook": "all 9 units measured at the older config x=1.88"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.200417885426267,
+   "B": 3.3821029828809297,
+   "B_lo_red": 1.4826935076427161,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 6.14,
+    "shown:notebook_median": 18.98
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.27449828729304854,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.30688502907622867,
+    "s": 2.628181441018234,
+    "s1": 0.7967653576550575,
+    "tau": 0.6532262324975384,
+    "tau2": 0.08227388158837204,
+    "tau_r": 0.017730240896178865
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 9,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.38
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.66
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 6.14
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 18.98
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 6.393033598600037,
+    "x_nb": 1.7990288220554667,
+    "n": 324
+   },
+   "seed": 43302635,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.6385301277167993,
+   "T": 0.01828561371304907,
+   "T_hi": 0.019671902291330243,
+   "fair": 1.0,
+   "oracle_bias_share": 0.008999437328165433,
+   "bias_buy": 1.001774551922269,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 315,
+   "eff": 3.7925866794678234,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.5033,
+    "target": 6.393,
+    "n": 315,
+    "runs_per_unit": 35,
+    "notebook": "all 9 units measured at the older config x=1.80"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 5.36937190197039,
+   "B": 5.776440489169819,
+   "B_lo_red": 4.112763754085634,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 7.4,
+    "shown:notebook_median": 18.8
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.3924484597374195,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.12174172676849088,
+    "s": 1.7882888849774612,
+    "s1": 0.6868393333077603,
+    "tau": 0.6551768955267832,
+    "tau2": 0.14721011153132288,
+    "tau_r": 0.021746280437974434
+   },
+   "probes": 48,
+   "first_cert_probe": 31,
+   "world_idx": 10,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 1.039,
+    "tau2": 0.409,
+    "s": 0.379,
+    "tau": 0.355
+   },
+   "realism_flags": [
+    "n=315 runs"
+   ],
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.78
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 7.4
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 7.68
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 18.8
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 4,
+    "xs": 4.926376611801454,
+    "x_nb": 2.1864100971209717,
+    "n": 400
+   },
+   "seed": 131906030,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.8815000201521652,
+   "T": 0.013866252000181312,
+   "T_hi": 0.015007260912419988,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005137236184224335,
+   "bias_buy": 1.0001596881233379,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.546946959524519,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 4,
+    "c": 0.8503,
+    "target": 4.926,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=2.19"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.2323853996970056,
+   "B": 1.3337943979143119,
+   "B_lo_red": 1.2323853996970056,
+   "nearest_red": "drop:censored",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.25,
+    "shown:notebook_median": 19.94
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.785967383817514,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.19760625493001488,
+    "s": 2.6482376793225115,
+    "s1": 2.4613182227517036,
+    "tau": 0.44804841770900306,
+    "tau2": 0.022865909320255954,
+    "tau_r": 0.025050410216171975
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 11,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 1.33
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.25
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.44
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 19.94
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 4.801508050073622,
+    "x_nb": 3.578620227730058,
+    "n": 373
+   },
+   "seed": 1073344656,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.6578534649315823,
+   "T": 0.015401905974151926,
+   "T_hi": 0.01707833779949225,
+   "fair": 1.0,
+   "oracle_bias_share": 0.009724289654356332,
+   "bias_buy": 0.9924484998200508,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 371,
+   "eff": 3.2615009138226565,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.4984,
+    "target": 4.802,
+    "n": 371,
+    "runs_per_unit": 53,
+    "notebook": "all 7 units measured at the older config x=3.58"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.287246269118946,
+   "B": 4.753894754097658,
+   "B_lo_red": 0.08326208131570467,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 10.35,
+    "shown:notebook_median": 6.73
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.0923248040200229,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.12112686122178963,
+    "s": 2.036638761681367,
+    "s1": 1.5964342494731127,
+    "tau": 0.9849774842615033,
+    "tau2": 0.031003747100139905,
+    "tau_r": 0.02423628346620458
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 12,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.75
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.97
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 6.73
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 10.35
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 2.701206929943045,
+    "x_nb": 5.113620293550609,
+    "n": 400
+   },
+   "seed": 878175476,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "drop:censored_mean_nb_shift",
+   "noise_limited": true,
+   "truth": 0.6925115517120549,
+   "T": 0.018238531367563104,
+   "T_hi": 0.01956681359757298,
+   "fair": 1.0,
+   "oracle_bias_share": 0.017618301101742378,
+   "bias_buy": 1.034267956668946,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 4.172130826536066,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.6307,
+    "target": 2.701,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=5.11"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.159003867540099,
+   "B": 3.3890689214209493,
+   "B_lo_red": 0.7457629128742763,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.39,
+    "shown:notebook_median": 12.21
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.8000755987483725,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.34271738529316664,
+    "s": 1.6460477808445217,
+    "s1": 0.9375973529818461,
+    "tau": 0.8356066239141626,
+    "tau2": 0.14807707173823853,
+    "tau_r": 0.025689972298037534
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 13,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.39
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.48
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.9
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 12.21
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 4.8833886389159655,
+    "x_nb": 3.706398761733524,
+    "n": 295
+   },
+   "seed": 146560583,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.7298391713350929,
+   "T": 0.02290418896375514,
+   "T_hi": 0.024895229722035405,
+   "fair": 1.0,
+   "oracle_bias_share": 0.004705196607020226,
+   "bias_buy": 0.9998348408297189,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 275,
+   "eff": 4.2626825159753094,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.6548,
+    "target": 4.883,
+    "n": 275,
+    "runs_per_unit": 25,
+    "notebook": "all 11 units measured at the older config x=3.71"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.845855527381069,
+   "B": 3.0932432151162432,
+   "B_lo_red": 0.08299689524131737,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.28,
+    "shown:notebook_median": 5.11
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.09021174146432406,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.1565098129565865,
+    "s": 1.6952100898928064,
+    "s1": 1.4734989552733397,
+    "tau": 0.5962159031933256,
+    "tau2": 0.09468872182885922,
+    "tau_r": 0.0283408185884203
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 14,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.09
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.28
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.23
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 5.11
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 7.0,
+    "x_nb": 3.5190670414339817,
+    "n": 364
+   },
+   "seed": 526839438,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.9101203144990366,
+   "T": 0.011011309810276704,
+   "T_hi": 0.012111205197602691,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005172455631000453,
+   "bias_buy": 0.9978057095001731,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 351,
+   "eff": 3.704980255039391,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.8407,
+    "target": 7.0,
+    "n": 351,
+    "runs_per_unit": 39,
+    "notebook": "all 9 units measured at the older config x=3.52"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.3692030113142213,
+   "B": 2.6058574610283984,
+   "B_lo_red": 1.8393511063882964,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 6.31,
+    "shown:notebook_median": 9.33
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.02576847760466741,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.3266390447356798,
+    "s": 1.2806715015971477,
+    "s1": 0.7857478614774303,
+    "tau": 1.1291260920434862,
+    "tau2": 0.10538290689623202,
+    "tau_r": 0.016961202330556598
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 15,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.61
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.71
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 6.31
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 9.33
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 1,
+    "xs": 6.755959290500547,
+    "x_nb": 7.0,
+    "n": 317
+   },
+   "seed": 347805889,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": false,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G4_tight",
+   "nearest": "R1:notebook_config",
+   "noise_limited": true,
+   "truth": 0.23717058798117885,
+   "T": 0.014112773898526219,
+   "T_hi": 0.015265820232301584,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.024101859247138705,
+   "bias_buy": 0.9756173712833763,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 315,
+   "eff": 3.13476165011068,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 1,
+    "c": 0.2044,
+    "target": 6.756,
+    "n": 315,
+    "runs_per_unit": 45,
+    "notebook": "all 7 units measured at the older config x=7.00"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 0.3359653364576704,
+   "B": 0.36341448304384066,
+   "B_lo_red": 0.030021624571394047,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.32,
+    "shown:notebook_median": 0.36
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.03247446087380524,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.09855754684315055,
+    "s": 0.5312460536563355,
+    "s1": 0.481109850584315,
+    "tau": 0.4429033045550548,
+    "tau2": 0.013249887237782958,
+    "tau_r": 0.005146414627269406
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 16,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 0.36
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.32
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.24
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.8
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 7.0,
+    "x_nb": 4.443330903002632,
+    "n": 400
+   },
+   "seed": 291126103,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.7550085413435474,
+   "T": 0.014405043631174445,
+   "T_hi": 0.0156667535576374,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007172396891422734,
+   "bias_buy": 1.0034855791399033,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 4.056279916493172,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.652,
+    "target": 7.0,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=4.44"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.817705201005788,
+   "B": 4.152090619873523,
+   "B_lo_red": 1.189379886037809,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 7.15,
+    "shown:notebook_median": 12.37
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 1.2935553711645371,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.14960508568629582,
+    "s": 2.6474031829827354,
+    "s1": 2.76166628636625,
+    "tau": 1.026706629255332,
+    "tau2": 0.03626735775841066,
+    "tau_r": 0.02403897946981779
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 17,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 4.15
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.96
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 7.15
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 12.37
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 3,
+    "xs": 7.0,
+    "x_nb": 3.6725100525479406,
+    "n": 400
+   },
+   "seed": 417760408,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.6630017321491286,
+   "T": 0.01608870679473732,
+   "T_hi": 0.01753738633489009,
+   "fair": 1.0,
+   "oracle_bias_share": 0.00730570298338396,
+   "bias_buy": 1.0158425872152115,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 3.886219868332971,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 3,
+    "c": 0.5372,
+    "target": 7.0,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=3.67"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.945406934151281,
+   "B": 5.39070747537179,
+   "B_lo_red": 0.8055686103156267,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 7.82,
+    "shown:notebook_median": 11.64
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.8781046306957906,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.18395074942658884,
+    "s": 1.7279350050130202,
+    "s1": 1.2649587298795297,
+    "tau": 1.047319530496555,
+    "tau2": 0.09840962934239526,
+    "tau_r": 0.016348289530903178
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 18,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 5.39
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 6.3
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 7.82
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 11.64
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 2,
+    "xs": 6.120880307207574,
+    "x_nb": 3.7052410950321777,
+    "n": 369
+   },
+   "seed": 303404911,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.5457073116354116,
+   "T": 0.01634069650322073,
+   "T_hi": 0.01696108823290074,
+   "fair": 1.0,
+   "oracle_bias_share": 0.07581288501201564,
+   "bias_buy": 1.0924427240830135,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 363,
+   "eff": 3.3563049612220586,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 2,
+    "c": 0.3066,
+    "target": 6.121,
+    "n": 363,
+    "runs_per_unit": 33,
+    "notebook": "all 11 units measured at the older config x=3.71"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.006164831765595,
+   "B": 4.158263093236421,
+   "B_lo_red": 1.9863294681848487,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 14.63,
+    "shown:notebook_median": 4.16
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 1.5334584333553374,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3151560085979169,
+    "s": 0.5502269785939367,
+    "s1": 1.9364618655688899,
+    "tau": 1.1957527034083708,
+    "tau2": 0.13753019742174383,
+    "tau_r": 0.010019216063304885
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 19,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.16
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 6.05
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 8.28
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 14.63
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 3,
+    "xs": 4.785718250765367,
+    "x_nb": 2.8760274497277263,
+    "n": 365
+   },
+   "seed": 234085017,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "drop:censored_mean_nb_shift",
+   "noise_limited": true,
+   "truth": 0.786255603819516,
+   "T": 0.01270388437442965,
+   "T_hi": 0.013815470660521321,
+   "fair": 1.0,
+   "oracle_bias_share": 0.012655102513094853,
+   "bias_buy": 1.0053678853380794,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 363,
+   "eff": 4.193258960971687,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 3,
+    "c": 0.6586,
+    "target": 4.786,
+    "n": 363,
+    "runs_per_unit": 33,
+    "notebook": "all 11 units measured at the older config x=2.88"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 5.283248031914751,
+   "B": 5.7455307389360755,
+   "B_lo_red": 2.965772251909887,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 10.05,
+    "shown:notebook_median": 14.51
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.6962555662050182,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.31703648162793796,
+    "s": 2.341055300551539,
+    "s1": 1.5309723615140816,
+    "tau": 1.156898563985259,
+    "tau2": 0.08308123305955044,
+    "tau_r": 0.008515989639828268
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 20,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.75
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 8.61
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 10.05
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 14.51
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 1,
+    "xs": 4.99762274592485,
+    "x_nb": 2.553305420994622,
+    "n": 400
+   },
+   "seed": 152968803,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.3384956538605912,
+   "T": 0.014074645489659338,
+   "T_hi": 0.01601698178077099,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005403454702796366,
+   "bias_buy": 0.9981739611237841,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 399,
+   "eff": 3.1908689682391653,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 1,
+    "c": 0.2659,
+    "target": 4.998,
+    "n": 399,
+    "runs_per_unit": 57,
+    "notebook": "all 7 units measured at the older config x=2.55"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.074073016560892,
+   "B": 3.4983027839095695,
+   "B_lo_red": 0.8914843719127424,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.16,
+    "shown:notebook_median": 7.89
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.4656577403070496,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.10578733962705959,
+    "s": 1.216980468091644,
+    "s1": 2.735872751447514,
+    "tau": 0.37855807395388735,
+    "tau2": 0.10993538958373474,
+    "tau_r": 0.02735685828402308
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 21,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.5
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.96
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.16
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 7.89
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 3,
+    "xs": 5.4467054200409235,
+    "x_nb": 2.5438060299527585,
+    "n": 400
+   },
+   "seed": 416045042,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "drop:censored_mean_nb_shift",
+   "noise_limited": true,
+   "truth": 0.650676947786902,
+   "T": 0.016028325909972458,
+   "T_hi": 0.017692402274404436,
+   "fair": 1.0,
+   "oracle_bias_share": 0.002858838488637103,
+   "bias_buy": 0.9948804355347426,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 3.992012505182752,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 3,
+    "c": 0.4658,
+    "target": 5.447,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=2.54"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 6.9377965992318815,
+   "B": 7.6580853809090295,
+   "B_lo_red": 2.044684123278834,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 11.53,
+    "shown:notebook_median": 18.18
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 2.2569652149779156,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.17776532106015014,
+    "s": 2.721864027181671,
+    "s1": 2.6347239159994684,
+    "tau": 0.7483077427223185,
+    "tau2": 0.02324223663629491,
+    "tau_r": 0.02669948430443088
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 22,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 7.66
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 10.61
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 11.53
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 18.18
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 2,
+    "xs": 6.443186447725195,
+    "x_nb": 4.228977601672801,
+    "n": 233
+   },
+   "seed": 968733192,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.46420775899921307,
+   "T": 0.022745617083701757,
+   "T_hi": 0.024341687132262983,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0892483305948218,
+   "bias_buy": 1.0701551518786951,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 231,
+   "eff": 3.456483616170729,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 2,
+    "c": 0.4194,
+    "target": 6.443,
+    "n": 231,
+    "runs_per_unit": 21,
+    "notebook": "all 11 units measured at the older config x=4.23"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.2259343755468761,
+   "B": 1.3119587349261619,
+   "B_lo_red": 0.30855500452779794,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 1.97,
+    "shown:notebook_median": 3.09
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.009797006700895446,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.22284525943428635,
+    "s": 0.44663842701852446,
+    "s1": 2.5071299020832654,
+    "tau": 0.3697640381622817,
+    "tau2": 0.01851208076604764,
+    "tau_r": 0.018097233261536592
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 23,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 1.31
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 1.32
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 1.97
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 3.09
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 5,
+    "m": 2,
+    "xs": 0.0,
+    "x_nb": 0.8505079479149333,
+    "n": 400
+   },
+   "seed": 195844087,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.38041362013068136,
+   "T": 0.012216587107504145,
+   "T_hi": 0.012829348345299543,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01282485781690713,
+   "bias_buy": 0.9910176859681687,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 395,
+   "eff": 2.766751376562083,
+   "T_at_floor": false,
+   "spec": {
+    "K": 5,
+    "m_censored": 2,
+    "c": 0.3241,
+    "target": 0.0,
+    "n": 395,
+    "runs_per_unit": 79,
+    "notebook": "all 5 units measured at the older config x=0.85"
+   },
+   "clauses_added": [
+    "the median is over all 5 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.4063407346286834,
+   "B": 3.5771964365146736,
+   "B_lo_red": 0.5512038990416783,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 4.61,
+    "shown:notebook_median": 7.45
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.5788512591826263,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2902637987933528,
+    "s": 0.7547435087068564,
+    "s1": 2.74888372416936,
+    "tau": 0.5450893576177109,
+    "tau2": 0.026396495352858495,
+    "tau_r": 0.006906833537546601
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 24,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.58
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 4.61
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.19
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 7.45
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 7.0,
+    "x_nb": 5.076442467864286,
+    "n": 355
+   },
+   "seed": 32387713,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.5986440856463122,
+   "T": 0.01596084005155576,
+   "T_hi": 0.01845388521925439,
+   "fair": 0.995,
+   "oracle_bias_share": 0.006576647562259025,
+   "bias_buy": 0.9904729824634362,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 351,
+   "eff": 3.650526189364277,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.4996,
+    "target": 7.0,
+    "n": 351,
+    "runs_per_unit": 39,
+    "notebook": "all 9 units measured at the older config x=5.08"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.765418321002018,
+   "B": 4.3535676865251025,
+   "B_lo_red": 0.633239483547327,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 6.21,
+    "shown:notebook_median": 8.29
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.7321499813252781,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.09597617207256665,
+    "s": 2.562211133407013,
+    "s1": 2.242802681629155,
+    "tau": 0.3073556056332515,
+    "tau2": 0.11028981170563455,
+    "tau_r": 0.02143638386304398
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 25,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.35
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 5.82
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 6.21
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 8.29
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 0.5928332684420164,
+    "x_nb": 0.0,
+    "n": 400
+   },
+   "seed": 946238605,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.37625246860761674,
+   "T": 0.017910625423947488,
+   "T_hi": 0.019146013517986057,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01006209889913962,
+   "bias_buy": 0.9931682581630432,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 3.9674809817205317,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.3257,
+    "target": 0.593,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=0.00"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.3359699248854375,
+   "B": 2.4970938033055137,
+   "B_lo_red": 0.04432543047658144,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.82,
+    "shown:notebook_median": 2.96
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.026032383766688733,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2893259493450796,
+    "s": 0.6179071922085366,
+    "s1": 0.8526199196378744,
+    "tau": 0.30107367918344563,
+    "tau2": 0.03873752109548127,
+    "tau_r": 0.006990536032982928
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 26,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.5
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.82
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 2.85
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 2.96
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 6.828949444665674,
+    "x_nb": 4.266909394634969,
+    "n": 400
+   },
+   "seed": 635422699,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.5426041028402266,
+   "T": 0.01898982503975379,
+   "T_hi": 0.020203008641995597,
+   "fair": 1.0,
+   "oracle_bias_share": 0.014750783490984049,
+   "bias_buy": 1.0017631474478312,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 4.168762150458544,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.4877,
+    "target": 6.829,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=4.27"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.6814821235061417,
+   "B": 2.8527912395791972,
+   "B_lo_red": 0.7215891187840813,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.89,
+    "shown:notebook_median": 5.09
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.7676885475377605,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.1636461073280387,
+    "s": 0.6177474922103059,
+    "s1": 0.9700271377733218,
+    "tau": 0.3522046729945948,
+    "tau2": 0.02251678813014079,
+    "tau_r": 0.0056021847708222425
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 27,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.85
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.89
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.67
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 5.09
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 13,
+    "m": 2,
+    "xs": 6.3427302195918704,
+    "x_nb": 4.693191379685365,
+    "n": 369
+   },
+   "seed": 426877893,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.5256857683406942,
+   "T": 0.021235639737123727,
+   "T_hi": 0.0237939501836624,
+   "fair": 1.0,
+   "oracle_bias_share": 0.004699947996846981,
+   "bias_buy": 1.0036177336159786,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 351,
+   "eff": 4.519441880204737,
+   "T_at_floor": false,
+   "spec": {
+    "K": 13,
+    "m_censored": 2,
+    "c": 0.3852,
+    "target": 6.343,
+    "n": 351,
+    "runs_per_unit": 27,
+    "notebook": "all 13 units measured at the older config x=4.69"
+   },
+   "clauses_added": [
+    "the median is over all 13 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.575713997190038,
+   "B": 4.006489174490388,
+   "B_lo_red": 0.354489971421815,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 6.61,
+    "shown:notebook_median": 4.18
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.18115464755610156,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.18543436035712302,
+    "s": 1.0977195621969247,
+    "s1": 0.7647100291649314,
+    "tau": 0.4787372864793834,
+    "tau2": 0.09563633077980283,
+    "tau_r": 0.018843209723948286
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 28,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.01
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.18
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 4.19
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 6.61
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 3.618764943061593,
+    "x_nb": 1.758326028860667,
+    "n": 400
+   },
+   "seed": 525339446,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.539015038688051,
+   "T": 0.017112386378976836,
+   "T_hi": 0.01893001917876504,
+   "fair": 1.0,
+   "oracle_bias_share": 0.009352609856552943,
+   "bias_buy": 0.9912825021254751,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.604826317045173,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.4663,
+    "target": 3.619,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=1.76"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.1033314801402447,
+   "B": 3.4329592107207088,
+   "B_lo_red": 0.5168290001095339,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 4.25,
+    "shown:notebook_median": 6.48
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.5717252209916736,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.2550967554515834,
+    "s": 0.6573521494407832,
+    "s1": 0.41222781922615126,
+    "tau": 0.7494418525796155,
+    "tau2": 0.0258660440272925,
+    "tau_r": 0.025779534691978172
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 29,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.43
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.07
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 4.25
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 6.48
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 4.401053336666312,
+    "x_nb": 2.7147655298997964,
+    "n": 400
+   },
+   "seed": 491354829,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.4797849772877747,
+   "T": 0.01756291894854883,
+   "T_hi": 0.019367926888436464,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0005569543126849767,
+   "bias_buy": 0.9988614438653703,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.775098602673609,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.4373,
+    "target": 4.401,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=2.71"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.1562930416057766,
+   "B": 1.2751296727517456,
+   "B_lo_red": 0.3154647626226338,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.42,
+    "shown:notebook_median": 5.83
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.17338291296400188,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2205583641077139,
+    "s": 0.8908305500381457,
+    "s1": 2.089404509035377,
+    "tau": 0.7313645179234733,
+    "tau2": 0.04492573753395264,
+    "tau_r": 0.024229773315185825
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 30,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 1.28
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.38
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.42
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 5.83
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 5.098381234014885,
+    "x_nb": 1.8140055974116223,
+    "n": 243
+   },
+   "seed": 323153024,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.4595029306892623,
+   "T": 0.022935221097431426,
+   "T_hi": 0.02426735772582616,
+   "fair": 1.0,
+   "oracle_bias_share": 0.00041227485993671533,
+   "bias_buy": 0.9990732412436495,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 243,
+   "eff": 3.866032935210375,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.4136,
+    "target": 5.098,
+    "n": 243,
+    "runs_per_unit": 27,
+    "notebook": "all 9 units measured at the older config x=1.81"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.8919620898075586,
+   "B": 2.0018521139176446,
+   "B_lo_red": 1.0017438110422483,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.0,
+    "shown:notebook_median": 6.57
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.0026702569129037007,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2745200862874801,
+    "s": 0.5032048700117445,
+    "s1": 2.989500111368808,
+    "tau": 1.0876797631738238,
+    "tau2": 0.1000653171341177,
+    "tau_r": 0.02293138033887427
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 31,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.0
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.4
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.51
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 6.57
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 3,
+    "xs": 7.0,
+    "x_nb": 4.504387708950309,
+    "n": 365
+   },
+   "seed": 804158460,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.7992231322946622,
+   "T": 0.013813645541041687,
+   "T_hi": 0.014879170142360629,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.009348351099884342,
+   "bias_buy": 0.9992436636475025,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 351,
+   "eff": 3.5827162403017487,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 3,
+    "c": 0.7551,
+    "target": 7.0,
+    "n": 351,
+    "runs_per_unit": 39,
+    "notebook": "all 9 units measured at the older config x=4.50"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.8722694078321713,
+   "B": 3.093823790892603,
+   "B_lo_red": 0.7025592885894417,
+   "nearest_red": "drop:censored_mean_nb_shift",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.19,
+    "shown:notebook_median": 6.06
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.27743294536917085,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.13468142280402118,
+    "s": 2.8163832952828303,
+    "s1": 1.3714296561280077,
+    "tau": 0.3943303784043427,
+    "tau2": 0.06464462949772572,
+    "tau_r": 0.013722461770282232
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 32,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.09
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.19
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.37
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 6.06
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 2,
+    "xs": 2.280605370322617,
+    "x_nb": 2.6956074251734456,
+    "n": 400
+   },
+   "seed": 20251550,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.647276371813277,
+   "T": 0.015537607533014067,
+   "T_hi": 0.017654976220684487,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.06337475205642974,
+   "bias_buy": 0.9989071735714251,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 3.5741966346289473,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 2,
+    "c": 0.6046,
+    "target": 2.281,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=2.70"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.417895170143755,
+   "B": 2.7473909121654234,
+   "B_lo_red": 0.06556362573375565,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.75,
+    "shown:notebook_median": 3.45
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.07449822958984027,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.32283750116080534,
+    "s": 2.2690959154781942,
+    "s1": 1.5616566279706632,
+    "tau": 0.3484644646709045,
+    "tau2": 0.02829472348090574,
+    "tau_r": 0.02073722531643991
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 33,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.75
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.34
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 3.45
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.96
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 5.893627375113426,
+    "x_nb": 4.682137722567405,
+    "n": 400
+   },
+   "seed": 437801780,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.8678579979972301,
+   "T": 0.010906955493621877,
+   "T_hi": 0.011166924275702967,
+   "fair": 1.0,
+   "oracle_bias_share": 0.004617796547671,
+   "bias_buy": 1.0059052263635462,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 399,
+   "eff": 3.3498109831119502,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.6527,
+    "target": 5.894,
+    "n": 399,
+    "runs_per_unit": 57,
+    "notebook": "all 7 units measured at the older config x=4.68"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.935358004031555,
+   "B": 5.052992939847744,
+   "B_lo_red": 0.26748602567766727,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 19.73,
+    "shown:notebook_median": 5.7
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.2738615918344925,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.20322713388376415,
+    "s": 2.9107661603061197,
+    "s1": 1.1037235991487178,
+    "tau": 1.1104538231719479,
+    "tau2": 0.12056148451320542,
+    "tau_r": 0.01959921640890745
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 34,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.05
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 5.7
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 6.43
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 19.73
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 3,
+    "xs": 5.954791131064332,
+    "x_nb": 2.5708616037486984,
+    "n": 400
+   },
+   "seed": 983122895,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.9459766995719935,
+   "T": 0.005518173760848239,
+   "T_hi": 0.006315255361453387,
+   "fair": 0.9975,
+   "oracle_bias_share": 0.006396155834960117,
+   "bias_buy": 1.013581432076273,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 399,
+   "eff": 3.281614656414413,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 3,
+    "c": 0.916,
+    "target": 5.955,
+    "n": 399,
+    "runs_per_unit": 57,
+    "notebook": "all 7 units measured at the older config x=2.57"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.743512224433867,
+   "B": 5.428696577120983,
+   "B_lo_red": 4.743512224433867,
+   "nearest_red": "B_guess:threshold",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.43,
+    "shown:notebook_median": 42.72
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.06021809376867267,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.33936447693948685,
+    "s": 2.726700199421593,
+    "s1": 0.7630391869336488,
+    "tau": 0.8298477631996,
+    "tau2": 0.10734293540601277,
+    "tau_r": 0.016793209271739804
+   },
+   "probes": 48,
+   "first_cert_probe": 35,
+   "world_idx": 35,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "tau2",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau2": 1.409,
+    "pbar": 0.862,
+    "s": 0.486,
+    "tau": 0.218
+   },
+   "realism_flags": [
+    "n=399 runs"
+   ],
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.43
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.44
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 6.12
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 42.72
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 4.173510202940017,
+    "x_nb": 0.45760857295276264,
+    "n": 400
+   },
+   "seed": 157354333,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.7585121664051038,
+   "T": 0.013157943654779987,
+   "T_hi": 0.014635565078595194,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006918513742815927,
+   "bias_buy": 1.0092966368078713,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 387,
+   "eff": 3.7217798596145655,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.7095,
+    "target": 4.174,
+    "n": 387,
+    "runs_per_unit": 43,
+    "notebook": "all 9 units measured at the older config x=0.46"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.685535222038473,
+   "B": 2.9871176335920304,
+   "B_lo_red": 0.0,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.72,
+    "shown:notebook_median": 36.97
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2655597905141096,
+    "s": 2.8882347225206964,
+    "s1": 2.120728577183458,
+    "tau": 0.5273929405333475,
+    "tau2": 0.003551265278698007,
+    "tau_r": 0.022620107481919238
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 36,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 2.99
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.0
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.72
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 36.97
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 3,
+    "xs": 4.59483731388963,
+    "x_nb": 2.974368680285515,
+    "n": 181
+   },
+   "seed": 349587558,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.9043582156981833,
+   "T": 0.012185492756722292,
+   "T_hi": 0.014265844817267514,
+   "fair": 1.0,
+   "oracle_bias_share": 0.001313602625201567,
+   "bias_buy": 1.002697675581005,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 175,
+   "eff": 3.269565962953929,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 3,
+    "c": 0.883,
+    "target": 4.595,
+    "n": 175,
+    "runs_per_unit": 25,
+    "notebook": "all 7 units measured at the older config x=2.97"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.496493248552097,
+   "B": 1.7519800700841939,
+   "B_lo_red": 0.4952872508852642,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 1.75,
+    "shown:notebook_median": 8.33
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.21725428363593874,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.33756708770413674,
+    "s": 2.624627996723968,
+    "s1": 0.4386830187244707,
+    "tau": 0.7078172783915353,
+    "tau2": 0.04133721459299395,
+    "tau_r": 0.02986585946293154
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 37,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 1.75
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.68
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 2.9
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 8.33
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 5.466336978357004,
+    "x_nb": 2.7814961071625772,
+    "n": 250
+   },
+   "seed": 573419804,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.6916535650092623,
+   "T": 0.02030368556687871,
+   "T_hi": 0.021708439678842065,
+   "fair": 1.0,
+   "oracle_bias_share": 0.003427740138590394,
+   "bias_buy": 1.0033939121219013,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 245,
+   "eff": 3.5811305784795526,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.6139,
+    "target": 5.466,
+    "n": 245,
+    "runs_per_unit": 35,
+    "notebook": "all 7 units measured at the older config x=2.78"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.803341566964246,
+   "B": 2.997296776744231,
+   "B_lo_red": 0.11540036736632378,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 3.83,
+    "shown:notebook_median": 11.54
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.000542649758236803,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.13983391762104688,
+    "s": 2.537176642252826,
+    "s1": 2.7222535750623766,
+    "tau": 0.5612507840676867,
+    "tau2": 0.073475206781608,
+    "tau_r": 0.013270742350400887
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 38,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 3.0
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.0
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 3.83
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 11.54
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 4,
+    "xs": 4.889577539475433,
+    "x_nb": 3.4219550878769684,
+    "n": 208
+   },
+   "seed": 843052283,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:mean_uncensored",
+   "noise_limited": true,
+   "truth": 0.9327234529895206,
+   "T": 0.012594405125879317,
+   "T_hi": 0.013386597594658475,
+   "fair": 1.0,
+   "oracle_bias_share": 0.028730173841824212,
+   "bias_buy": 1.02722481361513,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 187,
+   "eff": 3.802403661968451,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 4,
+    "c": 0.9011,
+    "target": 4.89,
+    "n": 187,
+    "runs_per_unit": 17,
+    "notebook": "all 11 units measured at the older config x=3.42"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 2.2653565176130974,
+   "B": 2.4078482315460796,
+   "B_lo_red": 1.173272365156687,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 2.51,
+    "shown:notebook_median": 7.45
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.4529676709124821,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.345022913730898,
+    "s": 2.9441340830317166,
+    "s1": 0.8845686829379087,
+    "tau": 0.5190846610334062,
+    "tau2": 0.1486751745399379,
+    "tau_r": 0.02866159026659671
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 39,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.41
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 2.51
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 3.2
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 7.45
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 13,
+    "m": 4,
+    "xs": 6.087781808592549,
+    "x_nb": 1.83242523395812,
+    "n": 267
+   },
+   "seed": 584893394,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.7889190747234874,
+   "T": 0.01493328909768952,
+   "T_hi": 0.01630226280427809,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007125506224162059,
+   "bias_buy": 0.9842205925934358,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 247,
+   "eff": 4.413099455513523,
+   "T_at_floor": false,
+   "spec": {
+    "K": 13,
+    "m_censored": 4,
+    "c": 0.7041,
+    "target": 6.088,
+    "n": 247,
+    "runs_per_unit": 19,
+    "notebook": "all 13 units measured at the older config x=1.83"
+   },
+   "clauses_added": [
+    "the median is over all 13 units, including those logged only as a bound"
+   ],
+   "B_lo": 5.2049717886102025,
+   "B": 5.6821251789671265,
+   "B_lo_red": 3.067982227893167,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 5.68,
+    "shown:notebook_median": 17.31
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.07867265466789479,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3235890121558984,
+    "s": 1.7863099099127782,
+    "s1": 2.7785809168976705,
+    "tau": 0.8426665656721946,
+    "tau2": 0.13552623368216252,
+    "tau_r": 0.016490097054858203
+   },
+   "probes": 48,
+   "first_cert_probe": 37,
+   "world_idx": 40,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "tau",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau": 0.78,
+    "tau2": 0.301,
+    "pbar": 0.072,
+    "s": 0.058
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 5.68
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 6.98
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 9.62
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 17.31
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 4.773446837254373,
+    "x_nb": 2.9453872433564396,
+    "n": 138
+   },
+   "seed": 76402826,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.6802711278082971,
+   "T": 0.01851749719765588,
+   "T_hi": 0.019433547944971957,
+   "fair": 1.0,
+   "oracle_bias_share": 0.08926310322766827,
+   "bias_buy": 1.0851847065591098,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 133,
+   "eff": 2.693582459193015,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.5226,
+    "target": 4.773,
+    "n": 133,
+    "runs_per_unit": 19,
+    "notebook": "all 7 units measured at the older config x=2.95"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.466009877958871,
+   "B": 4.68694101366025,
+   "B_lo_red": 0.0,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 8.52,
+    "shown:notebook_median": 4.69
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.0,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.3482435277325304,
+    "s": 1.1360311593169214,
+    "s1": 2.850739413354589,
+    "tau": 1.081596818141202,
+    "tau2": 0.13395793519089078,
+    "tau_r": 0.013013259738193075
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 41,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.69
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 7.21
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 7.29
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 8.52
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 5,
+    "m": 1,
+    "xs": 3.0586369998232548,
+    "x_nb": 0.9475246537489144,
+    "n": 400
+   },
+   "seed": 424543105,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.7025884441407106,
+   "T": 0.010962709504730491,
+   "T_hi": 0.011571252542192495,
+   "fair": 1.0,
+   "oracle_bias_share": 0.010367385924965026,
+   "bias_buy": 1.0159048815622616,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 395,
+   "eff": 2.753384815356611,
+   "T_at_floor": false,
+   "spec": {
+    "K": 5,
+    "m_censored": 1,
+    "c": 0.615,
+    "target": 3.059,
+    "n": 395,
+    "runs_per_unit": 79,
+    "notebook": "all 5 units measured at the older config x=0.95"
+   },
+   "clauses_added": [
+    "the median is over all 5 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.929951242328708,
+   "B": 4.148103923018853,
+   "B_lo_red": 0.8059085678192345,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 7.99,
+    "shown:notebook_median": 26.41
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.8506447753750167,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.32233374710465146,
+    "s": 2.3754771472629517,
+    "s1": 1.4043931281350601,
+    "tau": 0.45802703904236375,
+    "tau2": 0.06329317888654769,
+    "tau_r": 0.028209195735985612
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 42,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 4.15
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.23
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 7.99
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 26.41
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 3,
+    "xs": 4.694180269775733,
+    "x_nb": 2.4943959214686005,
+    "n": 400
+   },
+   "seed": 591160942,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:threshold",
+   "noise_limited": true,
+   "truth": 0.5565223437485315,
+   "T": 0.015297958599833057,
+   "T_hi": 0.017158437580205448,
+   "fair": 1.0,
+   "oracle_bias_share": 0.009014574698089035,
+   "bias_buy": 1.0121763714286187,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 399,
+   "eff": 3.3599469707193794,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 3,
+    "c": 0.5356,
+    "target": 4.694,
+    "n": 399,
+    "runs_per_unit": 57,
+    "notebook": "all 7 units measured at the older config x=2.49"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 1.2173355003241244,
+   "B": 1.3653831692751213,
+   "B_lo_red": 0.09553437257212048,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 1.37,
+    "shown:notebook_median": 8.05
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.10715289610998877,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "pbar": 0.2835091225190382,
+    "s": 0.6239531818833071,
+    "s1": 2.7873117619392307,
+    "tau": 0.3769172122773172,
+    "tau2": 0.0005593986757226498,
+    "tau_r": 0.022377829687266
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 43,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:threshold",
+     "over_T": 1.37
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 1.39
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 2.61
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 8.05
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 7,
+    "m": 2,
+    "xs": 5.624063230007971,
+    "x_nb": 2.8902951149344545,
+    "n": 400
+   },
+   "seed": 824725274,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.8545998899218674,
+   "T": 0.008197165403905842,
+   "T_hi": 0.009345657819203853,
+   "fair": 1.0,
+   "oracle_bias_share": 0.013612424150655547,
+   "bias_buy": 0.97861114367359,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 399,
+   "eff": 3.0465557870619553,
+   "T_at_floor": false,
+   "spec": {
+    "K": 7,
+    "m_censored": 2,
+    "c": 0.8026,
+    "target": 5.624,
+    "n": 399,
+    "runs_per_unit": 57,
+    "notebook": "all 7 units measured at the older config x=2.89"
+   },
+   "clauses_added": [
+    "the median is over all 7 units, including those logged only as a bound"
+   ],
+   "B_lo": 4.447936007413698,
+   "B": 5.07112957696293,
+   "B_lo_red": 2.4122029916651218,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 6.35,
+    "shown:notebook_median": 19.62
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.8021919995417792,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.29089331950757324,
+    "s": 2.1738994429544785,
+    "s1": 1.4191085197800142,
+    "tau": 0.7258037605221639,
+    "tau2": 0.0986089005061098,
+    "tau_r": 0.017381668521408045
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 44,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 5.07
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 5.87
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 6.35
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 19.62
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 11,
+    "m": 3,
+    "xs": 5.227519764001515,
+    "x_nb": 4.005160776621813,
+    "n": 400
+   },
+   "seed": 702696028,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "naive_ignore:unit_slope",
+   "noise_limited": true,
+   "truth": 0.6497724222763217,
+   "T": 0.01680714802970072,
+   "T_hi": 0.017705435368824896,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01208415564752567,
+   "bias_buy": 1.0012862239388822,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 385,
+   "eff": 4.201809815135428,
+   "T_at_floor": false,
+   "spec": {
+    "K": 11,
+    "m_censored": 3,
+    "c": 0.5824,
+    "target": 5.228,
+    "n": 385,
+    "runs_per_unit": 35,
+    "notebook": "all 11 units measured at the older config x=4.01"
+   },
+   "clauses_added": [
+    "the median is over all 11 units, including those logged only as a bound"
+   ],
+   "B_lo": 3.0047906462346816,
+   "B": 3.1653869228582674,
+   "B_lo_red": 0.031726406760280094,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 4.01,
+    "shown:notebook_median": 4.47
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.03342207990234445,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.305364198865978,
+    "s": 1.0434462222686913,
+    "s1": 0.7153820525542682,
+    "tau": 0.8810506150278694,
+    "tau2": 0.006152668541143413,
+    "tau_r": 0.026210167986217604
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 45,
+   "tier": 2,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 3.17
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 4.01
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 4.21
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 4.47
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 5,
+    "m": 2,
+    "xs": 3.232260147314495,
+    "x_nb": 1.7677625250643487,
+    "n": 400
+   },
+   "seed": 1063831586,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "drop:censored",
+   "noise_limited": true,
+   "truth": 0.6496059713959592,
+   "T": 0.010876044890424512,
+   "T_hi": 0.011744066562918614,
+   "fair": 1.0,
+   "oracle_bias_share": 0.016986138724559372,
+   "bias_buy": 1.0110059156130038,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 395,
+   "eff": 2.8180668558304527,
+   "T_at_floor": false,
+   "spec": {
+    "K": 5,
+    "m_censored": 2,
+    "c": 0.5578,
+    "target": 3.232,
+    "n": 395,
+    "runs_per_unit": 79,
+    "notebook": "all 5 units measured at the older config x=1.77"
+   },
+   "clauses_added": [
+    "the median is over all 5 units, including those logged only as a bound"
+   ],
+   "B_lo": 5.828498310818819,
+   "B": 6.293673188530135,
+   "B_lo_red": 3.137214190962867,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 8.44,
+    "shown:notebook_median": 20.1
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.05826283073730643,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.31798861987437366,
+    "s": 2.6275658113638602,
+    "s1": 2.944726091131343,
+    "tau": 0.7074564435477676,
+    "tau2": 0.12103736529374465,
+    "tau_r": 0.026188243017763877
+   },
+   "probes": 48,
+   "first_cert_probe": 48,
+   "world_idx": 46,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "tau2",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau2": 0.438,
+    "pbar": 0.385,
+    "tau": 0.199,
+    "s": 0.117
+   },
+   "realism_flags": [
+    "n=395 runs"
+   ],
+   "table": [
+    {
+     "route": "drop:censored",
+     "over_T": 6.29
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 8.44
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 9.9
+    },
+    {
+     "route": "R1:notebook_config",
+     "over_T": 20.1
+    }
+   ]
+  },
+  {
+   "card": "K4_passk",
+   "tpl": "M2",
+   "design": {
+    "K": 9,
+    "m": 2,
+    "xs": 5.855647024189535,
+    "x_nb": 3.304095914527232,
+    "n": 263
+   },
+   "seed": 795490352,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R1:notebook_config",
+   "noise_limited": true,
+   "truth": 0.467257456009078,
+   "T": 0.019058594063774865,
+   "T_hi": 0.020403973882579814,
+   "fair": 1.0,
+   "oracle_bias_share": 0.10355526304523124,
+   "bias_buy": 1.1057610492533483,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 261,
+   "eff": 3.293833157390091,
+   "T_at_floor": false,
+   "spec": {
+    "K": 9,
+    "m_censored": 2,
+    "c": 0.1663,
+    "target": 5.856,
+    "n": 261,
+    "runs_per_unit": 29,
+    "notebook": "all 9 units measured at the older config x=3.30"
+   },
+   "clauses_added": [
+    "the median is over all 9 units, including those logged only as a bound"
+   ],
+   "B_lo": 7.454140706146686,
+   "B": 7.980341665095904,
+   "B_lo_red": 3.150944127801665,
+   "nearest_red": "naive_ignore:unit_slope",
+   "census": {
+    "numerical": [
+     "R1"
+    ],
+    "structural": [
+     "B_guess",
+     "drop"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {},
+   "shown_over_T": {
+    "shown:threshold_c": 15.79,
+    "shown:notebook_median": 7.98
+   },
+   "valid_over_T": {
+    "valid:censor_as_c": 0.0,
+    "valid:symmetric_trim": 0.0
+   },
+   "min_route_sep_over_T": 0.9917980634905916,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "pbar": 0.10852487358865529,
+    "s": 2.9217646857922457,
+    "s1": 0.9363852308317705,
+    "tau": 1.0107520028767831,
+    "tau2": 0.1281973203996211,
+    "tau_r": 0.022733635527723343
+   },
+   "probes": 48,
+   "first_cert_probe": 16,
+   "world_idx": 47,
+   "tier": 2,
+   "tier_cert": true,
+   "driver_key": "pbar",
+   "driver_class": "mechanism",
+   "driver_sens": {
+    "pbar": 3.373,
+    "tau": 0.914,
+    "s": 0.834,
+    "tau2": 0.246
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:notebook_config",
+     "over_T": 7.98
+    },
+    {
+     "route": "B_guess:mean_uncensored",
+     "over_T": 9.96
+    },
+    {
+     "route": "drop:censored",
+     "over_T": 10.95
+    },
+    {
+     "route": "B_guess:threshold",
+     "over_T": 15.79
+    }
+   ]
+  }
+ ],
+ "trace": []
+}

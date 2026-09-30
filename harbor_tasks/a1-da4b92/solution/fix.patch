@@ -1,0 +1,32 @@
+Binary files public/minilab/__pycache__/__init__.cpython-310.pyc and variants/oracle/minilab/__pycache__/__init__.cpython-310.pyc differ
+Binary files public/minilab/__pycache__/data.cpython-310.pyc and variants/oracle/minilab/__pycache__/data.cpython-310.pyc differ
+Binary files public/minilab/__pycache__/model.cpython-310.pyc and variants/oracle/minilab/__pycache__/model.cpython-310.pyc differ
+Binary files public/minilab/__pycache__/optim.cpython-310.pyc and variants/oracle/minilab/__pycache__/optim.cpython-310.pyc differ
+Binary files public/minilab/__pycache__/schedule.cpython-310.pyc and variants/oracle/minilab/__pycache__/schedule.cpython-310.pyc differ
+Binary files public/minilab/__pycache__/trainer.cpython-310.pyc and variants/oracle/minilab/__pycache__/trainer.cpython-310.pyc differ
+diff -ruN public/minilab/optim.py variants/oracle/minilab/optim.py
+--- a/minilab/optim.py	2026-09-24 16:43:53.555004431 +0800
++++ b/minilab/optim.py	2026-09-24 16:43:53.562004431 +0800
+@@ -7,9 +7,7 @@
+         self.params = params
+         self.lr = lr
+         self.momentum = momentum
+-        # dampening defaults to the momentum coefficient so that the buffer is a
+-        # properly normalised running average of recent gradients
+-        self.dampening = momentum if dampening is None else dampening
++        self.dampening = 0.0 if dampening is None else dampening
+         self.weight_decay = weight_decay
+         self.buf = {k: np.zeros_like(v) for k, v in params.items()}
+ 
+diff -ruN public/minilab/trainer.py variants/oracle/minilab/trainer.py
+--- a/minilab/trainer.py	2026-09-24 16:43:53.555004431 +0800
++++ b/minilab/trainer.py	2026-09-24 16:43:53.562004431 +0800
+@@ -25,7 +25,7 @@
+         acc = {name: np.zeros_like(v) for name, v in params.items()}
+         for _ in range(k):
+             idx = rng.integers(0, n, size=mb)
+-            _, g = loss_and_grads(params, x_train[idx], y_train[idx], denom=len(idx))
++            _, g = loss_and_grads(params, x_train[idx], y_train[idx], denom=mb * k)
+             for name in acc:
+                 acc[name] += g[name]
+         if clip is not None:

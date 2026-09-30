@@ -1,0 +1,7 @@
+The launch decision is HOLD. I used the LLM judge and expert review only to form sampling strata, because the labelling specification defines full verification as the ground truth.
+
+I first obtained expert review for all 600 responses from each model. I then purchased full verification for a stratified sample: 34 A responses and 156 B responses. The strata separated judge/review agreement patterns; for B, the judge/review-pass group was also split by response length because B's responses were much longer and the pilot showed substantially worse verification agreement among longer responses. I estimated each stratum's pass rate from its verified sample and combined the stratum estimates using the stratum's population size.
+
+The resulting estimates are A = 0.673, B = 0.546, and B minus A = -0.128. The estimated probability that B exceeds A under a beta-binomial uncertainty calculation was about 0.004. The approximate 95% intervals were 0.498–0.582 for B and -0.205 to -0.050 for the difference. These intervals describe sampling uncertainty; they do not remove the possibility of residual error from unverified responses, especially in strata with few verified examples. The conclusion is nevertheless strongly against shipping B: the verified sample found many long B responses that passed both preliminary labels but failed full verification.
+
+All 500 credits were used: 120 for the two complete expert-review passes and 380 for full verification of 190 responses.

@@ -1,0 +1,653 @@
+{
+ "task": "ab_interference",
+ "ok": true,
+ "created": "2026-09-30 12:59",
+ "candidates": [
+  {
+   "kind": "reference",
+   "name": "solution.py",
+   "passed": true,
+   "as_expected": true,
+   "failed_settings": [],
+   "secs": 2.3,
+   "detail": {
+    "pass": true,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.010887311896329473,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0023,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.013083974395768949,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.0042,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.01712085385821977,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0007,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.010392017599881434,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0085,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.021885038970568895,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0035,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.012190737974321447,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0042,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "cuped.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "hid_zero_sum",
+    "hid_cautious",
+    "hid_small"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.17948735111284655,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.1793,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.03684615313077587,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0363,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.0068483298198125,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0024,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.27653140318618363,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.2761,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.06967283779839377,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0685,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.10834578757055727,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.1076,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "diff_in_means.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "dev_grow",
+    "hid_none",
+    "hid_zero_sum",
+    "hid_cautious",
+    "hid_small"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.20173963912448917,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.1956,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.10681462986473449,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0072,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.12394703348881073,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0605,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.2766357386391681,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.2596,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.08731700426033658,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0263,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.256820263938804,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0383,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "reg_adjust.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "dev_grow",
+    "hid_zero_sum",
+    "hid_cautious",
+    "hid_small"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.24192495017969834,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.2419,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.048837141009103156,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0487,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.008147544832275536,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0072,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.38231036700646975,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.3822,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.10935853836322548,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.109,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.16142658661529904,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.1609,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "hi_lo_contrast.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "hid_zero_sum",
+    "hid_small"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.09386117549911227,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.0936,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.023264110685162848,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0158,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.01706648520264379,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0039,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.13822038835980147,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.1367,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.034287832040063505,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0148,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.06596387635209829,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0623,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "ipw_saturation.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "dev_grow",
+    "hid_zero_sum",
+    "hid_cautious",
+    "hid_small"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.24255843255181053,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.2425,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.049499289349853044,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0492,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.008016507457393659,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0048,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.38068304601106484,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.3806,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.1124422335976057,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.1123,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.15858061437169538,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.1582,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "market_equal_weight.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "hid_zero_sum"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.00839188031300602,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0024,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.017633271146981138,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.0055,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.006197784330430469,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0008,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.0713965177057151,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0669,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.018981226036256942,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.004,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.007250836694016162,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0027,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "market_linear.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "hid_cautious"
+   ],
+   "secs": 2.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.011421736330040514,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": -0.0032,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.020508568626641552,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.0052,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.016875927391904966,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0004,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.00966540945107937,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0074,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.07634689862908581,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.0727,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.01763856520520599,
+      "threshold": 0.04,
+      "ok": true,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.004,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "market_no_adjust.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_steal",
+    "dev_grow",
+    "hid_none",
+    "hid_zero_sum",
+    "hid_cautious",
+    "hid_small"
+   ],
+   "secs": 2.5,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_steal": {
+      "metric": 0.20402209193898815,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.3,
+      "mean_err": 0.0787,
+      "true_gte_rel": -0.0426
+     },
+     "dev_grow": {
+      "metric": 0.4245989027755311,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": false,
+      "secs": 0.4,
+      "mean_err": 0.116,
+      "true_gte_rel": 0.1643
+     },
+     "hid_none": {
+      "metric": 0.5026844009208262,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.2739,
+      "true_gte_rel": 0.1275
+     },
+     "hid_zero_sum": {
+      "metric": 0.3009799579518012,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.0706,
+      "true_gte_rel": -0.0978
+     },
+     "hid_cautious": {
+      "metric": 0.39564375210966723,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": 0.2436,
+      "true_gte_rel": 0.2898
+     },
+     "hid_small": {
+      "metric": 0.9012011713657208,
+      "threshold": 0.04,
+      "ok": false,
+      "hidden": true,
+      "secs": 0.3,
+      "mean_err": -0.256,
+      "true_gte_rel": 0.0986
+     }
+    }
+   }
+  }
+ ],
+ "pass_dev_fail_hidden": [
+  "market_equal_weight.py",
+  "market_linear.py"
+ ]
+}

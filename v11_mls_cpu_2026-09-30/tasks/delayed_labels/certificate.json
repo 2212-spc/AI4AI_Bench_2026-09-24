@@ -1,0 +1,426 @@
+{
+ "task": "delayed_labels",
+ "ok": true,
+ "created": "2026-09-30 12:57",
+ "candidates": [
+  {
+   "kind": "reference",
+   "name": "solution.py",
+   "passed": true,
+   "as_expected": true,
+   "failed_settings": [],
+   "secs": 19.9,
+   "detail": {
+    "pass": true,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.0406,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 2.9
+     },
+     "dev_shock": {
+      "metric": 0.0367,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 3.4
+     },
+     "hid_rise": {
+      "metric": 0.0385,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 4.1
+     },
+     "hid_recover": {
+      "metric": 0.0427,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 2.9
+     },
+     "hid_cycle": {
+      "metric": 0.0582,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 3.8
+     },
+     "hid_flat_churn": {
+      "metric": 0.0607,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 2.6
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "mature_window.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_shock",
+    "hid_rise",
+    "hid_recover",
+    "hid_cycle",
+    "hid_flat_churn"
+   ],
+   "secs": 9.4,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.1185,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 1.3
+     },
+     "dev_shock": {
+      "metric": 0.5046,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 1.6
+     },
+     "hid_rise": {
+      "metric": 0.4987,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     },
+     "hid_recover": {
+      "metric": 1.3697,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.5
+     },
+     "hid_cycle": {
+      "metric": 0.2987,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.4
+     },
+     "hid_flat_churn": {
+      "metric": 0.2546,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "naive.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_shock",
+    "hid_rise",
+    "hid_recover",
+    "hid_cycle",
+    "hid_flat_churn"
+   ],
+   "secs": 11.8,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.1488,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 2.1
+     },
+     "dev_shock": {
+      "metric": 0.3779,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 2.3
+     },
+     "hid_rise": {
+      "metric": 0.3278,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 2.0
+     },
+     "hid_recover": {
+      "metric": 1.3553,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     },
+     "hid_cycle": {
+      "metric": 0.5848,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     },
+     "hid_flat_churn": {
+      "metric": 0.3371,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     }
+    }
+   }
+  },
+  {
+   "kind": "baseline",
+   "name": "recent_mature_window.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_shock",
+    "hid_rise",
+    "hid_recover",
+    "hid_cycle"
+   ],
+   "secs": 17.6,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.2029,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 3.4
+     },
+     "dev_shock": {
+      "metric": 0.5422,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 3.4
+     },
+     "hid_rise": {
+      "metric": 0.4335,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 3.8
+     },
+     "hid_recover": {
+      "metric": 1.3312,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.6
+     },
+     "hid_cycle": {
+      "metric": 0.2539,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 3.7
+     },
+     "hid_flat_churn": {
+      "metric": 0.2205,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 1.6
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "drop_closed.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_shock",
+    "hid_rise",
+    "hid_recover",
+    "hid_cycle",
+    "hid_flat_churn"
+   ],
+   "secs": 11.3,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.1582,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 2.1
+     },
+     "dev_shock": {
+      "metric": 0.3547,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 1.7
+     },
+     "hid_rise": {
+      "metric": 0.3767,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 2.0
+     },
+     "hid_recover": {
+      "metric": 2.2053,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     },
+     "hid_cycle": {
+      "metric": 0.5216,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     },
+     "hid_flat_churn": {
+      "metric": 0.3433,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.7
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "km_calibrated.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_shock",
+    "hid_rise",
+    "hid_recover",
+    "hid_flat_churn"
+   ],
+   "secs": 10.1,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.1836,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": false,
+      "secs": 1.6
+     },
+     "dev_shock": {
+      "metric": 0.4761,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 1.5
+     },
+     "hid_rise": {
+      "metric": 0.5582,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     },
+     "hid_recover": {
+      "metric": 1.221,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.6
+     },
+     "hid_cycle": {
+      "metric": 0.1828,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 1.7
+     },
+     "hid_flat_churn": {
+      "metric": 0.3467,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     }
+    }
+   }
+  },
+  {
+   "kind": "decoy",
+   "name": "tenure_feature.py",
+   "passed": false,
+   "as_expected": true,
+   "failed_settings": [
+    "dev_flat",
+    "dev_shock",
+    "hid_recover",
+    "hid_cycle"
+   ],
+   "secs": 11.4,
+   "detail": {
+    "pass": false,
+    "settings": {
+     "dev_flat": {
+      "metric": 0.2837,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 1.8
+     },
+     "dev_shock": {
+      "metric": 0.5751,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": false,
+      "secs": 2.0
+     },
+     "hid_rise": {
+      "metric": 0.2143,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 2.0
+     },
+     "hid_recover": {
+      "metric": 0.5667,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     },
+     "hid_cycle": {
+      "metric": 0.6028,
+      "threshold": 0.25,
+      "ok": false,
+      "hidden": true,
+      "secs": 1.8
+     },
+     "hid_flat_churn": {
+      "metric": 0.1838,
+      "threshold": 0.25,
+      "ok": true,
+      "hidden": true,
+      "secs": 1.8
+     }
+    }
+   }
+  }
+ ],
+ "pass_dev_fail_hidden": []
+}

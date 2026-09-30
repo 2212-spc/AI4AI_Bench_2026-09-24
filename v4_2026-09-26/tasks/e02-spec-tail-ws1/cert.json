@@ -1,0 +1,748 @@
+{
+ "gates": {
+  "G0_wellposed": {
+   "pass": true,
+   "why": "q2 5363-7841 tok/s (width 1.462x; the memory formula would say 8857, the lab box's batch_max 7841, the midpoint 6672); q1 0.1841 (flat profile 0.1403, published constant 0.3386, memo's baseline 0.4511); tie point 0.8897, true tail 0.9633, continuation 1.0345, bottom 0.9807; bound 0.1230 between sup 1.1003 and min(flat 1.1461, loose 1.1880); witness volume 0.0383; notebook max |z| 1.82, sum z^2 19.5 of 48.4, witness volume 0.0171"
+  },
+  "G1_solvable": {
+   "pass": true,
+   "ver_allpass": 1.0,
+   "min_item_pass": 1.0,
+   "shipped_oracle_all_pass": true
+  },
+  "G2_kill_matrix": {
+   "pass": true,
+   "unkilled_must_kill": []
+  },
+  "G3_set_width": {
+   "pass": true,
+   "narrow": []
+  },
+  "G4_identifiability": {
+   "pass": true,
+   "certs": [
+    {
+     "param": "prod_seq",
+     "range": [
+      883.0,
+      1446.0
+     ],
+     "n_requests": 420,
+     "n_differing": 0,
+     "zero_footprint": true
+    },
+    {
+     "param": "drafts.d_lite.rho_tail",
+     "range": [
+      0.85,
+      1.0
+     ],
+     "n_requests": 420,
+     "n_differing": 0,
+     "zero_footprint": true
+    }
+   ]
+  },
+  "G5_replay": {
+   "n_rows": 5,
+   "n_mismatch": 0,
+   "pass": true
+  },
+  "G6_leakage": {
+   "hits": [],
+   "pass": true
+  },
+  "G7_key_types": {
+   "pass": true,
+   "kinds": [
+    "cex",
+    "point",
+    "set"
+   ],
+   "has_ignorance_item": true
+  },
+  "G8_decision_gap": {
+   "pass": true,
+   "gaps": []
+  },
+  "G9_load_bearing": {
+   "pass": true,
+   "cards": {
+    "S1": "killed by drop:S1",
+    "S3": "killed by drop:S3",
+    "S5": "killed by drop:S5"
+   }
+  },
+  "G10_item_useful": {
+   "pass": true,
+   "note": "informational: which rivals each item kills with margin",
+   "free_items": [],
+   "item_kills": {
+    "q1": [
+     "B_prior",
+     "skip:matched",
+     "skip:profile",
+     "skip:perstep",
+     "naive_ignore:S3",
+     "drop:S3",
+     "widen_points"
+    ],
+    "q2": [
+     "skip:capacity",
+     "skip:roofline",
+     "skip:extremes",
+     "naive_ignore:S5",
+     "naive_ignore:S1",
+     "drop:S1",
+     "drop:S5",
+     "collapse_sets"
+    ],
+    "q3": [
+     "skip:profile",
+     "skip:tail",
+     "naive_ignore:S3",
+     "drop:S3"
+    ],
+    "q4": [
+     "skip:profile",
+     "skip:bound",
+     "naive_ignore:S3",
+     "drop:S3"
+    ]
+   }
+  },
+  "G11_depth": {
+   "pass": true,
+   "declared_depth": {
+    "q1": 3,
+    "q2": 3,
+    "q3": 2,
+    "q4": 2
+   },
+   "max_depth": 3,
+   "claimed": 3,
+   "steps_without_a_killed_shortcut": []
+  },
+  "G12_nuisance": {
+   "pass": true,
+   "nuisance_cards": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "not_killed": []
+  },
+  "G13_anti_prior": {
+   "pass": true,
+   "items": [
+    {
+     "item": "q1",
+     "prior_rival_killed": true,
+     "gap_over_T": 13.73
+    }
+   ],
+   "failing": []
+  },
+  "G14_witness": {
+   "pass": true,
+   "vol_max": 0.1,
+   "items": [
+    {
+     "item": "q3",
+     "entailed": false,
+     "n_samples": 609,
+     "consistent_frac": 0.0788,
+     "flip_frac": 0.0772,
+     "witness_volume": 0.0263,
+     "n_corner_witnesses": 0,
+     "n_corners": 9,
+     "pass": true
+    },
+    {
+     "item": "q4",
+     "entailed": true,
+     "n_samples": 609,
+     "consistent_frac": 0.0985,
+     "flip_frac": 0.0887,
+     "witness_volume": 0.0,
+     "n_corner_witnesses": 0,
+     "n_corners": 9,
+     "pass": true
+    }
+   ]
+  },
+  "G15_plan": {
+   "pass": true,
+   "need_sd": 4.0,
+   "n_salt": 9,
+   "items": []
+  },
+  "G16_audit": {
+   "pass": true,
+   "herring_max": 0.25,
+   "defect_min": 2.0,
+   "items": []
+  },
+  "G17_oracle_bias": {
+   "pass": true,
+   "biased_items": {},
+   "median_over_p90": {
+    "q1": {
+     "median": 0.001957164780912124,
+     "p90": 0.005000678609408116,
+     "ratio": 0.391,
+     "median_over_tol": 0.174,
+     "tol_above_floor": true
+    },
+    "q2": {
+     "median": 38.93666182179095,
+     "p90": 62.70266466472094,
+     "ratio": 0.621,
+     "median_over_tol": 0.276,
+     "tol_above_floor": true
+    }
+   },
+   "ratio_max": 0.9,
+   "share_max": 0.05
+  }
+ },
+ "ok": true,
+ "kill_matrix": {
+  "B_prior": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 13.73
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:matched": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 23.72
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:profile": {
+   "score": 0.25,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.9
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "entailed"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "the witness world does not reproduce the observations"
+    }
+   }
+  },
+  "skip:perstep": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 204.28
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:capacity": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 17.56
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:roofline": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.2
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:extremes": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 9.28
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:tail": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q3"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "entailed"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "skip:bound": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "the witness world does not reproduce the observations"
+    }
+   }
+  },
+  "naive_ignore:S3": {
+   "score": 0.25,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.9
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "entailed"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "the witness world does not reproduce the observations"
+    }
+   }
+  },
+  "naive_ignore:S5": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 17.56
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "naive_ignore:S1": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.2
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "drop:S1": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.2
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "drop:S3": {
+   "score": 0.25,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q3",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 16.37
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q3": {
+     "pass": false,
+     "answer": "entailed"
+    },
+    "q4": {
+     "pass": false,
+     "answer": "the witness world does not reproduce the observations"
+    }
+   }
+  },
+  "drop:S5": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 17.56
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "collapse_sets": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q2"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.27
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 9.1
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  },
+  "widen_points": {
+   "score": 0.75,
+   "killed": true,
+   "margin_items": [
+    "q1"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.27
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.36
+    },
+    "q3": {
+     "pass": true,
+     "answer": "witness is consistent with every observation and the claim is false in it"
+    },
+    "q4": {
+     "pass": true,
+     "answer": "entailed"
+    }
+   }
+  }
+ },
+ "calibration": {
+  "tol": {
+   "q1": 0.01125152687116826,
+   "q2": 141.08099549562212
+  },
+  "cal_errs": {
+   "q1": [
+    0.0001616313943643144,
+    0.005000678609408116,
+    0.00043168936556503557,
+    0.0007381578789993348,
+    0.0009835830196103235,
+    0.004399652494798012,
+    0.0033493025226718487,
+    0.0029307465422139245,
+    0.006246795537356409,
+    0.0002955322407627303
+   ],
+   "q2": [
+    30.75461490012185,
+    21.316967925151403,
+    62.70266466472094,
+    38.937437628629596,
+    39.666287841077974,
+    69.59567855363548,
+    31.631902883105795,
+    46.584801017754216,
+    10.49985933636799,
+    38.9358860149523
+   ],
+   "q3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q4": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ver_pass": {
+   "q1": 1.0,
+   "q2": 1.0,
+   "q3": 1.0,
+   "q4": 1.0
+  },
+  "ver_allpass": 1.0,
+  "oracle_usage": {
+   "cost_unit": "accelerator-seconds",
+   "cost_used": 560.0,
+   "cost_left": 340.0,
+   "runs_used": 18,
+   "runs_left": 18,
+   "run_cost_cap": 40.0
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "params": {
+  "N": 10218767100.353874,
+  "L": 54,
+  "H_kv": 8,
+  "d_head": 128,
+  "M_gpu": 80000000000.0,
+  "act_bytes": 2759807730.7916718,
+  "P_peak": 362727234812741.1,
+  "BW": 3930872950778.449,
+  "eff": 0.6292000475692018,
+  "mem_util": 0.9019309532834768,
+  "kv_bytes": 1.1888076197143993,
+  "ctx_lo": 1182,
+  "ctx_hi": 1760,
+  "kv_pool": 20655837241.712353,
+  "drafts": {
+   "none": {
+    "a": 0.0,
+    "c": 0.0,
+    "rho": 1.0
+   },
+   "d_lite": {
+    "a": 0.8894672023946509,
+    "rho": 0.9394724443173352,
+    "c": 0.05023230947905509,
+    "tail_from": 4,
+    "rho_tail": 0.9752816070681481
+   }
+  },
+  "x4": 0.0985,
+  "bench_seq": 1536,
+  "bench_batch": 229,
+  "prod_seq": 1262.798724796534
+ },
+ "spec": {
+  "lab": "servelab",
+  "knobs": {
+   "svc": {
+    "type": "choice",
+    "values": [
+     "bench"
+    ],
+    "default": "bench"
+   },
+   "seq": {
+    "type": "float",
+    "min": 256,
+    "max": 4096,
+    "int": true,
+    "default": 1024
+   },
+   "batch": {
+    "type": "float",
+    "min": 1,
+    "max": 1024,
+    "int": true,
+    "default": 32
+   },
+   "draft": {
+    "type": "choice",
+    "values": [
+     "none",
+     "d_lite"
+    ],
+    "default": "none"
+   },
+   "spec_g": {
+    "type": "float",
+    "min": 0,
+    "max": 4,
+    "int": true,
+    "default": 0
+   },
+   "dur": {
+    "type": "float",
+    "min": 5.0,
+    "max": 40.0,
+    "default": 20.0
+   }
+  },
+  "fixed": {
+   "bits": 16
+  },
+  "caps": {
+   "run_cost": 40.0,
+   "total_cost": 900.0,
+   "max_runs": 36
+  }
+ },
+ "salt": "5f69a9851ea4734c",
+ "blueprint": "e02-spec-tail",
+ "module": "e02_spec_tail_cex",
+ "world_seed": 3
+}

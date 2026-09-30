@@ -1,0 +1,27 @@
+version = "1.0"
+artifacts = ["answers.json"]
+
+[metadata]
+author_name = "heterogeneous-task-factory (generated)"
+difficulty = "hard"
+category = "ai4ai"
+tags = ["generated", "d-design-open", "value-of-information", "partial-identification", "experiment-design", "underdetermined-evidence", "worst-case-reasoning", "ai4ai-eval"]
+expert_time_estimate_hours = 6.0
+
+[agent]
+timeout_sec = 5400.0
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+cpus = 2
+memory_mb = 4096
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096

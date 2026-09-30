@@ -1,0 +1,5117 @@
+{
+ "card": "K1_compute",
+ "tpl": "M3",
+ "mode": "search_t1",
+ "spent": 1927,
+ "na": false,
+ "results": [
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.8929620573256762,
+    "x0": 0.694433501124996,
+    "n": 80
+   },
+   "seed": 994669748,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.743705384046822,
+   "T": 0.002743705384046822,
+   "T_hi": 0.002743705384046822,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0010806939477037154,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 1.0053309142642304,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 10,
+    "x0": 0.694,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0093 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 1.8219617466982647,
+   "B": 1.8219617466982647,
+   "B_lo_red": 1.560140170645656,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 0.22
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 2.76,
+    "shown:notebook_best": 1.82
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.18427384585539508,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.7388876521156507,
+    "A": 1.8323321716515473,
+    "al": 0.37102768658976937,
+    "D": 0.03381687503632379,
+    "xr": 1.0652404948352248,
+    "s0": 0.00623084979901218,
+    "tau": 0.20590417844746164,
+    "tau2": 0.011246266977328846,
+    "tau_r": 0.00810846666979377
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 0,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 1.82
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 2.76
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 3.88
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 4.795981765308944,
+    "x0": 1.5921107419683909,
+    "n": 133
+   },
+   "seed": 306494257,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.511334201860107,
+   "T": 0.0025113342018601072,
+   "T_hi": 0.0025113342018601072,
+   "fair": 1.0,
+   "oracle_bias_share": 0.013281316064823589,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 133,
+   "eff": 1.0129899665178754,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 5,
+    "x0": 1.592,
+    "n": 133,
+    "notebook": "one run per recipe, eval noise sd 0.0264 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 1.977244605480407,
+   "B": 1.977244605480407,
+   "B_lo_red": 1.8280011814600134,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 5.51
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 1.98,
+    "shown:notebook_best": 8.7
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.8691277778022256,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 2.0710163763704825,
+    "A": 1.3781245301806975,
+    "al": 0.3143296525855842,
+    "D": 0.06746878231100131,
+    "xr": 1.0487622205907594,
+    "s0": 0.009557106902252931,
+    "tau": 0.11106892017622583,
+    "tau2": 0.04773001585570191,
+    "tau_r": 0.004055392094438981
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 1,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 1.98
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.51
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.7
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.605948264023568,
+    "x0": 1.0523218888548453,
+    "n": 116
+   },
+   "seed": 547246536,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.549953248745678,
+   "T": 0.0025499532487456783,
+   "T_hi": 0.0025499532487456783,
+   "fair": 1.0,
+   "oracle_bias_share": 0.024989362167964106,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 116,
+   "eff": 0.9670100150799622,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 6,
+    "x0": 1.052,
+    "n": 116,
+    "notebook": "one run per recipe, eval noise sd 0.0087 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.31494810502648,
+   "B": 6.31494810502648,
+   "B_lo_red": 6.31494810502648,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 7.96
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 14.37,
+    "shown:notebook_best": 6.31
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.6185099645104467,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.8977065040576533,
+    "A": 1.7737026935445888,
+    "al": 0.3903101573787633,
+    "D": 0.04105974681732103,
+    "xr": 1.2234641114195255,
+    "s0": 0.007797576209732539,
+    "tau": 0.17193104173281637,
+    "tau2": 0.019027443624895335,
+    "tau_r": 0.012075580804754297
+   },
+   "probes": 23,
+   "first_cert_probe": 8,
+   "world_idx": 2,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.486,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.31
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 13.6
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 14.37
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 1.6164860673519552,
+    "x0": 1.1649476495095359,
+    "n": 71
+   },
+   "seed": 570639612,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "R7:top2_mean",
+   "noise_limited": false,
+   "truth": 2.4483536412810327,
+   "T": 0.002448353641281033,
+   "T_hi": 0.002448353641281033,
+   "fair": 1.0,
+   "oracle_bias_share": 0.013333441052271671,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 71,
+   "eff": 1.0263729423378372,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 2,
+    "x0": 1.165,
+    "n": 71,
+    "notebook": "one run per recipe, eval noise sd 0.0065 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.949794651585519,
+   "B": 4.949794651585519,
+   "B_lo_red": 2.3078320623798274,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 4.29
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 13.6,
+    "shown:notebook_best": 5.05
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.07047904106742967,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9422732700063279,
+    "A": 1.0827896945078543,
+    "al": 0.2597968166407279,
+    "D": 0.03173468655057547,
+    "xr": 1.3675186098485383,
+    "s0": 0.006040551318155519,
+    "tau": 0.10138923849292986,
+    "tau2": 0.047344499211064,
+    "tau_r": 0.019107274395490884
+   },
+   "probes": 48,
+   "first_cert_probe": 2,
+   "world_idx": 3,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.269,
+    "tau_r": 0.038,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 4.95
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 5.05
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 13.6
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 2.8925752950395274,
+    "x0": 1.9876079663758686,
+    "n": 65
+   },
+   "seed": 1030249738,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.3262899959009236,
+   "T": 0.0023262899959009234,
+   "T_hi": 0.0023262899959009234,
+   "fair": 1.0,
+   "oracle_bias_share": 0.002844886777810586,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 65,
+   "eff": 1.0149831939619,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 7,
+    "x0": 1.988,
+    "n": 65,
+    "notebook": "one run per recipe, eval noise sd 0.0115 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.4436100440586124,
+   "B": 3.4436100440586124,
+   "B_lo_red": 3.4436100440586124,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 9.25
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 6.91,
+    "shown:notebook_best": 3.44
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.026570493861994823,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.8284872842393585,
+    "A": 1.7919027566654215,
+    "al": 0.27291371680846677,
+    "D": 0.07692007690513428,
+    "xr": 1.7043944402650713,
+    "s0": 0.00789881912778982,
+    "tau": 0.19331974722647705,
+    "tau2": 0.04734213822137639,
+    "tau_r": 0.012057552349795811
+   },
+   "probes": 48,
+   "first_cert_probe": 29,
+   "world_idx": 4,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 9.471,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.44
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 6.91
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.25
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 1.0,
+    "x0": 3.0,
+    "n": 70
+   },
+   "seed": 232120405,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 1.8882586497301417,
+   "T": 0.0018882586497301417,
+   "T_hi": 0.00200431489898245,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0023331014255872575,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 70,
+   "eff": 0.9899843772573201,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 14,
+    "x0": 3.0,
+    "n": 70,
+    "notebook": "one run per recipe, eval noise sd 0.0042 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.1469533627031305,
+   "B": 3.340371570478564,
+   "B_lo_red": 0.7612536869449872,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 1.46
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 8.71,
+    "shown:notebook_best": 3.34
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.29071653229616123,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.7598177396810633,
+    "A": 1.112487396282392,
+    "al": 0.2950909761972548,
+    "D": 0.05465042263321174,
+    "xr": 1.6662715217889286,
+    "s0": 0.011929497381806521,
+    "tau": 0.21900307115604237,
+    "tau2": 0.029495677458326153,
+    "tau_r": 0.008627530316902712
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 5,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.34
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 6.51
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 8.71
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 2.0,
+    "x0": 0.5718295074121489,
+    "n": 61
+   },
+   "seed": 391176626,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 3.2683304931538415,
+   "T": 0.0032683304931538414,
+   "T_hi": 0.0032683304931538414,
+   "fair": 1.0,
+   "oracle_bias_share": 0.003425955961520476,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 61,
+   "eff": 0.9528119197976597,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 9,
+    "x0": 0.572,
+    "n": 61,
+    "notebook": "one run per recipe, eval noise sd 0.0121 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.587053410063656,
+   "B": 6.587053410063656,
+   "B_lo_red": 2.897474408290232,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.57
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 7.61,
+    "shown:notebook_best": 6.59
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.5058558541192537,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 2.086438356063509,
+    "A": 1.9000377436159521,
+    "al": 0.3447592939697212,
+    "D": 0.07906828228548998,
+    "xr": 1.686922290263631,
+    "s0": 0.00734593718338438,
+    "tau": 0.19814156904150163,
+    "tau2": 0.025256237830403556,
+    "tau_r": 0.018004166106749313
+   },
+   "probes": 17,
+   "first_cert_probe": 5,
+   "world_idx": 6,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.237,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.59
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.1
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 7.61
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 4,
+    "r_nb": 1.5,
+    "x0": 1.0595725448877291,
+    "n": 120
+   },
+   "seed": 897839561,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": true,
+   "truth": 2.0279907994346607,
+   "T": 0.002094124595372449,
+   "T_hi": 0.0022315584152344556,
+   "fair": 1.0,
+   "oracle_bias_share": 0.011228203271871911,
+   "bias_buy": 1.0045533687751174,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 120,
+   "eff": 1.0519818423973215,
+   "T_at_floor": false,
+   "spec": {
+    "G": 4,
+    "selected": 1,
+    "x0": 1.06,
+    "n": 120,
+    "notebook": "one run per recipe, eval noise sd 0.0091 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.893667305255051,
+   "B": 7.346086914247096,
+   "B_lo_red": 2.8190608712039307,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 7.04
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 12.99,
+    "shown:notebook_best": 7.35
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.8941206026872064,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.706624215547312,
+    "A": 1.011775570940991,
+    "al": 0.4367730755471888,
+    "D": 0.03811668608327991,
+    "xr": 1.267231413191528,
+    "s0": 0.00874054572499451,
+    "tau": 0.2283826089065058,
+    "tau2": 0.016520289956979347,
+    "tau_r": 0.019000372706382787
+   },
+   "probes": 16,
+   "first_cert_probe": 16,
+   "world_idx": 7,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.206,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.35
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 10.2
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 12.99
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 2.189732936998812,
+    "x0": 1.720872595238411,
+    "n": 206
+   },
+   "seed": 482920119,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.0978392145943947,
+   "T": 0.0020978392145943946,
+   "T_hi": 0.0020978392145943946,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006394313115942292,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 206,
+   "eff": 0.9437823636333913,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 2,
+    "x0": 1.721,
+    "n": 206,
+    "notebook": "one run per recipe, eval noise sd 0.0145 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.735598923367914,
+   "B": 5.735598923367914,
+   "B_lo_red": 1.8873036989796494,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.14
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.28,
+    "shown:notebook_best": 8.8
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.8873036989796494,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7956956976325809,
+    "A": 1.6665285024183993,
+    "al": 0.415177675171683,
+    "D": 0.06970441023901283,
+    "xr": 1.9480419972064742,
+    "s0": 0.011993542224018616,
+    "tau": 0.20068710939958084,
+    "tau2": 0.02630703240534073,
+    "tau_r": 0.010400223355569085
+   },
+   "probes": 48,
+   "first_cert_probe": 8,
+   "world_idx": 8,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.094,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.74
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.8
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.28
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.0,
+    "x0": 2.271780668086637,
+    "n": 148
+   },
+   "seed": 218457469,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.1316662727260964,
+   "T": 0.0021316662727260964,
+   "T_hi": 0.0021316662727260964,
+   "fair": 1.0,
+   "oracle_bias_share": 0.002160517530582716,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 148,
+   "eff": 1.042179399655358,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 3,
+    "x0": 2.272,
+    "n": 148,
+    "notebook": "one run per recipe, eval noise sd 0.0052 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.7925758632717286,
+   "B": 3.7925758632717286,
+   "B_lo_red": 1.3868280610236579,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.04
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 5.99,
+    "shown:notebook_best": 3.82
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.5794751164689202,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9753440439055847,
+    "A": 1.449026429859249,
+    "al": 0.4106642182704145,
+    "D": 0.04749749071639155,
+    "xr": 1.2415235562609626,
+    "s0": 0.011366139090570649,
+    "tau": 0.18285491834402295,
+    "tau2": 0.019663137563750734,
+    "tau_r": 0.009952025778521749
+   },
+   "probes": 48,
+   "first_cert_probe": 22,
+   "world_idx": 9,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.073,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 3.79
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.82
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 5.99
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.0,
+    "x0": 1.1049092615640221,
+    "n": 336
+   },
+   "seed": 855754734,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.2258980912505417,
+   "T": 0.002225898091250542,
+   "T_hi": 0.002225898091250542,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01627761989638331,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 336,
+   "eff": 1.0335486641615816,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 5,
+    "x0": 1.105,
+    "n": 336,
+    "notebook": "one run per recipe, eval noise sd 0.0065 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.038626271869271,
+   "B": 3.038626271869271,
+   "B_lo_red": 0.11356378161127671,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 0.73
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 5.15,
+    "shown:notebook_best": 3.04
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.10727228883741362,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.7894652306942471,
+    "A": 1.174622779626775,
+    "al": 0.3789570227036996,
+    "D": 0.05577085255329459,
+    "xr": 1.4666147074213174,
+    "s0": 0.009536232149475545,
+    "tau": 0.06358079710105657,
+    "tau2": 0.028228228831023584,
+    "tau_r": 0.009043497953749926
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 10,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.04
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 3.12
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 5.15
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.1770123011154132,
+    "x0": 1.9387525467952456,
+    "n": 139
+   },
+   "seed": 577493177,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "R7:menu_mean",
+   "noise_limited": false,
+   "truth": 1.9645783379613433,
+   "T": 0.001964578337961343,
+   "T_hi": 0.001964578337961343,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0005411420049793562,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 139,
+   "eff": 0.9763865930272773,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 6,
+    "x0": 1.939,
+    "n": 139,
+    "notebook": "one run per recipe, eval noise sd 0.0050 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.7551739036824023,
+   "B": 3.7551739036824023,
+   "B_lo_red": 0.759364241663649,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 1.81
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 3.86,
+    "shown:notebook_best": 3.79
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.10351341168247644,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.7419224972172578,
+    "A": 1.168216617603787,
+    "al": 0.36381597106271535,
+    "D": 0.047091269777476075,
+    "xr": 1.1966378388158518,
+    "s0": 0.008322667895538797,
+    "tau": 0.12158211436311439,
+    "tau2": 0.020370831865153413,
+    "tau_r": 0.009125971122621666
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 11,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 3.76
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.79
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 3.86
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 2.657890322564318,
+    "x0": 2.777305661959214,
+    "n": 191
+   },
+   "seed": 287103029,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "R7:top2_mean",
+   "noise_limited": false,
+   "truth": 2.0389447884977927,
+   "T": 0.0020389447884977927,
+   "T_hi": 0.0020389447884977927,
+   "fair": 1.0,
+   "oracle_bias_share": 0.012592805445607234,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 191,
+   "eff": 1.0108899289477773,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 4,
+    "x0": 2.777,
+    "n": 191,
+    "notebook": "one run per recipe, eval noise sd 0.0121 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 7.9282071131574625,
+   "B": 7.9282071131574625,
+   "B_lo_red": 0.1681304254671098,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.56
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.97,
+    "shown:notebook_best": 7.93
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.1681304254671098,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9411626614245274,
+    "A": 1.2713116545858112,
+    "al": 0.37155673935569494,
+    "D": 0.06659093349517543,
+    "xr": 1.7076635373762095,
+    "s0": 0.011886181478544013,
+    "tau": 0.22501376930723557,
+    "tau2": 0.022488197951582068,
+    "tau_r": 0.010530034088741369
+   },
+   "probes": 27,
+   "first_cert_probe": 9,
+   "world_idx": 12,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.472,
+    "s0": 0.131,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.93
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.24
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.97
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 1.2937588126185917,
+    "x0": 1.7755825926038113,
+    "n": 400
+   },
+   "seed": 850275219,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.016729651225607,
+   "T": 0.002016729651225607,
+   "T_hi": 0.002016729651225607,
+   "fair": 1.0,
+   "oracle_bias_share": 0.018293264330861616,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9740345995286681,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 12,
+    "x0": 1.776,
+    "n": 400,
+    "notebook": "one run per recipe, eval noise sd 0.0058 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.6542977361021722,
+   "B": 3.6542977361021722,
+   "B_lo_red": 0.7946157500498797,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 0.44
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 3.8,
+    "shown:notebook_best": 3.65
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.7946157500498797,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.8377057099811291,
+    "A": 1.1318103735552294,
+    "al": 0.440796354745118,
+    "D": 0.0718280037381797,
+    "xr": 1.753054529152943,
+    "s0": 0.008230941046024377,
+    "tau": 0.20639849818462186,
+    "tau2": 0.0012900578212256654,
+    "tau_r": 0.005131180618859058
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 13,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.65
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 3.8
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 4.97
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 6.0,
+    "x0": 3.0,
+    "n": 124
+   },
+   "seed": 928000504,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.0591057968505306,
+   "T": 0.0020591057968505307,
+   "T_hi": 0.0020591057968505307,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006762140360599727,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 124,
+   "eff": 0.9267826687267109,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 7,
+    "x0": 3.0,
+    "n": 124,
+    "notebook": "one run per recipe, eval noise sd 0.0216 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 4.009593470299353,
+   "B": 4.009593470299353,
+   "B_lo_red": 4.009593470299353,
+   "nearest_red": "R1:incumbent_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.86
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 4.01,
+    "shown:notebook_best": 24.43
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.6820859257697045,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9746040374415028,
+    "A": 1.381731154773411,
+    "al": 0.3910241569925925,
+    "D": 0.03718646945377735,
+    "xr": 1.3900120124334896,
+    "s0": 0.010139157470342337,
+    "tau": 0.16176854276777358,
+    "tau2": 0.006127315724785515,
+    "tau_r": 0.013227981566030462
+   },
+   "probes": 48,
+   "first_cert_probe": 18,
+   "world_idx": 14,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.546,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x6.0"
+   ],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 4.01
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.69
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 24.43
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 6.0,
+    "x0": 2.6472387520159635,
+    "n": 90
+   },
+   "seed": 429670706,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:menu_mean",
+   "noise_limited": false,
+   "truth": 2.141548586486039,
+   "T": 0.002141548586486039,
+   "T_hi": 0.002141548586486039,
+   "fair": 1.0,
+   "oracle_bias_share": 0.006160800196809611,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 90,
+   "eff": 1.0199801165236109,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 2,
+    "x0": 2.647,
+    "n": 90,
+    "notebook": "one run per recipe, eval noise sd 0.0182 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.6269316340039817,
+   "B": 2.6269316340039817,
+   "B_lo_red": 2.6269316340039817,
+   "nearest_red": "R7:menu_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 1.51
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 2.79,
+    "shown:notebook_best": 12.5
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.16260374297858843,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.9957190650685492,
+    "A": 1.224530596913381,
+    "al": 0.3425032998577837,
+    "D": 0.030990683948379717,
+    "xr": 1.0425864088800216,
+    "s0": 0.0075489029494940196,
+    "tau": 0.1353838801392614,
+    "tau2": 0.012445713089527983,
+    "tau_r": 0.002837979193992018
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 15,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 2.63
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 2.79
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 12.5
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 2.192672223191531,
+    "x0": 2.0766059372587944,
+    "n": 175
+   },
+   "seed": 314142881,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.1202184123652574,
+   "T": 0.0021202184123652575,
+   "T_hi": 0.0021202184123652575,
+   "fair": 1.0,
+   "oracle_bias_share": 0.013015254424497618,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 175,
+   "eff": 1.0113118211626904,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 4,
+    "x0": 2.077,
+    "n": 175,
+    "notebook": "one run per recipe, eval noise sd 0.0106 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 6.9473898705545585,
+   "B": 6.9473898705545585,
+   "B_lo_red": 1.961145338081394,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.5
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 11.45,
+    "shown:notebook_best": 6.95
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.961145338081394,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.8481528852824505,
+    "A": 1.562014208711075,
+    "al": 0.34763135508215454,
+    "D": 0.061734557495332014,
+    "xr": 1.478521494423234,
+    "s0": 0.009878052963142193,
+    "tau": 0.09229523020064105,
+    "tau2": 0.04014417199453838,
+    "tau_r": 0.01190203909669774
+   },
+   "probes": 39,
+   "first_cert_probe": 6,
+   "world_idx": 16,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.119,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.95
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.83
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 11.45
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.1575217021940671,
+    "x0": 1.47639249266876,
+    "n": 214
+   },
+   "seed": 525687923,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "R7:top2_mean",
+   "noise_limited": false,
+   "truth": 2.5805284559516277,
+   "T": 0.002580528455951628,
+   "T_hi": 0.002580528455951628,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005289487035337671,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 214,
+   "eff": 1.0379393432341546,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 2,
+    "x0": 1.476,
+    "n": 214,
+    "notebook": "one run per recipe, eval noise sd 0.0056 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 3.218369333018961,
+   "B": 3.218369333018961,
+   "B_lo_red": 1.3143343995001695,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.54
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 3.22,
+    "shown:notebook_best": 3.61
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.10791705693201989,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9144198659489189,
+    "A": 1.8548810445107025,
+    "al": 0.297610352159858,
+    "D": 0.05070838267266192,
+    "xr": 1.582000461579172,
+    "s0": 0.00812575726678895,
+    "tau": 0.21232311632867315,
+    "tau2": 0.03738113909202411,
+    "tau_r": 0.016772330434318774
+   },
+   "probes": 48,
+   "first_cert_probe": 12,
+   "world_idx": 17,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.164,
+    "tau_r": 0.097,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 3.22
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.61
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.8
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.0,
+    "x0": 3.0,
+    "n": 61
+   },
+   "seed": 4578151,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:menu_mean",
+   "noise_limited": false,
+   "truth": 2.102760862858311,
+   "T": 0.0021027608628583112,
+   "T_hi": 0.0021027608628583112,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005045442801697303,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 61,
+   "eff": 0.96624986732002,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 0,
+    "x0": 3.0,
+    "n": 61,
+    "notebook": "one run per recipe, eval noise sd 0.0027 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 1.6309809442046104,
+   "B": 1.6309809442046104,
+   "B_lo_red": 1.3187971200737438,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 2
+   },
+   "free_over_T": {
+    "free:james_stein": 2.28
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 0.0,
+    "shown:notebook_best": 2.6
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.22833726422202738,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 2.008251878762806,
+    "A": 1.8191336551565023,
+    "al": 0.42813050461036706,
+    "D": 0.04132416854338863,
+    "xr": 1.89431311695825,
+    "s0": 0.007566385092685144,
+    "tau": 0.19304693696982847,
+    "tau2": 0.009711404053267175,
+    "tau_r": 0.008234935225577278
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 18,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 1.63
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 2.6
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 3.0891343284008257,
+    "x0": 1.8282559178660105,
+    "n": 242
+   },
+   "seed": 963384222,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 1.9572336391639216,
+   "T": 0.0019572336391639215,
+   "T_hi": 0.0019572336391639215,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007274626726640593,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 242,
+   "eff": 1.0167114213828867,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 3,
+    "x0": 1.828,
+    "n": 242,
+    "notebook": "one run per recipe, eval noise sd 0.0190 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.957985333807122,
+   "B": 5.957985333807122,
+   "B_lo_red": 2.5376969566637895,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.05
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 5.96,
+    "shown:notebook_best": 7.18
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 2.5376969566637895,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7723725447526,
+    "A": 1.0272785892578,
+    "al": 0.3928752377796074,
+    "D": 0.04760656519166592,
+    "xr": 1.042571085908977,
+    "s0": 0.011576922261934679,
+    "tau": 0.16322095801977354,
+    "tau2": 0.03590481539745884,
+    "tau_r": 0.014740639269940691
+   },
+   "probes": 48,
+   "first_cert_probe": 14,
+   "world_idx": 19,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.132,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 5.96
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.18
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.39
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.3982358665268642,
+    "x0": 3.0,
+    "n": 57
+   },
+   "seed": 957179367,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.3131675665121483,
+   "T": 0.0023131675665121485,
+   "T_hi": 0.0023131675665121485,
+   "fair": 1.0,
+   "oracle_bias_share": 0.029758520346637538,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 57,
+   "eff": 0.9878488204606961,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 8,
+    "x0": 3.0,
+    "n": 57,
+    "notebook": "one run per recipe, eval noise sd 0.0052 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 1.5545090728010789,
+   "B": 1.5545090728010789,
+   "B_lo_red": 1.171217783152798,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 0.34
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 1.55,
+    "shown:notebook_best": 3.43
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.7424199144508128,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 2.084455707770631,
+    "A": 1.5011346079529768,
+    "al": 0.27011867830203223,
+    "D": 0.07985125680344657,
+    "xr": 1.1288287284539855,
+    "s0": 0.01051884946193498,
+    "tau": 0.2092944172828888,
+    "tau2": 0.026453722574035096,
+    "tau_r": 0.0041251874352488125
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 20,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 1.55
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 2.3
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.43
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.9295112910699619,
+    "x0": 1.0728522204349746,
+    "n": 227
+   },
+   "seed": 205761583,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.617649702120986,
+   "T": 0.002617649702120986,
+   "T_hi": 0.002617649702120986,
+   "fair": 1.0,
+   "oracle_bias_share": 0.020818412301099976,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 227,
+   "eff": 0.9920898151730635,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 1,
+    "x0": 1.073,
+    "n": 227,
+    "notebook": "one run per recipe, eval noise sd 0.0126 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.599764567759268,
+   "B": 5.599764567759268,
+   "B_lo_red": 0.7974032867005277,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.05
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.19,
+    "shown:notebook_best": 5.6
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.39996188971855906,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9720728829690468,
+    "A": 1.9694307892700618,
+    "al": 0.4366944479408035,
+    "D": 0.07588848682395075,
+    "xr": 1.159102426109127,
+    "s0": 0.009437280547849133,
+    "tau": 0.11200676011483562,
+    "tau2": 0.04362131302226694,
+    "tau_r": 0.016134948283129148
+   },
+   "probes": 48,
+   "first_cert_probe": 27,
+   "world_idx": 21,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.051,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 5.6
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.19
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 10.09
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 2.714637634576056,
+    "x0": 0.8968120306062067,
+    "n": 80
+   },
+   "seed": 675739311,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.5872582833125057,
+   "T": 0.0025872582833125057,
+   "T_hi": 0.0025872582833125057,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0004704581300936673,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 1.0037030925136932,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 2,
+    "x0": 0.897,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0120 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.902718288090041,
+   "B": 6.902718288090041,
+   "B_lo_red": 2.2773856128826795,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 4.82
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 11.32,
+    "shown:notebook_best": 6.9
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.4638295484189882,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9856515872334801,
+    "A": 1.4953965906849083,
+    "al": 0.41792143442579754,
+    "D": 0.06631546440494315,
+    "xr": 1.4952894045743022,
+    "s0": 0.006008868496481818,
+    "tau": 0.07845805985303712,
+    "tau2": 0.040101865322357794,
+    "tau_r": 0.012903270360264972
+   },
+   "probes": 13,
+   "first_cert_probe": 5,
+   "world_idx": 22,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.227,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.9
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.29
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 11.32
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 2.0087304542939726,
+    "x0": 3.0,
+    "n": 90
+   },
+   "seed": 633669945,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.1614668032162405,
+   "T": 0.0021614668032162404,
+   "T_hi": 0.0021614668032162404,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007749227024674173,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 90,
+   "eff": 0.9698144785707911,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 2,
+    "x0": 3.0,
+    "n": 90,
+    "notebook": "one run per recipe, eval noise sd 0.0075 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 2.321207485172287,
+   "B": 2.321207485172287,
+   "B_lo_red": 0.9545274032320272,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 1.54
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 2.32,
+    "shown:notebook_best": 4.42
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.42846126151896896,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 2.0311932048222925,
+    "A": 1.7202729236464585,
+    "al": 0.3681096842020542,
+    "D": 0.03494847148322629,
+    "xr": 1.4347882778135486,
+    "s0": 0.010516623888317977,
+    "tau": 0.1289295724710358,
+    "tau2": 0.03255903132346635,
+    "tau_r": 0.003802904351352919
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 23,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 2.32
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 2.75
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 4.42
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 2.0,
+    "x0": 2.316270805686799,
+    "n": 80
+   },
+   "seed": 244511905,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R7:menu_mean",
+   "noise_limited": true,
+   "truth": 1.9675345618758293,
+   "T": 0.002516767795956161,
+   "T_hi": 0.0027542724026660805,
+   "fair": 1.0,
+   "oracle_bias_share": 0.01199286803465381,
+   "bias_buy": 1.0035275017265015,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 1.0687575318632054,
+   "T_at_floor": false,
+   "spec": {
+    "G": 8,
+    "selected": 3,
+    "x0": 2.316,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0107 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.016751995760201,
+   "B": 6.584546258989498,
+   "B_lo_red": 3.8726893102504967,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 6.52
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.64,
+    "shown:notebook_best": 8.47
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.7631370073936024,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.826812360775081,
+    "A": 1.7428462944877094,
+    "al": 0.44199901005269737,
+    "D": 0.040415240625101385,
+    "xr": 1.7839814549876212,
+    "s0": 0.011852289987760384,
+    "tau": 0.09811131909603649,
+    "tau2": 0.00889993944405243,
+    "tau_r": 0.011771650380293945
+   },
+   "probes": 13,
+   "first_cert_probe": 3,
+   "world_idx": 24,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 1.002,
+    "s0": 0.002,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 6.58
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.47
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.64
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.5,
+    "x0": 1.9581218612142612,
+    "n": 80
+   },
+   "seed": 169907002,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "R7:top2_mean",
+   "noise_limited": true,
+   "truth": 2.2768356238495393,
+   "T": 0.0023166454197856012,
+   "T_hi": 0.002418914466933528,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0030600166728180058,
+   "bias_buy": 1.0068327241112114,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 0.9744975235631709,
+   "T_at_floor": false,
+   "spec": {
+    "G": 8,
+    "selected": 1,
+    "x0": 1.958,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0086 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 7.1633658530821585,
+   "B": 7.479594911663988,
+   "B_lo_red": 1.2235674835572476,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 5.54
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 15.98,
+    "shown:notebook_best": 7.48
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.2775822583673553,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9618689283146797,
+    "A": 1.231089414825199,
+    "al": 0.27768949755797045,
+    "D": 0.04144720082063849,
+    "xr": 1.7474464970611265,
+    "s0": 0.011241177145296283,
+    "tau": 0.1054140215804289,
+    "tau2": 0.033732245551844495,
+    "tau_r": 0.017707994092983764
+   },
+   "probes": 6,
+   "first_cert_probe": 4,
+   "world_idx": 25,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.386,
+    "s0": 0.271,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.48
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 11.42
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 15.98
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 2.0,
+    "x0": 1.5049551801011218,
+    "n": 80
+   },
+   "seed": 977430752,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": true,
+   "truth": 2.331304857579192,
+   "T": 0.002393598308498235,
+   "T_hi": 0.002578611695294032,
+   "fair": 1.0,
+   "oracle_bias_share": 4.2996136901693e-06,
+   "bias_buy": 1.0000096742243925,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 1.0448528758437228,
+   "T_at_floor": false,
+   "spec": {
+    "G": 6,
+    "selected": 4,
+    "x0": 1.505,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0113 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.5479361673483245,
+   "B": 7.054059455680644,
+   "B_lo_red": 2.170534620177196,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 5.45
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 7.17,
+    "shown:notebook_best": 7.05
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.14470540281345243,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 2.095963051717471,
+    "A": 1.005905931018849,
+    "al": 0.3988653942182228,
+    "D": 0.038882100068889605,
+    "xr": 1.0807031356167927,
+    "s0": 0.009491079616238764,
+    "tau": 0.09181025399450621,
+    "tau2": 0.03609222928510574,
+    "tau_r": 0.017911732338796407
+   },
+   "probes": 4,
+   "first_cert_probe": 4,
+   "world_idx": 26,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.148,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.05
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 7.17
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.1
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 6.0,
+    "x0": 3.0,
+    "n": 85
+   },
+   "seed": 521970655,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.10505077270368,
+   "T": 0.00210505077270368,
+   "T_hi": 0.00210505077270368,
+   "fair": 1.0,
+   "oracle_bias_share": 0.017352454454334143,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 85,
+   "eff": 0.9377266252421583,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 7,
+    "x0": 3.0,
+    "n": 85,
+    "notebook": "one run per recipe, eval noise sd 0.0213 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 1.59686408312336,
+   "B": 1.59686408312336,
+   "B_lo_red": 1.59686408312336,
+   "nearest_red": "R1:incumbent_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 10.46
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 1.6,
+    "shown:notebook_best": 18.96
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.880195860002981,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.7807412744662792,
+    "A": 1.9249223982343562,
+    "al": 0.2593261758426217,
+    "D": 0.060328102848548476,
+    "xr": 1.6644021851180208,
+    "s0": 0.00998274750121276,
+    "tau": 0.1351724139836903,
+    "tau2": 0.025829413560899257,
+    "tau_r": 0.0022145629222265735
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 27,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 1.6
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.47
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 18.96
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.6091223402928496,
+    "x0": 1.3890820911644899,
+    "n": 69
+   },
+   "seed": 821429402,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.2755449045359324,
+   "T": 0.0022755449045359323,
+   "T_hi": 0.0022755449045359323,
+   "fair": 1.0,
+   "oracle_bias_share": 0.002174724737757421,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 69,
+   "eff": 0.9319422422569765,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 1,
+    "x0": 1.389,
+    "n": 69,
+    "notebook": "one run per recipe, eval noise sd 0.0082 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.56959749640837,
+   "B": 4.56959749640837,
+   "B_lo_red": 0.9829339526583074,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.05
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 8.29,
+    "shown:notebook_best": 4.57
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.15258317626739049,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.873224163334367,
+    "A": 1.255442435505914,
+    "al": 0.34145976863382627,
+    "D": 0.06463443403088251,
+    "xr": 1.6731257844184313,
+    "s0": 0.008195006413991783,
+    "tau": 0.1697966351519148,
+    "tau2": 0.023871232752993854,
+    "tau_r": 0.015727345417400264
+   },
+   "probes": 48,
+   "first_cert_probe": 3,
+   "world_idx": 28,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.072,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 4.57
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 4.64
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 8.29
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 2.0,
+    "x0": 1.5538431897955696,
+    "n": 80
+   },
+   "seed": 941501427,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "R7:top2_mean",
+   "noise_limited": true,
+   "truth": 2.1078347025470023,
+   "T": 0.0022473742896522053,
+   "T_hi": 0.0024652259081999173,
+   "fair": 1.0,
+   "oracle_bias_share": 0.027804285944954515,
+   "bias_buy": 1.0072607548162893,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 0.9798722128381806,
+   "T_at_floor": false,
+   "spec": {
+    "G": 6,
+    "selected": 3,
+    "x0": 1.554,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0112 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.140467451872254,
+   "B": 6.735700199345278,
+   "B_lo_red": 0.48851998756048176,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 4.78
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 12.21,
+    "shown:notebook_best": 6.74
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.2606665067839008,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7757818432465644,
+    "A": 1.4243517239909926,
+    "al": 0.3848130293487735,
+    "D": 0.06204480296684262,
+    "xr": 1.4066371950328707,
+    "s0": 0.009601008812215496,
+    "tau": 0.06803719907064948,
+    "tau2": 0.022474483890096264,
+    "tau_r": 0.013963659397637487
+   },
+   "probes": 6,
+   "first_cert_probe": 2,
+   "world_idx": 29,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.475,
+    "s0": 0.264,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.74
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 11.94
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 12.21
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 3.8449978470539783,
+    "x0": 3.0,
+    "n": 147
+   },
+   "seed": 845596634,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.2113009496211578,
+   "T": 0.002211300949621158,
+   "T_hi": 0.002211300949621158,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0011262535898552803,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 147,
+   "eff": 0.973382268442642,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 6,
+    "x0": 3.0,
+    "n": 147,
+    "notebook": "one run per recipe, eval noise sd 0.0115 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 5.67939736366082,
+   "B": 5.67939736366082,
+   "B_lo_red": 1.4052352742963334,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.22
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 5.68,
+    "shown:notebook_best": 6.63
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 1.4052352742963334,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 2.077136557052856,
+    "A": 1.052939669952455,
+    "al": 0.2853015172838237,
+    "D": 0.04398292242868781,
+    "xr": 1.8056620594229233,
+    "s0": 0.008466138810039842,
+    "tau": 0.09919374576661985,
+    "tau2": 0.049704187050901676,
+    "tau_r": 0.007299128221378057
+   },
+   "probes": 48,
+   "first_cert_probe": 14,
+   "world_idx": 30,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.1,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 5.68
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.63
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.78
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.8279714788693027,
+    "x0": 3.0,
+    "n": 240
+   },
+   "seed": 908091940,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.0108336685736923,
+   "T": 0.002010833668573692,
+   "T_hi": 0.002010833668573692,
+   "fair": 1.0,
+   "oracle_bias_share": 0.016750743492973657,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 240,
+   "eff": 0.9765254115006442,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 9,
+    "x0": 3.0,
+    "n": 240,
+    "notebook": "one run per recipe, eval noise sd 0.0052 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.006221606562125,
+   "B": 3.006221606562125,
+   "B_lo_red": 0.31129015124556425,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 0.58
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 7.36,
+    "shown:notebook_best": 3.01
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.12362497506281536,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.9275643122719055,
+    "A": 1.6517733829048225,
+    "al": 0.4088131778058642,
+    "D": 0.03279506934302287,
+    "xr": 1.8441126460788082,
+    "s0": 0.007971876780410751,
+    "tau": 0.19077221971140307,
+    "tau2": 0.044705670268814446,
+    "tau_r": 0.009862308566287134
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 31,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.01
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 6.42
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 7.36
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 4,
+    "r_nb": 3.5577280191727607,
+    "x0": 1.921368576814078,
+    "n": 152
+   },
+   "seed": 881842277,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.270854313159151,
+   "T": 0.002270854313159151,
+   "T_hi": 0.002270854313159151,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005555666959182772,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 152,
+   "eff": 0.979162667766047,
+   "T_at_floor": true,
+   "spec": {
+    "G": 4,
+    "selected": 1,
+    "x0": 1.921,
+    "n": 152,
+    "notebook": "one run per recipe, eval noise sd 0.0160 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.149866772122303,
+   "B": 4.149866772122303,
+   "B_lo_red": 2.9036140644122392,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.34
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 10.65,
+    "shown:notebook_best": 4.15
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.976450889712641,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.8129755256648306,
+    "A": 1.838962708901457,
+    "al": 0.3026358784164347,
+    "D": 0.04916191814873833,
+    "xr": 1.9572594592081498,
+    "s0": 0.008742291957210655,
+    "tau": 0.09475466544557117,
+    "tau2": 0.03335284105140556,
+    "tau_r": 0.015385612970397028
+   },
+   "probes": 48,
+   "first_cert_probe": 35,
+   "world_idx": 32,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.199,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 4.15
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 10.65
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 13.22
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 2.676608457509022,
+    "x0": 1.7560720245615848,
+    "n": 205
+   },
+   "seed": 1046034427,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.313971249472638,
+   "T": 0.002313971249472638,
+   "T_hi": 0.002313971249472638,
+   "fair": 1.0,
+   "oracle_bias_share": 0.00550266138606436,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 205,
+   "eff": 0.9702404201303629,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 15,
+    "x0": 1.756,
+    "n": 205,
+    "notebook": "one run per recipe, eval noise sd 0.0100 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.269144114120491,
+   "B": 3.269144114120491,
+   "B_lo_red": 3.269144114120491,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 6.23
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 10.08,
+    "shown:notebook_best": 3.27
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.19728087132368988,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7753532227441917,
+    "A": 1.631412147345566,
+    "al": 0.2635875729933966,
+    "D": 0.03791200831577489,
+    "xr": 1.346802859455602,
+    "s0": 0.00682490132404104,
+    "tau": 0.12348082338852623,
+    "tau2": 0.005777878334018833,
+    "tau_r": 0.009293147777804425
+   },
+   "probes": 48,
+   "first_cert_probe": 33,
+   "world_idx": 33,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 12.904,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.27
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.76
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 10.08
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 3.221160877399016,
+    "x0": 3.0,
+    "n": 85
+   },
+   "seed": 400948731,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 1.830169004989277,
+   "T": 0.001830169004989277,
+   "T_hi": 0.001830169004989277,
+   "fair": 1.0,
+   "oracle_bias_share": 0.007521241073699408,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 85,
+   "eff": 0.995502244795181,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 7,
+    "x0": 3.0,
+    "n": 85,
+    "notebook": "one run per recipe, eval noise sd 0.0077 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 4.834753357120769,
+   "B": 4.834753357120769,
+   "B_lo_red": 2.116420100843249,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.17
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 4.94,
+    "shown:notebook_best": 6.31
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.10061454416868354,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7060494092046952,
+    "A": 1.2757712810208277,
+    "al": 0.3271415426235344,
+    "D": 0.04772014467475394,
+    "xr": 1.2599412820918265,
+    "s0": 0.006718293616455682,
+    "tau": 0.23786609845558024,
+    "tau2": 0.031979919498066285,
+    "tau_r": 0.00635103942160004
+   },
+   "probes": 48,
+   "first_cert_probe": 13,
+   "world_idx": 34,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.189,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 4.83
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 4.94
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.31
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 2.8375218175268753,
+    "x0": 1.8107909010619139,
+    "n": 182
+   },
+   "seed": 393312966,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.2894718035438317,
+   "T": 0.0022894718035438317,
+   "T_hi": 0.0022894718035438317,
+   "fair": 1.0,
+   "oracle_bias_share": 0.009467737189908168,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 182,
+   "eff": 1.0442437894347538,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 3,
+    "x0": 1.811,
+    "n": 182,
+    "notebook": "one run per recipe, eval noise sd 0.0141 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.318071167366091,
+   "B": 4.318071167366091,
+   "B_lo_red": 2.7288961471903987,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.56
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 4.32,
+    "shown:notebook_best": 8.89
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.4240992652499795,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.951793604680825,
+    "A": 1.318641326113152,
+    "al": 0.3198003254458959,
+    "D": 0.07144722917571042,
+    "xr": 1.0996242247791421,
+    "s0": 0.009291279084041091,
+    "tau": 0.15623043140918458,
+    "tau2": 0.029992844820574335,
+    "tau_r": 0.013235232499932538
+   },
+   "probes": 48,
+   "first_cert_probe": 4,
+   "world_idx": 35,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.176,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 4.32
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 4.86
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.89
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 4.726748750394923,
+    "x0": 1.416674361229902,
+    "n": 400
+   },
+   "seed": 464050166,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R7:menu_mean",
+   "noise_limited": false,
+   "truth": 2.268092318326045,
+   "T": 0.002268092318326045,
+   "T_hi": 0.002268092318326045,
+   "fair": 1.0,
+   "oracle_bias_share": 0.02149729942092587,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 0.9854143994543153,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 0,
+    "x0": 1.417,
+    "n": 400,
+    "notebook": "one run per recipe, eval noise sd 0.0284 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.714421042840352,
+   "B": 2.714421042840352,
+   "B_lo_red": 2.714421042840352,
+   "nearest_red": "R7:menu_mean",
+   "census": {
+    "numerical": [
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 2
+   },
+   "free_over_T": {
+    "free:james_stein": 2.71
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 0.0,
+    "shown:notebook_best": 7.54
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.940341337415531,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.9227178790846022,
+    "A": 1.133484414187504,
+    "al": 0.3643218047361664,
+    "D": 0.0597338923281672,
+    "xr": 1.1199996544334816,
+    "s0": 0.009810077562648206,
+    "tau": 0.11251893450953407,
+    "tau2": 0.03365370807464727,
+    "tau_r": 0.0022793398977772952
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 36,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 2.71
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 7.54
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 4.68915038200759,
+    "x0": 2.213247864398228,
+    "n": 400
+   },
+   "seed": 9985877,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.2724865749112357,
+   "T": 0.0022724865749112356,
+   "T_hi": 0.0022724865749112356,
+   "fair": 1.0,
+   "oracle_bias_share": 0.010614112747766974,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 400,
+   "eff": 1.0179006032065732,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 7,
+    "x0": 2.213,
+    "n": 400,
+    "notebook": "one run per recipe, eval noise sd 0.0231 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 3.6332430880238658,
+   "B": 3.6332430880238658,
+   "B_lo_red": 3.6332430880238658,
+   "nearest_red": "R1:incumbent_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.65
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 3.63,
+    "shown:notebook_best": 20.66
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.012385068845362696,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.950870448250369,
+    "A": 1.8977554908620422,
+    "al": 0.35341600133410933,
+    "D": 0.04886570352193495,
+    "xr": 1.204053168915092,
+    "s0": 0.010564217297220912,
+    "tau": 0.24936592439202354,
+    "tau2": 0.045414590947139746,
+    "tau_r": 0.008016046269922748
+   },
+   "probes": 48,
+   "first_cert_probe": 48,
+   "world_idx": 37,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.816,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x4.7",
+    "n=400 runs"
+   ],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 3.63
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 3.65
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 20.66
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 1.7134271929910405,
+    "x0": 2.2649589999747732,
+    "n": 48
+   },
+   "seed": 599828384,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": false,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G7_free",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.058306165543754,
+   "T": 0.002058306165543754,
+   "T_hi": 0.002058306165543754,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0035726756030557915,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 48,
+   "eff": 0.9994651800565784,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 4,
+    "x0": 2.265,
+    "n": 48,
+    "notebook": "one run per recipe, eval noise sd 0.0057 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.234940237078685,
+   "B": 4.234940237078685,
+   "B_lo_red": 0.0011117619497876938,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 1.78
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.87,
+    "shown:notebook_best": 4.23
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.0011117619497876938,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.8267494615416968,
+    "A": 1.1033604809137871,
+    "al": 0.28324985561755506,
+    "D": 0.06326869941792727,
+    "xr": 1.6135649825798752,
+    "s0": 0.007271810559501289,
+    "tau": 0.24937905391808754,
+    "tau2": 0.04177948482176715,
+    "tau_r": 0.0072087404376649095
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 38,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 4.23
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 9.16
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.87
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 6,
+    "r_nb": 1.3416368897739184,
+    "x0": 2.7872449536966197,
+    "n": 110
+   },
+   "seed": 1059517905,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 1.9018370729771694,
+   "T": 0.0019018370729771694,
+   "T_hi": 0.0019018370729771694,
+   "fair": 1.0,
+   "oracle_bias_share": 0.002065971580780079,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 110,
+   "eff": 0.975222331200607,
+   "T_at_floor": true,
+   "spec": {
+    "G": 6,
+    "selected": 5,
+    "x0": 2.787,
+    "n": 110,
+    "notebook": "one run per recipe, eval noise sd 0.0060 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 6.723598747637167,
+   "B": 6.723598747637167,
+   "B_lo_red": 6.723598747637167,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 7.63
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 9.33,
+    "shown:notebook_best": 6.72
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.43017214105812723,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.8298789603240952,
+    "A": 1.17440996931688,
+    "al": 0.4007448482523992,
+    "D": 0.0380351318259778,
+    "xr": 1.7255439561644499,
+    "s0": 0.011761200895400201,
+    "tau": 0.23002304428815878,
+    "tau2": 0.039773523321075095,
+    "tau_r": 0.006856851087240436
+   },
+   "probes": 39,
+   "first_cert_probe": 28,
+   "world_idx": 39,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.343,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 6.72
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 9.33
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 11.93
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.469508882711236,
+    "x0": 1.9404617577857939,
+    "n": 90
+   },
+   "seed": 416319474,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.052765437969613,
+   "T": 0.002052765437969613,
+   "T_hi": 0.002052765437969613,
+   "fair": 1.0,
+   "oracle_bias_share": 0.03434274924052323,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 90,
+   "eff": 0.9712941433902554,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 4,
+    "x0": 1.94,
+    "n": 90,
+    "notebook": "one run per recipe, eval noise sd 0.0062 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.7376927257585177,
+   "B": 2.7376927257585177,
+   "B_lo_red": 2.7376927257585177,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 5.13
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 4.08,
+    "shown:notebook_best": 2.74
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.13289096838202505,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.761437341223117,
+    "A": 1.468726661228522,
+    "al": 0.35571209527386827,
+    "D": 0.03998126112591635,
+    "xr": 1.0243175375218874,
+    "s0": 0.008302611682689504,
+    "tau": 0.10234407299941421,
+    "tau2": 0.012240922122574572,
+    "tau_r": 0.003883006700570027
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 40,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 2.74
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 4.08
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.43
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 2.495360589418838,
+    "x0": 1.572853951682684,
+    "n": 70
+   },
+   "seed": 268385291,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R7:menu_mean",
+   "noise_limited": false,
+   "truth": 2.1982658846407572,
+   "T": 0.0021982658846407574,
+   "T_hi": 0.0021982658846407574,
+   "fair": 1.0,
+   "oracle_bias_share": 0.004935378746748367,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 70,
+   "eff": 0.9835036860473599,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 12,
+    "x0": 1.573,
+    "n": 70,
+    "notebook": "one run per recipe, eval noise sd 0.0107 (stated)"
+   },
+   "clauses_added": [
+    "the true value of the recipe the notebook selected, not of the best recipe on the menu"
+   ],
+   "B_lo": 6.573925860905295,
+   "B": 6.573925860905295,
+   "B_lo_red": 3.7375784971368016,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 4.55
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 7.27,
+    "shown:notebook_best": 8.62
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.3108244046034768,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7425571316422848,
+    "A": 1.9388902731420719,
+    "al": 0.39031067816294096,
+    "D": 0.031484766458474325,
+    "xr": 1.2478100108460217,
+    "s0": 0.00740227486884526,
+    "tau": 0.08359076138006248,
+    "tau2": 0.01529942047773037,
+    "tau_r": 0.01829637299890969
+   },
+   "probes": 39,
+   "first_cert_probe": 13,
+   "world_idx": 41,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.709,
+    "s0": 0.052,
+    "E": 0.0,
+    "A": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R7:menu_mean",
+     "over_T": 6.57
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 7.27
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.62
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 2.0,
+    "x0": 1.982498302720499,
+    "n": 80
+   },
+   "seed": 544013656,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.132436894086523,
+   "T": 0.002132436894086523,
+   "T_hi": 0.002132436894086523,
+   "fair": 1.0,
+   "oracle_bias_share": 0.02460625595000878,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 80,
+   "eff": 0.9701422033284471,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 5,
+    "x0": 1.982,
+    "n": 80,
+    "notebook": "one run per recipe, eval noise sd 0.0094 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 8.087580699892671,
+   "B": 8.087580699892671,
+   "B_lo_red": 3.4573113302263034,
+   "nearest_red": "R7:top2_mean",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.47
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 11.83,
+    "shown:notebook_best": 8.09
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.22192679054020373,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9718341871663698,
+    "A": 1.076816781737918,
+    "al": 0.3848893365506555,
+    "D": 0.0386870017192746,
+    "xr": 1.99799928521252,
+    "s0": 0.009321724736653197,
+    "tau": 0.21242163613963197,
+    "tau2": 0.036969311732480234,
+    "tau_r": 0.01664170486273754
+   },
+   "probes": 5,
+   "first_cert_probe": 2,
+   "world_idx": 42,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.521,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 8.09
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 10.1
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 11.83
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 12,
+    "r_nb": 3.4057728563351564,
+    "x0": 1.1575965532990633,
+    "n": 165
+   },
+   "seed": 742661376,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.209225571919325,
+   "T": 0.002209225571919325,
+   "T_hi": 0.002209225571919325,
+   "fair": 1.0,
+   "oracle_bias_share": 0.010687813894487998,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 165,
+   "eff": 0.9596723229673989,
+   "T_at_floor": true,
+   "spec": {
+    "G": 12,
+    "selected": 2,
+    "x0": 1.158,
+    "n": 165,
+    "notebook": "one run per recipe, eval noise sd 0.0217 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 7.0810931812477875,
+   "B": 7.0810931812477875,
+   "B_lo_red": 0.7845827116796799,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 7.26
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 7.08,
+    "shown:notebook_best": 9.02
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.7845827116796799,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.7439340403765353,
+    "A": 1.210701855953911,
+    "al": 0.3463647027586075,
+    "D": 0.04933946356964439,
+    "xr": 1.524347952968837,
+    "s0": 0.009483135603988165,
+    "tau": 0.06827678491899294,
+    "tau2": 0.03876386428148457,
+    "tau_r": 0.010477594540288585
+   },
+   "probes": 48,
+   "first_cert_probe": 44,
+   "world_idx": 43,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.05,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 7.08
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 8.44
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 9.02
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 1.82586145650745,
+    "x0": 3.0,
+    "n": 301
+   },
+   "seed": 688592355,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": false,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G5_B",
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.0917845783377818,
+   "T": 0.002091784578337782,
+   "T_hi": 0.002091784578337782,
+   "fair": 1.0,
+   "oracle_bias_share": 0.004074350304571856,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 301,
+   "eff": 0.9781149152889392,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 4,
+    "x0": 3.0,
+    "n": 301,
+    "notebook": "one run per recipe, eval noise sd 0.0050 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 2.1329665701270946,
+   "B": 2.1329665701270946,
+   "B_lo_red": 1.1723847989567757,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 2.15
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 2.13,
+    "shown:notebook_best": 3.54
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.5216732764184162,
+   "certified": false,
+   "certified_without_redteam": false,
+   "world": {
+    "E": 1.998347443267755,
+    "A": 1.9350814513252463,
+    "al": 0.4319738989444876,
+    "D": 0.03840756370088752,
+    "xr": 1.935977004712099,
+    "s0": 0.007659609350714999,
+    "tau": 0.1379255720056039,
+    "tau2": 0.03401890709877406,
+    "tau_r": 0.008553824467295735
+   },
+   "probes": 48,
+   "first_cert_probe": null,
+   "world_idx": 44,
+   "tier": 1,
+   "tier_cert": false,
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 2.13
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 2.83
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.54
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 16,
+    "r_nb": 1.1620664468667685,
+    "x0": 1.7845294539751304,
+    "n": 127
+   },
+   "seed": 146517772,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "B_guess:notebook_value",
+   "noise_limited": false,
+   "truth": 2.2529002927984703,
+   "T": 0.0022529002927984703,
+   "T_hi": 0.0022529002927984703,
+   "fair": 1.0,
+   "oracle_bias_share": 0.0033800612985601703,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 127,
+   "eff": 1.0280143169685443,
+   "T_at_floor": true,
+   "spec": {
+    "G": 16,
+    "selected": 14,
+    "x0": 1.785,
+    "n": 127,
+    "notebook": "one run per recipe, eval noise sd 0.0065 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 3.313333347422021,
+   "B": 3.313333347422021,
+   "B_lo_red": 3.313333347422021,
+   "nearest_red": "B_guess:notebook_value",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 6.99
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 8.07,
+    "shown:notebook_best": 3.31
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.3342374732477708,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9963959767785615,
+    "A": 1.533779017944886,
+    "al": 0.4185623125513195,
+    "D": 0.05061532575868295,
+    "xr": 1.8984719934359462,
+    "s0": 0.010312168863751105,
+    "tau": 0.10523593915851204,
+    "tau2": 0.028677057448419082,
+    "tau_r": 0.008348168523611461
+   },
+   "probes": 48,
+   "first_cert_probe": 20,
+   "world_idx": 45,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.193,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 3.31
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 7.42
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 8.07
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 6.0,
+    "x0": 2.8121933559949452,
+    "n": 73
+   },
+   "seed": 557069039,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": true
+   },
+   "first_fail": null,
+   "nearest": "R1:incumbent_value",
+   "noise_limited": false,
+   "truth": 2.023939658801646,
+   "T": 0.0020239396588016463,
+   "T_hi": 0.0020239396588016463,
+   "fair": 1.0,
+   "oracle_bias_share": 0.005300498709173037,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 73,
+   "eff": 1.0351483185136336,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 4,
+    "x0": 2.812,
+    "n": 73,
+    "notebook": "one run per recipe, eval noise sd 0.0176 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.7740320530723475,
+   "B": 4.7740320530723475,
+   "B_lo_red": 3.622139993978341,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 3.28
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 4.77,
+    "shown:notebook_best": 5.05
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 0.4736932111745181,
+   "certified": true,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 1.9221370219939147,
+    "A": 1.1819720938791134,
+    "al": 0.36465086619575426,
+    "D": 0.04413886219946635,
+    "xr": 1.265044658662387,
+    "s0": 0.007726440351632996,
+    "tau": 0.18110539260715952,
+    "tau2": 0.018131784636366,
+    "tau_r": 0.011306016595606507
+   },
+   "probes": 48,
+   "first_cert_probe": 17,
+   "world_idx": 46,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "tau_r",
+   "driver_class": "stat",
+   "driver_sens": {
+    "tau_r": 0.76,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [
+    "notebook noise x6.0"
+   ],
+   "table": [
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 4.77
+    },
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 5.05
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 6.28
+    }
+   ]
+  },
+  {
+   "card": "K1_compute",
+   "tpl": "M3",
+   "design": {
+    "G": 8,
+    "r_nb": 2.4503528027336516,
+    "x0": 1.4101740289039002,
+    "n": 275
+   },
+   "seed": 979971215,
+   "gates": {
+    "G0_build": true,
+    "G1_budget": true,
+    "G2_fair": true,
+    "G3_oracle_bias": true,
+    "G4_tight": true,
+    "G5_B": true,
+    "G6_kappa": true,
+    "G7_free": true,
+    "G8_census": true,
+    "G9_redteam": false
+   },
+   "first_fail": "G9_redteam",
+   "nearest": "B_guess:notebook_plus_1se",
+   "noise_limited": false,
+   "truth": 2.5392959768609598,
+   "T": 0.0025392959768609598,
+   "T_hi": 0.0025392959768609598,
+   "fair": 1.0,
+   "oracle_bias_share": 0.016575267714907388,
+   "bias_buy": 1.0,
+   "frac_unidentified": 0.0,
+   "kappa": 1.0,
+   "n": 275,
+   "eff": 0.9771074432267609,
+   "T_at_floor": true,
+   "spec": {
+    "G": 8,
+    "selected": 6,
+    "x0": 1.41,
+    "n": 275,
+    "notebook": "one run per recipe, eval noise sd 0.0179 (stated)"
+   },
+   "clauses_added": [],
+   "B_lo": 4.89999376034341,
+   "B": 4.89999376034341,
+   "B_lo_red": 2.1651188362773226,
+   "nearest_red": "B_guess:notebook_plus_1se",
+   "census": {
+    "numerical": [
+     "R1",
+     "R7"
+    ],
+    "structural": [
+     "B_guess"
+    ],
+    "n_families": 3
+   },
+   "free_over_T": {
+    "free:james_stein": 4.48
+   },
+   "shown_over_T": {
+    "shown:incumbent_published": 10.32,
+    "shown:notebook_best": 4.9
+   },
+   "valid_over_T": {},
+   "min_route_sep_over_T": 2.0968895044046207,
+   "certified": false,
+   "certified_without_redteam": true,
+   "world": {
+    "E": 2.089176039500154,
+    "A": 1.1096648528032391,
+    "al": 0.26045355090844335,
+    "D": 0.07700263923487899,
+    "xr": 1.6794477233529013,
+    "s0": 0.011915983625813819,
+    "tau": 0.14790209804680676,
+    "tau2": 0.03154873596860216,
+    "tau_r": 0.014726946844995528
+   },
+   "probes": 48,
+   "first_cert_probe": 21,
+   "world_idx": 47,
+   "tier": 1,
+   "tier_cert": true,
+   "driver_key": "s0",
+   "driver_class": "stat",
+   "driver_sens": {
+    "s0": 0.109,
+    "E": 0.0,
+    "A": 0.0,
+    "al": 0.0
+   },
+   "realism_flags": [],
+   "table": [
+    {
+     "route": "B_guess:notebook_value",
+     "over_T": 4.9
+    },
+    {
+     "route": "R7:menu_mean",
+     "over_T": 5.01
+    },
+    {
+     "route": "R1:incumbent_value",
+     "over_T": 10.32
+    }
+   ]
+  }
+ ],
+ "trace": []
+}

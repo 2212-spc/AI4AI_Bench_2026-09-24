@@ -1,0 +1,13 @@
+[task]
+name = "ja_L1_s1"
+module = "judge_audit"
+seed = 1
+
+[verifier]
+artifacts = ["answers.md", "report.md"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 500
+unit = "credits"

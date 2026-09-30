@@ -1,0 +1,53 @@
+{
+ "pass": false,
+ "score": 0.6263,
+ "items": {
+  "R0_artifact": {
+   "ok": true,
+   "detail": "config.json is valid (n in the allowed set, eta in range, interval width <= 0.20)"
+  },
+  "R1_config_quality": {
+   "ok": false,
+   "detail": "your run scores 3.7483, the best reachable is 3.0035 -> regret 0.7448, tolerance 0.0600"
+  },
+  "R2_forecast_covers": {
+   "ok": true,
+   "detail": "your interval [3.6000, 3.8000] contains the value of your own run (3.7483)"
+  }
+ },
+ "diag": {
+  "n": 512,
+  "steps": 3840000.0,
+  "eta": 0.006,
+  "rho": 0.719,
+  "p_diverge": 0.0276,
+  "forecast_center_err": -0.0483,
+  "interval_width": 0.2,
+  "n_train": 27,
+  "n_diverged_probes": 7,
+  "max_width_probed": 8192,
+  "distinct_widths": 6
+ },
+ "ref": {
+  "gap": 4.9965,
+  "tol": 0.06,
+  "n_opt": 2048,
+  "q": 1.3929,
+  "L_opt": 3.0035,
+  "L_q1": 4.9965,
+  "L_qhalf": 4.9965,
+  "L_small": 0.2015,
+  "L_big": 1.3714,
+  "L_transplant": 4.9965
+ },
+ "run": "k3v1__haiku45__r1",
+ "task": "k3-edge-v1",
+ "model": "claude-haiku-4-5-20251001",
+ "hint": 0,
+ "lab_calls": 27,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 0.9,
+ "api_errors": 0,
+ "truncated": false
+}

@@ -1,0 +1,66 @@
+{
+ "pass": false,
+ "score": 0.5,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "answers.md is well-formed"
+  },
+  "R1_pass_B": {
+   "ok": false,
+   "detail": "Q1 you 0.7410, truth 0.7633 (tolerance 0.02)"
+  },
+  "R2_diff": {
+   "ok": false,
+   "detail": "Q2 you +0.0130, truth +0.0367 (tolerance 0.02)"
+  },
+  "R3_decision": {
+   "ok": true,
+   "detail": "Q3 you SHIP, truth SHIP"
+  }
+ },
+ "diag": {
+  "answer": {
+   "Q1": 0.741,
+   "Q2": 0.013,
+   "Q3": "SHIP"
+  },
+  "instrument_estimates": {
+   "judge_only": [
+    0.845,
+    0.1367
+   ],
+   "review_all": [
+    0.8417,
+    0.1183
+   ]
+  },
+  "closest": "truth",
+  "spent_by_op": {
+   "review": 120.0,
+   "verify": 380.0
+  },
+  "verify_n": {
+   "A": 60,
+   "B": 130
+  },
+  "verify_B_median_len": 794.5,
+  "pool_B_median_len": 627.0
+ },
+ "ref": {
+  "pass_A": 0.7266666666666667,
+  "pass_B": 0.7633333333333333,
+  "D": 0.036666666666666625,
+  "decision": "SHIP"
+ },
+ "run": "ja_L1_s0_gpt6",
+ "task": "ja_L1_s0",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 6,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 29.0,
+ "api_errors": 3,
+ "truncated": false
+}

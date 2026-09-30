@@ -1,0 +1,70 @@
+{
+ "task": "judge_audit",
+ "seed": 0,
+ "params": {
+  "seed": 0,
+  "k": 0,
+  "wseed": 141621774,
+  "L0": 1000.0
+ },
+ "salt": "80981c2d65e758ba428ac7b0",
+ "budget": 500.0,
+ "truth": {
+  "truth": {
+   "pass_A": 0.7266666666666667,
+   "pass_B": 0.7633333333333333,
+   "D": 0.036666666666666625,
+   "decision": "SHIP"
+  },
+  "policies": {
+   "judge_only": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.0817,
+    "bias_q2": 0.1,
+    "sd_q2": 0.0
+   },
+   "review_all": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.0783,
+    "bias_q2": 0.0817,
+    "sd_q2": 0.0
+   },
+   "crowd5_majority": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.0775,
+    "bias_q2": 0.0778,
+    "sd_q2": 0.0102
+   },
+   "judge_corrected_by_review": {
+    "pass_rate": 0.0,
+    "bias_q1": 0.0782,
+    "bias_q2": 0.0818,
+    "sd_q2": 0.0064
+   },
+   "info_ppi_random": {
+    "pass_rate": 0.58,
+    "bias_q1": -0.0005,
+    "bias_q2": -0.0006,
+    "sd_q2": 0.0252
+   },
+   "info_ppi_random_B_only": {
+    "pass_rate": 0.71,
+    "bias_q1": -0.0013,
+    "bias_q2": 0.0021,
+    "sd_q2": 0.0171
+   },
+   "reference": {
+    "pass_rate": 1.0,
+    "bias_q1": 0.0047,
+    "bias_q2": 0.008,
+    "sd_q2": 0.0009
+   }
+  },
+  "decoys": [
+   "judge_only",
+   "review_all",
+   "crowd5_majority",
+   "judge_corrected_by_review"
+  ]
+ }
+}

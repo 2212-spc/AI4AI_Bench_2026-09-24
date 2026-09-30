@@ -1,0 +1,13 @@
+[task]
+name = "k1-judge-b1"
+module = "k1_judge"
+seed = 5
+
+[verifier]
+artifacts = ["estimator.py"]
+grader = "python3 -m l15.grade <run_dir>"
+main_score = "pass = all rubric items R* true (mechanical, against the simulator)"
+
+[lab]
+budget = 220
+unit = "human annotations"

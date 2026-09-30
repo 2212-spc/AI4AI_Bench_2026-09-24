@@ -1,0 +1,759 @@
+{
+ "gates": {
+  "G1_solvable": {
+   "pass": true,
+   "ver_allpass": 1.0,
+   "min_item_pass": 1.0,
+   "shipped_oracle_all_pass": true
+  },
+  "G2_kill_matrix": {
+   "pass": true,
+   "unkilled_must_kill": []
+  },
+  "G3_set_width": {
+   "pass": true,
+   "narrow": []
+  },
+  "G4_identifiability": {
+   "pass": true,
+   "certs": [
+    {
+     "param": "gB",
+     "range": [
+      0.0,
+      0.5
+     ],
+     "n_requests": 1525,
+     "n_differing": 0,
+     "zero_footprint": true
+    }
+   ]
+  },
+  "G5_replay": {
+   "n_rows": 25,
+   "n_mismatch": 0,
+   "pass": true
+  },
+  "G6_leakage": {
+   "hits": [],
+   "pass": true
+  },
+  "G7_key_types": {
+   "pass": true,
+   "kinds": [
+    "decision",
+    "point",
+    "set",
+    "verdict"
+   ],
+   "has_ignorance_item": true
+  },
+  "G8_decision_gap": {
+   "pass": true,
+   "gaps": [
+    [
+     "q7",
+     0.0065126243921053
+    ]
+   ]
+  },
+  "G9_load_bearing": {
+   "pass": true,
+   "cards": {
+    "C1": "killed by drop:C1:textbook",
+    "C2": "killed by drop:C2:gD,drop:C2:gN",
+    "C10": "exempt: noise card: shapes tolerances, not answers (declared exemption)"
+   }
+  },
+  "G10_item_useful": {
+   "pass": true,
+   "note": "informational: which rivals each item kills with margin",
+   "free_items": [],
+   "item_kills": {
+    "q1": [
+     "B0_textbook",
+     "drop:C2:gD",
+     "drop:C2:gN",
+     "drop:C1:textbook",
+     "widen_points"
+    ],
+    "q2": [
+     "B0_textbook",
+     "B1_notebook_naive",
+     "B5_notebook_horizon_only",
+     "drop:C2:gD",
+     "drop:C2:gN",
+     "drop:C1:textbook",
+     "widen_points"
+    ],
+    "q3": [
+     "B0_textbook",
+     "B1_notebook_naive",
+     "B5_notebook_horizon_only",
+     "drop:C1:textbook",
+     "widen_points"
+    ],
+    "q4": [
+     "B0_textbook",
+     "B1_notebook_naive",
+     "B5_notebook_horizon_only",
+     "drop:C2:gD",
+     "drop:C2:gN",
+     "drop:C1:textbook",
+     "collapse_sets"
+    ],
+    "q5": [
+     "B1_notebook_naive"
+    ],
+    "q6": [
+     "B0_textbook",
+     "B1_notebook_naive",
+     "drop:C2:gD",
+     "drop:C1:textbook"
+    ],
+    "q7": [
+     "B0_textbook",
+     "B2_notebook_allcards",
+     "B5_notebook_horizon_only",
+     "drop:C2:gD",
+     "drop:C1:textbook"
+    ],
+    "q8": [
+     "B0_textbook",
+     "B1_notebook_naive",
+     "B4_more_diagonal",
+     "drop:C1:textbook",
+     "widen_points"
+    ]
+   }
+  }
+ },
+ "ok": true,
+ "kill_matrix": {
+  "B0_textbook": {
+   "score": 0.125,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q6",
+    "q7",
+    "q8"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 10.59
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.36
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 2.54
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 7.36
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": false,
+     "answer": "undetermined"
+    },
+    "q7": {
+     "pass": false,
+     "answer": "D"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 7.51
+    }
+   }
+  },
+  "B1_notebook_naive": {
+   "score": 0.25,
+   "killed": true,
+   "margin_items": [
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6",
+    "q8"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.16
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 7.9
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 2.46
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 7.9
+    },
+    "q5": {
+     "pass": false,
+     "answer": "supported"
+    },
+    "q6": {
+     "pass": false,
+     "answer": "undetermined"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 5.16
+    }
+   }
+  },
+  "B2_notebook_allcards": {
+   "score": 0.375,
+   "killed": true,
+   "margin_items": [
+    "q7"
+   ],
+   "killed_with_margin": true,
+   "must_kill": false,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.16
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 1.21
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 1.11
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 1.21
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": false,
+     "answer": "B"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 1.05
+    }
+   }
+  },
+  "B5_notebook_horizon_only": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q2",
+    "q3",
+    "q4",
+    "q7"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.16
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 2.98
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 3.24
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 2.98
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": false,
+     "answer": "B"
+    },
+    "q8": {
+     "pass": true,
+     "err_over_T": 0.87
+    }
+   }
+  },
+  "B3_random_design": {
+   "score": 1.0,
+   "killed": false,
+   "margin_items": [],
+   "killed_with_margin": false,
+   "must_kill": false,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.25
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.25
+    },
+    "q3": {
+     "pass": true,
+     "err_over_T": 0.24
+    },
+    "q4": {
+     "pass": true,
+     "err_over_T": 0.25
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": true,
+     "err_over_T": 0.22
+    }
+   }
+  },
+  "B4_more_diagonal": {
+   "score": 0.625,
+   "killed": true,
+   "margin_items": [
+    "q8"
+   ],
+   "killed_with_margin": true,
+   "must_kill": false,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.27
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 1.13
+    },
+    "q3": {
+     "pass": true,
+     "err_over_T": 0.96
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 1.13
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 6.29
+    }
+   }
+  },
+  "drop:C2:gD": {
+   "score": 0.25,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2",
+    "q4",
+    "q6",
+    "q7"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 6.67
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 11.8
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 1.77
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 11.8
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": false,
+     "answer": "undetermined"
+    },
+    "q7": {
+     "pass": false,
+     "answer": "D"
+    },
+    "q8": {
+     "pass": true,
+     "err_over_T": 0.13
+    }
+   }
+  },
+  "drop:C2:gN": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2",
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.78
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 2.63
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 1.88
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 2.63
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": true,
+     "err_over_T": 0.09
+    }
+   }
+  },
+  "drop:C1:textbook": {
+   "score": 0.125,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q6",
+    "q7",
+    "q8"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 6.0
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 8.6
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 2.13
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 8.6
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": false,
+     "answer": "undetermined"
+    },
+    "q7": {
+     "pass": false,
+     "answer": "D"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 7.51
+    }
+   }
+  },
+  "collapse_sets": {
+   "score": 0.875,
+   "killed": true,
+   "margin_items": [
+    "q4"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": true,
+     "err_over_T": 0.19
+    },
+    "q2": {
+     "pass": true,
+     "err_over_T": 0.34
+    },
+    "q3": {
+     "pass": true,
+     "err_over_T": 0.36
+    },
+    "q4": {
+     "pass": false,
+     "err_over_T": 4.86
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": true,
+     "err_over_T": 0.11
+    }
+   }
+  },
+  "widen_points": {
+   "score": 0.5,
+   "killed": true,
+   "margin_items": [
+    "q1",
+    "q2",
+    "q3",
+    "q8"
+   ],
+   "killed_with_margin": true,
+   "must_kill": true,
+   "items": {
+    "q1": {
+     "pass": false,
+     "err_over_T": 3.19
+    },
+    "q2": {
+     "pass": false,
+     "err_over_T": 3.34
+    },
+    "q3": {
+     "pass": false,
+     "err_over_T": 3.36
+    },
+    "q4": {
+     "pass": true,
+     "err_over_T": 0.34
+    },
+    "q5": {
+     "pass": true,
+     "answer": "refuted"
+    },
+    "q6": {
+     "pass": true,
+     "answer": "supported"
+    },
+    "q7": {
+     "pass": true,
+     "answer": "C"
+    },
+    "q8": {
+     "pass": false,
+     "err_over_T": 3.11
+    }
+   }
+  }
+ },
+ "calibration": {
+  "tol": {
+   "q1": 0.03,
+   "q2": 0.04996931162032936,
+   "q3": 0.021648500855863586,
+   "q4": 0.04996931162033036,
+   "q8": 0.04139155907849368
+  },
+  "cal_errs": {
+   "q1": [
+    0.010815942659242683,
+    0.005501435301338731,
+    0.007056177004751252,
+    0.0044677621666355805,
+    0.00671799856876687,
+    0.007428962030440633,
+    0.008058935194921624,
+    0.010415679577915338,
+    0.005370473037970225,
+    0.006350606859416352
+   ],
+   "q2": [
+    0.022208582942368604,
+    0.019768409622924477,
+    0.019518701996896315,
+    0.021482421917355943,
+    0.017940814851225007,
+    0.014697009564458519,
+    0.019753806631563897,
+    0.023824560611548584,
+    0.014414562510346673,
+    0.0215372588034084
+   ],
+   "q3": [
+    0.008550014964493056,
+    0.008790499489798292,
+    0.008267482789596124,
+    0.009621555935939372,
+    0.007822698558540862,
+    0.006611336215493729,
+    0.008493184174798392,
+    0.010073503074433963,
+    0.007059360939741251,
+    0.009010668550137935
+   ],
+   "q4": [
+    0.02220858294236905,
+    0.01976840962292492,
+    0.01951870199689676,
+    0.021482421917356387,
+    0.01794081485122545,
+    0.014697009564458519,
+    0.01975380663156434,
+    0.02382456061154903,
+    0.014414562510346673,
+    0.021537258803408843
+   ],
+   "q5": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q6": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q7": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "q8": [
+    0.018396248479330524,
+    0.004006261333499683,
+    0.016733533988861904,
+    0.011344043806429394,
+    0.003927929819257159,
+    0.017332881166852054,
+    0.0021498968501894034,
+    0.024798681738336104,
+    0.005378036742120784,
+    0.01455327734055345
+   ]
+  },
+  "ver_pass": {
+   "q1": 1.0,
+   "q2": 1.0,
+   "q3": 1.0,
+   "q4": 1.0,
+   "q5": 1.0,
+   "q6": 1.0,
+   "q7": 1.0,
+   "q8": 1.0
+  },
+  "ver_allpass": 1.0,
+  "oracle_usage": {
+   "flops_used": 1.1232e+20,
+   "flops_left": 7.68e+18,
+   "runs_used": 27,
+   "runs_left": 13,
+   "run_flops_cap": 6e+18
+  }
+ }
+}

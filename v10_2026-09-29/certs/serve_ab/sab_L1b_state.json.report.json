@@ -1,0 +1,818 @@
+{
+ "family": "serve_ab",
+ "n_candidates": 16,
+ "n_screened": 16,
+ "n_strategy_gate_clean": 15,
+ "n_strategy_gate_run": 16,
+ "strategy_gate_rejected": {
+  "10": [
+   "oracle"
+  ]
+ },
+ "admitted": [
+  1,
+  3,
+  4,
+  8,
+  9,
+  12,
+  13,
+  15
+ ],
+ "pool_gate": {
+  "n": 8,
+  "quota_counts": {
+   "24": 3,
+   "16": 3,
+   "20": 1,
+   "32": 1
+  }
+ },
+ "p_ablation": {
+  "1": {
+   "seed": 1,
+   "screen_ok": true,
+   "principles": {
+    "P1_ab_nets_out_shared_cost": {
+     "strategy": "ship_all",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule",
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_guardrail_test_is_masked": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_overload_priced_by_patience": {
+     "strategy": "loss_no_drill",
+     "items_declared": true,
+     "protects": [
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "3": {
+   "seed": 3,
+   "screen_ok": true,
+   "principles": {
+    "P1_ab_nets_out_shared_cost": {
+     "strategy": "ship_all",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule",
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_guardrail_test_is_masked": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_overload_priced_by_patience": {
+     "strategy": "loss_no_drill",
+     "items_declared": true,
+     "protects": [
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "4": {
+   "seed": 4,
+   "screen_ok": true,
+   "principles": {
+    "P1_ab_nets_out_shared_cost": {
+     "strategy": "ship_all",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule",
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_guardrail_test_is_masked": {
+     "strategy": "guard_safe",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_overload_priced_by_patience": {
+     "strategy": "loss_no_drill",
+     "items_declared": true,
+     "protects": [
+      "R2_full_launch"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_partial_launch_beats_none": {
+     "strategy": "no_ship",
+     "items_declared": true,
+     "protects": [
+      "R1_schedule"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ],
+      [
+       "R1_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  }
+ },
+ "p_ablation_ok": true,
+ "item_activity": {
+  "R0_format": {
+   "n": 40,
+   "pass": 32,
+   "oracle_n": 4,
+   "oracle_pass": 4,
+   "pass_rate": 0.8,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R1_schedule": {
+   "n": 32,
+   "pass": 10,
+   "oracle_n": 4,
+   "oracle_pass": 4,
+   "pass_rate": 0.312,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R2_full_launch": {
+   "n": 32,
+   "pass": 8,
+   "oracle_n": 4,
+   "oracle_pass": 4,
+   "pass_rate": 0.25,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R3_own_schedule": {
+   "n": 32,
+   "pass": 10,
+   "oracle_n": 4,
+   "oracle_pass": 4,
+   "pass_rate": 0.312,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  }
+ },
+ "items_inert": [],
+ "items_broken": [],
+ "search": {
+  "1": {
+   "seed": 1,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "sweep_guard": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "offpeak_full": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.292,
+      0.292,
+      0.292
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "3": {
+   "seed": 3,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "sweep_guard": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "offpeak_full": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.292,
+      0.292,
+      0.292
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "4": {
+   "seed": 4,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "sweep_guard": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    },
+    "offpeak_full": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.292,
+      0.292,
+      0.292
+     ],
+     "failed_items": [
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ],
+      [
+       "R1_schedule",
+       "R2_full_launch",
+       "R3_own_schedule"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  }
+ },
+ "search_ok": true,
+ "mutation": {
+  "1": {
+   "seed": 1,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "schedule": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_schedule",
+      "failed": [
+       "R1_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "q1_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q1_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q2_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_own_schedule",
+      "failed": [
+       "R3_own_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "format": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R0_format",
+      "failed": [
+       "R0_format"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "3": {
+   "seed": 3,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "schedule": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_schedule",
+      "failed": [
+       "R1_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "q1_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q1_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_full_launch",
+      "failed": [
+       "R2_full_launch"
+      ]
+     },
+     "ok": true
+    },
+    "q2_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R3_own_schedule",
+      "failed": [
+       "R3_own_schedule"
+      ]
+     },
+     "ok": true
+    },
+    "format": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R0_format",
+      "failed": [
+       "R0_format"
+      ]
+     },
+     "ok": true
+    }
+   }
+  }
+ },
+ "mutation_ok": true,
+ "mutation_checked": true,
+ "ok": true
+}

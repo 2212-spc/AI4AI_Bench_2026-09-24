@@ -1,0 +1,65 @@
+{
+ "pass": false,
+ "score": 0.8429,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "policy ran and submitted on all 3 test batches within budget"
+  },
+  "R1_accuracy": {
+   "ok": false,
+   "detail": "test accuracy 0.8325 (majority@6 0.4792, reference 0.8983) -> s=0.843, need 0.85"
+  }
+ },
+ "diag": {
+  "acc_by_world": [
+   0.8425,
+   0.8075,
+   0.8475
+  ],
+  "per_topic": [
+   {
+    "algebra": 0.8041,
+    "geometry": 0.8037,
+    "combinatorics": 0.9217,
+    "number_theory": 0.8272
+   },
+   {
+    "algebra": 0.7706,
+    "geometry": 0.7471,
+    "combinatorics": 0.875,
+    "number_theory": 0.83
+   },
+   {
+    "algebra": 0.7941,
+    "geometry": 0.8161,
+    "combinatorics": 0.89,
+    "number_theory": 0.8829
+   }
+  ],
+  "n_dev_samples": 2135,
+  "n_evaluate": 2
+ },
+ "ref": {
+  "maj": [
+   0.5025,
+   0.4725,
+   0.4625
+  ],
+  "ref": [
+   0.895,
+   0.8975,
+   0.9025
+  ]
+ },
+ "run": "k4w1__gemflash__r1",
+ "task": "k4-tts-w1",
+ "model": "gemini-3.8-flash",
+ "hint": 0,
+ "lab_calls": 13,
+ "budget_spent_frac": 0.413,
+ "status": "done",
+ "agent_min": 54.0,
+ "api_errors": 0,
+ "truncated": false
+}

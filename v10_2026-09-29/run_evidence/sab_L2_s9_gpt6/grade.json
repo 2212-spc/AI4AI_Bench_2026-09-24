@@ -1,0 +1,96 @@
+{
+ "pass": false,
+ "score": 0.75,
+ "items": {
+  "R0_format": {
+   "ok": true,
+   "detail": "rollout.conf and report.md are well-formed"
+  },
+  "R1_schedule": {
+   "ok": false,
+   "detail": "expected daily score change of your schedule +0.01553 vs the best achievable +0.02651: regret 0.01098 (allowed 0.0010)"
+  },
+  "R2_full_launch": {
+   "ok": true,
+   "detail": "Q1 truth -0.00369; you said [-0.00530, +0.00070] (covers, width 0.00600, cap 0.0060)"
+  },
+  "R3_own_schedule": {
+   "ok": true,
+   "detail": "Q2 truth (your schedule) +0.01553; you said [+0.01370, +0.01770] (covers, width 0.00400, cap 0.0040)"
+  }
+ },
+ "diag": {
+  "regret": 0.010976,
+  "D_submitted": 0.015534,
+  "closest_schedule": "guard_safe",
+  "closest_dist": 0.0,
+  "peak_fraction": 0.3,
+  "q1_centre_minus_truth": 0.001386,
+  "q1_centre_minus_naive": -0.036513,
+  "q1_centre_minus_fluid": -0.014251,
+  "q1_centre_minus_lossmodel": -0.02191,
+  "q2_centre_minus_truth": 0.000166,
+  "n_tests": 2,
+  "n_drills": 0,
+  "drill_days": 0,
+  "max_peak_fraction_tested": 0.3,
+  "spent": 24.0
+ },
+ "ref": {
+  "level": "L2",
+  "D_star": 0.02651,
+  "x_star": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.962,
+   0.803,
+   0.677,
+   0.59,
+   0.546,
+   0.546,
+   0.565,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "D_full": -0.003686,
+  "naive_ab_delta": 0.034213,
+  "fluid_full": 0.011951,
+  "loss_full": 0.01961,
+  "decoy_regret": {
+   "ship_all": 0.030196,
+   "guard_safe": 0.010976,
+   "keep_target": 0.001447,
+   "no_ship": 0.02651,
+   "rho_0.85": 6.4e-05,
+   "rho_0.90": 0.00085,
+   "rho_0.95": 0.00364
+  },
+  "peak_hour": 15,
+  "peak_full_util_at_quota": 1.15,
+  "peak_full_abandon": 0.1311,
+  "peak_full_wait_s": 10.36
+ },
+ "run": "sab_L2_s9_gpt6",
+ "task": "sab_L2_s9",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 2,
+ "budget_spent_frac": 1.0,
+ "status": "done",
+ "agent_min": 66.9,
+ "api_errors": 10,
+ "truncated": false
+}

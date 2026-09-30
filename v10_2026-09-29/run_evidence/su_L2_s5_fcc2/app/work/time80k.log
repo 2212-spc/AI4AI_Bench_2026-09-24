@@ -1,0 +1,11 @@
+rows=80000 unique=80000 (max multiplicity 1)  train=76000 val=4000  steps/candidate=19000  prior wd=0.89  order=[1.0, 0.7, 1.5, 0.5, 2.0, 3.0, 5.0]
+candidate wd=1      val(crowd) acc 0.7835  train time 16.2s
+candidate wd=0.7    val(crowd) acc 0.8615  train time 16.4s
+candidate wd=1.5    val(crowd) acc 0.6905  train time 16.5s
+skipping remaining candidates (cpu used 49.3s, per model 16.5s, budget 75s)
+lda                val(crowd) acc 0.4607
+selected wd=0.7; ensemble on validation: ['mlp wd=0.7'] -> val acc 0.8615
+final all-data model 1 wd=0.7 (20000 steps)
+stopping final models (cpu used 67.4s, budget 75s)
+ensemble of 2 models, total cpu 67.4s
+trained 20000 steps in 67.5s wall, 67.5s cpu

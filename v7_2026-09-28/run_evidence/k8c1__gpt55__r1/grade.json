@@ -1,0 +1,62 @@
+{
+ "pass": true,
+ "score": 1.0121,
+ "items": {
+  "R0_report": {
+   "ok": true,
+   "detail": "report.json declares a cause from ['capacity', 'mixture', 'lr_scale'] and a fix config"
+  },
+  "R1_fix_recovers": {
+   "ok": true,
+   "detail": "your fix reaches online 0.8034 (release 0.7137, best reachable under the release constraints 0.8024) -> recovers 101.2% of what is reachable, need 90%"
+  },
+  "R2_cause_survives_intervention": {
+   "ok": true,
+   "detail": "holding `lr_scale` at its release value costs 64.0% of the regression once the other knobs are re-tuned; the knobs rank lr_scale 64%, mixture 25%, capacity 15% - the cause must rank first by >= 15 points"
+  },
+  "R3_fix_acts_on_cause": {
+   "ok": true,
+   "detail": "fix moves `lr_scale`, the knob you diagnosed"
+  }
+ },
+ "diag": {
+  "declared_cause": "lr_scale",
+  "true_cause": "lr_scale",
+  "fix": {
+   "lr_scale": 1.2609,
+   "mixture": 0.6969,
+   "capacity": 0.6908
+  },
+  "q_fixed": 0.8034,
+  "recovered": 1.0121,
+  "n_rerun": 1,
+  "n_canary": 2,
+  "n_decon": 7,
+  "spent": 17.0
+ },
+ "ref": {
+  "q_healthy": 0.89203,
+  "q_sick": 0.71371,
+  "cause": "lr_scale",
+  "gap": 0.17832,
+  "sick_value": 1.3887,
+  "q_best": 0.80235,
+  "cfg_best": {
+   "capacity": 0.68,
+   "mixture": 0.6969,
+   "lr_scale": 1.2609,
+   "leak": 0.608
+  },
+  "gap_reachable": 0.08865
+ },
+ "run": "k8c1__gpt55__r1",
+ "task": "k8-post-c1",
+ "model": "gpt-5.5",
+ "hint": 0,
+ "lab_calls": 10,
+ "budget_spent_frac": 0.85,
+ "status": "done",
+ "agent_min": 12.1,
+ "api_errors": 3,
+ "truncated": false
+}

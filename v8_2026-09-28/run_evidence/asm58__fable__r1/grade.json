@@ -1,0 +1,112 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_plan": {
+   "ok": true,
+   "detail": "plan.json is well-formed and within the review-day cap"
+  },
+  "R1_set_is_near_optimal": {
+   "ok": true,
+   "detail": "your set reaches 1.9799x on production traffic; the best feasible set reaches 1.9799x -> you capture 100.0% of the achievable gain, need 90%.  Only 1 of 27 feasible sets clear that bar."
+  },
+  "R2_speedup_predicted": {
+   "ok": true,
+   "detail": "the true production speedup of YOUR set is 1.9799x; you reported [1.9400, 2.0500] (covers, relative width 0.0556, cap 0.060).  Production traffic is 0.243, 0.096, 0.330, 0.039, 0.292 over R1, R2, R3, R4, R5."
+  },
+  "R3_weakest_member": {
+   "ok": true,
+   "detail": "removing `C-241` from your own set costs 0.3524 of production speedup gain; the least-contributing member is `C-241` at 0.3524 (slack 0.015).  In-context ranking inside your set: C-241 0.3524, C-203 0.4822, C-127 0.6622"
+  }
+ },
+ "diag": {
+  "declared": [
+   "C-127",
+   "C-203",
+   "C-241"
+  ],
+  "true_best": [
+   "C-127",
+   "C-203",
+   "C-241"
+  ],
+  "sp": 1.97994,
+  "gain_ratio": 1.0,
+  "pi": [
+   0.24295826932240863,
+   0.09559001091619422,
+   0.33011636472477984,
+   0.03919620633814729,
+   0.29213914869846996
+  ],
+  "is_best_on_R1": false,
+  "is_best_on_R2": false,
+  "is_best_on_R3": false,
+  "is_best_on_R4": false,
+  "is_best_on_R5": true,
+  "n_replay": 166,
+  "n_canary": 11,
+  "distinct_replay_sets": 28,
+  "traces_used": [
+   "R1",
+   "R2",
+   "R3",
+   "R4",
+   "R5"
+  ],
+  "canary_points": [
+   [],
+   [
+    "C-114"
+   ],
+   [
+    "C-127"
+   ],
+   [
+    "C-203"
+   ],
+   [
+    "C-241"
+   ],
+   [
+    "C-318"
+   ],
+   [
+    "C-352"
+   ]
+  ],
+  "spent": 314.0
+ },
+ "ref": {
+  "best_set": [
+   "C-127",
+   "C-203",
+   "C-241"
+  ],
+  "best_speedup": 1.97994,
+  "n_feasible": 27,
+  "n_qualifying": 1,
+  "ratio_gap_at_tau": 0.2472,
+  "weakest": "C-241",
+  "weak_margin": 0.1298,
+  "pi": [
+   0.24295826932240863,
+   0.09559001091619422,
+   0.33011636472477984,
+   0.03919620633814729,
+   0.29213914869846996
+  ],
+  "max_pi": 0.3301,
+  "base_prod": 921.844
+ },
+ "run": "asm58__fable__r1",
+ "task": "a_span_min_s58",
+ "model": "claude-fable-5-1",
+ "hint": 0,
+ "lab_calls": 177,
+ "budget_spent_frac": 0.981,
+ "status": "done",
+ "agent_min": 4.4,
+ "api_errors": 0,
+ "truncated": false
+}

@@ -1,0 +1,155 @@
+{
+ "params": {
+  "n_items": 1500,
+  "n_slices": 3,
+  "bank_seed": 941826,
+  "det_fast_cost": 0.03,
+  "det_scan_cost": 1.2,
+  "a_mu": 1.441293704017785,
+  "a_sd": 0.5452038048497044,
+  "b_mu": -0.24343139376236303,
+  "b_sd": 0.5643782683537906,
+  "det_a": 0.7578131187449688,
+  "det_b": -3.059835458556277,
+  "det_s": 1.1266591019483962,
+  "dup_frac": 0.24615085477151885,
+  "dup_lam": 8.271058980287641,
+  "sig_call": 0.21580174953812867,
+  "slice_b": [
+   -0.5524454858213846,
+   0.4216272419410717,
+   0.1308182438803129
+  ],
+  "fmt_ext": {
+   "mc_letter": {
+    "base": 0.09066795823926299,
+    "by_slice": [
+     -0.020516438330896163,
+     0.010860616872420717,
+     0.009655821458475442
+    ]
+   },
+   "mc_cloze": {
+    "base": 0.02969820823595441,
+    "by_slice": [
+     -0.0028359491177652784,
+     -0.004312749195399562,
+     0.0071486983131648415
+    ]
+   }
+  },
+  "models": {
+   "M_new": {
+    "theta": -0.044390590329144414,
+    "kappa": 1.0671574722712545,
+    "ext": 0.1382709526635782,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": 0.1619696581896776
+    },
+    "slice_off": [
+     -0.0918017852175628,
+     0.09095517328014349,
+     0.0008466119374193054
+    ]
+   },
+   "M_ref": {
+    "theta": -0.4308965875100832,
+    "kappa": 0.0,
+    "ext": 0.0,
+    "cost": 0.05,
+    "length": 300.0,
+    "fmt": {
+     "mc_letter": 0.0,
+     "mc_cloze": -0.05422302825690418
+    },
+    "slice_off": [
+     0.10445837868659386,
+     -0.03931023523359294,
+     -0.06514814345300092
+    ]
+   }
+  },
+  "w0_rel": 0.26518036144995266
+ },
+ "spec": {
+  "lab": "evallab",
+  "knobs": {
+   "svc": {
+    "type": "choice",
+    "values": [
+     "score",
+     "corpus"
+    ],
+    "default": "score"
+   },
+   "model": {
+    "type": "choice",
+    "values": [
+     "M_new",
+     "M_ref"
+    ],
+    "default": "M_new"
+   },
+   "split": {
+    "type": "choice",
+    "values": [
+     "all",
+     "s0",
+     "s1",
+     "s2"
+    ],
+    "default": "all"
+   },
+   "fmt": {
+    "type": "choice",
+    "values": [
+     "mc_letter",
+     "mc_cloze"
+    ],
+    "default": "mc_letter"
+   },
+   "n": {
+    "type": "float",
+    "min": 10,
+    "max": 1500,
+    "int": true
+   },
+   "reps": {
+    "type": "float",
+    "min": 1,
+    "max": 400,
+    "int": true,
+    "default": 1
+   },
+   "detail": {
+    "type": "choice",
+    "values": [
+     0,
+     1
+    ],
+    "default": 0
+   },
+   "mode": {
+    "type": "choice",
+    "values": [
+     "fast",
+     "scan"
+    ],
+    "default": "fast"
+   }
+  },
+  "fixed": {},
+  "caps": {
+   "run_cost": 8000.0,
+   "total_cost": 30000.0,
+   "max_runs": 36
+  }
+ },
+ "salt": "a557d7f44fc13c6d",
+ "blueprint": "e01-release-gap",
+ "module": "e01_release_gap",
+ "world_seed": 3
+}

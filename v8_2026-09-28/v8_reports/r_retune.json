@@ -1,0 +1,1124 @@
+{
+ "family": "r_retune",
+ "n_candidates": 240,
+ "n_screened": 240,
+ "n_strategy_gate_clean": 32,
+ "n_strategy_gate_run": 32,
+ "strategy_gate_rejected": {},
+ "admitted": [
+  6,
+  9,
+  10,
+  11,
+  14,
+  16,
+  20,
+  23,
+  24,
+  25,
+  29,
+  30
+ ],
+ "pool_gate": {
+  "n": 12,
+  "modal_variant": 3,
+  "variants": {
+   "batch4x": 3,
+   "batch2x_tokens8x": 3,
+   "tokens8x": 3,
+   "tokens4x": 1,
+   "batch8x": 2
+  },
+  "cap": 3
+ },
+ "p_ablation": {
+  "6": {
+   "seed": 6,
+   "screen_ok": true,
+   "principles": {
+    "P1_retune_after_forced_change": {
+     "strategy": "carry_over",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_measure_dont_recite": {
+     "strategy": "recite_rules",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_wd_must_move": {
+     "strategy": "lr_only",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_tau_exponent_is_measured": {
+     "strategy": "lr_did_tau",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_proxy_length_is_biased": {
+     "strategy": "proxy_direct",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_lr_and_lrwd_are_the_knobs": {
+     "strategy": "full_ofat",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "9": {
+   "seed": 9,
+   "screen_ok": true,
+   "principles": {
+    "P1_retune_after_forced_change": {
+     "strategy": "carry_over",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_measure_dont_recite": {
+     "strategy": "recite_rules",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_wd_must_move": {
+     "strategy": "lr_only",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_tau_exponent_is_measured": {
+     "strategy": "lr_did_tau",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_proxy_length_is_biased": {
+     "strategy": "proxy_direct",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_lr_and_lrwd_are_the_knobs": {
+     "strategy": "full_ofat",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "10": {
+   "seed": 10,
+   "screen_ok": true,
+   "principles": {
+    "P1_retune_after_forced_change": {
+     "strategy": "carry_over",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_measure_dont_recite": {
+     "strategy": "recite_rules",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_wd_must_move": {
+     "strategy": "lr_only",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_tau_exponent_is_measured": {
+     "strategy": "lr_did_tau",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_proxy_length_is_biased": {
+     "strategy": "proxy_direct",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_lr_and_lrwd_are_the_knobs": {
+     "strategy": "full_ofat",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "11": {
+   "seed": 11,
+   "screen_ok": true,
+   "principles": {
+    "P1_retune_after_forced_change": {
+     "strategy": "carry_over",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P2_measure_dont_recite": {
+     "strategy": "recite_rules",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P3_wd_must_move": {
+     "strategy": "lr_only",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P4_tau_exponent_is_measured": {
+     "strategy": "lr_did_tau",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P5_proxy_length_is_biased": {
+     "strategy": "proxy_direct",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "P6_lr_and_lrwd_are_the_knobs": {
+     "strategy": "full_ofat",
+     "items_declared": true,
+     "protects": [
+      "R1_recipe"
+     ],
+     "n": 4,
+     "n_pass": 0,
+     "n_fail_on_target": 4,
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  }
+ },
+ "p_ablation_ok": true,
+ "item_activity": {
+  "R0_recipe": {
+   "n": 78,
+   "pass": 66,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.846,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R1_recipe": {
+   "n": 66,
+   "pass": 12,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.182,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  },
+  "R2_loss": {
+   "n": 66,
+   "pass": 60,
+   "oracle_n": 6,
+   "oracle_pass": 6,
+   "pass_rate": 0.909,
+   "oracle_rate": 1.0,
+   "inert": false,
+   "broken": false
+  }
+ },
+ "items_inert": [],
+ "items_broken": [],
+ "search": {
+  "6": {
+   "seed": 6,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "successive_halving": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.661,
+      0.661,
+      0.661
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "proxy_grid": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "full_ofat": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "9": {
+   "seed": 9,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "successive_halving": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.661,
+      0.661,
+      0.661
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "proxy_grid": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "full_ofat": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "10": {
+   "seed": 10,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "successive_halving": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.661,
+      0.661,
+      0.661
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "proxy_grid": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "full_ofat": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  },
+  "11": {
+   "seed": 11,
+   "checked": true,
+   "ok": true,
+   "searches": {
+    "successive_halving": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.661,
+      0.661,
+      0.661
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "proxy_grid": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ]
+     ],
+     "ok": true
+    },
+    "full_ofat": {
+     "n": 3,
+     "n_pass": 0,
+     "spent_frac": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "failed_items": [
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe"
+      ],
+      [
+       "R1_recipe",
+       "R2_loss"
+      ]
+     ],
+     "ok": true
+    }
+   }
+  }
+ },
+ "search_ok": true,
+ "mutation": {
+  "6": {
+   "seed": 6,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "lr_value": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_recipe",
+      "failed": [
+       "R1_recipe"
+      ]
+     },
+     "ok": true
+    },
+    "wd_value": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_recipe",
+      "failed": [
+       "R1_recipe"
+      ]
+     },
+     "ok": true
+    },
+    "loss_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_loss",
+      "failed": [
+       "R2_loss"
+      ]
+     },
+     "ok": true
+    },
+    "loss_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_loss",
+      "failed": [
+       "R2_loss"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  "9": {
+   "seed": 9,
+   "checked": true,
+   "salt": "mut-0",
+   "ok": true,
+   "mutations": {
+    "lr_value": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_recipe",
+      "failed": [
+       "R1_recipe"
+      ]
+     },
+     "ok": true
+    },
+    "wd_value": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R1_recipe",
+      "failed": [
+       "R1_recipe"
+      ]
+     },
+     "ok": true
+    },
+    "loss_coverage": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_loss",
+      "failed": [
+       "R2_loss"
+      ]
+     },
+     "ok": true
+    },
+    "loss_width": {
+     "small": {
+      "pass": true,
+      "want_item": null,
+      "failed": []
+     },
+     "large": {
+      "pass": false,
+      "want_item": "R2_loss",
+      "failed": [
+       "R2_loss"
+      ]
+     },
+     "ok": true
+    }
+   }
+  }
+ },
+ "mutation_ok": true,
+ "mutation_checked": true,
+ "ok": true
+}

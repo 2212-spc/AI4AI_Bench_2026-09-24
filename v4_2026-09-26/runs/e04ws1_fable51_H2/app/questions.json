@@ -1,0 +1,47 @@
+[
+ {
+  "id": "q1",
+  "question": "The team's proposal is `method=ppo kl=6.44235 steps=470`.  What best-of-n sampling budget `n` puts a policy at the **same** KL from the initial policy as that run actually reaches?  Answer the exact n, not a bound.",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "samples"
+ },
+ {
+  "id": "q2",
+  "question": "Of the proposed recipe's proxy reward - its gain over the initial policy, which scores 0 - what fraction is contributed by the length term rather than by quality?  Answer a fraction in [0, 1].",
+  "answer_format": {
+   "lo": "number",
+   "hi": "number"
+  },
+  "unit": "fraction of proxy reward"
+ },
+ {
+  "id": "q3",
+  "question": "The team will ship exactly one of the two recipes below, and they are to be compared at the\n**same distance from the initial policy** - the KL the proposed PPO recipe actually reaches:\n\n  - `bon`: best-of-n sampling, at whatever sampling budget n puts it at that same KL;\n  - `ppo`: the proposed recipe, `method=ppo kl=6.44235 steps=470`.\n\nThe ship rule is fixed: the answer is `bon` if best-of-n's true gold win rate exceeds the PPO recipe's by\nmore than 0.1, `ppo` if the PPO recipe's exceeds best-of-n's by more than 0.1, and `undetermined`\notherwise.\n\nPre-register the experiment that decides it: at most 3 runs costing at most 4400 in total, and a\ndecision rule over their results.  Your plan is executed in **every world consistent with what this\nnotebook disclosed**, each under several independent noise salts, and it passes only if the rule returns\nthat world's correct conclusion every time.  A rule that is right only in the world you measured yourself\nwill not pass, and neither will a statistic that cannot tell those worlds apart.",
+  "answer_format": {
+   "runs": "list of lab requests, each optionally with a \"label\"",
+   "rule": {
+    "expr": "arithmetic over <label>.<field>",
+    "cuts": "[[op, threshold, label], ..., [\"else\", label]]"
+   }
+  },
+  "limits": {
+   "max_runs": 3,
+   "budget": 4400.0,
+   "allowed_labels": [
+    "bon",
+    "ppo",
+    "undetermined"
+   ]
+  }
+ },
+ {
+  "id": "q4",
+  "question": "There is budget for exactly one more alignment run before the freeze.  Which of these four\nrecipes gives the highest **gold** win rate?\n\n  - `ppo_ship`: `method=ppo kl=6.44235 steps=470`\n  - `ppo_light`: `method=ppo kl=6.44235 steps=296`\n  - `bon_a`: `method=bon n=13`\n  - `bon_b`: `method=bon n=60 len_pen=6.32353`\n\nThe first three carry no length penalty.",
+  "answer_format": {
+   "choice": "one of ppo_ship, ppo_light, bon_a, bon_b"
+  }
+ }
+]

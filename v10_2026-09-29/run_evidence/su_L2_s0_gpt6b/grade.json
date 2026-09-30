@@ -1,0 +1,65 @@
+{
+ "pass": true,
+ "score": 1.0,
+ "items": {
+  "R0_runs": {
+   "ok": true,
+   "detail": "production job ran for both seeds and wrote valid predictions"
+  },
+  "R1_accuracy": {
+   "ok": true,
+   "detail": "production accuracy (mean of seeds 0,1) 0.7639 vs target 0.745"
+  }
+ },
+ "diag": {
+  "replicas": [
+   {
+    "seed": 0,
+    "exit": 0,
+    "cpu_s": 18.4,
+    "acc": 0.76435
+   },
+   {
+    "seed": 1,
+    "exit": 0,
+    "cpu_s": 18.3,
+    "acc": 0.7635
+   }
+  ],
+  "acc": 0.76392,
+  "shipped_cfg": {
+   "hidden": 256,
+   "lr": 0.005,
+   "batch_size": 128,
+   "aug_sigma": 0.03,
+   "label_smoothing": 0.0,
+   "warmup_frac": 0.02,
+   "weight_decay": 2.0,
+   "whiten_ridge": 0.01,
+   "robust_q": 0.6,
+   "ema": 0.995
+  },
+  "wd_ratio_vs_team": 1.0,
+  "train_py_changed": true
+ },
+ "ref": {
+  "T": 0.745,
+  "ref_acc": 0.773575,
+  "decoys": {
+   "ship_as_is": 0.7224999999999999,
+   "retune_sample": 0.7224999999999999,
+   "row_rule": 0.61585,
+   "l1_fable_injob": 0.62395
+  }
+ },
+ "run": "su_L2_s0_gpt6b",
+ "task": "su_L2_s0",
+ "model": "gpt-6-astra",
+ "hint": 0,
+ "lab_calls": 0,
+ "budget_spent_frac": 0.0,
+ "status": "done",
+ "agent_min": 81.2,
+ "api_errors": 8,
+ "truncated": false
+}

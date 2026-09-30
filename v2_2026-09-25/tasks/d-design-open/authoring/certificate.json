@@ -1,0 +1,312 @@
+{
+ "accepted": true,
+ "n_items": 31,
+ "gates": {
+  "G2_validity": {
+   "unrecorded_runs": 310,
+   "worst_day_total_error": 0.0,
+   "tightest_run_slack": 0.4996,
+   "tightest_contrast_slack": 0.0
+  },
+  "G3_attainment": {
+   "items": 9,
+   "all_attained": true,
+   "sample": [
+    {
+     "item": "w01",
+     "k": 2,
+     "width": 0.127978733032,
+     "witness_width": 0.127978733032,
+     "attained": true
+    },
+    {
+     "item": "w02",
+     "k": 0,
+     "width": 0.06,
+     "witness_width": 0.06,
+     "attained": true
+    },
+    {
+     "item": "w03",
+     "k": 2,
+     "width": 0.038846153846,
+     "witness_width": 0.038846153846,
+     "attained": true
+    },
+    {
+     "item": "w04",
+     "k": 2,
+     "width": 0.1283,
+     "witness_width": 0.1283,
+     "attained": true
+    }
+   ]
+  },
+  "G4_soundness_sampling": {
+   "outcomes_checked": 320,
+   "items_where_sampling_also_hit_the_max": 8,
+   "items": 8
+  },
+  "G9_identifiability": {
+   "log_rows": 38,
+   "candidate_readings": 15,
+   "readings_consistent_with_the_log": [
+    "the_outage_left_only_an_audit_line_for_those_runs",
+    "the_outage_stopped_at_the_archive_and_the_bundle_is_intact",
+    "the_sink_finalises_the_bundle_and_the_screen_redacts_it"
+   ],
+   "outcome_mix": {
+    "value": 4,
+    "range": 34,
+    "no_bundle": 0
+   }
+  },
+  "G10_no_lookup": {
+   "runs_named_by_items": 41,
+   "runs_in_the_log": 38,
+   "overlap": []
+  },
+  "G5_decoys": {
+   "min_fail": 2,
+   "still_needed": {},
+   "items_each_reading_gets_wrong": {
+    "analysis__day_totals_ignored": 7,
+    "analysis__recovered_value_is_best_case": 5,
+    "analysis__recovered_value_is_the_box_midpoint": 2,
+    "analysis__recovered_value_is_the_box_top": 3,
+    "analysis__surplus_stays_put": 2,
+    "analysis__value_is_box_width_over_n": 6,
+    "recovery__cold_storage_is_the_backup_for_whatever_the_archive_lost": 15,
+    "recovery__every_request_returns_the_exact_value": 15,
+    "recovery__nothing_that_finished_during_the_outage_survived": 2,
+    "recovery__nothing_the_archive_lost_can_be_recovered": 13,
+    "recovery__one_audit_resolution_for_the_whole_fleet": 8,
+    "recovery__the_audit_resolution_is_the_suites_chance_rate": 8,
+    "recovery__the_lost_shard_took_its_bundles_too": 4,
+    "recovery__the_outage_left_only_an_audit_line_for_those_runs": 9,
+    "recovery__the_outage_stopped_at_the_archive_and_the_bundle_is_intact": 9,
+    "recovery__the_screen_deleted_the_bundles_and_the_sink_left_them_alone": 17,
+    "recovery__the_screen_redacted_what_the_sink_delivered": 15,
+    "recovery__the_sink_outage_took_the_bundles_and_the_screen_left_them_alone": 6,
+    "recovery__the_three_sink_workers_lost_everything": 2,
+    "recovery__the_two_outage_workers_lost_everything": 4
+   },
+   "items_in_pool_each_reading_could_lose": {
+    "analysis__day_totals_ignored": 303,
+    "analysis__recovered_value_is_best_case": 64,
+    "analysis__recovered_value_is_the_box_midpoint": 49,
+    "analysis__recovered_value_is_the_box_top": 33,
+    "analysis__surplus_stays_put": 32,
+    "analysis__value_is_box_width_over_n": 94,
+    "recovery__cold_storage_is_the_backup_for_whatever_the_archive_lost": 381,
+    "recovery__every_request_returns_the_exact_value": 381,
+    "recovery__nothing_that_finished_during_the_outage_survived": 44,
+    "recovery__nothing_the_archive_lost_can_be_recovered": 262,
+    "recovery__one_audit_resolution_for_the_whole_fleet": 189,
+    "recovery__the_audit_resolution_is_the_suites_chance_rate": 185,
+    "recovery__the_lost_shard_took_its_bundles_too": 41,
+    "recovery__the_outage_left_only_an_audit_line_for_those_runs": 191,
+    "recovery__the_outage_stopped_at_the_archive_and_the_bundle_is_intact": 191,
+    "recovery__the_screen_deleted_the_bundles_and_the_sink_left_them_alone": 411,
+    "recovery__the_screen_redacted_what_the_sink_delivered": 381,
+    "recovery__the_sink_outage_took_the_bundles_and_the_screen_left_them_alone": 190,
+    "recovery__the_three_sink_workers_lost_everything": 29,
+    "recovery__the_two_outage_workers_lost_everything": 35
+   }
+  },
+  "G6_coverage": {
+   "value_labels": [
+    "no",
+    "yes"
+   ],
+   "yes_for_a_run_in_neither_cell": [
+    "v07"
+   ],
+   "no_for_the_widest_box_on_its_day": [
+    "v01",
+    "v04",
+    "v05",
+    "v06"
+   ],
+   "recovery_outcomes_graded": [
+    "band",
+    "empty",
+    "exact"
+   ]
+  },
+  "G7_search": {
+   "plans": [
+    {
+     "item": "p01",
+     "k": 2,
+     "greedy_needs": 3,
+     "unrecoverable_runs_offered": [
+      "r02593",
+      "r02594",
+      "r02595",
+      "r02596",
+      "r02597"
+     ],
+     "optimal_sets": [
+      [
+       "r02612",
+       "r02613"
+      ]
+     ]
+    },
+    {
+     "item": "p02",
+     "k": 1,
+     "greedy_needs": 1,
+     "unrecoverable_runs_offered": [
+      "r00577",
+      "r00578",
+      "r00579",
+      "r00582",
+      "r00583"
+     ],
+     "optimal_sets": [
+      [
+       "r02608"
+      ]
+     ]
+    }
+   ],
+   "with_unrecoverable_bait": [
+    "p01",
+    "p02"
+   ],
+   "with_greedy_strictly_worse": [
+    "p01"
+   ]
+  },
+  "G8_regimes": {
+   "members_only": [
+    "2026-07-04@w01",
+    "2026-07-06@w05",
+    "2026-07-04@v01"
+   ],
+   "non_members_only": [
+    "2026-07-11@w01",
+    "2026-07-12@w01",
+    "2026-07-11@w02"
+   ],
+   "non_members_only_surplus_forced_down": [
+    "2026-07-13@w04",
+    "2026-07-13@v02",
+    "2026-07-13@v03"
+   ],
+   "nothing_helps": [
+    "2026-06-29@w05",
+    "2026-07-02@w05",
+    "2026-06-30@w06"
+   ]
+  },
+  "G11_inversion_is_load_bearing": {
+   "reading": "the_outage_stopped_at_the_archive_and_the_bundle_is_intact",
+   "items_it_gets_wrong": {
+    "recovery": [
+     "r05",
+     "r07",
+     "r08"
+    ],
+    "values": [
+     "v09",
+     "v10",
+     "v11"
+    ],
+    "widths": [
+     "w06",
+     "w07"
+    ],
+    "plans": [
+     "p02"
+    ]
+   },
+   "unrecoverable_runs_named_by_items": [
+    "r00084",
+    "r00097",
+    "r00108",
+    "r02060",
+    "r02600",
+    "r02603",
+    "r02605",
+    "r02606",
+    "r02611"
+   ],
+   "banded_runs_named_by_items": [
+    "r00055",
+    "r01932",
+    "r02049",
+    "r02506",
+    "r02613"
+   ]
+  },
+  "G12_resolutions": {
+   "suites_items_depend_on": [
+    "arc_lite",
+    "code_ms",
+    "gsm_plus"
+   ],
+   "band_widths_shown_in_the_log": {
+    "arc_lite": [
+     0.04
+    ],
+    "code_ms": [
+     0.025
+    ],
+    "gsm_plus": [
+     0.02
+    ]
+   },
+   "banded_rows_per_suite": {
+    "arc_lite": 2,
+    "code_ms": 30,
+    "gsm_plus": 2
+   }
+  },
+  "G13_open_cell": {
+   "open_class": "never_written",
+   "unrecorded_runs_in_it": 165,
+   "rows_of_it_in_the_log": [],
+   "states_the_log_exercises": [
+    "below_retention_floor",
+    "shard_file_lost"
+   ],
+   "survivors_agree_on_every_other_run": true,
+   "key_is_the_pointwise_worst_case": true,
+   "survivors_strictly_below_it_on_the_open_cell": [
+    "the_outage_left_only_an_audit_line_for_those_runs",
+    "the_outage_stopped_at_the_archive_and_the_bundle_is_intact"
+   ],
+   "widest_box_in_the_sweep_is_open_class": true,
+   "shipped_items_that_touch_it": {
+    "recovery": [
+     "r02060",
+     "r02606",
+     "r02611"
+    ],
+    "values": [
+     "r00084",
+     "r00097",
+     "r00108",
+     "r02600",
+     "r02603",
+     "r02605"
+    ],
+    "widths": [
+     "w01",
+     "w03",
+     "w04",
+     "w05",
+     "w06",
+     "w07"
+    ],
+    "plans": [
+     "p01",
+     "p02"
+    ]
+   }
+  }
+ }
+}
